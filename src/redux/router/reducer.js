@@ -2,7 +2,7 @@ import * as types from './types';
 
 import { AppNavigator } from '../../navigator/AppNavigator';
 
-const initialState = AppNavigator.router.getStateForAction(AppNavigator.router.getActionForPathAndParams('Launch'));
+const initialState = AppNavigator.router.getStateForAction(AppNavigator.router.getActionForPathAndParams('Login'));
 
 export default function (state = initialState, action) {
 
