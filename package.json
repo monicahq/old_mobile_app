@@ -23,11 +23,17 @@
     "eslint-plugin-flowtype": "^2.41.0",
     "eslint-plugin-prettier": "^2.4.0",
     "eslint-plugin-react": "^7.5.1",
-    "flow-bin": "^0.57.0",
+    "flow-bin": "~0.57.0",
     "jest": "22.0.4",
     "react-test-renderer": "16.0.0"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "!node_modules/react-runtime"
+    ]
   }
 }
