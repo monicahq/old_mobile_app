@@ -4,7 +4,6 @@ node_js:
 sudo: false
 cache: yarn
 script:
-  - cp env.example.js env.js
   - npm run lint
   - npm run flow
   - npm test
