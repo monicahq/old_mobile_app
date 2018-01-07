@@ -9,6 +9,18 @@
 
 ## Introduction
 
-Monica is an open-source web application to organize the interactions with your loved ones. I call it a PRM, or Personal Relationship Management. Think of it as a [CRM](https://en.wikipedia.org/wiki/Customer_relationship_management) (a popular tool used by sales teams in the corporate world) for your friends or family.
+Chandler is the official [Monica](https://github.com/monicahq/monica) mobile app. It is not yet available on the App Store and the Play Store as it is (really) on its early stage.
 
-Chandler is the [Monica](https://github.com/monicahq/monica) mobile app.
+We will soon post more information regarding the way you could contribute.
+
+## Contact
+
+If you need to talk, you can contact me at regis AT monicahq DOT com. You can also reach me [on Twitter](https://twitter.com/djaiss).
+
+## Thank you, open source
+
+Monica use a lot of open source projects and we thank them with all our hearts. We hope that providing Monica as an free, open source project will help other people the same way those softwares have helped us.
+
+## License
+
+Licensed under the AGPL License. [View license](/LICENSE).
