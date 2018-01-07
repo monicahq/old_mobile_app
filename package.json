@@ -1,0 +1,33 @@
+{
+  "name": "monica",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "lint": "eslint .",
+    "flow": "flow"
+  },
+  "dependencies": {
+    "react": "16.0.0",
+    "react-native": "0.51.0",
+    "react-navigation": "^1.0.0-beta.23",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.1.2",
+    "babel-jest": "22.0.4",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.15.0",
+    "eslint-plugin-flowtype": "^2.41.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-react": "^7.5.1",
+    "flow-bin": "^0.57.0",
+    "jest": "22.0.4",
+    "react-test-renderer": "16.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
