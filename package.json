@@ -32,6 +32,10 @@
     "transform": {
       "^.+\\.js?$": "babel-jest"
     },
+    "moduleNameMapper": {
+      "^image![a-zA-Z0-9$_-]+$": "GlobalImageStub",
+      "^[@./a-zA-Z0-9$_-]+\\.(png|gif)$": "RelativeImageStub"
+    },
     "transformIgnorePatterns": [
       "!node_modules/react-runtime"
     ]
