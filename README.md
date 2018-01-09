@@ -9,6 +9,8 @@
 
 ## Introduction
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/monicahq/chandler.svg)](https://greenkeeper.io/)
+
 Chandler is the official [Monica](https://github.com/monicahq/monica) mobile app. It is not yet available on the App Store and the Play Store as it is (really) on its early stage.
 
 We will soon post more information regarding the way you could contribute.
