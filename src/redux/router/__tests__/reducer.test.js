@@ -1,5 +1,5 @@
-import reducer from './reducer';
-import {navigate, back} from './actions';
+import reducer from '../reducer';
+import {navigate, back} from '../actions';
 
 describe('Router', () => {
   describe('Reducer', () => {

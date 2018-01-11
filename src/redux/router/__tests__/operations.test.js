@@ -1,5 +1,5 @@
-import {navigate, back} from './operations';
-import {navigate as n, back as b} from './actions';
+import {navigate, back} from '../operations';
+import {navigate as n, back as b} from '../actions';
 
 describe('Router', () => {
   describe('Operations', () => {

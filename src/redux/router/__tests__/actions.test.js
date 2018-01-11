@@ -1,5 +1,5 @@
-import {back, navigate} from './actions';
-import * as types from './types';
+import {back, navigate} from '../actions';
+import * as types from '../types';
 
 describe('Router', () => {
   describe('Actions', () => {
