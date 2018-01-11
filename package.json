@@ -29,6 +29,7 @@
     "react-test-renderer": "16.2.0"
   },
   "jest": {
+    "coverageReporters": ["lcov"],
     "preset": "react-native",
     "transform": {
       "^.+\\.js?$": "babel-jest"

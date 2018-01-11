@@ -3,6 +3,8 @@
 
 <p align="center">
 <a href="https://travis-ci.org/monicahq/chandler"><img src="https://travis-ci.org/monicahq/chandler.svg?branch=master" alt="Build Status"></a>
+<a href="https://codeclimate.com/github/monicahq/chandler/maintainability"><img src="https://api.codeclimate.com/v1/badges/72bec4479fc7057c5e7c/maintainability" /></a>
+<a href="https://codecov.io/gh/monicahq/chandler"><img src="https://codecov.io/gh/monicahq/chandler/branch/develop/graph/badge.svg" /></a>
 <a href="https://github.com/djaiss/monica/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-AGPL-blue.svg" alt="License"></a>
 </p>
 
