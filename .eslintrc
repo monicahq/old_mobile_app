@@ -168,7 +168,13 @@
   
     // Prettier Plugin
     // https://github.com/prettier/eslint-plugin-prettier
-      "prettier/prettier": ["error", "fb"],
+      "prettier/prettier": ["error", {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": false,
+        "jsxBracketSameLine": true,
+        "parser": "flow"
+      }],
   
     // Stylistic Issues
     // These rules are purely matters of style and are quite subjective.
