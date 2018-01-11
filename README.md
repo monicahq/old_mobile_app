@@ -5,13 +5,12 @@
 <a href="https://travis-ci.org/monicahq/chandler"><img src="https://travis-ci.org/monicahq/chandler.svg?branch=master" alt="Build Status"></a>
 <a href="https://codeclimate.com/github/monicahq/chandler/maintainability"><img src="https://api.codeclimate.com/v1/badges/72bec4479fc7057c5e7c/maintainability" /></a>
 <a href="https://codecov.io/gh/monicahq/chandler"><img src="https://codecov.io/gh/monicahq/chandler/branch/develop/graph/badge.svg" /></a>
+[![Greenkeeper badge](https://badges.greenkeeper.io/monicahq/chandler.svg)](https://greenkeeper.io/)
 <a href="https://github.com/djaiss/monica/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-AGPL-blue.svg" alt="License"></a>
 </p>
 
 
 ## Introduction
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/monicahq/chandler.svg)](https://greenkeeper.io/)
 
 Chandler is the official [Monica](https://github.com/monicahq/monica) mobile app. It is not yet available on the App Store and the Play Store as it is (really) on its early stage.
 
