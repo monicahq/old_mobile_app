@@ -1,0 +1,4 @@
+codecov:
+  allow_coverage_offsets: false
+  ignore:
+    - "tools"

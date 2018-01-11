@@ -1,0 +1,5 @@
+plugins: 
+  eslint:
+    enabled: true
+  nodesecurity:
+    enabled: true
