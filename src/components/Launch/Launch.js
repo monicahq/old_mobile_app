@@ -6,9 +6,7 @@ import {styles} from './Launch.styles';
 import {Button} from '../Button';
 
 export const Launch = ({navigate}) => (
-  <SafeAreaView
-    forceInset={{top: 'always'}}
-    style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+  <SafeAreaView forceInset={{top: 'always'}} style={styles.container}>
     <View style={styles.flex} />
 
     <View style={styles.centeredBlock}>

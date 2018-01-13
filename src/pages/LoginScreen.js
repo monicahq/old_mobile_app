@@ -1,14 +1,11 @@
-import React from 'react';
-import {Text, Button} from 'react-native';
-import {SafeAreaView} from 'react-navigation';
+import {connect} from 'react-redux';
 
-export const LoginScreen = ({navigation, banner}) => (
-  <SafeAreaView
-    forceInset={{top: 'always'}}
-    style={{backgroundColor: '#253760', flex: 1}}>
-    <Text>Login</Text>
+import {navigate, back} from '../redux/router';
+import {Login} from '../components/Login/Login';
 
-    <Button onPress={() => navigation.navigate('Tabs')} title="Go to tabs" />
-    <Button onPress={() => navigation.goBack(null)} title="Go back" />
-  </SafeAreaView>
-);
+export const LoginScreen = connect(null, dispatch => {
+  return {
+    navigate: routeName => dispatch(navigate(routeName)),
+    back: () => dispatch(back()),
+  };
+})(Login);
