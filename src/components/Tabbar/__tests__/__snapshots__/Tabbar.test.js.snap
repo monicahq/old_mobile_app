@@ -31,193 +31,196 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+        <Connect(ActionSheet) />,
+        Array [
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#1361cb"
-              name="dashboard"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  Object {
-                    "color": "#1361cb",
-                  },
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Dashboard
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+              <Icon
+                allowFontScaling={false}
+                color="#1361cb"
+                name="dashboard"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    Object {
+                      "color": "#1361cb",
+                    },
+                  ]
+                }
+              >
+                Dashboard
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#8d8d8d"
-              name="people"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  undefined,
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Contacts
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+              <Icon
+                allowFontScaling={false}
+                color="#8d8d8d"
+                name="people"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Contacts
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#8d8d8d"
-              name="add"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  undefined,
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Add
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+              <Icon
+                allowFontScaling={false}
+                color="#8d8d8d"
+                name="add"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Add
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#8d8d8d"
-              name="list"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  undefined,
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Journal
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+              <Icon
+                allowFontScaling={false}
+                color="#8d8d8d"
+                name="list"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Journal
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#8d8d8d"
-              name="settings"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  undefined,
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Settings
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
+              <Icon
+                allowFontScaling={false}
+                color="#8d8d8d"
+                name="settings"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Settings
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+        ],
       ],
       "style": Object {
         "backgroundColor": "#F8F7F7",
@@ -229,6 +232,15 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": [Function],
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": "Dashboard",
@@ -840,193 +852,196 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+          <Connect(ActionSheet) />,
+          Array [
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#1361cb"
-                name="dashboard"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    Object {
-                      "color": "#1361cb",
-                    },
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Dashboard
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+                <Icon
+                  allowFontScaling={false}
+                  color="#1361cb"
+                  name="dashboard"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      Object {
+                        "color": "#1361cb",
+                      },
+                    ]
+                  }
+                >
+                  Dashboard
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#8d8d8d"
-                name="people"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Contacts
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+                <Icon
+                  allowFontScaling={false}
+                  color="#8d8d8d"
+                  name="people"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Contacts
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#8d8d8d"
-                name="add"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Add
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+                <Icon
+                  allowFontScaling={false}
+                  color="#8d8d8d"
+                  name="add"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Add
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#8d8d8d"
-                name="list"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Journal
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+                <Icon
+                  allowFontScaling={false}
+                  color="#8d8d8d"
+                  name="list"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Journal
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#8d8d8d"
-                name="settings"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Settings
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
+                <Icon
+                  allowFontScaling={false}
+                  color="#8d8d8d"
+                  name="settings"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Settings
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+          ],
         ],
         "style": Object {
           "backgroundColor": "#F8F7F7",
@@ -1038,6 +1053,15 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": [Function],
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": "Dashboard",
@@ -1684,193 +1708,196 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+        <Connect(ActionSheet) />,
+        Array [
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#8d8d8d"
-              name="dashboard"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  undefined,
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Dashboard
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+              <Icon
+                allowFontScaling={false}
+                color="#8d8d8d"
+                name="dashboard"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Dashboard
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#1361cb"
-              name="people"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  Object {
-                    "color": "#1361cb",
-                  },
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Contacts
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+              <Icon
+                allowFontScaling={false}
+                color="#1361cb"
+                name="people"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    Object {
+                      "color": "#1361cb",
+                    },
+                  ]
+                }
+              >
+                Contacts
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#8d8d8d"
-              name="add"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  undefined,
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Add
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+              <Icon
+                allowFontScaling={false}
+                color="#8d8d8d"
+                name="add"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Add
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#8d8d8d"
-              name="list"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  undefined,
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Journal
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+              <Icon
+                allowFontScaling={false}
+                color="#8d8d8d"
+                name="list"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Journal
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#8d8d8d"
-              name="settings"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  undefined,
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Settings
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
+              <Icon
+                allowFontScaling={false}
+                color="#8d8d8d"
+                name="settings"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Settings
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+        ],
       ],
       "style": Object {
         "backgroundColor": "#F8F7F7",
@@ -1882,6 +1909,15 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": [Function],
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": "Dashboard",
@@ -2493,193 +2529,196 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+          <Connect(ActionSheet) />,
+          Array [
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#8d8d8d"
-                name="dashboard"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Dashboard
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+                <Icon
+                  allowFontScaling={false}
+                  color="#8d8d8d"
+                  name="dashboard"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Dashboard
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#1361cb"
-                name="people"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    Object {
-                      "color": "#1361cb",
-                    },
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Contacts
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+                <Icon
+                  allowFontScaling={false}
+                  color="#1361cb"
+                  name="people"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      Object {
+                        "color": "#1361cb",
+                      },
+                    ]
+                  }
+                >
+                  Contacts
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#8d8d8d"
-                name="add"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Add
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+                <Icon
+                  allowFontScaling={false}
+                  color="#8d8d8d"
+                  name="add"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Add
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#8d8d8d"
-                name="list"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Journal
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+                <Icon
+                  allowFontScaling={false}
+                  color="#8d8d8d"
+                  name="list"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Journal
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#8d8d8d"
-                name="settings"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Settings
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
+                <Icon
+                  allowFontScaling={false}
+                  color="#8d8d8d"
+                  name="settings"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Settings
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+          ],
         ],
         "style": Object {
           "backgroundColor": "#F8F7F7",
@@ -2691,6 +2730,15 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": [Function],
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": "Dashboard",
@@ -3337,193 +3385,196 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+        <Connect(ActionSheet) />,
+        Array [
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#8d8d8d"
-              name="dashboard"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  undefined,
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Dashboard
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+              <Icon
+                allowFontScaling={false}
+                color="#8d8d8d"
+                name="dashboard"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Dashboard
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#1361cb"
-              name="people"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  Object {
-                    "color": "#1361cb",
-                  },
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Contacts
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+              <Icon
+                allowFontScaling={false}
+                color="#1361cb"
+                name="people"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    Object {
+                      "color": "#1361cb",
+                    },
+                  ]
+                }
+              >
+                Contacts
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#8d8d8d"
-              name="add"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  undefined,
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Add
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+              <Icon
+                allowFontScaling={false}
+                color="#8d8d8d"
+                name="add"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Add
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#8d8d8d"
-              name="list"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  undefined,
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Journal
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
-        <TouchableWithoutFeedback
-          onPress={[Function]}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-                "padding": 4,
-              }
-            }
+              <Icon
+                allowFontScaling={false}
+                color="#8d8d8d"
+                name="list"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Journal
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+          <TouchableWithoutFeedback
+            onPress={[Function]}
           >
-            <Icon
-              allowFontScaling={false}
-              color="#8d8d8d"
-              name="settings"
-              size={25}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "#8d8d8d",
-                    "fontSize": 10,
-                  },
-                  undefined,
-                ]
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "padding": 4,
+                }
               }
             >
-              Settings
-            </Text>
-          </View>
-        </TouchableWithoutFeedback>,
+              <Icon
+                allowFontScaling={false}
+                color="#8d8d8d"
+                name="settings"
+                size={25}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#8d8d8d",
+                      "fontSize": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Settings
+              </Text>
+            </View>
+          </TouchableWithoutFeedback>,
+        ],
       ],
       "style": Object {
         "backgroundColor": "#F8F7F7",
@@ -3535,6 +3586,15 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": [Function],
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": "Dashboard",
@@ -4146,193 +4206,196 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+          <Connect(ActionSheet) />,
+          Array [
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#8d8d8d"
-                name="dashboard"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Dashboard
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+                <Icon
+                  allowFontScaling={false}
+                  color="#8d8d8d"
+                  name="dashboard"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Dashboard
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#1361cb"
-                name="people"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    Object {
-                      "color": "#1361cb",
-                    },
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Contacts
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+                <Icon
+                  allowFontScaling={false}
+                  color="#1361cb"
+                  name="people"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      Object {
+                        "color": "#1361cb",
+                      },
+                    ]
+                  }
+                >
+                  Contacts
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#8d8d8d"
-                name="add"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Add
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+                <Icon
+                  allowFontScaling={false}
+                  color="#8d8d8d"
+                  name="add"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Add
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#8d8d8d"
-                name="list"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Journal
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
-          <TouchableWithoutFeedback
-            onPress={[Function]}
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "justifyContent": "center",
-                  "padding": 4,
-                }
-              }
+                <Icon
+                  allowFontScaling={false}
+                  color="#8d8d8d"
+                  name="list"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Journal
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+            <TouchableWithoutFeedback
+              onPress={[Function]}
             >
-              <Icon
-                allowFontScaling={false}
-                color="#8d8d8d"
-                name="settings"
-                size={25}
-              />
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": "#8d8d8d",
-                      "fontSize": 10,
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "padding": 4,
+                  }
                 }
               >
-                Settings
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>,
+                <Icon
+                  allowFontScaling={false}
+                  color="#8d8d8d"
+                  name="settings"
+                  size={25}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#8d8d8d",
+                        "fontSize": 10,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Settings
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>,
+          ],
         ],
         "style": Object {
           "backgroundColor": "#F8F7F7",
@@ -4344,6 +4407,15 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": [Function],
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": "Dashboard",
