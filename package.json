@@ -36,9 +36,7 @@
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>setupTests.js",
-    "coverageReporters": [
-      "lcov"
-    ],
+    "coverageReporters": ["text", "lcov"],
     "preset": "react-native",
     "transform": {
       "^.+\\.js?$": "babel-jest"
