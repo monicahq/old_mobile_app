@@ -9,6 +9,8 @@ import {
 import {activeTextColor, iconSize, styles, textColor} from './Tabbar.styles';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+import {ActionSheetContainer} from '../../containers/ActionSheetContainer';
+
 const Touchable =
   Platform.OS === 'ios' ? TouchableWithoutFeedback : TouchableNativeFeedback;
 const routes = [
@@ -47,9 +49,15 @@ export const Tabbar = ({navigation}) => {
 
   return (
     <View style={styles.tabContainer}>
+      <ActionSheetContainer ref={o => (this.ActionSheet = o)} />
+
       {routes.map(route => (
         <Touchable
-          onPress={() => navigation.navigate(route.routeName)}
+          onPress={() =>
+            route.routeName
+              ? navigation.navigate(route.routeName)
+              : this.ActionSheet.getWrappedInstance().show()
+          }
           key={route.name}>
           <View style={styles.tab}>
             <Icon

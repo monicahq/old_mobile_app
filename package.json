@@ -11,6 +11,7 @@
   "dependencies": {
     "react": "16.2.0",
     "react-native": "0.52.0",
+    "react-native-actionsheet": "^2.3.0",
     "react-native-vector-icons": "^4.4.3",
     "react-navigation": "^1.0.0-beta.23",
     "react-redux": "^5.0.6",
