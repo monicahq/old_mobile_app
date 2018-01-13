@@ -11,9 +11,7 @@ export class Button extends Component {
   };
 
   getText() {
-    const buttonText =
-      this.props.text.toUpperCase() || this.props.children || '';
-    return buttonText;
+    return (this.props.text || this.props.children || '').toUpperCase();
   }
 
   render() {
