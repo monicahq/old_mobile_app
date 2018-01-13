@@ -32,18 +32,27 @@ const CustomTabView = ({router, navigation}) => {
   );
 };
 
+// TODO : remove this if using stackNavigatorAnimator
+const noHeader = {
+  navigationOptions: {header: null},
+};
+
 const CustomTabRouter = TabRouter({
   Dashboard: {
     screen: DashboardScreen,
+    ...noHeader,
   },
   Contacts: {
     screen: ContactsScreen,
+    ...noHeader,
   },
   Journal: {
     screen: JournalScreen,
+    ...noHeader,
   },
   Settings: {
     screen: SettingsScreen,
+    ...noHeader,
   },
 });
 
