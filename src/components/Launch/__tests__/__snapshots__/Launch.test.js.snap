@@ -1,0 +1,793 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Launch should renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Launch />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />,
+        <View
+          style={
+            Object {
+              "paddingHorizontal": 30,
+              "width": "100%",
+            }
+          }
+        >
+          <Image
+            source={1}
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "marginBottom": 20,
+                "marginTop": 40,
+                "textAlign": "center",
+              }
+            }
+          >
+            Keep track of every interaction with your friend and family!
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#97A5B2",
+                "marginBottom": 20,
+                "textAlign": "center",
+              }
+            }
+          >
+            Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!
+          </Text>
+          <Button
+            onPress={[Function]}
+          >
+            Get started
+          </Button>
+        </View>,
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />,
+        <View
+          style={
+            Object {
+              "borderColor": "#E2E4E5",
+              "borderTopWidth": 0.5,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "paddingVertical": 15,
+              "width": "100%",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+          >
+            Already have an account ? 
+          </Text>
+          <TouchableOpacity
+            activeOpacity={0.2}
+            hitSlop={
+              Object {
+                "bottom": 15,
+                "left": 15,
+                "right": 15,
+                "top": 15,
+              }
+            }
+            onPress={[Function]}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#1361cb",
+                }
+              }
+            >
+              Sign in
+            </Text>
+          </TouchableOpacity>
+        </View>,
+      ],
+      "forceInset": Object {
+        "top": "always",
+      },
+      "style": Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "style": Object {
+            "flex": 1,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Image
+              source={1}
+            />,
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontSize": 18,
+                  "fontWeight": "bold",
+                  "marginBottom": 20,
+                  "marginTop": 40,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Keep track of every interaction with your friend and family!
+            </Text>,
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#97A5B2",
+                  "marginBottom": 20,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!
+            </Text>,
+            <Button
+              onPress={[Function]}
+            >
+              Get started
+            </Button>,
+          ],
+          "style": Object {
+            "paddingHorizontal": 30,
+            "width": "100%",
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "source": 1,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "Keep track of every interaction with your friend and family!",
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "marginBottom": 20,
+                "marginTop": 40,
+                "textAlign": "center",
+              },
+            },
+            "ref": null,
+            "rendered": "Keep track of every interaction with your friend and family!",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!",
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "color": "#97A5B2",
+                "marginBottom": 20,
+                "textAlign": "center",
+              },
+            },
+            "ref": null,
+            "rendered": "Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Get started",
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "Get started",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "style": Object {
+            "flex": 1,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+            >
+              Already have an account ? 
+            </Text>,
+            <TouchableOpacity
+              activeOpacity={0.2}
+              hitSlop={
+                Object {
+                  "bottom": 15,
+                  "left": 15,
+                  "right": 15,
+                  "top": 15,
+                }
+              }
+              onPress={[Function]}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#1361cb",
+                  }
+                }
+              >
+                Sign in
+              </Text>
+            </TouchableOpacity>,
+          ],
+          "style": Object {
+            "borderColor": "#E2E4E5",
+            "borderTopWidth": 0.5,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingVertical": 15,
+            "width": "100%",
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "Already have an account ? ",
+              "ellipsizeMode": "tail",
+            },
+            "ref": null,
+            "rendered": "Already have an account ? ",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "activeOpacity": 0.2,
+              "children": <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#1361cb",
+                  }
+                }
+              >
+                Sign in
+              </Text>,
+              "hitSlop": Object {
+                "bottom": 15,
+                "left": 15,
+                "right": 15,
+                "top": 15,
+              },
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "Sign in",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "color": "#1361cb",
+                },
+              },
+              "ref": null,
+              "rendered": "Sign in",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />,
+          <View
+            style={
+              Object {
+                "paddingHorizontal": 30,
+                "width": "100%",
+              }
+            }
+          >
+            <Image
+              source={1}
+            />
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontSize": 18,
+                  "fontWeight": "bold",
+                  "marginBottom": 20,
+                  "marginTop": 40,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Keep track of every interaction with your friend and family!
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#97A5B2",
+                  "marginBottom": 20,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!
+            </Text>
+            <Button
+              onPress={[Function]}
+            >
+              Get started
+            </Button>
+          </View>,
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />,
+          <View
+            style={
+              Object {
+                "borderColor": "#E2E4E5",
+                "borderTopWidth": 0.5,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingVertical": 15,
+                "width": "100%",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+            >
+              Already have an account ? 
+            </Text>
+            <TouchableOpacity
+              activeOpacity={0.2}
+              hitSlop={
+                Object {
+                  "bottom": 15,
+                  "left": 15,
+                  "right": 15,
+                  "top": 15,
+                }
+              }
+              onPress={[Function]}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#1361cb",
+                  }
+                }
+              >
+                Sign in
+              </Text>
+            </TouchableOpacity>
+          </View>,
+        ],
+        "forceInset": Object {
+          "top": "always",
+        },
+        "style": Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "style": Object {
+              "flex": 1,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Image
+                source={1}
+              />,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontSize": 18,
+                    "fontWeight": "bold",
+                    "marginBottom": 20,
+                    "marginTop": 40,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Keep track of every interaction with your friend and family!
+              </Text>,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#97A5B2",
+                    "marginBottom": 20,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!
+              </Text>,
+              <Button
+                onPress={[Function]}
+              >
+                Get started
+              </Button>,
+            ],
+            "style": Object {
+              "paddingHorizontal": 30,
+              "width": "100%",
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "source": 1,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "Keep track of every interaction with your friend and family!",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "fontSize": 18,
+                  "fontWeight": "bold",
+                  "marginBottom": 20,
+                  "marginTop": 40,
+                  "textAlign": "center",
+                },
+              },
+              "ref": null,
+              "rendered": "Keep track of every interaction with your friend and family!",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "color": "#97A5B2",
+                  "marginBottom": 20,
+                  "textAlign": "center",
+                },
+              },
+              "ref": null,
+              "rendered": "Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Get started",
+                "onPress": [Function],
+              },
+              "ref": null,
+              "rendered": "Get started",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "style": Object {
+              "flex": 1,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                Already have an account ? 
+              </Text>,
+              <TouchableOpacity
+                activeOpacity={0.2}
+                hitSlop={
+                  Object {
+                    "bottom": 15,
+                    "left": 15,
+                    "right": 15,
+                    "top": 15,
+                  }
+                }
+                onPress={[Function]}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#1361cb",
+                    }
+                  }
+                >
+                  Sign in
+                </Text>
+              </TouchableOpacity>,
+            ],
+            "style": Object {
+              "borderColor": "#E2E4E5",
+              "borderTopWidth": 0.5,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "paddingVertical": 15,
+              "width": "100%",
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "Already have an account ? ",
+                "ellipsizeMode": "tail",
+              },
+              "ref": null,
+              "rendered": "Already have an account ? ",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "activeOpacity": 0.2,
+                "children": <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#1361cb",
+                    }
+                  }
+                >
+                  Sign in
+                </Text>,
+                "hitSlop": Object {
+                  "bottom": 15,
+                  "left": 15,
+                  "right": 15,
+                  "top": 15,
+                },
+                "onPress": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "accessible": true,
+                  "allowFontScaling": true,
+                  "children": "Sign in",
+                  "ellipsizeMode": "tail",
+                  "style": Object {
+                    "color": "#1361cb",
+                  },
+                },
+                "ref": null,
+                "rendered": "Sign in",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
