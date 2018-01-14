@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   View,
   Text,
@@ -9,10 +10,11 @@ import {
 import {activeTextColor, iconSize, styles, textColor} from './Tabbar.styles';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import {ActionSheetContainer} from '../../containers/ActionSheetContainer';
+import {ActionSheet} from '../../containers/ActionSheet';
 
 const Touchable =
   Platform.OS === 'ios' ? TouchableWithoutFeedback : TouchableNativeFeedback;
+
 const routes = [
   {
     name: 'Dashboard',
@@ -49,7 +51,7 @@ export const Tabbar = ({navigation}) => {
 
   return (
     <View style={styles.tabContainer}>
-      <ActionSheetContainer ref={o => (this.ActionSheet = o)} />
+      <ActionSheet ref={o => (this.ActionSheet = o)} />
 
       {routes.map(route => (
         <Touchable
@@ -77,4 +79,8 @@ export const Tabbar = ({navigation}) => {
       ))}
     </View>
   );
+};
+
+Tabbar.propTypes = {
+  navigation: PropTypes.object.isRequired,
 };

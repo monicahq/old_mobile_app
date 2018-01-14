@@ -28,6 +28,5 @@ describe('Components', () => {
       expect(shallow(<Tabbar navigation={contactsActive} />)).toMatchSnapshot();
       expect(shallow(<Tabbar navigation={loginActive} />)).toMatchSnapshot();
     });
-
   });
 });

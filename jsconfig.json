@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "baseUrl": "src",
+    "paths": {
+      "redux/*": ["./redux/*"],
+      "components/*": ["./components/*"],
+      "api/*": ["./api/*"],
+      "containers/*": ["./containers/*"],
+      "theme/*": ["./theme/*"]
+    }
+  },
+  "include": [
+      "src/**/*"
+  ]
+}

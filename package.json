@@ -4,39 +4,58 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "test": "jest",
-    "lint": "eslint --fix .",
+    "lint": "eslint .",
     "flow": "flow"
   },
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "formik": "^0.10.5",
+    "frisbee": "^1.6.4",
+    "prop-types": "^15.6.0",
     "react": "16.2.0",
     "react-native": "0.52.0",
     "react-native-actionsheet": "^2.3.0",
+    "react-native-keyboard-aware-scroll-view": "^0.4.1",
+    "react-native-splash-screen": "^3.0.6",
     "react-native-vector-icons": "^4.4.3",
-    "react-navigation": "^1.0.0-beta.23",
+    "react-navigation": "^1.0.0-beta.27",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
     "babel-eslint": "^8.1.2",
     "babel-jest": "22.0.6",
+    "babel-plugin-module-resolver": "^3.0.0",
     "babel-preset-react-native": "4.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-import-resolver-react-native": "^0.1.0",
     "eslint-plugin-flowtype": "^2.41.0",
-    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.5.0",
+    "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1",
     "flow-bin": "~0.61.0",
     "jest": "22.0.6",
     "prettier": "^1.10.2",
     "react-dom": "^16.2.0",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.2.0",
+    "remote-redux-devtools": "^0.5.12"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>setupTests.js",
-    "coverageReporters": ["text", "lcov"],
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ],
     "preset": "react-native",
     "transform": {
       "^.+\\.js?$": "babel-jest"

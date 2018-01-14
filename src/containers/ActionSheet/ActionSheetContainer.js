@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 
-import {navigate} from '../redux/router';
-import {ActionSheet} from '../components/ActionSheet/ActionSheet';
+import {navigate} from 'redux/router';
+import {ActionSheet} from './ActionSheet';
 
 export const ActionSheetContainer = connect(
   null,

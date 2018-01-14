@@ -7,3 +7,11 @@ export function navigate(routeName) {
 export function back() {
   return actions.back();
 }
+
+export function setState(state) {
+  return actions.setState(state);
+}
+
+export function goToLaunchScreen() {
+  return actions.goToLaunchScreen();
+}
