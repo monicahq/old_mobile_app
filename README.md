@@ -16,6 +16,20 @@ Chandler is the official [Monica](https://github.com/monicahq/monica) mobile app
 
 We will soon post more information regarding the way you could contribute.
 
+## Installation
+
+This project is a react-native project.
+
+$ yarn
+
+$ npm i -g react-native-cli
+
+## Run the project
+
+$ `npm start` will serve the files in development
+
+$ Then `react-native run-ios [--device]` or `react-native run-android [--device]` to run the app on your device/simulator.
+
 ## Contact
 
 If you need to talk, you can contact me at regis AT monicahq DOT com. You can also reach me [on Twitter](https://twitter.com/djaiss).
