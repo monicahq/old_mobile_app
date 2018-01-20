@@ -6,8 +6,8 @@
 import {StackNavigator} from 'react-navigation';
 // import {StackNavigatorAnimation} from './StackNavigatorAnimation';
 
-import {LaunchScreen} from '../pages/LaunchScreen';
-import {LoginScreen} from '../pages/LoginScreen';
+import {LaunchScreen} from '../pages/Launch/LaunchScreen';
+import {LoginScreen} from '../pages/Login/LoginScreen';
 import {AddContactScreen} from '../pages/AddContactScreen';
 import {TabsNavigator} from './TabsNavigator';
 

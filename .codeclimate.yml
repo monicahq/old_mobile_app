@@ -1,5 +1,8 @@
 exclude_patterns:
   - "**/__tests__/"
+  - "**/__tests__/"
+  - "ios/**/*"
+  - "android/**/*"
 
 plugins: 
   eslint:

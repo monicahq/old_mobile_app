@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {View, StyleSheet} from 'react-native';
 import {
   TabRouter,
@@ -7,11 +8,11 @@ import {
   addNavigationHelpers,
 } from 'react-navigation';
 
-import {Tabbar} from '../components/Tabbar/Tabbar';
+import {Tabbar} from 'components/Tabbar/Tabbar';
 import {DashboardScreen} from '../pages/DashboardScreen';
 import {ContactsScreen} from '../pages/ContactsScreen';
 import {JournalScreen} from '../pages/JournalScreen';
-import {SettingsScreen} from '../pages/SettingsScreen';
+import {SettingsScreen} from '../pages/Settings/SettingsScreen';
 
 const CustomTabView = ({router, navigation}) => {
   const {routes, index} = navigation.state;
@@ -30,6 +31,10 @@ const CustomTabView = ({router, navigation}) => {
       <Tabbar navigation={navigation} />
     </View>
   );
+};
+CustomTabView.propTypes = {
+  router: PropTypes.object.isRequired,
+  navigation: PropTypes.object.isRequired,
 };
 
 // TODO : remove this if using stackNavigatorAnimator

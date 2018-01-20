@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import RNActionSheet from 'react-native-actionsheet';
 
 const CANCEL_INDEX = 0;
@@ -12,6 +13,9 @@ const options = [
 ];
 
 export class ActionSheet extends Component {
+  static propTypes = {
+    navigate: PropTypes.func.isRequired,
+  };
   show = () => {
     this.RNActionSheet.show();
   };

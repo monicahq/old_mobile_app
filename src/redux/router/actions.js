@@ -12,3 +12,16 @@ export function back() {
     type: types.BACK,
   };
 }
+
+export function setState(state) {
+  return {
+    type: types.SET_STATE,
+    state,
+  };
+}
+
+export function goToLaunchScreen() {
+  return {
+    type: types.GO_TO_LAUNCH_SCREEN,
+  };
+}

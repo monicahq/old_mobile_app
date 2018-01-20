@@ -4,7 +4,10 @@ exports[`Components Launch should renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Launch />,
+  Symbol(enzyme.__unrendered__): <Launch
+    navigateLogin={[Function]}
+    navigateSignup={[Function]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -28,6 +31,8 @@ ShallowWrapper {
         <View
           style={
             Object {
+              "alignItems": "center",
+              "justifyContent": "center",
               "paddingHorizontal": 30,
               "width": "100%",
             }
@@ -67,6 +72,8 @@ ShallowWrapper {
             Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!
           </Text>
           <Button
+            disabled={false}
+            loading={false}
             onPress={[Function]}
           >
             Get started
@@ -79,51 +86,11 @@ ShallowWrapper {
             }
           }
         />,
-        <View
-          style={
-            Object {
-              "borderColor": "#E2E4E5",
-              "borderTopWidth": 0.5,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingVertical": 15,
-              "width": "100%",
-            }
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-          >
-            Already have an account ? 
-          </Text>
-          <TouchableOpacity
-            activeOpacity={0.2}
-            hitSlop={
-              Object {
-                "bottom": 15,
-                "left": 15,
-                "right": 15,
-                "top": 15,
-              }
-            }
-            onPress={[Function]}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#1361cb",
-                }
-              }
-            >
-              Sign in
-            </Text>
-          </TouchableOpacity>
-        </View>,
+        <BottomNav
+          linkTitle="Sign in"
+          onPress={[Function]}
+          title="Already have an account ?"
+        />,
       ],
       "forceInset": Object {
         "top": "always",
@@ -189,12 +156,16 @@ ShallowWrapper {
               Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!
             </Text>,
             <Button
+              disabled={false}
+              loading={false}
               onPress={[Function]}
             >
               Get started
             </Button>,
           ],
           "style": Object {
+            "alignItems": "center",
+            "justifyContent": "center",
             "paddingHorizontal": 30,
             "width": "100%",
           },
@@ -258,6 +229,8 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "Get started",
+              "disabled": false,
+              "loading": false,
               "onPress": [Function],
             },
             "ref": null,
@@ -283,114 +256,14 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
-          "children": Array [
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-            >
-              Already have an account ? 
-            </Text>,
-            <TouchableOpacity
-              activeOpacity={0.2}
-              hitSlop={
-                Object {
-                  "bottom": 15,
-                  "left": 15,
-                  "right": 15,
-                  "top": 15,
-                }
-              }
-              onPress={[Function]}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#1361cb",
-                  }
-                }
-              >
-                Sign in
-              </Text>
-            </TouchableOpacity>,
-          ],
-          "style": Object {
-            "borderColor": "#E2E4E5",
-            "borderTopWidth": 0.5,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "paddingVertical": 15,
-            "width": "100%",
-          },
+          "linkTitle": "Sign in",
+          "onPress": [Function],
+          "title": "Already have an account ?",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "accessible": true,
-              "allowFontScaling": true,
-              "children": "Already have an account ? ",
-              "ellipsizeMode": "tail",
-            },
-            "ref": null,
-            "rendered": "Already have an account ? ",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "activeOpacity": 0.2,
-              "children": <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#1361cb",
-                  }
-                }
-              >
-                Sign in
-              </Text>,
-              "hitSlop": Object {
-                "bottom": 15,
-                "left": 15,
-                "right": 15,
-                "top": 15,
-              },
-              "onPress": [Function],
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "accessible": true,
-                "allowFontScaling": true,
-                "children": "Sign in",
-                "ellipsizeMode": "tail",
-                "style": Object {
-                  "color": "#1361cb",
-                },
-              },
-              "ref": null,
-              "rendered": "Sign in",
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-        ],
+        "rendered": null,
         "type": [Function],
       },
     ],
@@ -413,6 +286,8 @@ ShallowWrapper {
           <View
             style={
               Object {
+                "alignItems": "center",
+                "justifyContent": "center",
                 "paddingHorizontal": 30,
                 "width": "100%",
               }
@@ -452,6 +327,8 @@ ShallowWrapper {
               Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!
             </Text>
             <Button
+              disabled={false}
+              loading={false}
               onPress={[Function]}
             >
               Get started
@@ -464,51 +341,11 @@ ShallowWrapper {
               }
             }
           />,
-          <View
-            style={
-              Object {
-                "borderColor": "#E2E4E5",
-                "borderTopWidth": 0.5,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingVertical": 15,
-                "width": "100%",
-              }
-            }
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-            >
-              Already have an account ? 
-            </Text>
-            <TouchableOpacity
-              activeOpacity={0.2}
-              hitSlop={
-                Object {
-                  "bottom": 15,
-                  "left": 15,
-                  "right": 15,
-                  "top": 15,
-                }
-              }
-              onPress={[Function]}
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#1361cb",
-                  }
-                }
-              >
-                Sign in
-              </Text>
-            </TouchableOpacity>
-          </View>,
+          <BottomNav
+            linkTitle="Sign in"
+            onPress={[Function]}
+            title="Already have an account ?"
+          />,
         ],
         "forceInset": Object {
           "top": "always",
@@ -574,12 +411,16 @@ ShallowWrapper {
                 Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!
               </Text>,
               <Button
+                disabled={false}
+                loading={false}
                 onPress={[Function]}
               >
                 Get started
               </Button>,
             ],
             "style": Object {
+              "alignItems": "center",
+              "justifyContent": "center",
               "paddingHorizontal": 30,
               "width": "100%",
             },
@@ -643,6 +484,8 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "Get started",
+                "disabled": false,
+                "loading": false,
                 "onPress": [Function],
               },
               "ref": null,
@@ -668,114 +511,14 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
-            "children": Array [
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
-                Already have an account ? 
-              </Text>,
-              <TouchableOpacity
-                activeOpacity={0.2}
-                hitSlop={
-                  Object {
-                    "bottom": 15,
-                    "left": 15,
-                    "right": 15,
-                    "top": 15,
-                  }
-                }
-                onPress={[Function]}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#1361cb",
-                    }
-                  }
-                >
-                  Sign in
-                </Text>
-              </TouchableOpacity>,
-            ],
-            "style": Object {
-              "borderColor": "#E2E4E5",
-              "borderTopWidth": 0.5,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingVertical": 15,
-              "width": "100%",
-            },
+            "linkTitle": "Sign in",
+            "onPress": [Function],
+            "title": "Already have an account ?",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "accessible": true,
-                "allowFontScaling": true,
-                "children": "Already have an account ? ",
-                "ellipsizeMode": "tail",
-              },
-              "ref": null,
-              "rendered": "Already have an account ? ",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "activeOpacity": 0.2,
-                "children": <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#1361cb",
-                    }
-                  }
-                >
-                  Sign in
-                </Text>,
-                "hitSlop": Object {
-                  "bottom": 15,
-                  "left": 15,
-                  "right": 15,
-                  "top": 15,
-                },
-                "onPress": [Function],
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "accessible": true,
-                  "allowFontScaling": true,
-                  "children": "Sign in",
-                  "ellipsizeMode": "tail",
-                  "style": Object {
-                    "color": "#1361cb",
-                  },
-                },
-                "ref": null,
-                "rendered": "Sign in",
-                "type": [Function],
-              },
-              "type": [Function],
-            },
-          ],
+          "rendered": null,
           "type": [Function],
         },
       ],

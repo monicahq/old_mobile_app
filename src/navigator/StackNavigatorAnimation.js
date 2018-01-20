@@ -1,8 +1,13 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {Animated, Easing, View, StyleSheet} from 'react-native';
 import {Transitioner, addNavigationHelpers} from 'react-navigation';
 
 export class StackNavigatorAnimation extends Component {
+  static propTypes = {
+    navigation: PropTypes.object.isRequired,
+    router: PropTypes.object.isRequired,
+  };
   render() {
     const {navigation} = this.props;
     return (

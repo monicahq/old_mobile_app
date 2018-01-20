@@ -4,16 +4,24 @@ import {Button} from '../Button.android';
 
 describe('Components', () => {
   describe('Button', () => {
+    const defaultOnPress = {
+      onPress: () => {},
+    };
+
     it('should renders correctly', () => {
-      expect(shallow(<Button>Test</Button>)).toMatchSnapshot();
-      expect(shallow(<Button text="qdwdqw" />)).toMatchSnapshot();
+      expect(
+        shallow(<Button {...defaultOnPress}>Test</Button>),
+      ).toMatchSnapshot();
+      expect(
+        shallow(<Button {...defaultOnPress} title="qdwdqw" />),
+      ).toMatchSnapshot();
     });
 
-    it('should contain the text uppercased passed into parameter', () => {
-      const button1 = shallow(<Button text="Test" />);
+    it('should contain the title uppercased passed into parameter', () => {
+      const button1 = shallow(<Button {...defaultOnPress} title="Test" />);
       expect(button1.find('Text').children().text()).toEqual('TEST'); // eslint-disable-line
 
-      const button2 = shallow(<Button text="Test2" />);
+      const button2 = shallow(<Button {...defaultOnPress} title="Test2" />);
       expect(button2.find('Text').children().text()).toEqual('TEST2'); // eslint-disable-line
     });
 
