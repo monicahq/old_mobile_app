@@ -5,7 +5,7 @@ import {User} from './user';
 import {tokenKey} from '../storage-keys';
 
 const frisbee = new Frisbee({
-  baseURI: 'https://api.cogecolive.com',
+  baseURI: 'https://api.monicahq.com/api/login',
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
