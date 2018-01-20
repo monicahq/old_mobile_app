@@ -10,15 +10,15 @@ import {commonStyles, forceInset, preAuthScreensStyles} from 'theme';
 
 export class Login extends Component {
   static propTypes = {
-    login: PropTypes.func.isRequired,
+    setToken: PropTypes.func.isRequired,
     navigateTabs: PropTypes.func.isRequired,
     navigateSignup: PropTypes.func.isRequired,
     back: PropTypes.func.isRequired,
   };
 
   onSuccessFormResult = res => {
-    const {login, navigateTabs} = this.props;
-    login(res.user, res.token);
+    const {setToken, navigateTabs} = this.props;
+    setToken(res.access_token);
     navigateTabs();
   };
 

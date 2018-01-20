@@ -5,8 +5,8 @@ import {API} from 'api';
 export const LoginFormContainer = withFormik({
   isInitialValid: true,
   mapPropsToValues: props => ({
-    email: 'theo.matl.com',
-    password: '',
+    email: 'theo.mathieu1@gmail.com',
+    password: 'abab1598',
   }),
   validate: ({email, password}) => {
     const errors = {};
@@ -25,7 +25,7 @@ export const LoginFormContainer = withFormik({
 
     API.User.login(email, password)
       .then(res => {
-        if (res.status === 1) {
+        if (res.access_token) {
           return props.onSuccess(res);
         }
 

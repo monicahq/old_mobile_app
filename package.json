@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "babel-core": "^6.26.0",
+    "base-64": "^0.1.0",
     "formik": "^0.10.5",
     "frisbee": "^1.6.4",
     "prop-types": "^15.6.0",

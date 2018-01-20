@@ -1,9 +1,9 @@
 import * as types from './types';
 
-export function login(user, token) {
+export function setToken(token) {
   return {
-    type: types.LOGIN,
-    user,
+    type: types.SET_TOKEN,
+    // user,
     token,
   };
 }

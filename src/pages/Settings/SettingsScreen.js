@@ -11,7 +11,7 @@ export class Settings extends Component {
   static propTypes = {
     logout: PropTypes.func.isRequired,
     goToLaunchScreen: PropTypes.func.isRequired,
-    user: PropTypes.object.isRequired,
+    // user: PropTypes.object.isRequired,
   };
 
   logout = () => {
@@ -20,11 +20,11 @@ export class Settings extends Component {
   };
 
   render() {
-    const {user} = this.props;
+    // const {user} = this.props;
     return (
       <SafeAreaView forceInset={{top: 'always'}}>
         <Text>Settings</Text>
-        <Text>{user && user.firstName}</Text>
+        {/* <Text>{user && user.firstName}</Text> */}
         <Button onPress={this.logout}>Logout</Button>
       </SafeAreaView>
     );
@@ -33,7 +33,7 @@ export class Settings extends Component {
 
 export const SettingsScreen = connect(
   state => ({
-    user: state.user,
+    // user: state.user,
   }),
   dispatch => ({
     logout: () => dispatch(logout()),

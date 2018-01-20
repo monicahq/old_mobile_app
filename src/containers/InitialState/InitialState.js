@@ -2,26 +2,26 @@ import {Component} from 'react';
 import PropTypes from 'prop-types';
 import {AsyncStorage} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-import {tokenKey, userKey} from '../../storage-keys';
+import {tokenKey} from '../../storage-keys';
 import {AppNavigator} from '../../navigator/AppNavigator';
 
 export class InitialState extends Component {
   static propTypes = {
     setState: PropTypes.func.isRequired,
-    login: PropTypes.func.isRequired,
+    setToken: PropTypes.func.isRequired,
   };
   componentWillMount() {
-    const {setState, login} = this.props;
+    const {setState, setToken} = this.props;
     Promise.all([
       AsyncStorage.getItem(tokenKey),
-      AsyncStorage.getItem(userKey),
-    ]).then(([token, user]) => {
+      // AsyncStorage.getItem(userKey),
+    ]).then(([token]) => {
       if (!token) {
         SplashScreen.hide();
         return;
       }
       setState(tabsState);
-      login(user, token);
+      setToken(token);
       setTimeout(() => {
         SplashScreen.hide();
       }, 400);

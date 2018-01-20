@@ -13,7 +13,7 @@ export class LoginForm extends Component {
     values: PropTypes.object.isRequired,
     touched: PropTypes.object.isRequired,
     errors: PropTypes.object.isRequired,
-    status: PropTypes.object.isRequired,
+    status: PropTypes.string,
     isValid: PropTypes.bool.isRequired,
     isSubmitting: PropTypes.bool.isRequired,
   };
@@ -80,7 +80,11 @@ export class LoginForm extends Component {
         disabled={isSubmitting}
         loading={isSubmitting}
       />,
-      status ? <Text style={commonStyles.errorMessage}>{status}</Text> : null,
+      status ? (
+        <Text key={3} style={commonStyles.errorMessage}>
+          {status}
+        </Text>
+      ) : null,
     ];
   }
 }
