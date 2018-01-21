@@ -9,6 +9,7 @@ import {StackNavigator} from 'react-navigation';
 import {LaunchScreen} from '../pages/Launch/LaunchScreen';
 import {LoginScreen} from '../pages/Login/LoginScreen';
 import {AddContactScreen} from '../pages/AddContactScreen';
+import {ContactScreen} from '../pages/ContactScreen';
 import {TabsNavigator} from './TabsNavigator';
 
 // const Router = StackRouter({
@@ -40,6 +41,10 @@ export const AppNavigator = StackNavigator({
   },
   AddContact: {
     screen: AddContactScreen,
-    navigationOptions: {...noHeader, ...noGestures},
+    navigationOptions: {...noHeader},
+  },
+  Contact: {
+    screen: ContactScreen,
+    navigationOptions: {...noHeader},
   },
 });

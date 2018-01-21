@@ -46,13 +46,15 @@ export class LoginForm extends Component {
     );
   }
 
+  passwordTextInputRef = ref => (this.passwordTextInput = ref);
+
   getPasswordField() {
     const {values, touched, errors, isValid, handleSubmit} = this.props;
 
     return (
       <TextInput
         key={1}
-        ref={c => (this.passwordTextInput = c)}
+        ref={this.passwordTextInputRef}
         title="Your password"
         returnKeyType="send"
         secureTextEntry={true}

@@ -10,7 +10,10 @@
         "containers": "./src/theme",
         "redux/router": "./src/redux/router",
         "redux/user": "./src/redux/user",
-        "components": "./src/components"
+        "redux/contacts": "./src/redux/contacts",
+        "components": "./src/components",
+        "utils": "./src/utils",
+        "assets": "./src/assets"
       }
     }]
   ]

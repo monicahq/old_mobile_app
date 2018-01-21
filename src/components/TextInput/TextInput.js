@@ -20,6 +20,8 @@ export class TextInput extends Component {
     this.textInput.focus();
   }
 
+  textInputRef = ref => (this.textInput = ref);
+
   render() {
     const {title, error, touched, ...props} = this.props;
 
@@ -37,7 +39,7 @@ export class TextInput extends Component {
       </View>,
       // TEXTINPUT
       <RNTextInput
-        ref={c => (this.textInput = c)}
+        ref={this.textInputRef}
         key={1}
         style={styles.textInput}
         autoCorrect={false}

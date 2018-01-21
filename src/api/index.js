@@ -1,7 +1,8 @@
 import Frisbee from 'frisbee';
-import {AsyncStorage} from 'react-native';
+import {AsyncStorage, StatusBar, Platform} from 'react-native';
 
 import {User} from './user';
+import {Contacts} from './contacts';
 import {tokenKey} from '../storage-keys';
 
 const frisbee = new Frisbee({
@@ -17,6 +18,7 @@ export const API = {
     frisbee.jwt(token);
   },
   User: new User(frisbee),
+  Contacts: new Contacts(frisbee),
 };
 
 // Get token from phone storage and add it to headers
@@ -30,28 +32,39 @@ AsyncStorage.getItem(tokenKey)
     console.warn(err);
   });
 
-// frisbee.interceptor.register({
-//   request: function(path, options) {
-//     console.info(path, options);
-//     // Read/Modify the path or options
-//     // ...
-//     return [path, options];
-//   },
-//   requestError: function(err) {
-//     console.error(err);
-//     // Handle an error occured in the request method
-//     // ...
-//     return Promise.reject(err);
-//   },
-//   response: function(response) {
-//     console.info(response);
-//     // Read/Modify the response
-//     // ...
-//     return response;
-//   },
-//   responseError: function(err) {
-//     console.error(err);
-//     // Handle error occured in api/response methods
-//     return Promise.reject(err);
-//   },
-// });
+/**
+ * Interceptor
+ */
+
+let countPendingRequests = 0;
+
+const setNetworkActivityIndicator = () =>
+  Platform.OS === 'ios' &&
+  StatusBar.setNetworkActivityIndicatorVisible(!!countPendingRequests);
+
+frisbee.interceptor.register({
+  request: function(path, options) {
+    countPendingRequests++;
+    setNetworkActivityIndicator();
+    return [path, options];
+  },
+  requestError: function(err) {
+    console.error(err);
+    return Promise.reject(err);
+  },
+  response: function(response, a, b) {
+    countPendingRequests--;
+    setNetworkActivityIndicator();
+
+    if (__DEV__) {
+      console.info('REQUEST', response.url, response.body);
+    }
+    return response;
+  },
+  responseError: function(err) {
+    countPendingRequests--;
+    setNetworkActivityIndicator();
+    console.error(err);
+    return Promise.reject(err);
+  },
+});

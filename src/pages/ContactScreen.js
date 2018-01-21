@@ -2,8 +2,8 @@ import React from 'react';
 import {Text} from 'react-native';
 import {SafeAreaView} from 'react-navigation';
 
-export const ContactsScreen = () => (
+export const ContactScreen = () => (
   <SafeAreaView forceInset={{top: 'always'}}>
-    <Text>Contacts</Text>
+    <Text>Contact</Text>
   </SafeAreaView>
 );
