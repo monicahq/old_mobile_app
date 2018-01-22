@@ -2638,10 +2638,6 @@ inquirer@^3.0.6:
     strip-ansi "^4.0.0"
     through "^2.3.6"
 
-install@^0.10.2:
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/install/-/install-0.10.2.tgz#f1f71902797e5a900069fb9ab80c94055025ffdc"
-
 invariant@^2.0.0, invariant@^2.2.0, invariant@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
@@ -4372,9 +4368,9 @@ react-native-vector-icons@^4.4.3:
     prop-types "^15.5.10"
     yargs "^8.0.2"
 
-react-native@0.52.0:
-  version "0.52.0"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.52.0.tgz#9784663a2aa40b30c87d4c9c06ef26cf8d419d91"
+react-native@0.52.1:
+  version "0.52.1"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.52.1.tgz#68ca222f9c6a9bbe4a6f95896a5f9611c1311c31"
   dependencies:
     absolute-path "^0.0.0"
     art "^0.10.0"
