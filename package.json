@@ -17,7 +17,7 @@
     "frisbee": "^1.6.4",
     "prop-types": "^15.6.0",
     "react": "16.2.0",
-    "react-native": "0.52.0",
+    "react-native": "0.52.1",
     "react-native-actionsheet": "^2.3.0",
     "react-native-keyboard-aware-scroll-view": "^0.4.1",
     "react-native-splash-screen": "^3.0.6",
