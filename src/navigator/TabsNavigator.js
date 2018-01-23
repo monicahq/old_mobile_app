@@ -10,7 +10,7 @@ import {
 
 import {Tabbar} from 'components/Tabbar/Tabbar';
 import {DashboardScreen} from '../pages/DashboardScreen';
-import {ContactsScreen} from '../pages/ContactsScreen';
+import {ContactsScreen} from '../pages/Contacts/ContactsScreen';
 import {JournalScreen} from '../pages/JournalScreen';
 import {SettingsScreen} from '../pages/Settings/SettingsScreen';
 

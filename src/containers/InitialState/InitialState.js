@@ -10,22 +10,25 @@ export class InitialState extends Component {
     setState: PropTypes.func.isRequired,
     setToken: PropTypes.func.isRequired,
   };
-  componentWillMount() {
-    const {setState, setToken} = this.props;
-    Promise.all([
-      AsyncStorage.getItem(tokenKey),
-      // AsyncStorage.getItem(userKey),
-    ]).then(([token]) => {
+  async componentWillMount() {
+    const {setState, setToken, getContacts} = this.props;
+
+    try {
+      const [token] = await Promise.all([
+        AsyncStorage.getItem(tokenKey),
+        // AsyncStorage.getItem(userKey),
+      ]);
       if (!token) {
         SplashScreen.hide();
         return;
       }
-      setState(tabsState);
       setToken(token);
+      getContacts();
+      setState(contactsState);
       setTimeout(() => {
         SplashScreen.hide();
       }, 400);
-    });
+    } catch (e) {}
   }
   render() {
     return null;
@@ -37,4 +40,9 @@ const tabsState = AppNavigator.router.getStateForAction(
   AppNavigator.router.getStateForAction(
     AppNavigator.router.getActionForPathAndParams('Launch'),
   ),
+);
+
+const contactsState = AppNavigator.router.getStateForAction(
+  {type: 'Navigation/NAVIGATE', routeName: 'Contacts'},
+  tabsState,
 );

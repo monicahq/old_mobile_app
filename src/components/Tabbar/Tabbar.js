@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {
   View,
@@ -26,10 +26,10 @@ const routes = [
     routeName: 'Contacts',
     icon: 'people',
   },
-  {
-    name: 'Add',
-    icon: 'add',
-  },
+  // {
+  //   name: 'Add',
+  //   icon: 'add',
+  // },
   {
     name: 'Journal',
     routeName: 'Journal',
@@ -45,41 +45,47 @@ const isActive = (route1, route2) => {
   return route1.routeName === route2.routeName;
 };
 
-export const Tabbar = ({navigation}) => {
-  const {routes: navigationRoutes, index} = navigation.state;
-  const activeRoute = navigationRoutes[index];
+export class Tabbar extends Component {
+  actionSheetRef = ref => (this.ActionSheet = ref);
 
-  return (
-    <View style={styles.tabContainer}>
-      <ActionSheet ref={o => (this.ActionSheet = o)} />
+  onPress = routeName => () =>
+    routeName
+      ? this.props.navigation.navigate(routeName)
+      : this.ActionSheet.getWrappedInstance().show();
 
-      {routes.map(route => (
-        <Touchable
-          onPress={() =>
-            route.routeName
-              ? navigation.navigate(route.routeName)
-              : this.ActionSheet.getWrappedInstance().show()
-          }
-          key={route.name}>
-          <View style={styles.tab}>
-            <Icon
-              name={route.icon}
-              size={iconSize}
-              color={isActive(route, activeRoute) ? activeTextColor : textColor}
-            />
-            <Text
-              style={[
-                styles.text,
-                isActive(route, activeRoute) ? styles.textActive : undefined,
-              ]}>
-              {route.name}
-            </Text>
-          </View>
-        </Touchable>
-      ))}
-    </View>
-  );
-};
+  render() {
+    const {navigation} = this.props;
+    const {routes: navigationRoutes, index} = navigation.state;
+    const activeRoute = navigationRoutes[index];
+
+    return (
+      <View style={styles.tabContainer}>
+        <ActionSheet ref={this.actionSheetRef} />
+
+        {routes.map(route => (
+          <Touchable onPress={this.onPress(route.routeName)} key={route.name}>
+            <View style={styles.tab}>
+              <Icon
+                name={route.icon}
+                size={iconSize}
+                color={
+                  isActive(route, activeRoute) ? activeTextColor : textColor
+                }
+              />
+              <Text
+                style={[
+                  styles.text,
+                  isActive(route, activeRoute) ? styles.textActive : undefined,
+                ]}>
+                {route.name}
+              </Text>
+            </View>
+          </Touchable>
+        ))}
+      </View>
+    );
+  }
+}
 
 Tabbar.propTypes = {
   navigation: PropTypes.object.isRequired,

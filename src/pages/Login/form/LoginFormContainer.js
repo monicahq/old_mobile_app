@@ -20,21 +20,22 @@ export const LoginFormContainer = withFormik({
     }
     return errors;
   },
-  handleSubmit: ({email, password}, {setSubmitting, setStatus, props}) => {
+  handleSubmit: async (
+    {email, password},
+    {setSubmitting, setStatus, props},
+  ) => {
     setStatus();
 
-    API.User.login(email, password)
-      .then(res => {
-        if (res.access_token) {
-          return props.onSuccess(res);
-        }
-
-        setStatus('Bad credentials.');
-        setSubmitting(false);
-      })
-      .catch(err => {
-        setStatus(err.message);
-        setSubmitting(false);
-      });
+    try {
+      const res = await API.User.login(email, password);
+      if (res.access_token) {
+        return props.onSuccess(res);
+      }
+      setStatus('Bad credentials.');
+      setSubmitting(false);
+    } catch (err) {
+      setStatus(err.message);
+      setSubmitting(false);
+    }
   },
 })(LoginForm);

@@ -10,6 +10,6 @@ install:
 before_script: greenkeeper-lockfile-update
 script:
   - npm run flow
-  - npm test -- --coverage
+  - npm test -- --coverage --runInBand
   - codecov
 after_script: greenkeeper-lockfile-upload

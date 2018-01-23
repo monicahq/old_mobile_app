@@ -9,7 +9,9 @@
       "components/*": ["./components/*"],
       "api/*": ["./api/*"],
       "containers/*": ["./containers/*"],
-      "theme/*": ["./theme/*"]
+      "theme/*": ["./theme/*"],
+      "utils/*": ["./utils/*"],
+      "assets/*": ["./assets/*"]
     }
   },
   "include": [

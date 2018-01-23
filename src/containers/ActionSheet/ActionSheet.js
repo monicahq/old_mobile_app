@@ -27,10 +27,12 @@ export class ActionSheet extends Component {
     }
   };
 
+  actionSheetRef = ref => (this.RNActionSheet = ref);
+
   render() {
     return (
       <RNActionSheet
-        ref={o => (this.RNActionSheet = o)}
+        ref={this.actionSheetRef}
         options={options}
         cancelButtonIndex={CANCEL_INDEX}
         onPress={this.handlePress}
