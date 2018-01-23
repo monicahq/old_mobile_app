@@ -22,13 +22,11 @@ This project is a react-native project.
 
 $ yarn
 
-$ npm i -g react-native-cli
-
-## Run the project
+## Run the project for development
 
 $ `npm start` will serve the files in development
 
-$ Then `react-native run-ios [--device]` or `react-native run-android [--device]` to run the app on your device/simulator.
+$ Then `npm run ios [-- --device]` or `npm run android [-- --device]` to run the app on your device/simulator.
 
 ## Contact
 
