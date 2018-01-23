@@ -3,19 +3,32 @@
 
 <p align="center">
 <a href="https://travis-ci.org/monicahq/chandler"><img src="https://travis-ci.org/monicahq/chandler.svg?branch=master" alt="Build Status"></a>
-<a href="https://codeclimate.com/github/monicahq/chandler/maintainability"><img src="https://api.codeclimate.com/v1/badges/72bec4479fc7057c5e7c/maintainability" /></a>
+<a class="badge-align" href="https://www.codacy.com/app/Mokto/chandler?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=monicahq/chandler&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/39824871b63643c0b19ce4326d5f8c28"/></a>
 <a href="https://codecov.io/gh/monicahq/chandler"><img src="https://codecov.io/gh/monicahq/chandler/branch/develop/graph/badge.svg" /></a>
+<a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/monicahq/chandler.svg" /></a>
 <a href="https://github.com/djaiss/monica/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-AGPL-blue.svg" alt="License"></a>
 </p>
 
 
 ## Introduction
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/monicahq/chandler.svg)](https://greenkeeper.io/)
-
 Chandler is the official [Monica](https://github.com/monicahq/monica) mobile app. It is not yet available on the App Store and the Play Store as it is (really) on its early stage.
 
 We will soon post more information regarding the way you could contribute.
+
+## Installation
+
+This project is a react-native project.
+
+$ yarn
+
+$ npm i -g react-native-cli
+
+## Run the project
+
+$ `npm start` will serve the files in development
+
+$ Then `react-native run-ios [--device]` or `react-native run-android [--device]` to run the app on your device/simulator.
 
 ## Contact
 

@@ -1,3 +1,20 @@
 {
-  "presets": ["react-native"]
+  "presets": ["react-native"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["."],
+      "extensions": [".js", ".ios.js", ".android.js"],
+      "alias": {
+        "api": "./src/api",
+        "theme": "./src/theme",
+        "containers": "./src/theme",
+        "redux/router": "./src/redux/router",
+        "redux/user": "./src/redux/user",
+        "redux/contacts": "./src/redux/contacts",
+        "components": "./src/components",
+        "utils": "./src/utils",
+        "assets": "./src/assets"
+      }
+    }]
+  ]
 }

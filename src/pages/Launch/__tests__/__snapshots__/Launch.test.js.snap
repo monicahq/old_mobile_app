@@ -1,0 +1,536 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Launch should renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Launch
+    navigateLogin={[Function]}
+    navigateSignup={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />,
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "paddingHorizontal": 30,
+              "width": "100%",
+            }
+          }
+        >
+          <Image
+            source={1}
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "marginBottom": 20,
+                "marginTop": 40,
+                "textAlign": "center",
+              }
+            }
+          >
+            Keep track of every interaction with your friend and family!
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#97A5B2",
+                "marginBottom": 20,
+                "textAlign": "center",
+              }
+            }
+          >
+            Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!
+          </Text>
+          <Button
+            disabled={false}
+            loading={false}
+            onPress={[Function]}
+          >
+            Get started
+          </Button>
+        </View>,
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />,
+        <BottomNav
+          linkTitle="Sign in"
+          onPress={[Function]}
+          title="Already have an account ?"
+        />,
+      ],
+      "forceInset": Object {
+        "top": "always",
+      },
+      "style": Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "style": Object {
+            "flex": 1,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Image
+              source={1}
+            />,
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontSize": 18,
+                  "fontWeight": "bold",
+                  "marginBottom": 20,
+                  "marginTop": 40,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Keep track of every interaction with your friend and family!
+            </Text>,
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#97A5B2",
+                  "marginBottom": 20,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!
+            </Text>,
+            <Button
+              disabled={false}
+              loading={false}
+              onPress={[Function]}
+            >
+              Get started
+            </Button>,
+          ],
+          "style": Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+            "paddingHorizontal": 30,
+            "width": "100%",
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "source": 1,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "Keep track of every interaction with your friend and family!",
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "marginBottom": 20,
+                "marginTop": 40,
+                "textAlign": "center",
+              },
+            },
+            "ref": null,
+            "rendered": "Keep track of every interaction with your friend and family!",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!",
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "color": "#97A5B2",
+                "marginBottom": 20,
+                "textAlign": "center",
+              },
+            },
+            "ref": null,
+            "rendered": "Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Get started",
+              "disabled": false,
+              "loading": false,
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "Get started",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "style": Object {
+            "flex": 1,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "linkTitle": "Sign in",
+          "onPress": [Function],
+          "title": "Already have an account ?",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />,
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+                "paddingHorizontal": 30,
+                "width": "100%",
+              }
+            }
+          >
+            <Image
+              source={1}
+            />
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontSize": 18,
+                  "fontWeight": "bold",
+                  "marginBottom": 20,
+                  "marginTop": 40,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Keep track of every interaction with your friend and family!
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#97A5B2",
+                  "marginBottom": 20,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!
+            </Text>
+            <Button
+              disabled={false}
+              loading={false}
+              onPress={[Function]}
+            >
+              Get started
+            </Button>
+          </View>,
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />,
+          <BottomNav
+            linkTitle="Sign in"
+            onPress={[Function]}
+            title="Already have an account ?"
+          />,
+        ],
+        "forceInset": Object {
+          "top": "always",
+        },
+        "style": Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "style": Object {
+              "flex": 1,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Image
+                source={1}
+              />,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontSize": 18,
+                    "fontWeight": "bold",
+                    "marginBottom": 20,
+                    "marginTop": 40,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Keep track of every interaction with your friend and family!
+              </Text>,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#97A5B2",
+                    "marginBottom": 20,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!
+              </Text>,
+              <Button
+                disabled={false}
+                loading={false}
+                onPress={[Function]}
+              >
+                Get started
+              </Button>,
+            ],
+            "style": Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "paddingHorizontal": 30,
+              "width": "100%",
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "source": 1,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "Keep track of every interaction with your friend and family!",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "fontSize": 18,
+                  "fontWeight": "bold",
+                  "marginBottom": 20,
+                  "marginTop": 40,
+                  "textAlign": "center",
+                },
+              },
+              "ref": null,
+              "rendered": "Keep track of every interaction with your friend and family!",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "color": "#97A5B2",
+                  "marginBottom": 20,
+                  "textAlign": "center",
+                },
+              },
+              "ref": null,
+              "rendered": "Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Get started",
+                "disabled": false,
+                "loading": false,
+                "onPress": [Function],
+              },
+              "ref": null,
+              "rendered": "Get started",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "style": Object {
+              "flex": 1,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "linkTitle": "Sign in",
+            "onPress": [Function],
+            "title": "Already have an account ?",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
