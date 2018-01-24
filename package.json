@@ -11,6 +11,9 @@
     "flow": "flow"
   },
   "dependencies": {
+    "appcenter": "^1.1.0",
+    "appcenter-analytics": "^1.1.0",
+    "appcenter-crashes": "^1.1.0",
     "babel-core": "^6.26.0",
     "base-64": "^0.1.0",
     "formik": "^0.10.5",
@@ -20,6 +23,7 @@
     "react": "16.2.0",
     "react-native": "0.52.0",
     "react-native-actionsheet": "^2.3.0",
+    "react-native-code-push": "^5.2.1",
     "react-native-keyboard-aware-scroll-view": "^0.4.1",
     "react-native-navbar": "^2.1.0",
     "react-native-search-bar": "^3.3.1",

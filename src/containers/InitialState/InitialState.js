@@ -2,22 +2,27 @@ import {Component} from 'react';
 import PropTypes from 'prop-types';
 import {AsyncStorage} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-import {tokenKey} from '../../storage-keys';
+import {tokenKey, betaKey} from '../../storage-keys';
 import {AppNavigator} from '../../navigator/AppNavigator';
 
 export class InitialState extends Component {
   static propTypes = {
     setState: PropTypes.func.isRequired,
     setToken: PropTypes.func.isRequired,
+    subscribeBeta: PropTypes.func.isRequired,
+    getContacts: PropTypes.func.isRequired,
   };
   async componentWillMount() {
-    const {setState, setToken, getContacts} = this.props;
+    const {setState, setToken, getContacts, subscribeBeta} = this.props;
 
     try {
-      const [token] = await Promise.all([
+      const [token, beta] = await Promise.all([
         AsyncStorage.getItem(tokenKey),
-        // AsyncStorage.getItem(userKey),
+        AsyncStorage.getItem(betaKey),
       ]);
+      // Subscribe to beta
+      subscribeBeta(!!beta);
+
       if (!token) {
         SplashScreen.hide();
         return;

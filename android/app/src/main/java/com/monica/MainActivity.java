@@ -1,4 +1,4 @@
-package com.monica;
+package com.monicahq.app;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;

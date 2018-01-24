@@ -1,0 +1,6 @@
+<resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey"></string>
+    <string moduleConfig="false" name="appcenterCrashes_whenToSendCrashes">NEVER_SEND</string>
+    <string moduleConfig="false" name="appcenterAnalytics_whenToEnableAnalytics">NEVER_SEND</string>
+    <string name="app_name">Monica Dev</string>
+</resources>

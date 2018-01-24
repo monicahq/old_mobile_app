@@ -6,6 +6,8 @@ import {addNavigationHelpers} from 'react-navigation';
 import {AppNavigator} from './navigator/AppNavigator';
 import configureStore from './redux/configureStore';
 import {InitialStateContainer} from './containers/InitialState/InitialStateContainer';
+import {CodePushContainer} from './containers/CodePush/CodePushContainer';
+import {codePush} from './CodePush';
 
 const store = configureStore();
 
@@ -18,6 +20,7 @@ const CustomAppNavigator = ({dispatch, router}) => [
     })}
   />,
   <InitialStateContainer key={1} />,
+  <CodePushContainer key={2} />,
 ];
 CustomAppNavigator.propTypes = {
   dispatch: PropTypes.func.isRequired,
@@ -28,8 +31,8 @@ const AppWithNavigationState = connect(state => ({
   router: state.router,
 }))(CustomAppNavigator);
 
-export const App = () => (
+export const App = codePush(() => (
   <Provider store={store}>
     <AppWithNavigationState />
   </Provider>
-);
+));
