@@ -28,6 +28,19 @@ $ `npm start` will serve the files in development
 
 $ Then `npm run ios [-- --device]` or `npm run android [-- --device]` to run the app on your device/simulator.
 
+## Environments
+
+There are 3 environments :
+
+- Development : 
+- Staging : Will be used for beta testing purposes (Testflight + Google Play Developer)
+- Production : Will be available on the Stores
+
+## AppCenter + Codepush
+
+- AppCenter (from Microsoft) is used for general insights (on production only) and crash reports (staging + production)
+- CodePush will allow us to push new versions faster (without going through the Store Validation processs)
+
 ## Contact
 
 If you need to talk, you can contact me at regis AT monicahq DOT com. You can also reach me [on Twitter](https://twitter.com/djaiss).
