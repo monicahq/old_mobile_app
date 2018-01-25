@@ -25,8 +25,9 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "Icon-29x29@3x.png",
       "scale" : "3x"
     },
     {
@@ -54,13 +55,8 @@
       "scale" : "3x"
     },
     {
+      "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "size" : "1024x1024",
-      "scale" : "1x"
-    },
-    {
-      "size" : "1024x1024",
-      "idiom" : "iphone",
       "filename" : "Icon-marketing-1024x1024.png",
       "scale" : "1x"
     }
