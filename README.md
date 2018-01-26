@@ -41,6 +41,10 @@ There are 3 environments :
 - AppCenter (from Microsoft) is used for general insights (on production only) and crash reports (staging + production)
 - CodePush will allow us to push new versions faster (without going through the Store Validation processs)
 
+## Instructions to change splash screens
+
+* https://medium.com/handlebar-labs/how-to-add-a-splash-screen-to-a-react-native-app-ios-and-android-30a3cec835ae
+
 ## Contact
 
 If you need to talk, you can contact me at regis AT monicahq DOT com. You can also reach me [on Twitter](https://twitter.com/djaiss).
