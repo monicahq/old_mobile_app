@@ -9,10 +9,10 @@ import {
 } from 'react-navigation';
 
 import {Tabbar} from 'components/Tabbar/Tabbar';
-import {DashboardScreen} from '../pages/DashboardScreen';
-import {ContactsScreen} from '../pages/Contacts/ContactsScreen';
-import {JournalScreen} from '../pages/JournalScreen';
-import {SettingsScreen} from '../pages/Settings/SettingsScreen';
+import {DashboardScreen} from 'pages/DashboardScreen';
+import {ContactsScreen} from 'pages/Contacts/ContactsScreen';
+import {JournalScreen} from 'pages/JournalScreen';
+import {SettingsScreen} from 'pages/Settings/SettingsScreen';
 
 const CustomTabView = ({router, navigation}) => {
   const {routes, index} = navigation.state;

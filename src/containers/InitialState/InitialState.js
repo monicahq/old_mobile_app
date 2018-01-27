@@ -2,8 +2,8 @@ import {Component} from 'react';
 import PropTypes from 'prop-types';
 import {AsyncStorage} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-import {tokenKey, betaKey} from '../../storage-keys';
-import {AppNavigator} from '../../navigator/AppNavigator';
+import {tokenKey, betaKey} from 'storage-keys';
+import {AppNavigator} from 'navigator/AppNavigator';
 
 export class InitialState extends Component {
   static propTypes = {

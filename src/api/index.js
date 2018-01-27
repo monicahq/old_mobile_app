@@ -3,7 +3,7 @@ import {AsyncStorage, StatusBar, Platform} from 'react-native';
 
 import {User} from './user';
 import {Contacts} from './contacts';
-import {tokenKey} from '../storage-keys';
+import {tokenKey} from 'storage-keys';
 
 const frisbee = new Frisbee({
   baseURI: 'https://app.monicahq.com',

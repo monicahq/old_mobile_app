@@ -1,9 +1,9 @@
 import {connect} from 'react-redux';
 
-import {setState} from '../../redux/router';
-import {setToken} from '../../redux/user';
-import {getContacts} from '../../redux/contacts';
-import {subscribeBeta} from '../../redux/beta';
+import {setState} from 'redux/router';
+import {setToken} from 'redux/user';
+import {getContacts} from 'redux/contacts';
+import {subscribeBeta} from 'redux/beta';
 import {InitialState} from './InitialState';
 
 export const InitialStateContainer = connect(null, dispatch => ({

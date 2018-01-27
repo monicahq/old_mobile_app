@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import {Provider, connect} from 'react-redux';
 import {addNavigationHelpers} from 'react-navigation';
 
-import {AppNavigator} from './navigator/AppNavigator';
-import configureStore from './redux/configureStore';
-import {InitialStateContainer} from './containers/InitialState/InitialStateContainer';
-import {CodePushContainer} from './containers/CodePush/CodePushContainer';
+import {AppNavigator} from 'navigator/AppNavigator';
+import configureStore from 'redux/configureStore';
+import {InitialStateContainer} from 'containers/InitialState/InitialStateContainer';
+import {CodePushContainer} from 'containers/CodePush/CodePushContainer';
 import {codePush} from './CodePush';
 
 const store = configureStore();

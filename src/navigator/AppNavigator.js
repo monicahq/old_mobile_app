@@ -6,10 +6,10 @@
 import {StackNavigator} from 'react-navigation';
 // import {StackNavigatorAnimation} from './StackNavigatorAnimation';
 
-import {LaunchScreen} from '../pages/Launch/LaunchScreen';
-import {LoginScreen} from '../pages/Login/LoginScreen';
-import {AddContactScreen} from '../pages/AddContactScreen';
-import {ContactScreen} from '../pages/ContactScreen';
+import {LaunchScreen} from 'pages/Launch/LaunchScreen';
+import {LoginScreen} from 'pages/Login/LoginScreen';
+import {AddContactScreen} from 'pages/AddContactScreen';
+import {ContactScreen} from 'pages/ContactScreen';
 import {TabsNavigator} from './TabsNavigator';
 
 // const Router = StackRouter({
