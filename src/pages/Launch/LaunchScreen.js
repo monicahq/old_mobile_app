@@ -5,7 +5,6 @@ import {Launch} from './Launch';
 
 export const LaunchScreen = connect(null, dispatch => {
   return {
-    navigateLogin: () => dispatch(navigate('Login')),
-    navigateSignup: () => dispatch(navigate('Signup')),
+    navigate: routeName => () => dispatch(navigate(routeName)),
   };
 })(Launch);

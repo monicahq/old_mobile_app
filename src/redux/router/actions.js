@@ -1,9 +1,10 @@
 import * as types from './types';
 
-export function navigate(routeName) {
+export function navigate(routeName, params) {
   return {
     type: types.NAVIGATE,
     routeName: routeName,
+    params,
   };
 }
 

@@ -11,19 +11,18 @@ import {commonStyles, forceInset, preAuthScreensStyles} from 'theme';
 export class Login extends Component {
   static propTypes = {
     setToken: PropTypes.func.isRequired,
-    navigateTabs: PropTypes.func.isRequired,
-    navigateSignup: PropTypes.func.isRequired,
+    navigate: PropTypes.func.isRequired,
     back: PropTypes.func.isRequired,
   };
 
   onSuccessFormResult = res => {
-    const {setToken, navigateTabs} = this.props;
+    const {setToken, navigate} = this.props;
     setToken(res.access_token);
-    navigateTabs();
+    navigate('Tabs')();
   };
 
   render() {
-    const {navigateSignup, back} = this.props;
+    const {navigate, back} = this.props;
 
     return (
       <KeyboardAwareScrollView contentContainerStyle={commonStyles.flex}>
@@ -48,7 +47,7 @@ export class Login extends Component {
           <BottomNav
             title="Don't have an account ?"
             linkTitle="Sign up"
-            onPress={navigateSignup}
+            onPress={navigate('Signup')}
           />
         </SafeAreaView>
       </KeyboardAwareScrollView>

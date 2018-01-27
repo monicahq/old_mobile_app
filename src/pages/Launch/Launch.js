@@ -6,7 +6,7 @@ import {SafeAreaView} from 'react-navigation';
 import {commonStyles, forceInset, preAuthScreensStyles} from 'theme';
 import {Button, BottomNav} from 'components';
 
-export const Launch = ({navigateLogin, navigateSignup}) => (
+export const Launch = ({navigate}) => (
   <SafeAreaView forceInset={forceInset} style={preAuthScreensStyles.container}>
     <View style={commonStyles.flex} />
 
@@ -21,7 +21,7 @@ export const Launch = ({navigateLogin, navigateSignup}) => (
         kids or what they prefer to eat!
       </Text>
 
-      <Button onPress={navigateSignup}>Get started</Button>
+      <Button onPress={navigate('Signup')}>Get started</Button>
     </View>
 
     <View style={commonStyles.flex} />
@@ -29,12 +29,11 @@ export const Launch = ({navigateLogin, navigateSignup}) => (
     <BottomNav
       title="Already have an account ?"
       linkTitle="Sign in"
-      onPress={navigateLogin}
+      onPress={navigate('Login')}
     />
   </SafeAreaView>
 );
 
 Launch.propTypes = {
-  navigateLogin: PropTypes.func.isRequired,
-  navigateSignup: PropTypes.func.isRequired,
+  navigate: PropTypes.func.isRequired,
 };

@@ -6,8 +6,7 @@ import {Login} from './Login';
 
 export const LoginScreen = connect(null, dispatch => {
   return {
-    navigateSignup: () => dispatch(navigate('Signup')),
-    navigateTabs: () => dispatch(navigate('Tabs')),
+    navigate: routeName => () => dispatch(navigate(routeName)),
     back: () => dispatch(back()),
     setToken: token => dispatch(setToken(token)),
   };

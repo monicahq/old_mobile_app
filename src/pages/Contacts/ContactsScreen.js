@@ -15,7 +15,8 @@ export const ContactsScreen = connect(
   dispatch => {
     return {
       getContacts: shouldInvalidate => dispatch(getContacts(shouldInvalidate)),
-      navigateToContact: contactId => dispatch(navigate('Contact', contactId)),
+      navigateToContact: contactId => () =>
+        dispatch(navigate('Contact', contactId)),
     };
   },
 )(Contacts);

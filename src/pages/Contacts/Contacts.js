@@ -23,7 +23,12 @@ export class Contacts extends PureComponent {
     const {contacts, navigateToContact} = this.props;
     const contact = contacts[item];
 
-    return <ContactListItem contact={contact} onPress={navigateToContact} />;
+    return (
+      <ContactListItem
+        contact={contact}
+        onPress={navigateToContact(contact.id)}
+      />
+    );
   };
 
   renderHeader = () => {
