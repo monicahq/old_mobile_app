@@ -453,6 +453,7 @@
 		CCBDA125F6B34D44A7ABF2A8 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		D2896115BDBA43A5DD5F3E18 /* libPods-Monica-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Monica-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E301807F26A54523B49FF417 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		E4ADC8DB201A009D0087AC93 /* Monica.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Monica.entitlements; path = Monica/Monica.entitlements; sourceTree = "<group>"; };
 		E4DE843D201824000012CEAE /* CodePush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
 		E4DE84722018242C0012CEAE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F26CC304FFE14A6B9997811B /* libAppCenterReactNativeAnalytics.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNativeAnalytics.a; sourceTree = "<group>"; };
@@ -607,6 +608,7 @@
 		13B07FAE1A68108700A75B9A /* Monica */ = {
 			isa = PBXGroup;
 			children = (
+				E4ADC8DB201A009D0087AC93 /* Monica.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -947,6 +949,12 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = MVHSH3DLRY;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1763,7 +1771,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_ENTITLEMENTS = Monica/Monica.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 5;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = MVHSH3DLRY;
 				HEADER_SEARCH_PATHS = (
@@ -1784,6 +1794,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.monicahq.app.debug;
 				PRODUCT_NAME = Monica;
+				PROVISIONING_PROFILE = "11c52717-799f-45f7-8f05-225aaee542ef";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.monicahq.app.debug";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1794,7 +1806,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_ENTITLEMENTS = Monica/Monica.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = MVHSH3DLRY;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1814,6 +1829,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.monicahq.app;
 				PRODUCT_NAME = Monica;
+				PROVISIONING_PROFILE = "1eb56bd1-e702-4147-a5aa-67e49506fbe5";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.monicahq.app";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

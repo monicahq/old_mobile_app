@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>5</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -57,5 +57,6 @@
 	<false/>
 	<key>CodePushDeploymentKey</key>
 	<string>i2oKT3PzZCZzwbJSF7Yb3HIo35lhH103vGVHM</string>
+  <key>ITSAppUsesNonExemptEncryption</key><false/>
 </dict>
 </plist>
