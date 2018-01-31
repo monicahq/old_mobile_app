@@ -14,6 +14,8 @@ target 'Monica' do
 
   pod 'CodePush', :path => '../node_modules/react-native-code-push'
 
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
+
   target 'MonicaTests' do
     inherit! :search_paths
     # Pods for testing

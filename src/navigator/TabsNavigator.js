@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {View, StyleSheet} from 'react-native';
+import {View} from 'react-native';
 import {
   TabRouter,
   createNavigationContainer,
   createNavigator,
   addNavigationHelpers,
 } from 'react-navigation';
+
+import {commonStyles} from 'theme';
 
 import {Tabbar} from 'components/Tabbar/Tabbar';
 import {DashboardScreen} from 'pages/DashboardScreen';
@@ -18,8 +20,8 @@ const CustomTabView = ({router, navigation}) => {
   const {routes, index} = navigation.state;
   const ActiveScreen = router.getComponentForRouteName(routes[index].routeName);
   return (
-    <View style={styles.flex}>
-      <View style={styles.flex}>
+    <View style={commonStyles.flex}>
+      <View style={[commonStyles.flex, commonStyles.bgWhite]}>
         <ActiveScreen
           navigation={addNavigationHelpers({
             dispatch: navigation.dispatch,
@@ -64,9 +66,3 @@ const CustomTabRouter = TabRouter({
 export const TabsNavigator = createNavigationContainer(
   createNavigator(CustomTabRouter)(CustomTabView),
 );
-
-const styles = StyleSheet.create({
-  flex: {
-    flex: 1,
-  },
-});

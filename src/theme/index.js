@@ -1,6 +1,7 @@
 import {StyleSheet} from 'react-native';
 
-export const navbarColor = '#355974';
+export const primaryColor = '#355974';
+export const navbarColor = primaryColor;
 export const mutedTextColor = '#676767';
 
 export const commonStyles = StyleSheet.create({
@@ -9,6 +10,12 @@ export const commonStyles = StyleSheet.create({
   },
   flex: {
     flex: 1,
+  },
+  bgWhite: {
+    backgroundColor: 'white',
+  },
+  bgOddRow: {
+    backgroundColor: '#FBFBFB',
   },
   mutedText: {
     color: mutedTextColor,
