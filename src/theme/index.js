@@ -3,6 +3,7 @@ import {StyleSheet} from 'react-native';
 export const primaryColor = '#355974';
 export const navbarColor = primaryColor;
 export const mutedTextColor = '#676767';
+export const statusBarLightContent = {style: 'light-content'};
 
 export const commonStyles = StyleSheet.create({
   errorMessage: {

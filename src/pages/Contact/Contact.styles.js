@@ -27,4 +27,11 @@ export const styles = StyleSheet.create({
     borderBottomWidth: 1,
     paddingHorizontal: 10,
   },
+  contactImage: {
+    position: 'absolute',
+    top: -32,
+    borderRadius: 3,
+    borderColor: 'white',
+    borderWidth: 3,
+  },
 });

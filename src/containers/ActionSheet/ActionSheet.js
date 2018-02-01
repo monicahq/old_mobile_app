@@ -6,10 +6,10 @@ const CANCEL_INDEX = 0;
 const options = [
   'Cancel',
   'Add a contact',
-  'Log an activity',
-  'Log a call',
-  'Add a reminder',
-  'Add a note',
+  // 'Log an activity',
+  // 'Log a call',
+  // 'Add a reminder',
+  // 'Add a note',
 ];
 
 export class ActionSheet extends Component {

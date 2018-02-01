@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {View, Text, TouchableOpacity} from 'react-native';
 import {getLastUpdatedDate} from 'utils/contacts';
-import {ContactAvatar} from 'components/ContactAvatar';
+import {ContactAvatar} from 'components';
 
 import {styles} from './ContactListItem.styles';
 import {commonStyles} from 'theme';

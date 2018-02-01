@@ -5,9 +5,7 @@ import NavigationBar from 'react-native-navbar';
 import SearchBar from 'react-native-search-bar';
 
 import {styles} from './Navbar.styles';
-import {navbarColor} from 'theme';
-
-const lightContent = {style: 'light-content'};
+import {navbarColor, statusBarLightContent} from 'theme';
 
 export class Navbar extends PureComponent {
   static propTypes = {
@@ -35,7 +33,7 @@ export class Navbar extends PureComponent {
           />
         }
         tintColor={navbarColor}
-        statusBar={lightContent}
+        statusBar={statusBarLightContent}
       />
     );
   }

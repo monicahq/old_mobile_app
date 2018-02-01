@@ -39,7 +39,6 @@ CustomTabView.propTypes = {
   navigation: PropTypes.object.isRequired,
 };
 
-// TODO : remove this if using stackNavigatorAnimator
 const noHeader = {
   navigationOptions: {header: null},
 };

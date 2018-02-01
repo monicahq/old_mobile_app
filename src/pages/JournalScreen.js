@@ -1,9 +1,11 @@
 import React from 'react';
-import {Text} from 'react-native';
-import {SafeAreaView} from 'react-navigation';
+import {View} from 'react-native';
+
+import {Navbar} from 'components';
+import {commonStyles} from 'theme';
 
 export const JournalScreen = () => (
-  <SafeAreaView forceInset={{top: 'always'}}>
-    <Text>Journal</Text>
-  </SafeAreaView>
+  <View style={commonStyles.flex}>
+    <Navbar title="Journal" />
+  </View>
 );

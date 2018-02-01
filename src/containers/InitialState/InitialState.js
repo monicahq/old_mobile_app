@@ -29,7 +29,7 @@ export class InitialState extends Component {
       }
       setToken(token);
       getContacts();
-      setState(contactsState);
+      setState(settingsState);
       setTimeout(() => {
         SplashScreen.hide();
       }, 400);
@@ -47,7 +47,12 @@ const tabsState = AppNavigator.router.getStateForAction(
   ),
 );
 
-const contactsState = AppNavigator.router.getStateForAction(
-  {type: 'Navigation/NAVIGATE', routeName: 'Contacts'},
+// const contactsState = AppNavigator.router.getStateForAction(
+//   {type: 'Navigation/NAVIGATE', routeName: 'Contacts'},
+//   tabsState,
+// );
+
+const settingsState = AppNavigator.router.getStateForAction(
+  {type: 'Navigation/NAVIGATE', routeName: 'Settings'},
   tabsState,
 );

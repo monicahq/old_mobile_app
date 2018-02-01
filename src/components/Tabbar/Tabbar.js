@@ -26,10 +26,10 @@ const routes = [
     routeName: 'Contacts',
     icon: 'people',
   },
-  // {
-  //   name: 'Add',
-  //   icon: 'add',
-  // },
+  {
+    name: 'Add',
+    icon: 'add',
+  },
   {
     name: 'Journal',
     routeName: 'Journal',

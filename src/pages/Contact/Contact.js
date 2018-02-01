@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {View, Text, ScrollView} from 'react-native';
 
-import {Navbar} from './Navbar/Navbar';
 import {commonStyles} from 'theme';
+import {Navbar, ContactAvatar} from 'components';
 import {getAge} from 'utils/contacts';
 import {styles} from './Contact.styles';
 
@@ -19,7 +19,16 @@ export class Contact extends Component {
     console.log(contact);
     return (
       <View style={[commonStyles.flex, commonStyles.bgWhite]}>
-        <Navbar contact={contact} onPressBack={back} />
+        <Navbar
+          title={
+            <ContactAvatar
+              contact={contact}
+              size={76}
+              style={styles.contactImage}
+            />
+          }
+          onBack={back}
+        />
         <View style={styles.nameContainer}>
           <Text style={styles.title}>
             {contact.first_name} {contact.last_name}
