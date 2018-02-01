@@ -23,16 +23,12 @@
 {
   NSURL *jsCodeLocation;
   
-  if (false) {
-    [AppCenterReactNativeCrashes registerWithAutomaticProcessing];  // Initialize AppCenter crashes
-    [AppCenterReactNativeAnalytics registerWithInitiallyEnabled:true];  // Initialize AppCenter analytics
-  }
-  [AppCenterReactNative register];  // Initialize AppCenter 
-  
-  
   #ifdef DEBUG
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
   #else
+    [AppCenterReactNativeCrashes registerWithAutomaticProcessing];  // Initialize AppCenter crashes
+    [AppCenterReactNativeAnalytics registerWithInitiallyEnabled:true];  // Initialize AppCenter analytics
+    [AppCenterReactNative register];  // Initialize AppCenter
     jsCodeLocation = [CodePush bundleURL];
   #endif
 

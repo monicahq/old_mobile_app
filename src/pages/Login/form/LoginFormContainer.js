@@ -3,11 +3,6 @@ import {LoginForm} from './LoginForm';
 import {API} from 'api';
 
 export const LoginFormContainer = withFormik({
-  isInitialValid: true,
-  mapPropsToValues: props => ({
-    email: 'theo.mathieu1@gmail.com',
-    password: 'abab1598',
-  }),
   validate: ({email, password}) => {
     const errors = {};
     if (!email) {

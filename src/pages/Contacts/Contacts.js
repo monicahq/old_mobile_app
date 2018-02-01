@@ -19,12 +19,12 @@ export class Contacts extends PureComponent {
 
   keyExtractor = (item, index) => item;
 
-  renderItem = ({item}) => {
+  renderItem = ({item, index}) => {
     const {contacts, navigateToContact} = this.props;
     const contact = contacts[item];
-
     return (
       <ContactListItem
+        bgOddRow={index % 2 === 1}
         contact={contact}
         onPress={navigateToContact(contact.id)}
       />
@@ -65,6 +65,12 @@ export class Contacts extends PureComponent {
   onRefresh = () => {
     this.props.getContacts(true);
   };
+
+  componentWillReceiveProps(nextProps) {
+    if (this.props.list.length === 0 && nextProps.list.length) {
+      this.props.navigateToContact(nextProps.list[0])();
+    }
+  }
 
   render() {
     const {list, isFetching, fetchedPageCount} = this.props;

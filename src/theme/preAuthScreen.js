@@ -5,6 +5,7 @@ export const preAuthScreensStyles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: 'white',
   },
   centeredBlock: {
     paddingHorizontal: 30,

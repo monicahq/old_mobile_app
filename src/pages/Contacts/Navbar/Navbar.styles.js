@@ -8,6 +8,6 @@ export const styles = StyleSheet.create({
   searchBar: {
     width: 245,
     height: 35,
-    marginTop: 2,
+    marginTop: 4,
   },
 });
