@@ -8,7 +8,9 @@
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "test": "jest",
     "lint": "eslint .",
-    "flow": "flow"
+    "flow": "flow",
+    "ios:beta": "cd ios && fastlane beta",
+    "ios:android": "cd ios && fastlane beta"
   },
   "dependencies": {
     "appcenter": "^1.1.0",

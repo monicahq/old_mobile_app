@@ -102,7 +102,7 @@ android {
         applicationId "com.monicahq.app"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 1.0.0
+        versionCode 1
         versionName "1.0.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
@@ -116,6 +116,18 @@ android {
             include "armeabi-v7a", "x86"
         }
     }
+     signingConfigs {
+        release {
+            "git clone git@gitlab.com:monicahq/mobile-credentials.git".execute()
+
+            if (project.hasProperty('MONICA_RELEASE_STORE_FILE')) {
+                storeFile file(MONICA_RELEASE_STORE_FILE)
+                storePassword new File('mobile-credentials/android/monica-store-password').text
+                keyAlias MONICA_RELEASE_KEY_ALIAS
+                keyPassword new File('mobile-credentials/android/monica-key-password').text
+            }
+        }
+    }
     buildTypes {
         debug {
             buildConfigField "String", "CODEPUSH_KEY", '""'
@@ -125,6 +137,8 @@ android {
             buildConfigField "String", "CODEPUSH_KEY", '"CiBcX7pGFspPvfqGCsdX5I_zdYpfryYjlEVSf"'
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+
+            signingConfig signingConfigs.release
         }
     }
     // applicationVariants are e.g. debug, release
