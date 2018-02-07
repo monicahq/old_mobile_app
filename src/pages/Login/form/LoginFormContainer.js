@@ -2,7 +2,7 @@ import {withFormik} from 'formik';
 import {LoginForm} from './LoginForm';
 import {API} from 'api';
 
-export const LoginFormContainer = withFormik({
+export const LoginFormContainer = withFormik(5
   validate: ({email, password}) => {
     const errors = {};
     if (!email) {
