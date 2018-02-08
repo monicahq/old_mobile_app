@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Provider, connect} from 'react-redux';
 import {addNavigationHelpers} from 'react-navigation';
+import {createReduxBoundAddListener} from 'react-navigation-redux-helpers';
 
 import {AppNavigator} from 'navigator/AppNavigator';
 import configureStore from 'redux/configureStore';
@@ -10,6 +11,7 @@ import {CodePushContainer} from 'containers/CodePush/CodePushContainer';
 import {codePush} from './CodePush';
 
 const store = configureStore();
+const addListener = createReduxBoundAddListener('root');
 
 const CustomAppNavigator = ({dispatch, router}) => [
   <AppNavigator
@@ -17,6 +19,7 @@ const CustomAppNavigator = ({dispatch, router}) => [
     navigation={addNavigationHelpers({
       dispatch,
       state: router,
+      addListener,
     })}
   />,
   <InitialStateContainer key={1} />,
