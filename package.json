@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.1.2",
-    "babel-jest": "22.1.0",
+    "babel-jest": "22.2.0",
     "babel-plugin-module-resolver": "^3.0.0",
     "babel-preset-react-native": "4.0.0",
     "enzyme": "^3.3.0",
