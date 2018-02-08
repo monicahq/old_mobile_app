@@ -53,6 +53,6 @@ const tabsState = AppNavigator.router.getStateForAction(
 // );
 
 const settingsState = AppNavigator.router.getStateForAction(
-  {type: 'Navigation/NAVIGATE', routeName: 'Settings'},
+  {type: 'Navigation/NAVIGATE', routeName: 'Dashboard'},
   tabsState,
 );
