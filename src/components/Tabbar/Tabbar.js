@@ -8,7 +8,8 @@ import {
   Platform,
 } from 'react-native';
 import {activeTextColor, iconSize, styles, textColor} from './Tabbar.styles';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+// import Icon from 'react-native-vector-icons/MaterialIcons';
+import {FontelloIcon} from '../FontelloIcon';
 
 import {ActionSheet} from '../../containers/ActionSheet';
 
@@ -19,16 +20,16 @@ const routes = [
   {
     name: 'Dashboard',
     routeName: 'Dashboard',
-    icon: 'dashboard',
+    icon: 'gauge',
   },
   {
     name: 'Contacts',
     routeName: 'Contacts',
-    icon: 'people',
+    icon: 'users',
   },
   {
     name: 'Add',
-    icon: 'add',
+    icon: 'plus-circled',
   },
   {
     name: 'Journal',
@@ -38,7 +39,7 @@ const routes = [
   {
     name: 'Settings',
     routeName: 'Settings',
-    icon: 'settings',
+    icon: 'cog',
   },
 ];
 const isActive = (route1, route2) => {
@@ -65,7 +66,7 @@ export class Tabbar extends Component {
         {routes.map(route => (
           <Touchable onPress={this.onPress(route.routeName)} key={route.name}>
             <View style={styles.tab}>
-              <Icon
+              <FontelloIcon
                 name={route.icon}
                 size={iconSize}
                 color={

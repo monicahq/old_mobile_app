@@ -11,7 +11,8 @@
     "flow": "flow",
     "ios:beta": "cd ios && fastlane beta",
     "android:alpha": "cd android && fastlane alpha",
-    "android:beta": "cd android && fastlane beta"
+    "android:beta": "cd android && fastlane beta",
+    "clean": "watchman watch-del-all && rm -rf node_modules && yarn && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/haste-map-react-native-packager-*"
   },
   "dependencies": {
     "appcenter": "^1.1.0",
