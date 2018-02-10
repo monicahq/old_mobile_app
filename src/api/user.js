@@ -10,10 +10,12 @@ export class User {
       const resp = await this.api.post('/oauth/token', {
         body: {
           grant_type: 'password',
-          client_id: '3',
-          client_secret: base64.decode(
-            'MFRITXAyRGVYeVVkaEd5ME9lckZMRFBWam9PVVhEMzdPdVhVdG94Sw',
-          ),
+          client_id: __DEV__ ? '2' : '3',
+          client_secret: __DEV__
+            ? 'nXNiKpzfhTvYEIN5hxqk2budfwrIFvDkQwXo2yym'
+            : base64.decode(
+                'MFRITXAyRGVYeVVkaEd5ME9lckZMRFBWam9PVVhEMzdPdVhVdG94Sw',
+              ),
           username: email,
           password,
         },

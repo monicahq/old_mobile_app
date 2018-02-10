@@ -17,7 +17,7 @@ export class Contacts extends PureComponent {
     navigateToContact: PropTypes.func.isRequired,
   };
 
-  keyExtractor = (item, index) => item;
+  keyExtractor = (item, index) => String(item);
 
   renderItem = ({item, index}) => {
     const {contacts, navigateToContact} = this.props;

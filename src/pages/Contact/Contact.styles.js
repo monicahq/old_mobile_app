@@ -1,11 +1,11 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, PixelRatio} from 'react-native';
 
 export const styles = StyleSheet.create({
   nameContainer: {
     paddingTop: 45,
     paddingBottom: 10,
     borderColor: '#E2E4E5',
-    borderBottomWidth: 1,
+    borderBottomWidth: 1 / PixelRatio.get(),
   },
   title: {
     textAlign: 'center',
@@ -21,11 +21,13 @@ export const styles = StyleSheet.create({
   bloc: {
     backgroundColor: 'white',
     marginTop: 10,
-    paddingVertical: 10,
     borderColor: '#E2E4E5',
-    borderTopWidth: 1,
-    borderBottomWidth: 1,
+    borderTopWidth: 1 / PixelRatio.get(),
+    borderBottomWidth: 1 / PixelRatio.get(),
     paddingHorizontal: 10,
+  },
+  paddingVertical: {
+    paddingVertical: 10,
   },
   contactImage: {
     position: 'absolute',

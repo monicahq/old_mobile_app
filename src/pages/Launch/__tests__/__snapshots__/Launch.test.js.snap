@@ -85,11 +85,6 @@ ShallowWrapper {
             }
           }
         />,
-        <BottomNav
-          linkTitle="Sign in"
-          onPress={[Function]}
-          title="Already have an account ?"
-        />,
       ],
       "forceInset": Object {
         "top": "always",
@@ -253,19 +248,6 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "linkTitle": "Sign in",
-          "onPress": [Function],
-          "title": "Already have an account ?",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
     ],
     "type": [Function],
   },
@@ -340,11 +322,6 @@ ShallowWrapper {
                 "flex": 1,
               }
             }
-          />,
-          <BottomNav
-            linkTitle="Sign in"
-            onPress={[Function]}
-            title="Already have an account ?"
           />,
         ],
         "forceInset": Object {
@@ -504,19 +481,6 @@ ShallowWrapper {
             "style": Object {
               "flex": 1,
             },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "linkTitle": "Sign in",
-            "onPress": [Function],
-            "title": "Already have an account ?",
           },
           "ref": null,
           "rendered": null,

@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache --port 8082",
-    "android": "node node_modules/react-native/local-cli/cli.js run-android --port 8082",
-    "ios": "node node_modules/react-native/local-cli/cli.js run-ios --port 8082",
+    "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
+    "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "test": "jest",
     "lint": "eslint .",
     "flow": "flow",

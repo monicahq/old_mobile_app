@@ -44,11 +44,11 @@ export class Login extends Component {
 
           <View style={commonStyles.flex} />
 
-          <BottomNav
+          {/* <BottomNav
             title="Don't have an account ?"
             linkTitle="Sign up"
             onPress={navigate('Signup')}
-          />
+          /> */}
         </SafeAreaView>
       </KeyboardAwareScrollView>
     );

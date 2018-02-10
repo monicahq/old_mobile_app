@@ -21,16 +21,16 @@ export const Launch = ({navigate}) => (
         kids or what they prefer to eat!
       </Text>
 
-      <Button onPress={navigate('Signup')}>Get started</Button>
+      <Button onPress={navigate('Login')}>Get started</Button>
     </View>
 
     <View style={commonStyles.flex} />
 
-    <BottomNav
+    {/* <BottomNav
       title="Already have an account ?"
       linkTitle="Sign in"
       onPress={navigate('Login')}
-    />
+    /> */}
   </SafeAreaView>
 );
 
