@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "flow": "flow",
     "ios:beta": "cd ios && fastlane beta",
-    "ios:android": "cd ios && fastlane beta"
+    "android:alpha": "cd android && fastlane alpha",
+    "android:beta": "cd android && fastlane beta"
   },
   "dependencies": {
     "appcenter": "^1.1.0",
