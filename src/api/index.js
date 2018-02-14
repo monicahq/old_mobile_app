@@ -6,7 +6,9 @@ import {Contacts} from './contacts';
 import {tokenKey} from 'storage-keys';
 
 const frisbee = new Frisbee({
-  baseURI: 'https://app.monicahq.com',
+  baseURI: __DEV__
+    ? 'https://monica-staging.frb.io'
+    : 'https://app.monicahq.com',
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',

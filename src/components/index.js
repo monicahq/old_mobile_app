@@ -6,4 +6,5 @@ export * from './ContactListItem';
 export * from './Navbar';
 export * from './ContactAvatar';
 export * from './UnderConstruction';
+export * from './Touchable';
 export * from './FontelloIcon';

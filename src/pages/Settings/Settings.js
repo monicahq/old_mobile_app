@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {Text, Switch, View} from 'react-native';
+import {Text, Switch, View, Platform} from 'react-native';
 import {Button, Navbar} from 'components';
 
-import {commonStyles} from 'theme';
+import {commonStyles, primaryColor} from 'theme';
 import {styles} from './Settings.styles';
 
 export class Settings extends Component {
@@ -28,7 +28,12 @@ export class Settings extends Component {
         <View style={[commonStyles.flex, styles.container]}>
           <View style={styles.betaContainer}>
             <View style={styles.rowCentered}>
-              <Switch value={beta} onValueChange={subscribeBeta} />
+              <Switch
+                value={beta}
+                onValueChange={subscribeBeta}
+                // onTintColor={Platform.OS === 'android' && primaryColor}
+                thumbTintColor={Platform.OS === 'android' && primaryColor}
+              />
               <Text style={styles.betaTitle}>Early Beta access.</Text>
             </View>
 
