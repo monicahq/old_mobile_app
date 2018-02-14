@@ -49,7 +49,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#1361cb"
-                name="dashboard"
+                name="gauge"
                 size={25}
               />
               <Text
@@ -88,7 +88,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="people"
+                name="users"
                 size={25}
               />
               <Text
@@ -125,7 +125,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="add"
+                name="plus-circled"
                 size={25}
               />
               <Text
@@ -199,7 +199,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="settings"
+                name="cog"
                 size={25}
               />
               <Text
@@ -259,7 +259,7 @@ ShallowWrapper {
             <Icon
               allowFontScaling={false}
               color="#1361cb"
-              name="dashboard"
+              name="gauge"
               size={25}
             />
             <Text
@@ -293,7 +293,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#1361cb"
-                name="dashboard"
+                name="gauge"
                 size={25}
               />,
               <Text
@@ -331,7 +331,7 @@ ShallowWrapper {
               "props": Object {
                 "allowFontScaling": false,
                 "color": "#1361cb",
-                "name": "dashboard",
+                "name": "gauge",
                 "size": 25,
               },
               "ref": null,
@@ -384,7 +384,7 @@ ShallowWrapper {
             <Icon
               allowFontScaling={false}
               color="#8d8d8d"
-              name="people"
+              name="users"
               size={25}
             />
             <Text
@@ -416,7 +416,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="people"
+                name="users"
                 size={25}
               />,
               <Text
@@ -452,7 +452,7 @@ ShallowWrapper {
               "props": Object {
                 "allowFontScaling": false,
                 "color": "#8d8d8d",
-                "name": "people",
+                "name": "users",
                 "size": 25,
               },
               "ref": null,
@@ -503,7 +503,7 @@ ShallowWrapper {
             <Icon
               allowFontScaling={false}
               color="#8d8d8d"
-              name="add"
+              name="plus-circled"
               size={25}
             />
             <Text
@@ -535,7 +535,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="add"
+                name="plus-circled"
                 size={25}
               />,
               <Text
@@ -571,7 +571,7 @@ ShallowWrapper {
               "props": Object {
                 "allowFontScaling": false,
                 "color": "#8d8d8d",
-                "name": "add",
+                "name": "plus-circled",
                 "size": 25,
               },
               "ref": null,
@@ -741,7 +741,7 @@ ShallowWrapper {
             <Icon
               allowFontScaling={false}
               color="#8d8d8d"
-              name="settings"
+              name="cog"
               size={25}
             />
             <Text
@@ -773,7 +773,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="settings"
+                name="cog"
                 size={25}
               />,
               <Text
@@ -809,7 +809,7 @@ ShallowWrapper {
               "props": Object {
                 "allowFontScaling": false,
                 "color": "#8d8d8d",
-                "name": "settings",
+                "name": "cog",
                 "size": 25,
               },
               "ref": null,
@@ -870,7 +870,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#1361cb"
-                  name="dashboard"
+                  name="gauge"
                   size={25}
                 />
                 <Text
@@ -909,7 +909,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="people"
+                  name="users"
                   size={25}
                 />
                 <Text
@@ -946,7 +946,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="add"
+                  name="plus-circled"
                   size={25}
                 />
                 <Text
@@ -1020,7 +1020,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="settings"
+                  name="cog"
                   size={25}
                 />
                 <Text
@@ -1080,7 +1080,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#1361cb"
-                name="dashboard"
+                name="gauge"
                 size={25}
               />
               <Text
@@ -1114,7 +1114,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#1361cb"
-                  name="dashboard"
+                  name="gauge"
                   size={25}
                 />,
                 <Text
@@ -1152,7 +1152,7 @@ ShallowWrapper {
                 "props": Object {
                   "allowFontScaling": false,
                   "color": "#1361cb",
-                  "name": "dashboard",
+                  "name": "gauge",
                   "size": 25,
                 },
                 "ref": null,
@@ -1205,7 +1205,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="people"
+                name="users"
                 size={25}
               />
               <Text
@@ -1237,7 +1237,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="people"
+                  name="users"
                   size={25}
                 />,
                 <Text
@@ -1273,7 +1273,7 @@ ShallowWrapper {
                 "props": Object {
                   "allowFontScaling": false,
                   "color": "#8d8d8d",
-                  "name": "people",
+                  "name": "users",
                   "size": 25,
                 },
                 "ref": null,
@@ -1324,7 +1324,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="add"
+                name="plus-circled"
                 size={25}
               />
               <Text
@@ -1356,7 +1356,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="add"
+                  name="plus-circled"
                   size={25}
                 />,
                 <Text
@@ -1392,7 +1392,7 @@ ShallowWrapper {
                 "props": Object {
                   "allowFontScaling": false,
                   "color": "#8d8d8d",
-                  "name": "add",
+                  "name": "plus-circled",
                   "size": 25,
                 },
                 "ref": null,
@@ -1562,7 +1562,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="settings"
+                name="cog"
                 size={25}
               />
               <Text
@@ -1594,7 +1594,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="settings"
+                  name="cog"
                   size={25}
                 />,
                 <Text
@@ -1630,7 +1630,7 @@ ShallowWrapper {
                 "props": Object {
                   "allowFontScaling": false,
                   "color": "#8d8d8d",
-                  "name": "settings",
+                  "name": "cog",
                   "size": 25,
                 },
                 "ref": null,
@@ -1726,7 +1726,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="dashboard"
+                name="gauge"
                 size={25}
               />
               <Text
@@ -1763,7 +1763,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#1361cb"
-                name="people"
+                name="users"
                 size={25}
               />
               <Text
@@ -1802,7 +1802,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="add"
+                name="plus-circled"
                 size={25}
               />
               <Text
@@ -1876,7 +1876,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="settings"
+                name="cog"
                 size={25}
               />
               <Text
@@ -1936,7 +1936,7 @@ ShallowWrapper {
             <Icon
               allowFontScaling={false}
               color="#8d8d8d"
-              name="dashboard"
+              name="gauge"
               size={25}
             />
             <Text
@@ -1968,7 +1968,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="dashboard"
+                name="gauge"
                 size={25}
               />,
               <Text
@@ -2004,7 +2004,7 @@ ShallowWrapper {
               "props": Object {
                 "allowFontScaling": false,
                 "color": "#8d8d8d",
-                "name": "dashboard",
+                "name": "gauge",
                 "size": 25,
               },
               "ref": null,
@@ -2055,7 +2055,7 @@ ShallowWrapper {
             <Icon
               allowFontScaling={false}
               color="#1361cb"
-              name="people"
+              name="users"
               size={25}
             />
             <Text
@@ -2089,7 +2089,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#1361cb"
-                name="people"
+                name="users"
                 size={25}
               />,
               <Text
@@ -2127,7 +2127,7 @@ ShallowWrapper {
               "props": Object {
                 "allowFontScaling": false,
                 "color": "#1361cb",
-                "name": "people",
+                "name": "users",
                 "size": 25,
               },
               "ref": null,
@@ -2180,7 +2180,7 @@ ShallowWrapper {
             <Icon
               allowFontScaling={false}
               color="#8d8d8d"
-              name="add"
+              name="plus-circled"
               size={25}
             />
             <Text
@@ -2212,7 +2212,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="add"
+                name="plus-circled"
                 size={25}
               />,
               <Text
@@ -2248,7 +2248,7 @@ ShallowWrapper {
               "props": Object {
                 "allowFontScaling": false,
                 "color": "#8d8d8d",
-                "name": "add",
+                "name": "plus-circled",
                 "size": 25,
               },
               "ref": null,
@@ -2418,7 +2418,7 @@ ShallowWrapper {
             <Icon
               allowFontScaling={false}
               color="#8d8d8d"
-              name="settings"
+              name="cog"
               size={25}
             />
             <Text
@@ -2450,7 +2450,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="settings"
+                name="cog"
                 size={25}
               />,
               <Text
@@ -2486,7 +2486,7 @@ ShallowWrapper {
               "props": Object {
                 "allowFontScaling": false,
                 "color": "#8d8d8d",
-                "name": "settings",
+                "name": "cog",
                 "size": 25,
               },
               "ref": null,
@@ -2547,7 +2547,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="dashboard"
+                  name="gauge"
                   size={25}
                 />
                 <Text
@@ -2584,7 +2584,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#1361cb"
-                  name="people"
+                  name="users"
                   size={25}
                 />
                 <Text
@@ -2623,7 +2623,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="add"
+                  name="plus-circled"
                   size={25}
                 />
                 <Text
@@ -2697,7 +2697,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="settings"
+                  name="cog"
                   size={25}
                 />
                 <Text
@@ -2757,7 +2757,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="dashboard"
+                name="gauge"
                 size={25}
               />
               <Text
@@ -2789,7 +2789,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="dashboard"
+                  name="gauge"
                   size={25}
                 />,
                 <Text
@@ -2825,7 +2825,7 @@ ShallowWrapper {
                 "props": Object {
                   "allowFontScaling": false,
                   "color": "#8d8d8d",
-                  "name": "dashboard",
+                  "name": "gauge",
                   "size": 25,
                 },
                 "ref": null,
@@ -2876,7 +2876,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#1361cb"
-                name="people"
+                name="users"
                 size={25}
               />
               <Text
@@ -2910,7 +2910,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#1361cb"
-                  name="people"
+                  name="users"
                   size={25}
                 />,
                 <Text
@@ -2948,7 +2948,7 @@ ShallowWrapper {
                 "props": Object {
                   "allowFontScaling": false,
                   "color": "#1361cb",
-                  "name": "people",
+                  "name": "users",
                   "size": 25,
                 },
                 "ref": null,
@@ -3001,7 +3001,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="add"
+                name="plus-circled"
                 size={25}
               />
               <Text
@@ -3033,7 +3033,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="add"
+                  name="plus-circled"
                   size={25}
                 />,
                 <Text
@@ -3069,7 +3069,7 @@ ShallowWrapper {
                 "props": Object {
                   "allowFontScaling": false,
                   "color": "#8d8d8d",
-                  "name": "add",
+                  "name": "plus-circled",
                   "size": 25,
                 },
                 "ref": null,
@@ -3239,7 +3239,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="settings"
+                name="cog"
                 size={25}
               />
               <Text
@@ -3271,7 +3271,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="settings"
+                  name="cog"
                   size={25}
                 />,
                 <Text
@@ -3307,7 +3307,7 @@ ShallowWrapper {
                 "props": Object {
                   "allowFontScaling": false,
                   "color": "#8d8d8d",
-                  "name": "settings",
+                  "name": "cog",
                   "size": 25,
                 },
                 "ref": null,
@@ -3403,7 +3403,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="dashboard"
+                name="gauge"
                 size={25}
               />
               <Text
@@ -3440,7 +3440,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#1361cb"
-                name="people"
+                name="users"
                 size={25}
               />
               <Text
@@ -3479,7 +3479,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="add"
+                name="plus-circled"
                 size={25}
               />
               <Text
@@ -3553,7 +3553,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="settings"
+                name="cog"
                 size={25}
               />
               <Text
@@ -3613,7 +3613,7 @@ ShallowWrapper {
             <Icon
               allowFontScaling={false}
               color="#8d8d8d"
-              name="dashboard"
+              name="gauge"
               size={25}
             />
             <Text
@@ -3645,7 +3645,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="dashboard"
+                name="gauge"
                 size={25}
               />,
               <Text
@@ -3681,7 +3681,7 @@ ShallowWrapper {
               "props": Object {
                 "allowFontScaling": false,
                 "color": "#8d8d8d",
-                "name": "dashboard",
+                "name": "gauge",
                 "size": 25,
               },
               "ref": null,
@@ -3732,7 +3732,7 @@ ShallowWrapper {
             <Icon
               allowFontScaling={false}
               color="#1361cb"
-              name="people"
+              name="users"
               size={25}
             />
             <Text
@@ -3766,7 +3766,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#1361cb"
-                name="people"
+                name="users"
                 size={25}
               />,
               <Text
@@ -3804,7 +3804,7 @@ ShallowWrapper {
               "props": Object {
                 "allowFontScaling": false,
                 "color": "#1361cb",
-                "name": "people",
+                "name": "users",
                 "size": 25,
               },
               "ref": null,
@@ -3857,7 +3857,7 @@ ShallowWrapper {
             <Icon
               allowFontScaling={false}
               color="#8d8d8d"
-              name="add"
+              name="plus-circled"
               size={25}
             />
             <Text
@@ -3889,7 +3889,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="add"
+                name="plus-circled"
                 size={25}
               />,
               <Text
@@ -3925,7 +3925,7 @@ ShallowWrapper {
               "props": Object {
                 "allowFontScaling": false,
                 "color": "#8d8d8d",
-                "name": "add",
+                "name": "plus-circled",
                 "size": 25,
               },
               "ref": null,
@@ -4095,7 +4095,7 @@ ShallowWrapper {
             <Icon
               allowFontScaling={false}
               color="#8d8d8d"
-              name="settings"
+              name="cog"
               size={25}
             />
             <Text
@@ -4127,7 +4127,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="settings"
+                name="cog"
                 size={25}
               />,
               <Text
@@ -4163,7 +4163,7 @@ ShallowWrapper {
               "props": Object {
                 "allowFontScaling": false,
                 "color": "#8d8d8d",
-                "name": "settings",
+                "name": "cog",
                 "size": 25,
               },
               "ref": null,
@@ -4224,7 +4224,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="dashboard"
+                  name="gauge"
                   size={25}
                 />
                 <Text
@@ -4261,7 +4261,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#1361cb"
-                  name="people"
+                  name="users"
                   size={25}
                 />
                 <Text
@@ -4300,7 +4300,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="add"
+                  name="plus-circled"
                   size={25}
                 />
                 <Text
@@ -4374,7 +4374,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="settings"
+                  name="cog"
                   size={25}
                 />
                 <Text
@@ -4434,7 +4434,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="dashboard"
+                name="gauge"
                 size={25}
               />
               <Text
@@ -4466,7 +4466,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="dashboard"
+                  name="gauge"
                   size={25}
                 />,
                 <Text
@@ -4502,7 +4502,7 @@ ShallowWrapper {
                 "props": Object {
                   "allowFontScaling": false,
                   "color": "#8d8d8d",
-                  "name": "dashboard",
+                  "name": "gauge",
                   "size": 25,
                 },
                 "ref": null,
@@ -4553,7 +4553,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#1361cb"
-                name="people"
+                name="users"
                 size={25}
               />
               <Text
@@ -4587,7 +4587,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#1361cb"
-                  name="people"
+                  name="users"
                   size={25}
                 />,
                 <Text
@@ -4625,7 +4625,7 @@ ShallowWrapper {
                 "props": Object {
                   "allowFontScaling": false,
                   "color": "#1361cb",
-                  "name": "people",
+                  "name": "users",
                   "size": 25,
                 },
                 "ref": null,
@@ -4678,7 +4678,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="add"
+                name="plus-circled"
                 size={25}
               />
               <Text
@@ -4710,7 +4710,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="add"
+                  name="plus-circled"
                   size={25}
                 />,
                 <Text
@@ -4746,7 +4746,7 @@ ShallowWrapper {
                 "props": Object {
                   "allowFontScaling": false,
                   "color": "#8d8d8d",
-                  "name": "add",
+                  "name": "plus-circled",
                   "size": 25,
                 },
                 "ref": null,
@@ -4916,7 +4916,7 @@ ShallowWrapper {
               <Icon
                 allowFontScaling={false}
                 color="#8d8d8d"
-                name="settings"
+                name="cog"
                 size={25}
               />
               <Text
@@ -4948,7 +4948,7 @@ ShallowWrapper {
                 <Icon
                   allowFontScaling={false}
                   color="#8d8d8d"
-                  name="settings"
+                  name="cog"
                   size={25}
                 />,
                 <Text
@@ -4984,7 +4984,7 @@ ShallowWrapper {
                 "props": Object {
                   "allowFontScaling": false,
                   "color": "#8d8d8d",
-                  "name": "settings",
+                  "name": "cog",
                   "size": 25,
                 },
                 "ref": null,

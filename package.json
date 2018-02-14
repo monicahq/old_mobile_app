@@ -11,7 +11,8 @@
     "flow": "flow",
     "ios:beta": "cd ios && fastlane beta",
     "android:alpha": "cd android && fastlane alpha",
-    "android:beta": "cd android && fastlane beta"
+    "android:beta": "cd android && fastlane beta",
+    "clean": "watchman watch-del-all && rm -rf node_modules && yarn && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/haste-map-react-native-packager-*"
   },
   "dependencies": {
     "appcenter": "^1.1.0",
@@ -27,7 +28,7 @@
     "react-native": "0.53.0",
     "react-native-actionsheet": "^2.3.0",
     "react-native-code-push": "^5.2.1",
-    "react-native-device-info": "^0.13.0",
+    "react-native-device-info": "^0.15.1",
     "react-native-keyboard-aware-scroll-view": "^0.4.3",
     "react-native-navbar": "^2.1.0",
     "react-native-search-bar": "^3.4.0",
@@ -42,7 +43,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.1.2",
-    "babel-jest": "22.2.0",
+    "babel-jest": "22.2.2",
     "babel-plugin-module-resolver": "^3.0.0",
     "babel-preset-react-native": "4.0.0",
     "enzyme": "^3.3.0",
