@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 
-import {getContacts} from 'redux/contacts';
+import {getContacts, searchContacts} from 'redux/contacts';
 import {navigate} from 'redux/router';
 import {Contacts} from './Contacts';
 
@@ -15,6 +15,8 @@ export const ContactsScreen = connect(
   dispatch => {
     return {
       getContacts: shouldInvalidate => dispatch(getContacts(shouldInvalidate)),
+      searchContacts: (query, shouldInvalidate) =>
+        dispatch(searchContacts(query, shouldInvalidate)),
       navigateToContact: contactId => () =>
         dispatch(navigate('Contact', contactId)),
     };
