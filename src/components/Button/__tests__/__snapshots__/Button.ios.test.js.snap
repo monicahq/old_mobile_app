@@ -1,316 +1,166 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Components Button should renders correctly 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Button
-    disabled={false}
-    loading={false}
-    onPress={[Function]}
+exports[`Components Button IOS should renders correctly 1`] = `
+<TouchableOpacity
+  activeOpacity={0.4}
+  disabled={false}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(43, 187, 72)",
+        "borderRadius": 5,
+        "flexDirection": "row",
+        "height": 45,
+        "justifyContent": "center",
+        "marginVertical": 10,
+        "width": "100%",
+      },
+      false,
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "white",
+        "fontWeight": "bold",
+        "textAlign": "center",
+      }
+    }
   >
     Test
-  </Button>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "activeOpacity": 0.4,
-      "children": Array [
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "white",
-              "fontWeight": "bold",
-              "textAlign": "center",
-            }
-          }
-        >
-          Test
-        </Text>,
-        false,
-      ],
-      "disabled": false,
-      "onPress": [Function],
-      "style": Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgb(43, 187, 72)",
-          "borderRadius": 5,
-          "flexDirection": "row",
-          "height": 45,
-          "justifyContent": "center",
-          "marginVertical": 10,
-          "width": "100%",
-        },
-        false,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "accessible": true,
-          "allowFontScaling": true,
-          "children": "Test",
-          "ellipsizeMode": "tail",
-          "style": Object {
-            "color": "white",
-            "fontWeight": "bold",
-            "textAlign": "center",
-          },
-        },
-        "ref": null,
-        "rendered": "Test",
-        "type": [Function],
-      },
-      false,
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "activeOpacity": 0.4,
-        "children": Array [
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "white",
-                "fontWeight": "bold",
-                "textAlign": "center",
-              }
-            }
-          >
-            Test
-          </Text>,
-          false,
-        ],
-        "disabled": false,
-        "onPress": [Function],
-        "style": Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "rgb(43, 187, 72)",
-            "borderRadius": 5,
-            "flexDirection": "row",
-            "height": 45,
-            "justifyContent": "center",
-            "marginVertical": 10,
-            "width": "100%",
-          },
-          false,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "accessible": true,
-            "allowFontScaling": true,
-            "children": "Test",
-            "ellipsizeMode": "tail",
-            "style": Object {
-              "color": "white",
-              "fontWeight": "bold",
-              "textAlign": "center",
-            },
-          },
-          "ref": null,
-          "rendered": "Test",
-          "type": [Function],
-        },
-        false,
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+  </Text>
+</TouchableOpacity>
 `;
 
-exports[`Components Button should renders correctly 2`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Button
-    disabled={false}
-    loading={false}
-    onPress={[Function]}
-    title="qdwdqw"
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "activeOpacity": 0.4,
-      "children": Array [
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "white",
-              "fontWeight": "bold",
-              "textAlign": "center",
-            }
-          }
-        >
-          qdwdqw
-        </Text>,
-        false,
-      ],
-      "disabled": false,
-      "onPress": [Function],
-      "style": Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "rgb(43, 187, 72)",
-          "borderRadius": 5,
-          "flexDirection": "row",
-          "height": 45,
-          "justifyContent": "center",
-          "marginVertical": 10,
-          "width": "100%",
-        },
-        false,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
+exports[`Components Button IOS should renders correctly 2`] = `
+<TouchableOpacity
+  activeOpacity={0.4}
+  disabled={false}
+  onPress={[Function]}
+  style={
+    Array [
       Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "accessible": true,
-          "allowFontScaling": true,
-          "children": "qdwdqw",
-          "ellipsizeMode": "tail",
-          "style": Object {
-            "color": "white",
-            "fontWeight": "bold",
-            "textAlign": "center",
-          },
-        },
-        "ref": null,
-        "rendered": "qdwdqw",
-        "type": [Function],
+        "alignItems": "center",
+        "backgroundColor": "rgb(43, 187, 72)",
+        "borderRadius": 5,
+        "flexDirection": "row",
+        "height": 45,
+        "justifyContent": "center",
+        "marginVertical": 10,
+        "width": "100%",
       },
       false,
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "activeOpacity": 0.4,
-        "children": Array [
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "white",
-                "fontWeight": "bold",
-                "textAlign": "center",
-              }
-            }
-          >
-            qdwdqw
-          </Text>,
-          false,
-        ],
-        "disabled": false,
-        "onPress": [Function],
-        "style": Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "rgb(43, 187, 72)",
-            "borderRadius": 5,
-            "flexDirection": "row",
-            "height": 45,
-            "justifyContent": "center",
-            "marginVertical": 10,
-            "width": "100%",
-          },
-          false,
-        ],
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "white",
+        "fontWeight": "bold",
+        "textAlign": "center",
+      }
+    }
+  >
+    qdwdqw
+  </Text>
+</TouchableOpacity>
+`;
+
+exports[`Components Button IOS should renders correctly 3`] = `
+<TouchableOpacity
+  activeOpacity={0.4}
+  disabled={false}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(43, 187, 72)",
+        "borderRadius": 5,
+        "flexDirection": "row",
+        "height": 45,
+        "justifyContent": "center",
+        "marginVertical": 10,
+        "width": "100%",
       },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "accessible": true,
-            "allowFontScaling": true,
-            "children": "qdwdqw",
-            "ellipsizeMode": "tail",
-            "style": Object {
-              "color": "white",
-              "fontWeight": "bold",
-              "textAlign": "center",
-            },
-          },
-          "ref": null,
-          "rendered": "qdwdqw",
-          "type": [Function],
-        },
-        false,
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
+      false,
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "white",
+        "fontWeight": "bold",
+        "textAlign": "center",
+      }
+    }
+  >
+    My loading title
+  </Text>
+  <ActivityIndicator
+    animating={true}
+    color="#ffffff"
+    hidesWhenStopped={true}
+    size="small"
+    style={
+      Object {
+        "marginLeft": 10,
+      }
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`Components Button IOS should renders correctly 4`] = `
+<TouchableOpacity
+  activeOpacity={0.4}
+  disabled={true}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(43, 187, 72)",
+        "borderRadius": 5,
+        "flexDirection": "row",
+        "height": 45,
+        "justifyContent": "center",
+        "marginVertical": 10,
+        "width": "100%",
       },
-    },
-  },
-}
+      Object {
+        "backgroundColor": "rgba(43, 187, 72, 0.4)",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "white",
+        "fontWeight": "bold",
+        "textAlign": "center",
+      }
+    }
+  >
+    qdwdqw
+  </Text>
+</TouchableOpacity>
 `;

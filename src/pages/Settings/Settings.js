@@ -31,8 +31,9 @@ export class Settings extends Component {
               <Switch
                 value={beta}
                 onValueChange={subscribeBeta}
-                // onTintColor={Platform.OS === 'android' && primaryColor}
-                thumbTintColor={Platform.OS === 'android' && primaryColor}
+                thumbTintColor={
+                  (Platform.OS === 'android' && primaryColor) || null
+                }
               />
               <Text style={styles.betaTitle}>Early Beta access.</Text>
             </View>

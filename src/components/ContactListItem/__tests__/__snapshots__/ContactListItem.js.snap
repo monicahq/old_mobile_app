@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components ContactListItem should renders correctly 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "paddingHorizontal": 10,
+          "paddingVertical": 3,
+        },
+        undefined,
+      ]
+    }
+  >
+    <ContactAvatar
+      contact={Object {}}
+      size={50}
+    />
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+         
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#676767",
+          }
+        }
+      >
+        Last updated 
+        testDate
+      </Text>
+    </View>
+  </View>
+</TouchableOpacity>
+`;
+
+exports[`Components ContactListItem should renders correctly 2`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "paddingHorizontal": 10,
+          "paddingVertical": 3,
+        },
+        Object {
+          "backgroundColor": "#FBFBFB",
+        },
+      ]
+    }
+  >
+    <ContactAvatar
+      contact={Object {}}
+      size={50}
+    />
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+         
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#676767",
+          }
+        }
+      >
+        Last updated 
+        testDate
+      </Text>
+    </View>
+  </View>
+</TouchableOpacity>
+`;

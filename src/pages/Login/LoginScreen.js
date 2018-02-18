@@ -4,10 +4,12 @@ import {navigate, back} from 'redux/router';
 import {setToken} from 'redux/user';
 import {Login} from './Login';
 
-export const LoginScreen = connect(null, dispatch => {
+export const mapDispatchToProps = dispatch => {
   return {
     navigate: routeName => () => dispatch(navigate(routeName)),
     back: () => dispatch(back()),
     setToken: token => dispatch(setToken(token)),
   };
-})(Login);
+};
+
+export const LoginScreen = connect(null, mapDispatchToProps)(Login);

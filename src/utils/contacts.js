@@ -30,3 +30,10 @@ export const getAge = contact => {
   }
   return moment().diff(birthDate.date, 'years');
 };
+
+export const getInitials = contact => {
+  return (
+    (contact.first_name ? contact.first_name.charAt(0) : '') +
+    (contact.last_name ? contact.last_name.charAt(0) : '')
+  ).toUpperCase();
+};

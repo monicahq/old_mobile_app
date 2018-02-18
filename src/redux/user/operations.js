@@ -1,5 +1,5 @@
 import * as actions from './actions';
-import {API} from '../../api';
+import {API} from 'api';
 import {AsyncStorage} from 'react-native';
 import {tokenKey} from '../../storage-keys';
 

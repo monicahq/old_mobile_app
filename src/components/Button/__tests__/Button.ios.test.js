@@ -1,19 +1,39 @@
 import React from 'react';
 import {shallow} from 'enzyme';
+import toJson from 'enzyme-to-json';
 import {Button} from '../Button.ios';
 
 describe('Components', () => {
-  describe('Button', () => {
+  describe('Button IOS', () => {
     const defaultOnPress = {
       onPress: () => {},
     };
 
     it('should renders correctly', () => {
       expect(
-        shallow(<Button {...defaultOnPress}>Test</Button>),
+        toJson(shallow(<Button {...defaultOnPress}>Test</Button>)),
       ).toMatchSnapshot();
       expect(
-        shallow(<Button {...defaultOnPress} title="qdwdqw" />),
+        toJson(shallow(<Button {...defaultOnPress} title="qdwdqw" />)),
+      ).toMatchSnapshot();
+      expect(
+        toJson(
+          shallow(
+            <Button
+              {...defaultOnPress}
+              title="qdwdqw"
+              loading={true}
+              loadingTitle="My loading title"
+            />,
+          ),
+        ),
+      ).toMatchSnapshot();
+      expect(
+        toJson(
+          shallow(
+            <Button {...defaultOnPress} title="qdwdqw" disabled={true} />,
+          ),
+        ),
       ).toMatchSnapshot();
     });
 

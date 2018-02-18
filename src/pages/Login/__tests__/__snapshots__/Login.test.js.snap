@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages Login should renders correctly 1`] = `
+<_class
+  contentContainerStyle={
+    Object {
+      "flex": 1,
+    }
+  }
+  enableAutomaticScroll={true}
+  enableResetScrollToCoords={true}
+  extraHeight={75}
+  extraScrollHeight={0}
+  keyboardOpeningTime={250}
+  viewIsInsideTabBar={false}
+>
+  <withOrientation
+    forceInset={
+      Object {
+        "top": "always",
+      }
+    }
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Back
+      onPress={[MockFunction]}
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingHorizontal": 30,
+          "width": "100%",
+        }
+      }
+    >
+      <Image
+        source={1}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 18,
+            "fontWeight": "bold",
+            "marginBottom": 20,
+            "marginTop": 40,
+            "textAlign": "center",
+          }
+        }
+      >
+        Sign in with your account
+      </Text>
+      <LoginFormContainer
+        onSuccess={[Function]}
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+  </withOrientation>
+</_class>
+`;

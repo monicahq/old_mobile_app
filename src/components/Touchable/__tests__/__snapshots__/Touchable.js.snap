@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Touchable android should renders correctly 1`] = `
+<DummyTouchableNativeFeedback
+  onPress={[MockFunction]}
+>
+  <View>
+    <View />
+  </View>
+</DummyTouchableNativeFeedback>
+`;
+
+exports[`Components Touchable ios should renders correctly 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+>
+  <View />
+  <View />
+</TouchableOpacity>
+`;

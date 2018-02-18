@@ -5,7 +5,7 @@ import {SafeAreaView} from 'react-navigation';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 
 import {LoginFormContainer} from './form/LoginFormContainer';
-import {Back, BottomNav} from 'components';
+import {Back} from 'components';
 import {commonStyles, forceInset, preAuthScreensStyles} from 'theme';
 
 export class Login extends Component {
@@ -22,7 +22,8 @@ export class Login extends Component {
   };
 
   render() {
-    const {navigate, back} = this.props;
+    const {back} = this.props;
+    // const {navigate} = this.props;
 
     return (
       <KeyboardAwareScrollView contentContainerStyle={commonStyles.flex}>
