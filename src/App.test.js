@@ -1,11 +1,14 @@
+import React from 'react';
 import 'react-native';
-// import React from 'react';
-// import {App} from './App';
+import {App} from './App';
+import renderer from 'react-test-renderer';
 
-// Note: test renderer must be required after react-native.
-// import renderer from 'react-test-renderer';
+jest.mock('./CodePush', () => ({
+  codePush: Component => Component,
+}));
 
-it('renders correctly', () => {
-  // renderer.create(<App />);
-  expect(true).toBe(true);
+describe('App', () => {
+  it('renders correctly', () => {
+    renderer.create(<App />);
+  });
 });

@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 
 import {Contact} from './Contact';
-import {back} from 'redux/router';
+import {back, navigate} from 'redux/router';
 
 export const ContactScreen = connect(
   (state, {navigation}) => ({
@@ -9,5 +9,6 @@ export const ContactScreen = connect(
   }),
   dispatch => ({
     back: () => dispatch(back()),
+    navigate: routeName => () => dispatch(navigate(routeName)),
   }),
 )(Contact);

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components BottomNav should renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "borderColor": "#E2E4E5",
+      "borderTopWidth": 0.5,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "paddingVertical": 15,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Bottom Nav title
+     
+  </Text>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    hitSlop={
+      Object {
+        "bottom": 15,
+        "left": 15,
+        "right": 15,
+        "top": 15,
+      }
+    }
+    onPress={[MockFunction]}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#1361cb",
+        }
+      }
+    >
+      Link title
+    </Text>
+  </TouchableOpacity>
+</View>
+`;

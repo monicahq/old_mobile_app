@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Navbar Android should renders correctly 1`] = `
+<IconToolbarAndroid
+  actions={
+    Array [
+      Object {
+        "iconName": "close",
+        "iconSize": 30,
+        "show": "always",
+        "title": "Close",
+      },
+    ]
+  }
+  iconSize={24}
+  logo={1}
+  onActionSelected={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#355974",
+      "height": 56,
+    }
+  }
+  title="  My title"
+  titleColor="white"
+/>
+`;
+
+exports[`Components Navbar Android should renders correctly 2`] = `
+<IconToolbarAndroid
+  iconSize={24}
+  logo={1}
+  onActionSelected={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#355974",
+      "height": 56,
+    }
+  }
+  title="  My title"
+  titleColor="white"
+/>
+`;

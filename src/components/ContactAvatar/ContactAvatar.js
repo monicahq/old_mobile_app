@@ -1,7 +1,7 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {View, Text, Image, ViewPropTypes} from 'react-native';
-import {getAvatarUrl, getAvatarColor} from 'utils/contacts';
+import {getAvatarUrl, getAvatarColor, getInitials} from 'utils/contacts';
 
 import {styles} from './ContactAvatar.styles';
 
@@ -11,14 +11,6 @@ export class ContactAvatar extends PureComponent {
     size: PropTypes.number.isRequired,
     style: ViewPropTypes.style,
   };
-  getInitials() {
-    const {contact} = this.props;
-
-    return (
-      (contact.first_name ? contact.first_name.charAt(0) : '') +
-      (contact.last_name ? contact.last_name.charAt(0) : '')
-    ).toUpperCase();
-  }
 
   render() {
     const {contact, size, style} = this.props;
@@ -43,7 +35,7 @@ export class ContactAvatar extends PureComponent {
           style,
           {backgroundColor: getAvatarColor(contact) || 'rgb(112, 149, 18)'},
         ]}>
-        <Text style={styles.text}>{this.getInitials()}</Text>
+        <Text style={styles.text}>{getInitials(contact)}</Text>
       </View>
     );
   }

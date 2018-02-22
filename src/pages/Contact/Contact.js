@@ -14,9 +14,10 @@ export class Contact extends Component {
   static propTypes = {
     contact: PropTypes.object.isRequired,
     back: PropTypes.func.isRequired,
+    navigate: PropTypes.func.isRequired,
   };
   render() {
-    const {contact, back} = this.props;
+    const {contact, back, navigate} = this.props;
 
     const age = getAge(contact);
     console.log(contact);
@@ -46,57 +47,43 @@ export class Contact extends Component {
           </View>
           <View style={styles.bloc}>
             <ContactActivityRow
-              onPress={() => {
-                console.log('Test');
-              }}
+              onPress={navigate('Calls')}
               image={require('assets/icons/phone.png')}
               title="Phone calls"
               count={contact.statistics.number_of_calls}
             />
             <ContactActivityRow
-              onPress={() => {
-                console.log('Test');
-              }}
+              onPress={navigate('Activities')}
               image={require('assets/icons/activities.png')}
               title="Activities"
               count={contact.statistics.number_of_activities}
             />
             <ContactActivityRow
-              onPress={() => {
-                console.log('Test');
-              }}
+              onPress={navigate('Reminders')}
               image={require('assets/icons/reminders.png')}
               title="Reminders"
               count={contact.statistics.number_of_reminders}
             />
             <ContactActivityRow
-              onPress={() => {
-                console.log('Test');
-              }}
+              onPress={navigate('Tasks')}
               image={require('assets/icons/tasks.png')}
               title="Tasks"
               count={contact.statistics.number_of_tasks}
             />
             <ContactActivityRow
-              onPress={() => {
-                console.log('Test');
-              }}
+              onPress={navigate('Notes')}
               image={require('assets/icons/notes.png')}
               title="Notes"
               count={contact.statistics.number_of_notes}
             />
             <ContactActivityRow
-              onPress={() => {
-                console.log('Test');
-              }}
+              onPress={navigate('Gifts')}
               image={require('assets/icons/gift.png')}
               title="Gifts"
               count={contact.statistics.number_of_gifts}
             />
             <ContactActivityRow
-              onPress={() => {
-                console.log('Test');
-              }}
+              onPress={navigate('Debts')}
               image={require('assets/icons/debts.png')}
               title="Debts"
               count={contact.statistics.number_of_debts}

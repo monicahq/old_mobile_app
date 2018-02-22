@@ -11,7 +11,6 @@ export class TextInput extends Component {
 
   static propTypes = {
     title: PropTypes.string,
-    children: PropTypes.string,
     touched: PropTypes.bool,
     error: PropTypes.string,
   };

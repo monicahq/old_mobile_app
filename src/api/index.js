@@ -24,15 +24,16 @@ export const API = {
 };
 
 // Get token from phone storage and add it to headers
-AsyncStorage.getItem(tokenKey)
-  .then(token => {
+(async () => {
+  try {
+    const token = await AsyncStorage.getItem(tokenKey);
     if (token) {
       frisbee.jwt(token);
     }
-  })
-  .catch(err => {
+  } catch (err) {
     console.warn(err);
-  });
+  }
+})();
 
 /**
  * Interceptor

@@ -1,5 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
+import toJson from 'enzyme-to-json';
 import {Tabbar} from '../Tabbar';
 
 describe('Components', () => {
@@ -24,9 +25,13 @@ describe('Components', () => {
     };
 
     it('should renders correctly', () => {
-      expect(shallow(<Tabbar navigation={dashboardActive} />)).toMatchSnapshot();// eslint-disable-line
-      expect(shallow(<Tabbar navigation={contactsActive} />)).toMatchSnapshot();
-      expect(shallow(<Tabbar navigation={loginActive} />)).toMatchSnapshot();
+      expect(toJson(shallow(<Tabbar navigation={dashboardActive} />))).toMatchSnapshot();// eslint-disable-line
+      expect(
+        toJson(shallow(<Tabbar navigation={contactsActive} />)),
+      ).toMatchSnapshot();
+      expect(
+        toJson(shallow(<Tabbar navigation={loginActive} />)),
+      ).toMatchSnapshot();
     });
   });
 });

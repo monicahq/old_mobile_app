@@ -7,7 +7,7 @@ const initialState = () =>
     AppNavigator.router.getActionForPathAndParams('Launch'),
   );
 
-export default function(state = initialState(), action) {
+export const routerReducer = (state = initialState(), action) => {
   if (action.type === types.BACK || action.type === types.NAVIGATE) {
     const nextState = AppNavigator.router.getStateForAction(action, state);
     return nextState || state;
@@ -20,4 +20,4 @@ export default function(state = initialState(), action) {
   }
 
   return state;
-}
+};

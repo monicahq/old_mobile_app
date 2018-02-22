@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Button Android should renders correctly 1`] = `
+<DummyTouchableNativeFeedback
+  disabled={false}
+  onPress={[Function]}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(43, 187, 72)",
+          "borderRadius": 5,
+          "flexDirection": "row",
+          "height": 45,
+          "justifyContent": "center",
+          "marginVertical": 10,
+          "width": "100%",
+        },
+        false,
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      TEST
+    </Text>
+  </View>
+</DummyTouchableNativeFeedback>
+`;
+
+exports[`Components Button Android should renders correctly 2`] = `
+<DummyTouchableNativeFeedback
+  disabled={false}
+  onPress={[Function]}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(43, 187, 72)",
+          "borderRadius": 5,
+          "flexDirection": "row",
+          "height": 45,
+          "justifyContent": "center",
+          "marginVertical": 10,
+          "width": "100%",
+        },
+        false,
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      QDWDQW
+    </Text>
+  </View>
+</DummyTouchableNativeFeedback>
+`;
+
+exports[`Components Button Android should renders correctly 3`] = `
+<DummyTouchableNativeFeedback
+  disabled={false}
+  onPress={[Function]}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(43, 187, 72)",
+          "borderRadius": 5,
+          "flexDirection": "row",
+          "height": 45,
+          "justifyContent": "center",
+          "marginVertical": 10,
+          "width": "100%",
+        },
+        false,
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      QDWDQW
+    </Text>
+    <ActivityIndicator
+      animating={true}
+      color="#ffffff"
+      hidesWhenStopped={true}
+      size="small"
+      style={
+        Object {
+          "marginLeft": 10,
+        }
+      }
+    />
+  </View>
+</DummyTouchableNativeFeedback>
+`;
+
+exports[`Components Button Android should renders correctly 4`] = `
+<DummyTouchableNativeFeedback
+  disabled={true}
+  onPress={[Function]}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(43, 187, 72)",
+          "borderRadius": 5,
+          "flexDirection": "row",
+          "height": 45,
+          "justifyContent": "center",
+          "marginVertical": 10,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "rgba(43, 187, 72, 0.4)",
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      QDWDQW
+    </Text>
+  </View>
+</DummyTouchableNativeFeedback>
+`;

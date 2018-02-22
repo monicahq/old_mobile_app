@@ -4,7 +4,7 @@ import {Text, Image, View} from 'react-native';
 import {SafeAreaView} from 'react-navigation';
 
 import {commonStyles, forceInset, preAuthScreensStyles} from 'theme';
-import {Button, BottomNav} from 'components';
+import {Button} from 'components';
 
 export const Launch = ({navigate}) => (
   <SafeAreaView forceInset={forceInset} style={preAuthScreensStyles.container}>

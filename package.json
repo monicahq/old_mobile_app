@@ -48,6 +48,7 @@
     "babel-preset-react-native": "4.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.1",
     "eslint": "^4.17.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-standard": "^11.0.0-beta.0",
@@ -71,6 +72,9 @@
     "coverageReporters": [
       "text",
       "lcov"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
     ],
     "preset": "react-native",
     "transform": {

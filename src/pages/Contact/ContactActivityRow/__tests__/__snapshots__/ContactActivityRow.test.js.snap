@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages Login should renders correctly 1`] = `
+<View>
+  <Touchable
+    onPress={[MockFunction]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "height": 50,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "uri": "image.net",
+        }
+      }
+      style={
+        Object {
+          "marginLeft": 5,
+          "marginRight": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        MY TITLE
+      </Text>
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      0
+    </Text>
+    <Icon
+      allowFontScaling={false}
+      color="#AAA"
+      name="ios-arrow-forward"
+      size={25}
+      style={
+        Object {
+          "marginLeft": 10,
+        }
+      }
+    />
+  </Touchable>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#E2E4E5",
+        "height": 0.5,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Pages Login should renders correctly with last true 1`] = `
+<View>
+  <Touchable
+    onPress={[MockFunction]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "height": 50,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "uri": "image.net",
+        }
+      }
+      style={
+        Object {
+          "marginLeft": 5,
+          "marginRight": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        MY TITLE
+      </Text>
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      0
+    </Text>
+    <Icon
+      allowFontScaling={false}
+      color="#AAA"
+      name="ios-arrow-forward"
+      size={25}
+      style={
+        Object {
+          "marginLeft": 10,
+        }
+      }
+    />
+  </Touchable>
+</View>
+`;

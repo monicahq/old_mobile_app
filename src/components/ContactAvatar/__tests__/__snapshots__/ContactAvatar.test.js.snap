@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components ContactAvatar should renders correctly 1`] = `
+<Image
+  source={
+    Object {
+      "uri": "url",
+    }
+  }
+  style={
+    Array [
+      Object {
+        "borderRadius": 3,
+        "justifyContent": "center",
+      },
+      Object {
+        "height": 15,
+        "width": 15,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Components ContactAvatar should renders correctly 2`] = `
+<Image
+  source={
+    Object {
+      "uri": "url",
+    }
+  }
+  style={
+    Array [
+      Object {
+        "borderRadius": 3,
+        "justifyContent": "center",
+      },
+      Object {
+        "height": 25,
+        "width": 25,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Components ContactAvatar should renders correctly 3`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 3,
+        "justifyContent": "center",
+      },
+      Object {
+        "height": 25,
+        "width": 25,
+      },
+      undefined,
+      Object {
+        "backgroundColor": "blue",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "white",
+        "fontSize": 20,
+        "textAlign": "center",
+      }
+    }
+  >
+    TM
+  </Text>
+</View>
+`;
+
+exports[`Components ContactAvatar should renders correctly 4`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 3,
+        "justifyContent": "center",
+      },
+      Object {
+        "height": 25,
+        "width": 25,
+      },
+      undefined,
+      Object {
+        "backgroundColor": "rgb(112, 149, 18)",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "white",
+        "fontSize": 20,
+        "textAlign": "center",
+      }
+    }
+  >
+    TM
+  </Text>
+</View>
+`;
