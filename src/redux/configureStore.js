@@ -1,5 +1,6 @@
 import {createStore, compose, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
+import createDebounce from 'redux-debounced';
 import {devToolsEnhancer} from 'redux-devtools-extension';
 import {createReactNavigationReduxMiddleware} from 'react-navigation-redux-helpers';
 
@@ -15,13 +16,11 @@ export default function configureStore() {
     rootReducer,
     __DEV__
       ? compose(
-          applyMiddleware(thunk),
-          applyMiddleware(rnNavigationMiddleware),
+          applyMiddleware(createDebounce(), thunk, rnNavigationMiddleware),
           devToolsEnhancer(),
         )
       : compose(
-          applyMiddleware(thunk),
-          applyMiddleware(rnNavigationMiddleware),
+          applyMiddleware(createDebounce(), thunk, rnNavigationMiddleware),
         ),
   );
 }

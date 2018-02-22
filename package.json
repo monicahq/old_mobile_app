@@ -39,6 +39,7 @@
     "react-navigation-redux-helpers": "^1.0.1",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
+    "redux-debounced": "^0.4.0",
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {

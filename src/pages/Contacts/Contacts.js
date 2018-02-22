@@ -9,6 +9,7 @@ import {styles} from './Contacts.styles';
 export class Contacts extends PureComponent {
   static propTypes = {
     getContacts: PropTypes.func.isRequired,
+    searchContacts: PropTypes.func.isRequired,
     contacts: PropTypes.object.isRequired,
     list: PropTypes.array.isRequired,
     isFetching: PropTypes.bool.isRequired,
@@ -54,8 +55,9 @@ export class Contacts extends PureComponent {
     }
   }
 
-  onSearchTextChanged = text => {
-    console.warn(text);
+  onSearchTextChanged = query => {
+    const {searchContacts} = this.props;
+    searchContacts(query);
   };
 
   onEndReached = () => {
@@ -66,11 +68,11 @@ export class Contacts extends PureComponent {
     this.props.getContacts(true);
   };
 
-  componentWillReceiveProps(nextProps) {
-    if (this.props.list.length === 0 && nextProps.list.length) {
-      this.props.navigateToContact(nextProps.list[0])();
-    }
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   if (this.props.list.length === 0 && nextProps.list.length) {
+  //     this.props.navigateToContact(nextProps.list[0])();
+  //   }
+  // }
 
   render() {
     const {list, isFetching, fetchedPageCount} = this.props;
