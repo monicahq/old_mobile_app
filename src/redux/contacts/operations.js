@@ -2,23 +2,21 @@ import * as actions from './actions';
 
 import {API} from 'api';
 
-export function getContacts(shouldInvalidate) {
+export function getContacts() {
   return async (dispatch, getState) => {
     const state = getState();
     if (
       state.getAllContacts.isFetching ||
-      (!shouldInvalidate &&
-        state.getAllContacts.count === state.getAllContacts.items.length)
+      state.getAllContacts.count === state.getAllContacts.items.length
     ) {
       return;
     }
-    dispatch(actions.getContactsFetched(shouldInvalidate));
+    dispatch(actions.getContactsFetched());
 
     try {
-      const page = !shouldInvalidate
-        ? state.getAllContacts.fetchedPageCount + 1
-        : 1;
-      const res = await API.Contacts.getAll(page);
+      const res = await API.Contacts.getAll(
+        state.getAllContacts.fetchedPageCount + 1,
+      );
       dispatch(actions.getContactsSuccess(res.data, res.meta.total));
     } catch (e) {
       dispatch(actions.getContactsFailed(e));

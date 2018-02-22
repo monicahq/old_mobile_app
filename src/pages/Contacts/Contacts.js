@@ -8,20 +8,18 @@ import {styles} from './Contacts.styles';
 
 export class Contacts extends PureComponent {
   static propTypes = {
-    getContacts: PropTypes.func.isRequired,
-    contacts: PropTypes.object.isRequired,
-    list: PropTypes.array.isRequired,
+    contacts: PropTypes.array.isRequired,
     isFetching: PropTypes.bool.isRequired,
-    fetchedPageCount: PropTypes.number.isRequired,
     count: PropTypes.number,
+    getContacts: PropTypes.func.isRequired,
     navigateToContact: PropTypes.func.isRequired,
   };
 
-  keyExtractor = (item, index) => String(item);
+  keyExtractor = (item, index) => String(item.id);
 
   renderItem = ({item, index}) => {
     const {contacts, navigateToContact} = this.props;
-    const contact = contacts[item];
+    const contact = contacts[index];
     return (
       <ContactListItem
         bgOddRow={index % 2 === 1}
@@ -47,9 +45,21 @@ export class Contacts extends PureComponent {
     );
   };
 
+  renderFooter = () => {
+    const {isFetching} = this.props;
+
+    if (!isFetching) {
+      return null;
+    }
+
+    return (
+      <ActivityIndicator style={commonStyles.activityIndicator} size="large" />
+    );
+  };
+
   componentWillMount() {
-    const {list, getContacts, isFetching} = this.props;
-    if (!list.length && !isFetching) {
+    const {contacts, getContacts, isFetching} = this.props;
+    if (!contacts.length && !isFetching) {
       getContacts();
     }
   }
@@ -62,40 +72,27 @@ export class Contacts extends PureComponent {
     this.props.getContacts();
   };
 
-  onRefresh = () => {
-    this.props.getContacts(true);
-  };
-
   componentWillReceiveProps(nextProps) {
-    if (this.props.list.length === 0 && nextProps.list.length) {
-      this.props.navigateToContact(nextProps.list[0])();
+    if (this.props.contacts.length === 0 && nextProps.contacts.length) {
+      this.props.navigateToContact(nextProps.contacts[4].id)();
     }
   }
 
   render() {
-    const {list, isFetching, fetchedPageCount} = this.props;
+    const {contacts} = this.props;
 
     return (
       <View style={commonStyles.flex}>
         <Navbar onSearchTextChanged={this.onSearchTextChanged} />
-        {list.length ? (
-          <FlatList
-            data={list}
-            renderItem={this.renderItem}
-            keyExtractor={this.keyExtractor}
-            ListHeaderComponent={this.renderHeader}
-            onEndReached={this.onEndReached}
-            onEndReachedThreshold={0.5}
-            onRefresh={this.onRefresh}
-            refreshing={fetchedPageCount === 1 && isFetching}
-          />
-        ) : null}
-        {isFetching && (
-          <ActivityIndicator
-            style={commonStyles.activityIndicator}
-            size="large"
-          />
-        )}
+        <FlatList
+          data={contacts}
+          renderItem={this.renderItem}
+          keyExtractor={this.keyExtractor}
+          ListHeaderComponent={this.renderHeader}
+          ListFooterComponent={this.renderFooter}
+          onEndReached={this.onEndReached}
+          onEndReachedThreshold={0.5}
+        />
       </View>
     );
   }
