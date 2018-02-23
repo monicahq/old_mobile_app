@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Pages Notes should display the activity indicator in the footer if it is fetching 1`] = `
+<ActivityIndicator
+  animating={true}
+  color="#999999"
+  hidesWhenStopped={true}
+  size="large"
+  style={
+    Object {
+      "marginVertical": 20,
+    }
+  }
+/>
+`;
+
 exports[`Pages Notes should renders correctly with notes and fetching 1`] = `
 <View
   style={
@@ -48,6 +62,41 @@ exports[`Pages Notes should renders correctly with notes and fetching 2`] = `
 <View
   style={
     Object {
+      "backgroundColor": "white",
+      "borderBottomWidth": 0.5,
+      "borderColor": "#E2E4E5",
+      "paddingHorizontal": 15,
+      "paddingVertical": 20,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 12,
+        "marginBottom": 8,
+      }
+    }
+  >
+    December 17, 1991
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    My body
+  </Text>
+</View>
+`;
+
+exports[`Pages Notes should renders correctly with notes and fetching 3`] = `
+<View
+  style={
+    Object {
       "flex": 1,
     }
   }
@@ -89,6 +138,76 @@ exports[`Pages Notes should renders correctly with notes and fetching 2`] = `
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
+</View>
+`;
+
+exports[`Pages Notes should renders correctly with notes and fetching 4`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderBottomWidth": 0.5,
+      "borderColor": "#E2E4E5",
+      "paddingHorizontal": 15,
+      "paddingVertical": 20,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 12,
+        "marginBottom": 8,
+      }
+    }
+  >
+    December 17, 1991
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    My body
+  </Text>
+</View>
+`;
+
+exports[`Pages Notes should renders correctly with notes and fetching 5`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderBottomWidth": 0.5,
+      "borderColor": "#E2E4E5",
+      "paddingHorizontal": 15,
+      "paddingVertical": 20,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 12,
+        "marginBottom": 8,
+      }
+    }
+  >
+    December 17, 1993
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    My body 2
+  </Text>
 </View>
 `;
 

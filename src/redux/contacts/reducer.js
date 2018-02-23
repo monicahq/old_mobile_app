@@ -1,5 +1,6 @@
 import * as types from './types';
 import * as noteTypes from '../notes/types';
+import * as debtTypes from '../debts/types';
 
 const getAllInitialState = {
   error: null,
@@ -22,14 +23,27 @@ export const contactsReducer = (state = {}, action) => {
       });
       return contacts;
     case noteTypes.GET_NOTES_BY_CONTACT_SUCCESS:
-      const id = action.contactId;
+      const noteId = action.contactId;
       return {
         ...state,
-        [id]: {
-          ...state[id],
+        [noteId]: {
+          ...state[noteId],
           notes: [
-            ...(state[id].notes || []),
+            ...(state[noteId].notes || []),
             ...action.notes.map(note => note.id),
+          ],
+        },
+      };
+
+    case debtTypes.GET_DEBTS_BY_CONTACT_SUCCESS:
+      const debtId = action.contactId;
+      return {
+        ...state,
+        [debtId]: {
+          ...state[debtId],
+          debts: [
+            ...(state[debtId].debts || []),
+            ...action.debts.map(debt => debt.id),
           ],
         },
       };
