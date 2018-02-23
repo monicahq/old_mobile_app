@@ -1,6 +1,6 @@
 {
   "name": "Monica",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
@@ -9,9 +9,11 @@
     "test": "jest",
     "lint": "eslint .",
     "flow": "flow",
-    "ios:beta": "cd ios && fastlane beta",
-    "android:alpha": "cd android && fastlane alpha",
-    "android:beta": "cd android && fastlane beta",
+    "ios:beta": "npm run version:ios && cd ios && bundle exec fastlane beta",
+    "android:alpha": "npm run version:android && cd android && bundle exec fastlane alpha",
+    "android:beta": "npm run version:android && cd android && bundle exec fastlane beta",
+    "version:ios": "cd ios && bundle exec fastlane version version:$npm_package_version",
+    "version:android": "cd android && bundle exec fastlane version version:$npm_package_version",
     "clean": "watchman watch-del-all && rm -rf node_modules && yarn && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/haste-map-react-native-packager-*"
   },
   "dependencies": {

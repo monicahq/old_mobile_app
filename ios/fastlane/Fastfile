@@ -30,4 +30,10 @@ platform :ios do
     match(git_url: "git@gitlab.com:monicahq/mobile-credentials.git", type: "adhoc", force_for_new_devices: true)
     match(git_url: "git@gitlab.com:monicahq/mobile-credentials.git", type: "development", force_for_new_devices: true, app_identifier: "com.monicahq.app.debug")
   end
+
+  lane :version do |options|
+    increment_version_number(
+      version_number: options[:version]
+    )
+  end
 end

@@ -20,7 +20,17 @@ or alternatively using `brew cask install fastlane`
 ```
 fastlane android alpha
 ```
-Submit a new Beta Build to Crashlytics Beta
+Submit a new Beta Build to Android Play store
+### android version
+```
+fastlane android version
+```
+
+### android test
+```
+fastlane android test
+```
+
 
 ----
 

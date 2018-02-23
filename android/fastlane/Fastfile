@@ -12,7 +12,7 @@
 default_platform(:android)
 
 platform :android do
-  desc "Submit a new Beta Build to Crashlytics Beta"
+  desc "Submit a new Beta Build to Android Play store"
   lane :alpha do
     increment_version_code
     gradle(task: "assembleRelease")
@@ -22,4 +22,9 @@ platform :android do
       apk: "#{lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH]}"
     )
   end
-end
+
+  lane :version do |options|
+    android_set_version_name(
+      version_name: options[:version],
+    )
+  end
