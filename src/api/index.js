@@ -3,6 +3,7 @@ import {AsyncStorage, StatusBar, Platform} from 'react-native';
 
 import {User} from './user';
 import {Contacts} from './contacts';
+import {Notes} from './notes';
 import {tokenKey} from 'storage-keys';
 
 const frisbee = new Frisbee({
@@ -21,6 +22,7 @@ export const API = {
   },
   User: new User(frisbee),
   Contacts: new Contacts(frisbee),
+  Notes: new Notes(frisbee),
 };
 
 // Get token from phone storage and add it to headers

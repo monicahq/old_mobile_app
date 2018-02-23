@@ -1,9 +1,8 @@
 import * as types from './types';
 
-export function getContactsFetched(shouldInvalidate) {
+export function getContactsFetched() {
   return {
     type: types.GET_ALL_FETCHED,
-    shouldInvalidate,
   };
 }
 

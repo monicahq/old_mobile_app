@@ -9,6 +9,7 @@ export const ContactScreen = connect(
   }),
   dispatch => ({
     back: () => dispatch(back()),
-    navigate: routeName => () => dispatch(navigate(routeName)),
+    navigate: (routeName, contactId) => () =>
+      dispatch(navigate(routeName, contactId)),
   }),
 )(Contact);

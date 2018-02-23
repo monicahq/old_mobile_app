@@ -1,11 +1,11 @@
 import * as types from './types';
+import * as noteTypes from '../notes/types';
 
 const getAllInitialState = {
   error: null,
   isFetching: false,
   lastUpdated: null,
   fetchedPageCount: 0,
-  done: false,
   items: [],
   count: null,
 };
@@ -20,8 +20,19 @@ export const contactsReducer = (state = {}, action) => {
           contacts[item.id] = item;
         }
       });
-
       return contacts;
+    case noteTypes.GET_NOTES_BY_CONTACT_SUCCESS:
+      const id = action.contactId;
+      return {
+        ...state,
+        [id]: {
+          ...state[id],
+          notes: [
+            ...(state[id].notes || []),
+            ...action.notes.map(note => note.id),
+          ],
+        },
+      };
   }
 
   return state;
@@ -31,14 +42,6 @@ export const getAllReducer = (state = getAllInitialState, action) => {
   switch (action.type) {
     // GET ALL FETCHED
     case types.GET_ALL_FETCHED:
-      if (action.shouldInvalidate) {
-        return {
-          ...getAllInitialState,
-          isFetching: true,
-          fetchedPageCount: 1,
-        };
-      }
-
       return {
         ...state,
         error: null,

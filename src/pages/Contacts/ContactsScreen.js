@@ -6,15 +6,13 @@ import {Contacts} from './Contacts';
 
 export const ContactsScreen = connect(
   state => ({
-    contacts: state.contacts,
-    list: state.getAllContacts.items,
+    contacts: state.getAllContacts.items.map(item => state.contacts[item]),
     isFetching: state.getAllContacts.isFetching,
-    fetchedPageCount: state.getAllContacts.fetchedPageCount,
     count: state.getAllContacts.count,
   }),
   dispatch => {
     return {
-      getContacts: shouldInvalidate => dispatch(getContacts(shouldInvalidate)),
+      getContacts: () => dispatch(getContacts()),
       navigateToContact: contactId => () =>
         dispatch(navigate('Contact', contactId)),
     };

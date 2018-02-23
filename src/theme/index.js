@@ -22,7 +22,7 @@ export const commonStyles = StyleSheet.create({
     color: mutedTextColor,
   },
   activityIndicator: {
-    marginTop: 20,
+    marginVertical: 20,
   },
   toolbarAndroid: {
     height: 56,

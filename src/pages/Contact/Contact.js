@@ -16,11 +16,13 @@ export class Contact extends Component {
     back: PropTypes.func.isRequired,
     navigate: PropTypes.func.isRequired,
   };
+  componentWillMount() {
+    this.props.navigate('Notes', this.props.contact.id)();
+  }
   render() {
     const {contact, back, navigate} = this.props;
 
     const age = getAge(contact);
-    console.log(contact);
 
     return (
       <View style={[commonStyles.flex, commonStyles.bgWhite]}>
@@ -47,43 +49,43 @@ export class Contact extends Component {
           </View>
           <View style={styles.bloc}>
             <ContactActivityRow
-              onPress={navigate('Calls')}
+              onPress={navigate('Calls', contact.id)}
               image={require('assets/icons/phone.png')}
               title="Phone calls"
               count={contact.statistics.number_of_calls}
             />
             <ContactActivityRow
-              onPress={navigate('Activities')}
+              onPress={navigate('Activities', contact.id)}
               image={require('assets/icons/activities.png')}
               title="Activities"
               count={contact.statistics.number_of_activities}
             />
             <ContactActivityRow
-              onPress={navigate('Reminders')}
+              onPress={navigate('Reminders', contact.id)}
               image={require('assets/icons/reminders.png')}
               title="Reminders"
               count={contact.statistics.number_of_reminders}
             />
             <ContactActivityRow
-              onPress={navigate('Tasks')}
+              onPress={navigate('Tasks', contact.id)}
               image={require('assets/icons/tasks.png')}
               title="Tasks"
               count={contact.statistics.number_of_tasks}
             />
             <ContactActivityRow
-              onPress={navigate('Notes')}
+              onPress={navigate('Notes', contact.id)}
               image={require('assets/icons/notes.png')}
               title="Notes"
               count={contact.statistics.number_of_notes}
             />
             <ContactActivityRow
-              onPress={navigate('Gifts')}
+              onPress={navigate('Gifts', contact.id)}
               image={require('assets/icons/gift.png')}
               title="Gifts"
               count={contact.statistics.number_of_gifts}
             />
             <ContactActivityRow
-              onPress={navigate('Debts')}
+              onPress={navigate('Debts', contact.id)}
               image={require('assets/icons/debts.png')}
               title="Debts"
               count={contact.statistics.number_of_debts}
