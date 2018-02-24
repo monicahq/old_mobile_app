@@ -12,6 +12,9 @@ export const commonStyles = StyleSheet.create({
   flex: {
     flex: 1,
   },
+  row: {
+    flexDirection: 'row',
+  },
   bgWhite: {
     backgroundColor: 'white',
   },
