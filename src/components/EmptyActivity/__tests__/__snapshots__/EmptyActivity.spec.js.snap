@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components EmptyActivity should renders correctly with a subtitle 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "white",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  />
+  <Image
+    source={2}
+    style={
+      Object {
+        "marginBottom": 20,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 60,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      My title
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontSize": 13,
+          "textAlign": "center",
+        }
+      }
+    >
+      My subtitle
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Components EmptyActivity should renders correctly with no subtitle 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "white",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  />
+  <Image
+    source={2}
+    style={
+      Object {
+        "marginBottom": 20,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 60,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      My title
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  />
+</View>
+`;

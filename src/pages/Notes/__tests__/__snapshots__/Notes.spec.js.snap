@@ -260,27 +260,10 @@ exports[`Pages Notes should renders correctly without notes and not fetching 1`]
     onBack={[MockFunction]}
     title="Notes"
   />
-  <FlatList
-    ListFooterComponent={[Function]}
-    data={Array []}
-    disableVirtualization={false}
-    horizontal={false}
-    initialNumToRender={10}
-    keyExtractor={[Function]}
-    maxToRenderPerBatch={10}
-    numColumns={1}
-    onEndReached={
-      [MockFunction] {
-        "calls": Array [
-          Array [],
-        ],
-      }
-    }
-    onEndReachedThreshold={0.5}
-    renderItem={[Function]}
-    scrollEventThrottle={50}
-    updateCellsBatchingPeriod={50}
-    windowSize={21}
+  <EmptyActivity
+    image={1}
+    subtitle="Just write down what you have in mind."
+    title="Notes are great to record precious details about your contacts."
   />
 </View>
 `;

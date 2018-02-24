@@ -16,9 +16,9 @@ export class Contact extends Component {
     back: PropTypes.func.isRequired,
     navigate: PropTypes.func.isRequired,
   };
-  componentWillMount() {
-    this.props.navigate('Debts', this.props.contact.id)();
-  }
+  // componentWillMount() {
+  //   this.props.navigate('Activities', this.props.contact.id)();
+  // }
   render() {
     const {contact, back, navigate} = this.props;
 

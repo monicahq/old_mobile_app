@@ -1,6 +1,11 @@
 import * as types from './types';
 import * as noteTypes from '../notes/types';
 import * as debtTypes from '../debts/types';
+import * as activityTypes from '../activities/types';
+import * as callTypes from '../calls/types';
+import * as giftTypes from '../gifts/types';
+import * as reminderTypes from '../reminders/types';
+import * as taskTypes from '../tasks/types';
 
 const getAllInitialState = {
   error: null,
@@ -44,6 +49,71 @@ export const contactsReducer = (state = {}, action) => {
           debts: [
             ...(state[debtId].debts || []),
             ...action.debts.map(debt => debt.id),
+          ],
+        },
+      };
+
+    case activityTypes.GET_ACTIVITIES_BY_CONTACT_SUCCESS:
+      const activityId = action.contactId;
+      return {
+        ...state,
+        [activityId]: {
+          ...state[activityId],
+          activities: [
+            ...(state[activityId].activities || []),
+            ...action.activities.map(activity => activity.id),
+          ],
+        },
+      };
+
+    case giftTypes.GET_GIFTS_BY_CONTACT_SUCCESS:
+      const giftId = action.contactId;
+      return {
+        ...state,
+        [giftId]: {
+          ...state[giftId],
+          gifts: [
+            ...(state[giftId].gifts || []),
+            ...action.gifts.map(gift => gift.id),
+          ],
+        },
+      };
+
+    case reminderTypes.GET_REMINDERS_BY_CONTACT_SUCCESS:
+      const reminderId = action.contactId;
+      return {
+        ...state,
+        [reminderId]: {
+          ...state[reminderId],
+          reminders: [
+            ...(state[reminderId].reminders || []),
+            ...action.reminders.map(reminder => reminder.id),
+          ],
+        },
+      };
+
+    case taskTypes.GET_REMINDERS_BY_CONTACT_SUCCESS:
+      const taskId = action.contactId;
+      return {
+        ...state,
+        [taskId]: {
+          ...state[taskId],
+          tasks: [
+            ...(state[taskId].tasks || []),
+            ...action.tasks.map(task => task.id),
+          ],
+        },
+      };
+
+    case callTypes.GET_CALLS_BY_CONTACT_SUCCESS:
+      const callId = action.contactId;
+      return {
+        ...state,
+        [callId]: {
+          ...state[callId],
+          calls: [
+            ...(state[callId].calls || []),
+            ...action.calls.map(call => call.id),
           ],
         },
       };

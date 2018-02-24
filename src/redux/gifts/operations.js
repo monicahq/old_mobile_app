@@ -1,0 +1,29 @@
+import * as actions from './actions';
+
+import {API} from 'api';
+
+export function getGiftsByContact(contactId) {
+  return async (dispatch, getState) => {
+    const state = getState();
+    if (
+      state.getGiftsByContact.isFetching ||
+      (state.contacts[contactId].gifts &&
+        state.contacts[contactId].statistics.number_of_gifts ===
+          state.contacts[contactId].gifts.length)
+    ) {
+      return;
+    }
+
+    dispatch(actions.getGiftsByContactFetched());
+
+    try {
+      const res = await API.Gifts.getAllByContact(
+        contactId,
+        state.getGiftsByContact.fetchedPageCount + 1,
+      );
+      dispatch(actions.getGiftsByContactSuccess(contactId, res.data));
+    } catch (e) {
+      dispatch(actions.getGiftsByContactFailed(e));
+    }
+  };
+}

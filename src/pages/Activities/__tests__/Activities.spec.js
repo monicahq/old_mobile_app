@@ -1,9 +1,134 @@
-import {} from '../Activities';
+import React from 'react';
+// import toJson from 'enzyme-to-json';
+import {shallow} from 'enzyme';
+import {Activities} from '../Activities';
 
 describe('Pages', () => {
   describe('Activities', () => {
-    it('must be true', () => {
-      expect(true).toBe(true);
+    let back;
+    let getActivitiesByContact;
+    const contact = {first_name: 'Theo'};
+
+    beforeEach(() => {
+      back = jest.fn();
+      getActivitiesByContact = jest.fn();
+    });
+
+    // it('should renders correctly without activities and fetching', () => {
+    //   const activities = [];
+    //   const tree = shallow(
+    //     <Activities
+    //       contact={contact}
+    //       back={back}
+    //       getActivitiesByContact={getActivitiesByContact}
+    //       isFetching={true}
+    //       activities={activities}
+    //     />,
+    //   );
+    //   expect(toJson(tree)).toMatchSnapshot();
+    // });
+
+    // it('should renders correctly without activities and not fetching', () => {
+    //   const activities = [];
+    //   const tree = shallow(
+    //     <Activities
+    //       back={back}
+    //       contact={contact}
+    //       getActivitiesByContact={getActivitiesByContact}
+    //       isFetching={false}
+    //       activities={activities}
+    //     />,
+    //   );
+    //   expect(toJson(tree)).toMatchSnapshot();
+    // });
+
+    // it('should renders correctly with activities and fetching', () => {
+    //   const activities = [{body: 'My body', created_at: '1991-12-17'}];
+    //   const tree = shallow(
+    //     <Activities
+    //       contact={contact}
+    //       back={back}
+    //       getActivitiesByContact={getActivitiesByContact}
+    //       isFetching={true}
+    //       activities={activities}
+    //     />,
+    //   );
+    //   expect(toJson(tree)).toMatchSnapshot();
+    //   expect(
+    //     toJson(shallow(tree.instance().renderItem({index: 0}))),
+    //   ).toMatchSnapshot();
+    // });
+
+    // it('should renders correctly with activities and fetching', () => {
+    //   const activities = [
+    //     {body: 'My body', created_at: '1991-12-17'},
+    //     {body: 'My body 2', created_at: '1993-12-17'},
+    //   ];
+    //   const tree = shallow(
+    //     <Activities
+    //       contact={contact}
+    //       back={back}
+    //       getActivitiesByContact={getActivitiesByContact}
+    //       isFetching={false}
+    //       activities={activities}
+    //     />,
+    //   );
+    //   expect(toJson(tree)).toMatchSnapshot();
+    //   expect(
+    //     toJson(shallow(tree.instance().renderItem({index: 0}))),
+    //   ).toMatchSnapshot();
+    //   expect(
+    //     toJson(shallow(tree.instance().renderItem({index: 1}))),
+    //   ).toMatchSnapshot();
+    // });
+
+    // it('should display the activity indicator in the footer if it is fetching', () => {
+    //   const activities = [
+    //     {body: 'My body', created_at: '1991-12-17'},
+    //     {body: 'My body 2', created_at: '1993-12-17'},
+    //   ];
+    //   const tree = shallow(
+    //     <Activities
+    //       contact={contact}
+    //       back={back}
+    //       getActivitiesByContact={getActivitiesByContact}
+    //       isFetching={true}
+    //       activities={activities}
+    //     />,
+    //   );
+    //   expect(toJson(shallow(tree.instance().renderFooter()))).toMatchSnapshot();
+    // });
+
+    it('should not display the activity indicator in the footer if it is not fetching', () => {
+      const activities = [
+        {body: 'My body', created_at: '1991-12-17'},
+        {body: 'My body 2', created_at: '1993-12-17'},
+      ];
+      const tree = shallow(
+        <Activities
+          contact={contact}
+          back={back}
+          getActivitiesByContact={getActivitiesByContact}
+          isFetching={false}
+          activities={activities}
+        />,
+      );
+      expect(tree.instance().renderFooter()).toBeNull();
+    });
+
+    it('should have a keyExtractor', () => {
+      const activities = [{id: 1}, {id: 2}];
+      const tree = shallow(
+        <Activities
+          contact={contact}
+          back={back}
+          getActivitiesByContact={getActivitiesByContact}
+          isFetching={false}
+          activities={activities}
+        />,
+      );
+      expect(tree.instance().keyExtractor(activities[0])).toBe('1');
+      expect(tree.instance().keyExtractor(activities[1])).toBe('2');
     });
   });
 });

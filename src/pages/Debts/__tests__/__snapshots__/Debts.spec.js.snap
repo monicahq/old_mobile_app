@@ -396,27 +396,10 @@ exports[`Pages Debts should renders correctly without debts and not fetching 1`]
     onBack={[MockFunction]}
     title="Debts"
   />
-  <FlatList
-    ListFooterComponent={[Function]}
-    data={Array []}
-    disableVirtualization={false}
-    horizontal={false}
-    initialNumToRender={10}
-    keyExtractor={[Function]}
-    maxToRenderPerBatch={10}
-    numColumns={1}
-    onEndReached={
-      [MockFunction] {
-        "calls": Array [
-          Array [],
-        ],
-      }
-    }
-    onEndReachedThreshold={0.5}
-    renderItem={[Function]}
-    scrollEventThrottle={50}
-    updateCellsBatchingPeriod={50}
-    windowSize={21}
+  <EmptyActivity
+    image={1}
+    subtitle="But having no debts that you owe is a way to stay happy in your friendship."
+    title="Money doesn’t buy happiness."
   />
 </View>
 `;

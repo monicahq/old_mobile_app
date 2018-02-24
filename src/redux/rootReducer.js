@@ -12,6 +12,26 @@ import {
   getByContactReducer as getDebtsByContactReducer,
   debtsReducer,
 } from './debts/reducer';
+import {
+  getByContactReducer as getActivitiesByContactReducer,
+  activitiesReducer,
+} from './activities/reducer';
+import {
+  getByContactReducer as getCallsByContactReducer,
+  callsReducer,
+} from './calls/reducer';
+import {
+  getByContactReducer as getGiftsByContactReducer,
+  giftsReducer,
+} from './gifts/reducer';
+import {
+  getByContactReducer as getRemindersByContactReducer,
+  remindersReducer,
+} from './reminders/reducer';
+import {
+  getByContactReducer as getTasksByContactReducer,
+  tasksReducer,
+} from './tasks/reducer';
 
 const rootReducer = combineReducers({
   router: routerReducer,
@@ -24,6 +44,16 @@ const rootReducer = combineReducers({
   notes: notesReducer,
   getDebtsByContact: getDebtsByContactReducer,
   debts: debtsReducer,
+  getActivitiesByContact: getActivitiesByContactReducer,
+  activities: activitiesReducer,
+  getCallsByContact: getCallsByContactReducer,
+  calls: callsReducer,
+  getGiftsByContact: getGiftsByContactReducer,
+  gifts: giftsReducer,
+  getRemindersByContact: getRemindersByContactReducer,
+  reminders: remindersReducer,
+  getTasksByContact: getTasksByContactReducer,
+  tasks: tasksReducer,
 });
 
 export default rootReducer;

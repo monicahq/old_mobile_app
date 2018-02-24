@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {View, FlatList, ActivityIndicator, Text} from 'react-native';
 
 import {styles} from './Debts.styles';
-import {Navbar} from 'components';
+import {Navbar, EmptyActivity} from 'components';
 import {commonStyles} from 'theme';
 
 export class Debts extends Component {
@@ -62,19 +62,27 @@ export class Debts extends Component {
   };
 
   render() {
-    const {back, debts, getDebtsByContact} = this.props;
+    const {back, debts, getDebtsByContact, isFetching} = this.props;
 
     return (
       <View style={commonStyles.flex}>
         <Navbar title="Debts" onBack={back} />
-        <FlatList
-          data={debts}
-          renderItem={this.renderItem}
-          keyExtractor={this.keyExtractor}
-          ListFooterComponent={this.renderFooter}
-          onEndReached={getDebtsByContact}
-          onEndReachedThreshold={0.5}
-        />
+        {isFetching || debts.length ? (
+          <FlatList
+            data={debts}
+            renderItem={this.renderItem}
+            keyExtractor={this.keyExtractor}
+            ListFooterComponent={this.renderFooter}
+            onEndReached={getDebtsByContact}
+            onEndReachedThreshold={0.5}
+          />
+        ) : (
+          <EmptyActivity
+            image={require('./assets/empty-debts.png')}
+            title="Money doesn’t buy happiness."
+            subtitle="But having no debts that you owe is a way to stay happy in your friendship."
+          />
+        )}
       </View>
     );
   }
