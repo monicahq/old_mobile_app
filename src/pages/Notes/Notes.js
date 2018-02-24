@@ -4,7 +4,7 @@ import {View, FlatList, ActivityIndicator, Text} from 'react-native';
 import moment from 'moment';
 
 import {styles} from './Notes.styles';
-import {Navbar} from 'components';
+import {Navbar, EmptyActivity} from 'components';
 import {commonStyles} from 'theme';
 
 export class Notes extends Component {
@@ -46,19 +46,27 @@ export class Notes extends Component {
   };
 
   render() {
-    const {back, notes, getNotesByContact} = this.props;
+    const {back, notes, getNotesByContact, isFetching} = this.props;
 
     return (
       <View style={commonStyles.flex}>
         <Navbar title="Notes" onBack={back} />
-        <FlatList
-          data={notes}
-          renderItem={this.renderItem}
-          keyExtractor={this.keyExtractor}
-          ListFooterComponent={this.renderFooter}
-          onEndReached={getNotesByContact}
-          onEndReachedThreshold={0.5}
-        />
+        {isFetching || notes.length ? (
+          <FlatList
+            data={notes}
+            renderItem={this.renderItem}
+            keyExtractor={this.keyExtractor}
+            ListFooterComponent={this.renderFooter}
+            onEndReached={getNotesByContact}
+            onEndReachedThreshold={0.5}
+          />
+        ) : (
+          <EmptyActivity
+            image={require('./assets/empty-notes.png')}
+            title="Notes are great to record precious details about your contacts."
+            subtitle="Just write down what you have in mind."
+          />
+        )}
       </View>
     );
   }

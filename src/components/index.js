@@ -8,3 +8,4 @@ export * from './ContactAvatar';
 export * from './UnderConstruction';
 export * from './Touchable';
 export * from './FontelloIcon';
+export * from './EmptyActivity';

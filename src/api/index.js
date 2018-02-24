@@ -5,6 +5,11 @@ import {User} from './user';
 import {Contacts} from './contacts';
 import {Notes} from './notes';
 import {Debts} from './debts';
+import {Activities} from './activities';
+import {Calls} from './calls';
+import {Gifts} from './gifts';
+import {Reminders} from './reminders';
+import {Tasks} from './tasks';
 import {tokenKey} from 'storage-keys';
 
 const frisbee = new Frisbee({
@@ -25,6 +30,11 @@ export const API = {
   Contacts: new Contacts(frisbee),
   Notes: new Notes(frisbee),
   Debts: new Debts(frisbee),
+  Activities: new Activities(frisbee),
+  Calls: new Calls(frisbee),
+  Gifts: new Gifts(frisbee),
+  Reminders: new Reminders(frisbee),
+  Tasks: new Tasks(frisbee),
 };
 
 // Get token from phone storage and add it to headers
