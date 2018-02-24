@@ -1,0 +1,492 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages Reminders should display the reminder indicator in the footer if it is fetching 1`] = `
+<ActivityIndicator
+  animating={true}
+  color="#999999"
+  hidesWhenStopped={true}
+  size="large"
+/>
+`;
+
+exports[`Pages Reminders should renders correctly with reminders and fetching 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    onBack={[MockFunction]}
+    title="Reminders"
+  />
+  <FlatList
+    ListFooterComponent={[Function]}
+    data={
+      Array [
+        Object {
+          "body": "My body",
+          "created_at": "1991-12-17",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReached={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+    onEndReachedThreshold={0.5}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</View>
+`;
+
+exports[`Pages Reminders should renders correctly with reminders and fetching 2`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderBottomWidth": 0.5,
+      "borderColor": "#E2E4E5",
+      "flexDirection": "row",
+      "paddingHorizontal": 15,
+      "paddingVertical": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingRight": 20,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#355974",
+          "fontSize": 17,
+          "textAlign": "center",
+        }
+      }
+    >
+      Feb 24
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#355974",
+          "fontSize": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      2018
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#818181",
+            "fontSize": 14,
+            "marginTop": 5,
+          }
+        }
+      >
+        a few seconds ago
+      </Text>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4A90E2",
+            "borderRadius": 5,
+            "marginLeft": 6,
+            "marginTop": 5,
+            "paddingHorizontal": 5,
+            "paddingVertical": 1,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "white",
+              "fontSize": 13,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Pages Reminders should renders correctly with reminders and fetching 3`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    onBack={[MockFunction]}
+    title="Reminders"
+  />
+  <FlatList
+    ListFooterComponent={[Function]}
+    data={
+      Array [
+        Object {
+          "body": "My body",
+          "created_at": "1991-12-17",
+        },
+        Object {
+          "body": "My body 2",
+          "created_at": "1993-12-17",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReached={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+    onEndReachedThreshold={0.5}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</View>
+`;
+
+exports[`Pages Reminders should renders correctly with reminders and fetching 4`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderBottomWidth": 0.5,
+      "borderColor": "#E2E4E5",
+      "flexDirection": "row",
+      "paddingHorizontal": 15,
+      "paddingVertical": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingRight": 20,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#355974",
+          "fontSize": 17,
+          "textAlign": "center",
+        }
+      }
+    >
+      Feb 24
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#355974",
+          "fontSize": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      2018
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#818181",
+            "fontSize": 14,
+            "marginTop": 5,
+          }
+        }
+      >
+        a few seconds ago
+      </Text>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4A90E2",
+            "borderRadius": 5,
+            "marginLeft": 6,
+            "marginTop": 5,
+            "paddingHorizontal": 5,
+            "paddingVertical": 1,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "white",
+              "fontSize": 13,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Pages Reminders should renders correctly with reminders and fetching 5`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderBottomWidth": 0.5,
+      "borderColor": "#E2E4E5",
+      "flexDirection": "row",
+      "paddingHorizontal": 15,
+      "paddingVertical": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingRight": 20,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#355974",
+          "fontSize": 17,
+          "textAlign": "center",
+        }
+      }
+    >
+      Feb 24
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#355974",
+          "fontSize": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      2018
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#818181",
+            "fontSize": 14,
+            "marginTop": 5,
+          }
+        }
+      >
+        a few seconds ago
+      </Text>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4A90E2",
+            "borderRadius": 5,
+            "marginLeft": 6,
+            "marginTop": 5,
+            "paddingHorizontal": 5,
+            "paddingVertical": 1,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "white",
+              "fontSize": 13,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Pages Reminders should renders correctly without reminders and fetching 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    onBack={[MockFunction]}
+    title="Reminders"
+  />
+  <FlatList
+    ListFooterComponent={[Function]}
+    data={Array []}
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReached={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+    onEndReachedThreshold={0.5}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</View>
+`;
+
+exports[`Pages Reminders should renders correctly without reminders and not fetching 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    onBack={[MockFunction]}
+    title="Reminders"
+  />
+  <EmptyActivity
+    image={1}
+    subtitle="Your memory might let you down - we won’t."
+    title="Be reminded at the right time, for things that matter."
+  />
+</View>
+`;

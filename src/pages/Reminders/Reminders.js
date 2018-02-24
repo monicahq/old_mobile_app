@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {View, FlatList, ActivityIndicator, Text} from 'react-native';
+import moment from 'moment';
 
 import {Navbar, EmptyActivity} from 'components';
 import {commonStyles} from 'theme';
+import {styles} from './Reminders.styles';
 
 export class Reminders extends Component {
   static propTypes = {
@@ -31,11 +33,51 @@ export class Reminders extends Component {
     );
   };
 
-  renderItem = ({item, index}) => {
-    // const {reminders} = this.props;
-    // const reminder = reminders[index];
+  getFrequencyLabel(type) {
+    if (type === 'year') {
+      return 'every year';
+    }
+    if (type === 'month') {
+      return 'every month';
+    }
+    if (type === 'day') {
+      return 'every day';
+    }
+    if (type === 'one_time') {
+      return 'one time';
+    }
+  }
 
-    return <Text>Text {index}</Text>;
+  renderItem = ({item, index}) => {
+    const {reminders} = this.props;
+    const reminder = reminders[index];
+
+    const nextDate = moment(reminder.next_expected_date);
+
+    return (
+      <View style={styles.reminderContainer}>
+        <View style={styles.dateContainer}>
+          <Text style={styles.date}>{nextDate.format('MMM DD')}</Text>
+          <Text style={styles.dateYear}>{nextDate.format('YYYY')}</Text>
+        </View>
+
+        <View style={commonStyles.flex}>
+          <Text>{reminder.title}</Text>
+          {reminder.description ? (
+            <Text style={styles.descriptionText}>{reminder.description}</Text>
+          ) : null}
+
+          <View style={commonStyles.row}>
+            <Text style={styles.descriptionText}>{nextDate.fromNow()}</Text>
+            <View style={styles.badge}>
+              <Text style={styles.badgeText}>
+                {this.getFrequencyLabel(reminder.frequency_type)}
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    );
   };
 
   render() {
