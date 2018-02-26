@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -8,7 +8,7 @@ const actions = [
   {title: 'Close', iconName: 'close', iconSize: 30, show: 'always'},
 ];
 
-export class Navbar extends Component {
+export class Navbar extends PureComponent {
   static propTypes = {
     onBack: PropTypes.func,
     title: PropTypes.any,

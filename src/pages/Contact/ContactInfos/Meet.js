@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import {Text} from 'react-native';
 
-export class Meet extends Component {
+export class Meet extends PureComponent {
   render() {
     return <Text>Meet</Text>;
   }

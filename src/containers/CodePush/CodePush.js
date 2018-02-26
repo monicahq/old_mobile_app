@@ -1,4 +1,4 @@
-import {Component} from 'react';
+import {PureComponent} from 'react';
 import {Platform, AppState} from 'react-native';
 import PropTypes from 'prop-types';
 import codePush from 'react-native-code-push';
@@ -8,7 +8,7 @@ const betaDeploymentKey =
     ? 'Dcx-ddWTB_BIqABopeNiY5l-m-oyHJU2vGNSf'
     : 'GERRrABwyzmQs-9gv8DTs0AE1O6GrkZolEVSz';
 
-export class CodePush extends Component {
+export class CodePush extends PureComponent {
   static propTypes = {
     // eslint-disable-next-line
     beta: PropTypes.object.isRequired,

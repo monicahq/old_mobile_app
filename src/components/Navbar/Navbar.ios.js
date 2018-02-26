@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {TouchableOpacity} from 'react-native';
 import NavigationBar from 'react-native-navbar';
@@ -7,7 +7,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import {styles} from './Navbar.styles';
 import {hitSlop, statusBarLightContent, navbarColor} from 'theme';
 
-export class Navbar extends Component {
+export class Navbar extends PureComponent {
   static propTypes = {
     onBack: PropTypes.func,
     title: PropTypes.any,

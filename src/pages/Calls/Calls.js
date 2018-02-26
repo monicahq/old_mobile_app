@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {View, FlatList, ActivityIndicator, Text} from 'react-native';
 
 import {Navbar, EmptyActivity} from 'components';
 import {commonStyles} from 'theme';
 
-export class Calls extends Component {
+export class Calls extends PureComponent {
   static propTypes = {
     back: PropTypes.func.isRequired,
     getCallsByContact: PropTypes.func.isRequired,

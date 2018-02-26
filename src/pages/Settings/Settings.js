@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {Text, Switch, View, Platform} from 'react-native';
 import {Button, Navbar} from 'components';
@@ -6,7 +6,7 @@ import {Button, Navbar} from 'components';
 import {commonStyles, primaryColor} from 'theme';
 import {styles} from './Settings.styles';
 
-export class Settings extends Component {
+export class Settings extends PureComponent {
   static propTypes = {
     logout: PropTypes.func.isRequired,
     goToLaunchScreen: PropTypes.func.isRequired,

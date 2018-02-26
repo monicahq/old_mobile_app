@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {TouchableOpacity, Text, ActivityIndicator} from 'react-native';
 import {styles} from './Button.styles';
 
-export class Button extends Component {
+export class Button extends PureComponent {
   static defaultProps = {
     disabled: false,
     loading: false,

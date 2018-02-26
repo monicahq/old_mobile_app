@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {View, Text, Image} from 'react-native';
 
 import {commonStyles} from 'theme';
 import {styles} from './EmptyActivities.styles';
 
-export class EmptyActivity extends Component {
+export class EmptyActivity extends PureComponent {
   static propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string,

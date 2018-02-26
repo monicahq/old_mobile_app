@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import {View, Text, Image} from 'react-native';
 
 import {commonStyles} from 'theme';
 import {styles} from './UnderConstruction.styles';
 
-export class UnderConstruction extends Component {
+export class UnderConstruction extends PureComponent {
   render() {
     return (
       <View style={styles.flexCentered}>

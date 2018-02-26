@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import RNActionSheet from 'react-native-actionsheet';
 
@@ -12,7 +12,7 @@ const options = [
   // 'Add a note',
 ];
 
-export class ActionSheet extends Component {
+export class ActionSheet extends PureComponent {
   static propTypes = {
     navigate: PropTypes.func.isRequired,
   };

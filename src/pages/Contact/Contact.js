@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {View, Text, ScrollView} from 'react-native';
 
@@ -10,15 +10,15 @@ import {styles} from './Contact.styles';
 import {ContactInfos} from './ContactInfos/ContactInfos';
 import {ContactActivityRow} from './ContactActivityRow/ContactActivityRow';
 
-export class Contact extends Component {
+export class Contact extends PureComponent {
   static propTypes = {
     contact: PropTypes.object.isRequired,
     back: PropTypes.func.isRequired,
     navigate: PropTypes.func.isRequired,
   };
-  // componentWillMount() {
-  //   this.props.navigate('Activities', this.props.contact.id)();
-  // }
+  componentWillMount() {
+    this.props.navigate('Calls', this.props.contact.id)();
+  }
   render() {
     const {contact, back, navigate} = this.props;
 

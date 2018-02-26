@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {Text, Image, View} from 'react-native';
 import {SafeAreaView} from 'react-navigation';
@@ -8,7 +8,7 @@ import {LoginFormContainer} from './form/LoginFormContainer';
 import {Back} from 'components';
 import {commonStyles, forceInset, preAuthScreensStyles} from 'theme';
 
-export class Login extends Component {
+export class Login extends PureComponent {
   static propTypes = {
     setToken: PropTypes.func.isRequired,
     navigate: PropTypes.func.isRequired,

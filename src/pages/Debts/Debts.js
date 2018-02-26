@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {View, FlatList, ActivityIndicator, Text} from 'react-native';
 
@@ -6,7 +6,7 @@ import {styles} from './Debts.styles';
 import {Navbar, EmptyActivity} from 'components';
 import {commonStyles} from 'theme';
 
-export class Debts extends Component {
+export class Debts extends PureComponent {
   static propTypes = {
     back: PropTypes.func.isRequired,
     getDebtsByContact: PropTypes.func.isRequired,

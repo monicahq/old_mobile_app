@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {Text} from 'react-native';
 import {TextInput, Button} from 'components';
 import {commonStyles} from 'theme';
 
-export class LoginForm extends Component {
+export class LoginForm extends PureComponent {
   static propTypes = {
     setFieldValue: PropTypes.func.isRequired,
     setFieldTouched: PropTypes.func.isRequired,

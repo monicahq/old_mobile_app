@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {
   View,
@@ -46,7 +46,7 @@ const isActive = (route1, route2) => {
   return route1.routeName === route2.routeName;
 };
 
-export class Tabbar extends Component {
+export class Tabbar extends PureComponent {
   actionSheetRef = ref => (this.ActionSheet = ref);
 
   onPress = routeName => () =>

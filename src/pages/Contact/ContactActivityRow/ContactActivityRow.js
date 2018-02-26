@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {Text, View, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -7,7 +7,7 @@ import {Touchable} from 'components';
 import {styles} from './ContactActivityRow.styles';
 import {commonStyles} from 'theme';
 
-export class ContactActivityRow extends Component {
+export class ContactActivityRow extends PureComponent {
   static propTypes = {
     count: PropTypes.number.isRequired,
     image: PropTypes.any.isRequired,

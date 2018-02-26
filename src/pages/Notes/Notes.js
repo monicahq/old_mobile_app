@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {View, FlatList, ActivityIndicator, Text} from 'react-native';
 import moment from 'moment';
@@ -7,7 +7,7 @@ import {styles} from './Notes.styles';
 import {Navbar, EmptyActivity} from 'components';
 import {commonStyles} from 'theme';
 
-export class Notes extends Component {
+export class Notes extends PureComponent {
   static propTypes = {
     back: PropTypes.func.isRequired,
     getNotesByContact: PropTypes.func.isRequired,

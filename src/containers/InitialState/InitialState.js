@@ -1,11 +1,11 @@
-import {Component} from 'react';
+import {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {AsyncStorage} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import {tokenKey, betaKey} from 'storage-keys';
 import {AppNavigator} from 'navigator/AppNavigator';
 
-export class InitialState extends Component {
+export class InitialState extends PureComponent {
   static propTypes = {
     setState: PropTypes.func.isRequired,
     setToken: PropTypes.func.isRequired,

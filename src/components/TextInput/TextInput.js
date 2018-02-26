@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {TextInput as RNTextInput, Text, View} from 'react-native';
 import {styles, borderColor} from './TextInput.styles';
 
-export class TextInput extends Component {
+export class TextInput extends PureComponent {
   static defaultProps = {
     touched: false,
     error: null,
