@@ -9,8 +9,9 @@ describe('Redux', () => {
   describe('Gifts', () => {
     describe('Actions', () => {
       it('getGiftsByContactFetched', () => {
-        expect(getGiftsByContactFetched()).toEqual({
+        expect(getGiftsByContactFetched(3)).toEqual({
           type: types.GET_GIFTS_BY_CONTACT_FETCHED,
+          contactId: 3,
         });
       });
 

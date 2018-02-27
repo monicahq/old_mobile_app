@@ -9,8 +9,9 @@ describe('Redux', () => {
   describe('Reminders', () => {
     describe('Actions', () => {
       it('getRemindersByContactFetched', () => {
-        expect(getRemindersByContactFetched()).toEqual({
+        expect(getRemindersByContactFetched(4)).toEqual({
           type: types.GET_REMINDERS_BY_CONTACT_FETCHED,
+          contactId: 4,
         });
       });
 

@@ -9,8 +9,10 @@ describe('Redux', () => {
   describe('Debts', () => {
     describe('Actions', () => {
       it('getDebtsByContactFetched', () => {
-        expect(getDebtsByContactFetched()).toEqual({
+        const contactId = 3;
+        expect(getDebtsByContactFetched(contactId)).toEqual({
           type: types.GET_DEBTS_BY_CONTACT_FETCHED,
+          contactId,
         });
       });
 

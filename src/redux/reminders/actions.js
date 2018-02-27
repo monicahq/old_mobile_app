@@ -1,8 +1,9 @@
 import * as types from './types';
 
-export function getRemindersByContactFetched() {
+export function getRemindersByContactFetched(contactId) {
   return {
     type: types.GET_REMINDERS_BY_CONTACT_FETCHED,
+    contactId,
   };
 }
 

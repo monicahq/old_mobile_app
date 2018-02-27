@@ -15,7 +15,7 @@ describe('Redux', () => {
 
           expect(state).toEqual({
             error: null,
-            fetchedPageCount: 0,
+            fetchedPageCount: {},
             isFetching: false,
             lastUpdated: null,
           });
@@ -25,12 +25,12 @@ describe('Redux', () => {
           const initialState = getByContactReducer(undefined, {});
           const state = getByContactReducer(
             initialState,
-            getDebtsByContactFetched(),
+            getDebtsByContactFetched(7),
           );
 
           expect(state).toEqual({
             ...initialState,
-            fetchedPageCount: 1,
+            fetchedPageCount: {7: 1},
             isFetching: true,
           });
         });
@@ -41,7 +41,7 @@ describe('Redux', () => {
           const initialState = getByContactReducer(undefined, {});
           let state = getByContactReducer(
             initialState,
-            getDebtsByContactFetched(),
+            getDebtsByContactFetched(contactId),
           );
           state = getByContactReducer(
             state,
@@ -50,7 +50,7 @@ describe('Redux', () => {
 
           expect(state).toEqual({
             ...initialState,
-            fetchedPageCount: 1,
+            fetchedPageCount: {[contactId]: 1},
             isFetching: false,
             lastUpdated: state.lastUpdated,
           });
@@ -61,13 +61,13 @@ describe('Redux', () => {
           const initialState = getByContactReducer(undefined, {});
           let state = getByContactReducer(
             initialState,
-            getDebtsByContactFetched(),
+            getDebtsByContactFetched(3),
           );
           state = getByContactReducer(state, getDebtsByContactFailed(error));
 
           expect(state).toEqual({
             ...initialState,
-            fetchedPageCount: 1,
+            fetchedPageCount: {3: 1},
             isFetching: false,
             error: error,
           });

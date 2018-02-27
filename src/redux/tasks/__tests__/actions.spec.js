@@ -9,8 +9,9 @@ describe('Redux', () => {
   describe('Tasks', () => {
     describe('Actions', () => {
       it('getTasksByContactFetched', () => {
-        expect(getTasksByContactFetched()).toEqual({
+        expect(getTasksByContactFetched(4)).toEqual({
           type: types.GET_TASKS_BY_CONTACT_FETCHED,
+          contactId: 4,
         });
       });
 

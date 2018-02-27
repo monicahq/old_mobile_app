@@ -1,8 +1,9 @@
 import * as types from './types';
 
-export function getTasksByContactFetched() {
+export function getTasksByContactFetched(contactId) {
   return {
     type: types.GET_TASKS_BY_CONTACT_FETCHED,
+    contactId,
   };
 }
 

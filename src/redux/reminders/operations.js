@@ -14,7 +14,7 @@ export function getRemindersByContact(contactId) {
       return;
     }
 
-    dispatch(actions.getRemindersByContactFetched());
+    dispatch(actions.getRemindersByContactFetched(contactId));
 
     try {
       const res = await API.Reminders.getAllByContact(

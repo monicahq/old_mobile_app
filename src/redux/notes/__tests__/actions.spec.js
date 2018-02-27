@@ -9,8 +9,9 @@ describe('Redux', () => {
   describe('Notes', () => {
     describe('Actions', () => {
       it('getNotesByContactFetched', () => {
-        expect(getNotesByContactFetched()).toEqual({
+        expect(getNotesByContactFetched(3)).toEqual({
           type: types.GET_NOTES_BY_CONTACT_FETCHED,
+          contactId: 3,
         });
       });
 

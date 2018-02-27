@@ -15,7 +15,7 @@ describe('Redux', () => {
 
           expect(state).toEqual({
             error: null,
-            fetchedPageCount: 0,
+            fetchedPageCount: {},
             isFetching: false,
             lastUpdated: null,
           });
@@ -25,12 +25,14 @@ describe('Redux', () => {
           const initialState = getByContactReducer(undefined, {});
           const state = getByContactReducer(
             initialState,
-            getActivitiesByContactFetched(),
+            getActivitiesByContactFetched(5),
           );
 
           expect(state).toEqual({
             ...initialState,
-            fetchedPageCount: 1,
+            fetchedPageCount: {
+              5: 1,
+            },
             isFetching: true,
           });
         });
@@ -41,7 +43,7 @@ describe('Redux', () => {
           const initialState = getByContactReducer(undefined, {});
           let state = getByContactReducer(
             initialState,
-            getActivitiesByContactFetched(),
+            getActivitiesByContactFetched(contactId),
           );
           state = getByContactReducer(
             state,
@@ -50,18 +52,21 @@ describe('Redux', () => {
 
           expect(state).toEqual({
             ...initialState,
-            fetchedPageCount: 1,
+            fetchedPageCount: {
+              [contactId]: 1,
+            },
             isFetching: false,
             lastUpdated: state.lastUpdated,
           });
         });
 
         it('should handle failed', () => {
+          const contactId = 5;
           const error = new Error();
           const initialState = getByContactReducer(undefined, {});
           let state = getByContactReducer(
             initialState,
-            getActivitiesByContactFetched(),
+            getActivitiesByContactFetched(contactId),
           );
           state = getByContactReducer(
             state,
@@ -70,7 +75,9 @@ describe('Redux', () => {
 
           expect(state).toEqual({
             ...initialState,
-            fetchedPageCount: 1,
+            fetchedPageCount: {
+              [contactId]: 1,
+            },
             isFetching: false,
             error: error,
           });
