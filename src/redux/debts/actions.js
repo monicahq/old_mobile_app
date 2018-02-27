@@ -1,8 +1,9 @@
 import * as types from './types';
 
-export function getDebtsByContactFetched() {
+export function getDebtsByContactFetched(contactId) {
   return {
     type: types.GET_DEBTS_BY_CONTACT_FETCHED,
+    contactId,
   };
 }
 

@@ -73,7 +73,7 @@ describe('Redux', () => {
           await getRemindersByContact(contactId)(dispatch, getState);
           expect(dispatch.mock.calls.length).toBe(2);
           expect(dispatch.mock.calls[0]).toEqual([
-            getRemindersByContactFetched(),
+            getRemindersByContactFetched(contactId),
           ]);
           expect(dispatch.mock.calls[1]).toEqual([
             getRemindersByContactSuccess(contactId, res.data),
@@ -101,7 +101,7 @@ describe('Redux', () => {
           await getRemindersByContact(contactId)(dispatch, getState);
           expect(dispatch.mock.calls.length).toBe(2);
           expect(dispatch.mock.calls[0]).toEqual([
-            getRemindersByContactFetched(),
+            getRemindersByContactFetched(contactId),
           ]);
           expect(dispatch.mock.calls[1]).toEqual([
             getRemindersByContactFailed(error),

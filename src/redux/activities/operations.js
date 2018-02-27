@@ -14,7 +14,7 @@ export function getActivitiesByContact(contactId) {
       return;
     }
 
-    dispatch(actions.getActivitiesByContactFetched());
+    dispatch(actions.getActivitiesByContactFetched(contactId));
 
     try {
       const res = await API.Activities.getAllByContact(

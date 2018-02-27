@@ -72,7 +72,9 @@ describe('Redux', () => {
           API.Calls.getAllByContact.mockReturnValue(Promise.resolve(res));
           await getCallsByContact(contactId)(dispatch, getState);
           expect(dispatch.mock.calls.length).toBe(2);
-          expect(dispatch.mock.calls[0]).toEqual([getCallsByContactFetched()]);
+          expect(dispatch.mock.calls[0]).toEqual([
+            getCallsByContactFetched(contactId),
+          ]);
           expect(dispatch.mock.calls[1]).toEqual([
             getCallsByContactSuccess(contactId, res.data),
           ]);
@@ -98,7 +100,9 @@ describe('Redux', () => {
           API.Calls.getAllByContact.mockReturnValue(Promise.reject(error));
           await getCallsByContact(contactId)(dispatch, getState);
           expect(dispatch.mock.calls.length).toBe(2);
-          expect(dispatch.mock.calls[0]).toEqual([getCallsByContactFetched()]);
+          expect(dispatch.mock.calls[0]).toEqual([
+            getCallsByContactFetched(contactId),
+          ]);
           expect(dispatch.mock.calls[1]).toEqual([
             getCallsByContactFailed(error),
           ]);

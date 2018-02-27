@@ -72,7 +72,9 @@ describe('Redux', () => {
           API.Debts.getAllByContact.mockReturnValue(Promise.resolve(res));
           await getDebtsByContact(contactId)(dispatch, getState);
           expect(dispatch.mock.calls.length).toBe(2);
-          expect(dispatch.mock.calls[0]).toEqual([getDebtsByContactFetched()]);
+          expect(dispatch.mock.calls[0]).toEqual([
+            getDebtsByContactFetched(contactId),
+          ]);
           expect(dispatch.mock.calls[1]).toEqual([
             getDebtsByContactSuccess(contactId, res.data),
           ]);
@@ -98,7 +100,9 @@ describe('Redux', () => {
           API.Debts.getAllByContact.mockReturnValue(Promise.reject(error));
           await getDebtsByContact(contactId)(dispatch, getState);
           expect(dispatch.mock.calls.length).toBe(2);
-          expect(dispatch.mock.calls[0]).toEqual([getDebtsByContactFetched()]);
+          expect(dispatch.mock.calls[0]).toEqual([
+            getDebtsByContactFetched(contactId),
+          ]);
           expect(dispatch.mock.calls[1]).toEqual([
             getDebtsByContactFailed(error),
           ]);

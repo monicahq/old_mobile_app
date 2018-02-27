@@ -14,7 +14,7 @@ export function getNotesByContact(contactId) {
       return;
     }
 
-    dispatch(actions.getNotesByContactFetched());
+    dispatch(actions.getNotesByContactFetched(contactId));
 
     try {
       const res = await API.Notes.getAllByContact(

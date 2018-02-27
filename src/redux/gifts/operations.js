@@ -14,7 +14,7 @@ export function getGiftsByContact(contactId) {
       return;
     }
 
-    dispatch(actions.getGiftsByContactFetched());
+    dispatch(actions.getGiftsByContactFetched(contactId));
 
     try {
       const res = await API.Gifts.getAllByContact(

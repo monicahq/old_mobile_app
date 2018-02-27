@@ -1,8 +1,9 @@
 import * as types from './types';
 
-export function getGiftsByContactFetched() {
+export function getGiftsByContactFetched(contactId) {
   return {
     type: types.GET_GIFTS_BY_CONTACT_FETCHED,
+    contactId,
   };
 }
 

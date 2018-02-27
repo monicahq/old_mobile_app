@@ -85,7 +85,7 @@ exports[`Pages Reminders should renders correctly with reminders and fetching 2`
         }
       }
     >
-      Feb 24
+      Feb 14
     </Text>
     <Text
       accessible={true}
@@ -99,7 +99,7 @@ exports[`Pages Reminders should renders correctly with reminders and fetching 2`
         }
       }
     >
-      2018
+      2017
     </Text>
   </View>
   <View
@@ -244,7 +244,7 @@ exports[`Pages Reminders should renders correctly with reminders and fetching 4`
         }
       }
     >
-      Feb 24
+      Feb 14
     </Text>
     <Text
       accessible={true}
@@ -258,7 +258,7 @@ exports[`Pages Reminders should renders correctly with reminders and fetching 4`
         }
       }
     >
-      2018
+      2017
     </Text>
   </View>
   <View
@@ -355,7 +355,7 @@ exports[`Pages Reminders should renders correctly with reminders and fetching 5`
         }
       }
     >
-      Feb 24
+      Feb 14
     </Text>
     <Text
       accessible={true}
@@ -369,7 +369,7 @@ exports[`Pages Reminders should renders correctly with reminders and fetching 5`
         }
       }
     >
-      2018
+      2017
     </Text>
   </View>
   <View

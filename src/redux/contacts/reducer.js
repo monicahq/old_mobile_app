@@ -17,6 +17,8 @@ const getAllInitialState = {
 };
 
 export const contactsReducer = (state = {}, action) => {
+  let contactId;
+
   switch (action.type) {
     // GET ALL SUCCESS
     case types.GET_ALL_SUCCESS:
@@ -28,91 +30,91 @@ export const contactsReducer = (state = {}, action) => {
       });
       return contacts;
     case noteTypes.GET_NOTES_BY_CONTACT_SUCCESS:
-      const noteId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [noteId]: {
-          ...state[noteId],
+        [contactId]: {
+          ...state[contactId],
           notes: [
-            ...(state[noteId].notes || []),
+            ...(state[contactId].notes || []),
             ...action.notes.map(note => note.id),
           ],
         },
       };
 
     case debtTypes.GET_DEBTS_BY_CONTACT_SUCCESS:
-      const debtId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [debtId]: {
-          ...state[debtId],
+        [contactId]: {
+          ...state[contactId],
           debts: [
-            ...(state[debtId].debts || []),
+            ...(state[contactId].debts || []),
             ...action.debts.map(debt => debt.id),
           ],
         },
       };
 
     case activityTypes.GET_ACTIVITIES_BY_CONTACT_SUCCESS:
-      const activityId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [activityId]: {
-          ...state[activityId],
+        [contactId]: {
+          ...state[contactId],
           activities: [
-            ...(state[activityId].activities || []),
+            ...(state[contactId].activities || []),
             ...action.activities.map(activity => activity.id),
           ],
         },
       };
 
     case giftTypes.GET_GIFTS_BY_CONTACT_SUCCESS:
-      const giftId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [giftId]: {
-          ...state[giftId],
+        [contactId]: {
+          ...state[contactId],
           gifts: [
-            ...(state[giftId].gifts || []),
+            ...(state[contactId].gifts || []),
             ...action.gifts.map(gift => gift.id),
           ],
         },
       };
 
     case reminderTypes.GET_REMINDERS_BY_CONTACT_SUCCESS:
-      const reminderId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [reminderId]: {
-          ...state[reminderId],
+        [contactId]: {
+          ...state[contactId],
           reminders: [
-            ...(state[reminderId].reminders || []),
+            ...(state[contactId].reminders || []),
             ...action.reminders.map(reminder => reminder.id),
           ],
         },
       };
 
     case taskTypes.GET_REMINDERS_BY_CONTACT_SUCCESS:
-      const taskId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [taskId]: {
-          ...state[taskId],
+        [contactId]: {
+          ...state[contactId],
           tasks: [
-            ...(state[taskId].tasks || []),
+            ...(state[contactId].tasks || []),
             ...action.tasks.map(task => task.id),
           ],
         },
       };
 
     case callTypes.GET_CALLS_BY_CONTACT_SUCCESS:
-      const callId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [callId]: {
-          ...state[callId],
+        [contactId]: {
+          ...state[contactId],
           calls: [
-            ...(state[callId].calls || []),
+            ...(state[contactId].calls || []),
             ...action.calls.map(call => call.id),
           ],
         },
