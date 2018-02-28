@@ -6,6 +6,7 @@ import {Contacts} from '../Contacts';
 describe('Pages', () => {
   describe('Contacts', () => {
     const getContacts = jest.fn();
+    const searchContacts = jest.fn();
     const navigateToContact = jest.fn();
 
     it('should renders correctly without contacts and fetching', () => {
@@ -14,8 +15,10 @@ describe('Pages', () => {
           shallow(
             <Contacts
               getContacts={getContacts}
+              searchContacts={searchContacts}
               contacts={[]}
               isFetching={true}
+              isSearching={false}
               navigateToContact={navigateToContact}
             />,
           ),
@@ -29,9 +32,11 @@ describe('Pages', () => {
           shallow(
             <Contacts
               getContacts={getContacts}
+              searchContacts={searchContacts}
               contacts={[]}
               count={0}
               isFetching={false}
+              isSearching={false}
               navigateToContact={navigateToContact}
             />,
           ),
@@ -58,9 +63,11 @@ describe('Pages', () => {
           shallow(
             <Contacts
               getContacts={getContacts}
+              searchContacts={searchContacts}
               contacts={contacts}
               count={2}
               isFetching={false}
+              isSearching={false}
               navigateToContact={navigateToContact}
             />,
           ),
@@ -74,9 +81,11 @@ describe('Pages', () => {
           shallow(
             <Contacts
               getContacts={getContacts}
+              searchContacts={searchContacts}
               contacts={contacts}
               count={30}
               isFetching={true}
+              isSearching={false}
               navigateToContact={navigateToContact}
             />,
           ),

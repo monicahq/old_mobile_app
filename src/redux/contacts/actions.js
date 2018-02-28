@@ -20,3 +20,25 @@ export function getContactsFailed(error) {
     error,
   };
 }
+
+export function searchContactsFetched(query) {
+  return {
+    type: types.SEARCH_FETCHED,
+    query,
+  };
+}
+
+export function searchContactsSuccess(items, count) {
+  return {
+    type: types.SEARCH_SUCCESS,
+    items,
+    count,
+  };
+}
+
+export function searchContactsFailed(error) {
+  return {
+    type: types.SEARCH_FAILED,
+    error,
+  };
+}

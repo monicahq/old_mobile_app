@@ -1,7 +1,7 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {FlatList, View, Text, ActivityIndicator} from 'react-native';
-import {ContactListItem} from 'components';
+import {ContactListItem, EmptyActivity} from 'components';
 import {Navbar} from './Navbar/Navbar';
 import {commonStyles} from 'theme';
 import {styles} from './Contacts.styles';
@@ -10,9 +10,11 @@ export class Contacts extends PureComponent {
   static propTypes = {
     contacts: PropTypes.array.isRequired,
     isFetching: PropTypes.bool.isRequired,
+    isSearching: PropTypes.bool.isRequired,
     count: PropTypes.number,
     getContacts: PropTypes.func.isRequired,
     navigateToContact: PropTypes.func.isRequired,
+    searchContacts: PropTypes.func.isRequired,
   };
 
   keyExtractor = (item, index) => String(item.id);
@@ -58,41 +60,58 @@ export class Contacts extends PureComponent {
   };
 
   componentWillMount() {
-    const {contacts, getContacts, isFetching} = this.props;
+    const {contacts, getContacts, isFetching, searchContacts} = this.props;
+    // reset search
+    searchContacts('');
+
     if (!contacts.length && !isFetching) {
       getContacts();
     }
   }
 
-  onSearchTextChanged = text => {
-    console.warn(text);
+  onSearchTextChanged = query => {
+    const {searchContacts} = this.props;
+    searchContacts(query);
   };
 
   onEndReached = () => {
-    this.props.getContacts();
+    const {isSearching, getContacts, searchContacts} = this.props;
+
+    if (isSearching) {
+      searchContacts();
+    } else {
+      getContacts();
+    }
   };
 
-  componentWillReceiveProps(nextProps) {
-    if (this.props.contacts.length === 0 && nextProps.contacts.length) {
-      this.props.navigateToContact(nextProps.contacts[4].id)();
-    }
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   if (this.props.contacts.length === 0 && nextProps.contacts.length) {
+  //     this.props.navigateToContact(nextProps.contacts[4].id)();
+  //   }
+  // }
 
   render() {
-    const {contacts} = this.props;
+    const {contacts, isFetching} = this.props;
 
     return (
       <View style={commonStyles.flex}>
         <Navbar onSearchTextChanged={this.onSearchTextChanged} />
-        <FlatList
-          data={contacts}
-          renderItem={this.renderItem}
-          keyExtractor={this.keyExtractor}
-          ListHeaderComponent={this.renderHeader}
-          ListFooterComponent={this.renderFooter}
-          onEndReached={this.onEndReached}
-          onEndReachedThreshold={0.5}
-        />
+        {isFetching || contacts.length ? (
+          <FlatList
+            data={contacts}
+            renderItem={this.renderItem}
+            keyExtractor={this.keyExtractor}
+            ListHeaderComponent={this.renderHeader}
+            ListFooterComponent={this.renderFooter}
+            onEndReached={this.onEndReached}
+            onEndReachedThreshold={0.5}
+          />
+        ) : (
+          <EmptyActivity
+            image={require('./assets/no-contacts.png')}
+            title="To add your first contact, use the “+” button below."
+          />
+        )}
       </View>
     );
   }

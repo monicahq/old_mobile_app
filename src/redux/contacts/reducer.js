@@ -16,6 +16,15 @@ const getAllInitialState = {
   count: null,
 };
 
+const searchInitialState = {
+  query: '',
+  error: null,
+  isFetching: false,
+  fetchedPageCount: 0,
+  items: [],
+  count: null,
+};
+
 export const contactsReducer = (state = {}, action) => {
   let contactId;
 
@@ -29,6 +38,16 @@ export const contactsReducer = (state = {}, action) => {
         }
       });
       return contacts;
+    // SEARCH SUCCESS
+    case types.SEARCH_SUCCESS:
+      const contactsSearch = {...state};
+      action.items.forEach(item => {
+        if (!contactsSearch[item.id]) {
+          contactsSearch[item.id] = item;
+        }
+      });
+      return contactsSearch;
+
     case noteTypes.GET_NOTES_BY_CONTACT_SUCCESS:
       contactId = action.contactId;
       return {
@@ -148,6 +167,42 @@ export const getAllReducer = (state = getAllInitialState, action) => {
 
     // GET ALL FAILED
     case types.GET_ALL_FAILED:
+      return {
+        ...state,
+        isFetching: false,
+        error: action.error,
+      };
+  }
+
+  return state;
+};
+
+export const searchReducer = (state = searchInitialState, action) => {
+  switch (action.type) {
+    // GET ALL FETCHED
+    case types.SEARCH_FETCHED:
+      return {
+        ...state,
+        query: action.query,
+        error: null,
+        isFetching: action.query !== '',
+        fetchedPageCount:
+          action.query === state.query ? state.fetchedPageCount + 1 : 1,
+      };
+
+    // GET ALL SUCCESS
+    case types.SEARCH_SUCCESS:
+      const items = action.items.map(item => item.id);
+      return {
+        ...state,
+        isFetching: false,
+        items:
+          state.fetchedPageCount === 1 ? items : [...state.items, ...items],
+        count: action.count,
+      };
+
+    // GET ALL FAILED
+    case types.SEARCH_FAILED:
       return {
         ...state,
         isFetching: false,

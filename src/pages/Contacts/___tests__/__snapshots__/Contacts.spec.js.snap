@@ -99,22 +99,9 @@ exports[`Pages Contacts should renders correctly without contacts (even in the d
   <Navbar
     onSearchTextChanged={[Function]}
   />
-  <FlatList
-    ListFooterComponent={[Function]}
-    ListHeaderComponent={[Function]}
-    data={Array []}
-    disableVirtualization={false}
-    horizontal={false}
-    initialNumToRender={10}
-    keyExtractor={[Function]}
-    maxToRenderPerBatch={10}
-    numColumns={1}
-    onEndReached={[Function]}
-    onEndReachedThreshold={0.5}
-    renderItem={[Function]}
-    scrollEventThrottle={50}
-    updateCellsBatchingPeriod={50}
-    windowSize={21}
+  <EmptyActivity
+    image={1}
+    title="To add your first contact, use the “+” button below."
   />
 </View>
 `;
