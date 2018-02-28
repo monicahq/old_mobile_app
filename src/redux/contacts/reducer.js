@@ -113,7 +113,7 @@ export const contactsReducer = (state = {}, action) => {
         },
       };
 
-    case taskTypes.GET_REMINDERS_BY_CONTACT_SUCCESS:
+    case taskTypes.GET_TASKS_BY_CONTACT_SUCCESS:
       contactId = action.contactId;
       return {
         ...state,
