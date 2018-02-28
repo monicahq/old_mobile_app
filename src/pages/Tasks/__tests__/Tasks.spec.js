@@ -1,5 +1,5 @@
 import React from 'react';
-// import toJson from 'enzyme-to-json';
+import toJson from 'enzyme-to-json';
 import {shallow} from 'enzyme';
 import {Tasks} from '../Tasks';
 
@@ -13,90 +13,90 @@ describe('Pages', () => {
       getTasksByContact = jest.fn();
     });
 
-    // it('should renders correctly without tasks and fetching', () => {
-    //   const tasks = [];
-    //   const tree = shallow(
-    //     <Tasks
-    //       back={back}
-    //       getTasksByContact={getTasksByContact}
-    //       isFetching={true}
-    //       tasks={tasks}
-    //     />,
-    //   );
-    //   expect(toJson(tree)).toMatchSnapshot();
-    // });
+    it('should renders correctly without tasks and fetching', () => {
+      const tasks = [];
+      const tree = shallow(
+        <Tasks
+          back={back}
+          getTasksByContact={getTasksByContact}
+          isFetching={true}
+          tasks={tasks}
+        />,
+      );
+      expect(toJson(tree)).toMatchSnapshot();
+    });
 
-    // it('should renders correctly without tasks and not fetching', () => {
-    //   const tasks = [];
-    //   const tree = shallow(
-    //     <Tasks
-    //       back={back}
-    //       getTasksByContact={getTasksByContact}
-    //       isFetching={false}
-    //       tasks={tasks}
-    //     />,
-    //   );
-    //   expect(toJson(tree)).toMatchSnapshot();
-    // });
+    it('should renders correctly without tasks and not fetching', () => {
+      const tasks = [];
+      const tree = shallow(
+        <Tasks
+          back={back}
+          getTasksByContact={getTasksByContact}
+          isFetching={false}
+          tasks={tasks}
+        />,
+      );
+      expect(toJson(tree)).toMatchSnapshot();
+    });
 
-    // it('should renders correctly with tasks and fetching', () => {
-    //   const tasks = [{body: 'My body', created_at: '1991-12-17'}];
-    //   const tree = shallow(
-    //     <Tasks
-    //       back={back}
-    //       getTasksByContact={getTasksByContact}
-    //       isFetching={true}
-    //       tasks={tasks}
-    //     />,
-    //   );
-    //   expect(toJson(tree)).toMatchSnapshot();
-    //   expect(
-    //     toJson(shallow(tree.instance().renderItem({index: 0}))),
-    //   ).toMatchSnapshot();
-    // });
+    it('should renders correctly with tasks and fetching', () => {
+      const tasks = [{title: 'My title', completed: false}];
+      const tree = shallow(
+        <Tasks
+          back={back}
+          getTasksByContact={getTasksByContact}
+          isFetching={true}
+          tasks={tasks}
+        />,
+      );
+      expect(toJson(tree)).toMatchSnapshot();
+      expect(
+        toJson(shallow(tree.instance().renderItem({index: 0}))),
+      ).toMatchSnapshot();
+    });
 
-    // it('should renders correctly with tasks and fetching', () => {
-    //   const tasks = [
-    //     {body: 'My body', created_at: '1991-12-17'},
-    //     {body: 'My body 2', created_at: '1993-12-17'},
-    //   ];
-    //   const tree = shallow(
-    //     <Tasks
-    //       back={back}
-    //       getTasksByContact={getTasksByContact}
-    //       isFetching={false}
-    //       tasks={tasks}
-    //     />,
-    //   );
-    //   expect(toJson(tree)).toMatchSnapshot();
-    //   expect(
-    //     toJson(shallow(tree.instance().renderItem({index: 0}))),
-    //   ).toMatchSnapshot();
-    //   expect(
-    //     toJson(shallow(tree.instance().renderItem({index: 1}))),
-    //   ).toMatchSnapshot();
-    // });
+    it('should renders correctly with tasks and fetching', () => {
+      const tasks = [
+        {title: 'My title', completed: false},
+        {title: 'My title 2', completed: true, description: 'My desc'},
+      ];
+      const tree = shallow(
+        <Tasks
+          back={back}
+          getTasksByContact={getTasksByContact}
+          isFetching={false}
+          tasks={tasks}
+        />,
+      );
+      expect(toJson(tree)).toMatchSnapshot();
+      expect(
+        toJson(shallow(tree.instance().renderItem({index: 0}))),
+      ).toMatchSnapshot();
+      expect(
+        toJson(shallow(tree.instance().renderItem({index: 1}))),
+      ).toMatchSnapshot();
+    });
 
-    // it('should display the task indicator in the footer if it is fetching', () => {
-    //   const tasks = [
-    //     {body: 'My body', created_at: '1991-12-17'},
-    //     {body: 'My body 2', created_at: '1993-12-17'},
-    //   ];
-    //   const tree = shallow(
-    //     <Tasks
-    //       back={back}
-    //       getTasksByContact={getTasksByContact}
-    //       isFetching={true}
-    //       tasks={tasks}
-    //     />,
-    //   );
-    //   expect(toJson(shallow(tree.instance().renderFooter()))).toMatchSnapshot();
-    // });
+    it('should display the task indicator in the footer if it is fetching', () => {
+      const tasks = [
+        {title: 'My title', completed: false},
+        {title: 'My title 2', completed: false, description: 'My desc'},
+      ];
+      const tree = shallow(
+        <Tasks
+          back={back}
+          getTasksByContact={getTasksByContact}
+          isFetching={true}
+          tasks={tasks}
+        />,
+      );
+      expect(toJson(shallow(tree.instance().renderFooter()))).toMatchSnapshot();
+    });
 
     it('should not display the task indicator in the footer if it is not fetching', () => {
       const tasks = [
-        {body: 'My body', created_at: '1991-12-17'},
-        {body: 'My body 2', created_at: '1993-12-17'},
+        {title: 'My title', completed: false},
+        {title: 'My title 2', completed: true, description: 'My desc'},
       ];
       const tree = shallow(
         <Tasks

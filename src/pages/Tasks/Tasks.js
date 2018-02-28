@@ -2,8 +2,9 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {View, FlatList, ActivityIndicator, Text} from 'react-native';
 
-import {Navbar, EmptyActivity} from 'components';
+import {Navbar, EmptyActivity, Checkbox} from 'components';
 import {commonStyles} from 'theme';
+import {styles} from './Tasks.styles';
 
 export class Tasks extends PureComponent {
   static propTypes = {
@@ -32,10 +33,20 @@ export class Tasks extends PureComponent {
   };
 
   renderItem = ({item, index}) => {
-    // const {tasks} = this.props;
-    // const task = tasks[index];
+    const {tasks} = this.props;
+    const task = tasks[index];
 
-    return <Text>Text {index}</Text>;
+    return (
+      <View style={styles.taskContainer}>
+        <Checkbox checked={task.completed} />
+        <View style={[styles.flex, {paddingLeft: 15, paddingRight: 30}]}>
+          <Text>{task.title}</Text>
+          {task.description && (
+            <Text style={styles.descriptionText}>{task.description}</Text>
+          )}
+        </View>
+      </View>
+    );
   };
 
   render() {
