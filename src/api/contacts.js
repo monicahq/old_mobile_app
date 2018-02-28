@@ -3,10 +3,10 @@ export class Contacts {
     this.api = api;
   }
 
-  async getAll(page, limit = 20) {
+  async getAll(page, limit = 20, query) {
     try {
       const resp = await this.api.get('/api/contacts', {
-        body: {page, limit},
+        body: {page, limit, query},
       });
       return resp.body;
     } catch (err) {

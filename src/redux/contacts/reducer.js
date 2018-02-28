@@ -16,7 +16,18 @@ const getAllInitialState = {
   count: null,
 };
 
+const searchInitialState = {
+  query: '',
+  error: null,
+  isFetching: false,
+  fetchedPageCount: 0,
+  items: [],
+  count: null,
+};
+
 export const contactsReducer = (state = {}, action) => {
+  let contactId;
+
   switch (action.type) {
     // GET ALL SUCCESS
     case types.GET_ALL_SUCCESS:
@@ -27,92 +38,102 @@ export const contactsReducer = (state = {}, action) => {
         }
       });
       return contacts;
+    // SEARCH SUCCESS
+    case types.SEARCH_SUCCESS:
+      const contactsSearch = {...state};
+      action.items.forEach(item => {
+        if (!contactsSearch[item.id]) {
+          contactsSearch[item.id] = item;
+        }
+      });
+      return contactsSearch;
+
     case noteTypes.GET_NOTES_BY_CONTACT_SUCCESS:
-      const noteId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [noteId]: {
-          ...state[noteId],
+        [contactId]: {
+          ...state[contactId],
           notes: [
-            ...(state[noteId].notes || []),
+            ...(state[contactId].notes || []),
             ...action.notes.map(note => note.id),
           ],
         },
       };
 
     case debtTypes.GET_DEBTS_BY_CONTACT_SUCCESS:
-      const debtId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [debtId]: {
-          ...state[debtId],
+        [contactId]: {
+          ...state[contactId],
           debts: [
-            ...(state[debtId].debts || []),
+            ...(state[contactId].debts || []),
             ...action.debts.map(debt => debt.id),
           ],
         },
       };
 
     case activityTypes.GET_ACTIVITIES_BY_CONTACT_SUCCESS:
-      const activityId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [activityId]: {
-          ...state[activityId],
+        [contactId]: {
+          ...state[contactId],
           activities: [
-            ...(state[activityId].activities || []),
+            ...(state[contactId].activities || []),
             ...action.activities.map(activity => activity.id),
           ],
         },
       };
 
     case giftTypes.GET_GIFTS_BY_CONTACT_SUCCESS:
-      const giftId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [giftId]: {
-          ...state[giftId],
+        [contactId]: {
+          ...state[contactId],
           gifts: [
-            ...(state[giftId].gifts || []),
+            ...(state[contactId].gifts || []),
             ...action.gifts.map(gift => gift.id),
           ],
         },
       };
 
     case reminderTypes.GET_REMINDERS_BY_CONTACT_SUCCESS:
-      const reminderId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [reminderId]: {
-          ...state[reminderId],
+        [contactId]: {
+          ...state[contactId],
           reminders: [
-            ...(state[reminderId].reminders || []),
+            ...(state[contactId].reminders || []),
             ...action.reminders.map(reminder => reminder.id),
           ],
         },
       };
 
     case taskTypes.GET_REMINDERS_BY_CONTACT_SUCCESS:
-      const taskId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [taskId]: {
-          ...state[taskId],
+        [contactId]: {
+          ...state[contactId],
           tasks: [
-            ...(state[taskId].tasks || []),
+            ...(state[contactId].tasks || []),
             ...action.tasks.map(task => task.id),
           ],
         },
       };
 
     case callTypes.GET_CALLS_BY_CONTACT_SUCCESS:
-      const callId = action.contactId;
+      contactId = action.contactId;
       return {
         ...state,
-        [callId]: {
-          ...state[callId],
+        [contactId]: {
+          ...state[contactId],
           calls: [
-            ...(state[callId].calls || []),
+            ...(state[contactId].calls || []),
             ...action.calls.map(call => call.id),
           ],
         },
@@ -146,6 +167,42 @@ export const getAllReducer = (state = getAllInitialState, action) => {
 
     // GET ALL FAILED
     case types.GET_ALL_FAILED:
+      return {
+        ...state,
+        isFetching: false,
+        error: action.error,
+      };
+  }
+
+  return state;
+};
+
+export const searchReducer = (state = searchInitialState, action) => {
+  switch (action.type) {
+    // GET ALL FETCHED
+    case types.SEARCH_FETCHED:
+      return {
+        ...state,
+        query: action.query,
+        error: null,
+        isFetching: action.query !== '',
+        fetchedPageCount:
+          action.query === state.query ? state.fetchedPageCount + 1 : 1,
+      };
+
+    // GET ALL SUCCESS
+    case types.SEARCH_SUCCESS:
+      const items = action.items.map(item => item.id);
+      return {
+        ...state,
+        isFetching: false,
+        items:
+          state.fetchedPageCount === 1 ? items : [...state.items, ...items],
+        count: action.count,
+      };
+
+    // GET ALL FAILED
+    case types.SEARCH_FAILED:
       return {
         ...state,
         isFetching: false,

@@ -2,7 +2,11 @@ import {combineReducers} from 'redux';
 
 import {routerReducer} from './router/reducer';
 import {userReducer, tokenReducer} from './user/reducer';
-import {contactsReducer, getAllReducer} from './contacts/reducer';
+import {
+  contactsReducer,
+  getAllReducer,
+  searchReducer,
+} from './contacts/reducer';
 import {betaReducer} from './beta/reducer';
 import {
   getByContactReducer as getNotesByContactReducer,
@@ -39,6 +43,7 @@ const rootReducer = combineReducers({
   token: tokenReducer,
   contacts: contactsReducer,
   getAllContacts: getAllReducer,
+  searchContacts: searchReducer,
   beta: betaReducer,
   getNotesByContact: getNotesByContactReducer,
   notes: notesReducer,

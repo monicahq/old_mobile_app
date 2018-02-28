@@ -14,7 +14,7 @@ export function getDebtsByContact(contactId) {
       return;
     }
 
-    dispatch(actions.getDebtsByContactFetched());
+    dispatch(actions.getDebtsByContactFetched(contactId));
 
     try {
       const res = await API.Debts.getAllByContact(

@@ -14,7 +14,7 @@ export function getCallsByContact(contactId) {
       return;
     }
 
-    dispatch(actions.getCallsByContactFetched());
+    dispatch(actions.getCallsByContactFetched(contactId));
 
     try {
       const res = await API.Calls.getAllByContact(

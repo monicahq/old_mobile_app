@@ -4,7 +4,7 @@ const getByContactInitialState = {
   error: null,
   isFetching: false,
   lastUpdated: null,
-  fetchedPageCount: 0,
+  fetchedPageCount: {},
 };
 
 export const tasksReducer = (state = {}, action) => {
@@ -35,7 +35,10 @@ export const getByContactReducer = (
         ...state,
         error: null,
         isFetching: true,
-        fetchedPageCount: state.fetchedPageCount + 1,
+        fetchedPageCount: {
+          [action.contactId]:
+            (state.fetchedPageCount[action.contactId] || 0) + 1,
+        },
       };
 
     case types.GET_TASKS_BY_CONTACT_SUCCESS:
