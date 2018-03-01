@@ -1,9 +1,16 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment';
 import {View, FlatList, ActivityIndicator, Text} from 'react-native';
 
-import {Navbar, EmptyActivity} from 'components';
+import {
+  Navbar,
+  EmptyActivity,
+  LastTwoYearsStatistics,
+  YearChart,
+} from 'components';
 import {commonStyles} from 'theme';
+import {styles} from './Activities.styles';
 
 export class Activities extends PureComponent {
   static propTypes = {
@@ -20,6 +27,28 @@ export class Activities extends PureComponent {
 
   keyExtractor = (item, index) => String(item.id);
 
+  renderHeader = () => {
+    const {isFetching} = this.props;
+
+    if (isFetching) {
+      return null;
+    }
+
+    return (
+      <View style={styles.headerContainer}>
+        <LastTwoYearsStatistics
+          image={require('assets/icons/activities.png')}
+          title1="in 2017"
+          count1={3}
+          title2="in 2016"
+          count2={6}
+        />
+
+        <YearChart />
+      </View>
+    );
+  };
+
   renderFooter = () => {
     const {isFetching} = this.props;
 
@@ -33,10 +62,23 @@ export class Activities extends PureComponent {
   };
 
   renderItem = ({item, index}) => {
-    // const {activities} = this.props;
-    // const activity = activities[index];
+    const {activities} = this.props;
+    const activity = activities[index];
 
-    return <Text>Text {index}</Text>;
+    return (
+      <View style={styles.activityContainer}>
+        <View style={commonStyles.row}>
+          <Text style={styles.textLeft}>Activity</Text>
+          <View style={commonStyles.flex} />
+          <Text style={styles.textRight}>
+            {moment(activity.date_it_happened).fromNow()}
+          </Text>
+        </View>
+        {activity.description && (
+          <Text style={styles.textInfo}>{activity.description}</Text>
+        )}
+      </View>
+    );
   };
 
   render() {

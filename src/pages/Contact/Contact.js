@@ -17,7 +17,7 @@ export class Contact extends PureComponent {
     navigate: PropTypes.func.isRequired,
   };
   componentWillMount() {
-    this.props.navigate('Calls', this.props.contact.id)();
+    this.props.navigate('Activities', this.props.contact.id)();
   }
   render() {
     const {contact, back, navigate} = this.props;

@@ -1,5 +1,5 @@
 import React from 'react';
-// import toJson from 'enzyme-to-json';
+import toJson from 'enzyme-to-json';
 import {shallow} from 'enzyme';
 import {Activities} from '../Activities';
 
@@ -14,95 +14,97 @@ describe('Pages', () => {
       getActivitiesByContact = jest.fn();
     });
 
-    // it('should renders correctly without activities and fetching', () => {
-    //   const activities = [];
-    //   const tree = shallow(
-    //     <Activities
-    //       contact={contact}
-    //       back={back}
-    //       getActivitiesByContact={getActivitiesByContact}
-    //       isFetching={true}
-    //       activities={activities}
-    //     />,
-    //   );
-    //   expect(toJson(tree)).toMatchSnapshot();
-    // });
+    it('should renders correctly without activities and fetching', () => {
+      const activities = [];
+      const tree = shallow(
+        <Activities
+          contact={contact}
+          back={back}
+          getActivitiesByContact={getActivitiesByContact}
+          isFetching={true}
+          activities={activities}
+        />,
+      );
+      expect(toJson(tree)).toMatchSnapshot();
+    });
 
-    // it('should renders correctly without activities and not fetching', () => {
-    //   const activities = [];
-    //   const tree = shallow(
-    //     <Activities
-    //       back={back}
-    //       contact={contact}
-    //       getActivitiesByContact={getActivitiesByContact}
-    //       isFetching={false}
-    //       activities={activities}
-    //     />,
-    //   );
-    //   expect(toJson(tree)).toMatchSnapshot();
-    // });
+    it('should renders correctly without activities and not fetching', () => {
+      const activities = [];
+      const tree = shallow(
+        <Activities
+          back={back}
+          contact={contact}
+          getActivitiesByContact={getActivitiesByContact}
+          isFetching={false}
+          activities={activities}
+        />,
+      );
+      expect(toJson(tree)).toMatchSnapshot();
+    });
 
-    // it('should renders correctly with activities and fetching', () => {
-    //   const activities = [{body: 'My body', created_at: '1991-12-17'}];
-    //   const tree = shallow(
-    //     <Activities
-    //       contact={contact}
-    //       back={back}
-    //       getActivitiesByContact={getActivitiesByContact}
-    //       isFetching={true}
-    //       activities={activities}
-    //     />,
-    //   );
-    //   expect(toJson(tree)).toMatchSnapshot();
-    //   expect(
-    //     toJson(shallow(tree.instance().renderItem({index: 0}))),
-    //   ).toMatchSnapshot();
-    // });
+    it('should renders correctly with activities and fetching', () => {
+      const activities = [
+        {description: 'My description', date_it_happened: '1991-12-17'},
+      ];
+      const tree = shallow(
+        <Activities
+          contact={contact}
+          back={back}
+          getActivitiesByContact={getActivitiesByContact}
+          isFetching={true}
+          activities={activities}
+        />,
+      );
+      expect(toJson(tree)).toMatchSnapshot();
+      expect(
+        toJson(shallow(tree.instance().renderItem({index: 0}))),
+      ).toMatchSnapshot();
+    });
 
-    // it('should renders correctly with activities and fetching', () => {
-    //   const activities = [
-    //     {body: 'My body', created_at: '1991-12-17'},
-    //     {body: 'My body 2', created_at: '1993-12-17'},
-    //   ];
-    //   const tree = shallow(
-    //     <Activities
-    //       contact={contact}
-    //       back={back}
-    //       getActivitiesByContact={getActivitiesByContact}
-    //       isFetching={false}
-    //       activities={activities}
-    //     />,
-    //   );
-    //   expect(toJson(tree)).toMatchSnapshot();
-    //   expect(
-    //     toJson(shallow(tree.instance().renderItem({index: 0}))),
-    //   ).toMatchSnapshot();
-    //   expect(
-    //     toJson(shallow(tree.instance().renderItem({index: 1}))),
-    //   ).toMatchSnapshot();
-    // });
+    it('should renders correctly with activities and fetching', () => {
+      const activities = [
+        {description: 'My description', date_it_happened: '1991-12-17'},
+        {description: 'My description 2', date_it_happened: '1993-12-17'},
+      ];
+      const tree = shallow(
+        <Activities
+          contact={contact}
+          back={back}
+          getActivitiesByContact={getActivitiesByContact}
+          isFetching={false}
+          activities={activities}
+        />,
+      );
+      expect(toJson(tree)).toMatchSnapshot();
+      expect(
+        toJson(shallow(tree.instance().renderItem({index: 0}))),
+      ).toMatchSnapshot();
+      expect(
+        toJson(shallow(tree.instance().renderItem({index: 1}))),
+      ).toMatchSnapshot();
+    });
 
-    // it('should display the activity indicator in the footer if it is fetching', () => {
-    //   const activities = [
-    //     {body: 'My body', created_at: '1991-12-17'},
-    //     {body: 'My body 2', created_at: '1993-12-17'},
-    //   ];
-    //   const tree = shallow(
-    //     <Activities
-    //       contact={contact}
-    //       back={back}
-    //       getActivitiesByContact={getActivitiesByContact}
-    //       isFetching={true}
-    //       activities={activities}
-    //     />,
-    //   );
-    //   expect(toJson(shallow(tree.instance().renderFooter()))).toMatchSnapshot();
-    // });
+    it('should display the activity indicator in the footer if it is fetching', () => {
+      const activities = [
+        {description: 'My description', date_it_happened: '1991-12-17'},
+        {description: 'My description 2', date_it_happened: '1993-12-17'},
+      ];
+      const tree = shallow(
+        <Activities
+          contact={contact}
+          back={back}
+          getActivitiesByContact={getActivitiesByContact}
+          isFetching={true}
+          activities={activities}
+        />,
+      );
+      expect(toJson(shallow(tree.instance().renderFooter()))).toMatchSnapshot();
+    });
 
     it('should not display the activity indicator in the footer if it is not fetching', () => {
       const activities = [
-        {body: 'My body', created_at: '1991-12-17'},
-        {body: 'My body 2', created_at: '1993-12-17'},
+        {description: 'My description', date_it_happened: '1991-12-17'},
+        {description: 'My description 2', date_it_happened: '1993-12-17'},
       ];
       const tree = shallow(
         <Activities
