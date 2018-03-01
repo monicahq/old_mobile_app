@@ -49,7 +49,6 @@ export class Gifts extends PureComponent {
             data={gifts}
             renderItem={this.renderItem}
             keyExtractor={this.keyExtractor}
-            ListHeaderComponent={this.renderHeader}
             ListFooterComponent={this.renderFooter}
             onEndReached={getGiftsByContact}
             onEndReachedThreshold={0.5}

@@ -60,7 +60,6 @@ export class Tasks extends PureComponent {
             data={tasks}
             renderItem={this.renderItem}
             keyExtractor={this.keyExtractor}
-            ListHeaderComponent={this.renderHeader}
             ListFooterComponent={this.renderFooter}
             onEndReached={getTasksByContact}
             onEndReachedThreshold={0.5}

@@ -10,3 +10,4 @@ export * from './Touchable';
 export * from './FontelloIcon';
 export * from './EmptyActivity';
 export * from './Checkbox';
+export * from './LastTwoYearsStatistics';

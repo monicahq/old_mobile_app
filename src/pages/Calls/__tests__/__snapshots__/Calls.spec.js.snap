@@ -1,0 +1,367 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages Calls should display the loading indicator in the footer if it is fetching 1`] = `
+<ActivityIndicator
+  animating={true}
+  color="#999999"
+  hidesWhenStopped={true}
+  size="large"
+/>
+`;
+
+exports[`Pages Calls should renders correctly with calls and fetching 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    onBack={[MockFunction]}
+    title="Calls"
+  />
+  <FlatList
+    ListFooterComponent={[Function]}
+    ListHeaderComponent={[Function]}
+    data={
+      Array [
+        Object {
+          "called_at": "2016-10-07T21:00:56Z",
+          "content": "My content",
+        },
+        Object {
+          "called_at": "2016-08-07T21:00:56Z",
+          "content": "My content 2",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReached={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+    onEndReachedThreshold={0.5}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</View>
+`;
+
+exports[`Pages Calls should renders correctly with calls and fetching 2`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderBottomWidth": 0.5,
+      "borderColor": "#E2E4E5",
+      "paddingHorizontal": 15,
+      "paddingVertical": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#355974",
+        }
+      }
+    >
+      You called
+    </Text>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#97A5B2",
+        }
+      }
+    >
+      4 months ago
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 14,
+        "marginTop": 5,
+      }
+    }
+  >
+    My content
+  </Text>
+</View>
+`;
+
+exports[`Pages Calls should renders correctly with calls and fetching 3`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    onBack={[MockFunction]}
+    title="Calls"
+  />
+  <FlatList
+    ListFooterComponent={[Function]}
+    ListHeaderComponent={[Function]}
+    data={
+      Array [
+        Object {
+          "called_at": "2016-10-07T21:00:56Z",
+          "content": "My content",
+        },
+        Object {
+          "called_at": "2016-08-07T21:00:56Z",
+          "content": "My content 2",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReached={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+    onEndReachedThreshold={0.5}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</View>
+`;
+
+exports[`Pages Calls should renders correctly with calls and fetching 4`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderBottomWidth": 0.5,
+      "borderColor": "#E2E4E5",
+      "paddingHorizontal": 15,
+      "paddingVertical": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#355974",
+        }
+      }
+    >
+      You called
+    </Text>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#97A5B2",
+        }
+      }
+    >
+      4 months ago
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 14,
+        "marginTop": 5,
+      }
+    }
+  >
+    My content
+  </Text>
+</View>
+`;
+
+exports[`Pages Calls should renders correctly with calls and fetching 5`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderBottomWidth": 0.5,
+      "borderColor": "#E2E4E5",
+      "paddingHorizontal": 15,
+      "paddingVertical": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#355974",
+        }
+      }
+    >
+      You called
+    </Text>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#97A5B2",
+        }
+      }
+    >
+      6 months ago
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 14,
+        "marginTop": 5,
+      }
+    }
+  >
+    My content 2
+  </Text>
+</View>
+`;
+
+exports[`Pages Calls should renders correctly without calls and fetching 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    onBack={[MockFunction]}
+    title="Calls"
+  />
+  <FlatList
+    ListFooterComponent={[Function]}
+    ListHeaderComponent={[Function]}
+    data={Array []}
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReached={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+    onEndReachedThreshold={0.5}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</View>
+`;
+
+exports[`Pages Calls should renders correctly without calls and not fetching 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    onBack={[MockFunction]}
+    title="Calls"
+  />
+  <EmptyActivity
+    image={1}
+    subtitle="So you can refer to it at a later time."
+    title="Enter details about phone calls you make."
+  />
+</View>
+`;
