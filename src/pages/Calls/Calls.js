@@ -1,9 +1,11 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {View, FlatList, ActivityIndicator, Text} from 'react-native';
+import moment from 'moment';
 
-import {Navbar, EmptyActivity} from 'components';
+import {Navbar, EmptyActivity, LastTwoYearsStatistics} from 'components';
 import {commonStyles} from 'theme';
+import {styles} from './Calls.styles';
 
 export class Calls extends PureComponent {
   static propTypes = {
@@ -19,6 +21,26 @@ export class Calls extends PureComponent {
 
   keyExtractor = (item, index) => String(item.id);
 
+  renderHeader = () => {
+    const {isFetching} = this.props;
+
+    if (isFetching) {
+      return null;
+    }
+
+    return (
+      <View style={styles.headerContainer}>
+        <LastTwoYearsStatistics
+          image={require('assets/icons/phone.png')}
+          title1="calls made in 2017"
+          count1={3}
+          title2="calls made in 2016"
+          count2={6}
+        />
+      </View>
+    );
+  };
+
   renderFooter = () => {
     const {isFetching} = this.props;
 
@@ -32,10 +54,21 @@ export class Calls extends PureComponent {
   };
 
   renderItem = ({item, index}) => {
-    // const {calls} = this.props;
-    // const call = calls[index];
+    const {calls} = this.props;
+    const call = calls[index];
 
-    return <Text>Text {index}</Text>;
+    return (
+      <View style={styles.callContainer}>
+        <View style={commonStyles.row}>
+          <Text style={styles.textLeft}>You called</Text>
+          <View style={commonStyles.flex} />
+          <Text style={styles.textRight}>
+            {moment(call.called_at).fromNow()}
+          </Text>
+        </View>
+        {call.content && <Text style={styles.textInfo}>{call.content}</Text>}
+      </View>
+    );
   };
 
   render() {

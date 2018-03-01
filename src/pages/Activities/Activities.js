@@ -56,6 +56,7 @@ export class Activities extends PureComponent {
             data={activities}
             renderItem={this.renderItem}
             keyExtractor={this.keyExtractor}
+            ListHeaderComponent={this.renderHeader}
             ListFooterComponent={this.renderFooter}
             onEndReached={getActivitiesByContact}
             onEndReachedThreshold={0.5}

@@ -91,7 +91,6 @@ export class Reminders extends PureComponent {
             data={reminders}
             renderItem={this.renderItem}
             keyExtractor={this.keyExtractor}
-            ListHeaderComponent={this.renderHeader}
             ListFooterComponent={this.renderFooter}
             onEndReached={getRemindersByContact}
             onEndReachedThreshold={0.5}

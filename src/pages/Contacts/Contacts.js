@@ -86,7 +86,7 @@ export class Contacts extends PureComponent {
 
   componentWillReceiveProps(nextProps) {
     if (this.props.contacts.length === 0 && nextProps.contacts.length) {
-      this.props.navigateToContact(nextProps.contacts[8].id)();
+      this.props.navigateToContact(nextProps.contacts[4].id)();
     }
   }
 
