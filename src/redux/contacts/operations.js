@@ -32,10 +32,10 @@ export function searchContacts(query) {
       query = state.searchContacts.query;
     }
 
-    console.log('-', query);
     if (
-      state.searchContacts.isFetching ||
-      state.searchContacts.count === state.searchContacts.items.length
+      state.searchContacts.query === query &&
+      (state.searchContacts.isFetching ||
+        state.searchContacts.count === state.searchContacts.items.length)
     ) {
       return;
     }
@@ -51,17 +51,9 @@ export function searchContacts(query) {
         undefined,
         query,
       );
-      // const newState = getState();
-      // if (newState.searchContacts.query !== query) {
-      //   return;
-      // }
       dispatch(actions.searchContactsSuccess(res.data, res.meta.total));
     } catch (e) {
       console.warn(e);
-      // const newState = getState();
-      // if (newState.searchContacts.query !== query) {
-      //   return;
-      // }
       dispatch(actions.searchContactsFailed(e));
     }
   };

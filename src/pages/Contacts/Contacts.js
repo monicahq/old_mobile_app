@@ -84,14 +84,18 @@ export class Contacts extends PureComponent {
     }
   };
 
-  componentWillReceiveProps(nextProps) {
-    if (this.props.contacts.length === 0 && nextProps.contacts.length) {
-      this.props.navigateToContact(nextProps.contacts[4].id)();
-    }
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   if (this.props.contacts.length === 0 && nextProps.contacts.length) {
+  //     this.props.navigateToContact(nextProps.contacts[4].id)();
+  //   }
+  // }
 
   render() {
-    const {contacts, isFetching} = this.props;
+    const {contacts, isFetching, isSearching} = this.props;
+
+    const title = isSearching
+      ? 'No contact found.'
+      : 'To add your first contact, use the “+” button below.';
 
     return (
       <View style={commonStyles.flex}>
@@ -109,7 +113,7 @@ export class Contacts extends PureComponent {
         ) : (
           <EmptyActivity
             image={require('./assets/no-contacts.png')}
-            title="To add your first contact, use the “+” button below."
+            title={title}
           />
         )}
       </View>
