@@ -181,13 +181,15 @@ export const searchReducer = (state = searchInitialState, action) => {
   switch (action.type) {
     // GET ALL FETCHED
     case types.SEARCH_FETCHED:
+      const sameQuery = action.query === state.query;
       return {
         ...state,
+        items: sameQuery ? state.items : [],
+        count: sameQuery ? state.count : 0,
         query: action.query,
         error: null,
         isFetching: action.query !== '',
-        fetchedPageCount:
-          action.query === state.query ? state.fetchedPageCount + 1 : 1,
+        fetchedPageCount: sameQuery ? state.fetchedPageCount + 1 : 1,
       };
 
     // GET ALL SUCCESS

@@ -9,6 +9,20 @@ describe('Pages', () => {
     const searchContacts = jest.fn();
     const navigateToContact = jest.fn();
 
+    it('should not have a componentWillReceiveProps method', () => {
+      const tree = shallow(
+        <Contacts
+          getContacts={getContacts}
+          searchContacts={searchContacts}
+          contacts={[]}
+          isFetching={true}
+          isSearching={false}
+          navigateToContact={navigateToContact}
+        />,
+      );
+      expect(tree.instance().componentWillReceiveProps).toBeUndefined();
+    });
+
     it('should renders correctly without contacts and fetching', () => {
       expect(
         toJson(
