@@ -27,7 +27,7 @@
     "moment": "^2.20.1",
     "prop-types": "^15.6.1",
     "react": "16.2.0",
-    "react-native": "0.53.3",
+    "react-native": "0.54.0",
     "react-native-actionsheet": "^2.3.0",
     "react-native-code-push": "^5.2.2",
     "react-native-device-info": "^0.17.2",
