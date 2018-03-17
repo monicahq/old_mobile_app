@@ -37,3 +37,16 @@ export const getInitials = contact => {
     (contact.last_name ? contact.last_name.charAt(0) : '')
   ).toUpperCase();
 };
+
+export const getFamily = contact => {
+  const {kids, partners, progenitors} = contact.information.family;
+  return [];
+  // return [
+  //   ...partners.partners.map(person => ({...person, type: 'Partner'})),
+  //   ...kids.kids.map(person => ({...person, type: 'Kid'})),
+  //   ...progenitors.progenitors.map(person => ({
+  //     ...person,
+  //     type: 'Progenitor',
+  //   })),
+  // ];
+};

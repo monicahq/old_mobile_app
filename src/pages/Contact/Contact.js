@@ -16,9 +16,9 @@ export class Contact extends PureComponent {
     back: PropTypes.func.isRequired,
     navigate: PropTypes.func.isRequired,
   };
-  componentWillMount() {
-    this.props.navigate('Gifts', this.props.contact.id)();
-  }
+  // componentWillMount() {
+  //   this.props.navigate('Gifts', this.props.contact.id)();
+  // }
   render() {
     const {contact, back, navigate} = this.props;
 
@@ -45,7 +45,7 @@ export class Contact extends PureComponent {
 
         <ScrollView style={styles.scrollView}>
           <View style={[styles.bloc, styles.paddingVertical]}>
-            <ContactInfos />
+            <ContactInfos contact={contact} />
           </View>
           <View style={styles.bloc}>
             <ContactActivityRow
