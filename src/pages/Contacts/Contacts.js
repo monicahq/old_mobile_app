@@ -84,11 +84,11 @@ export class Contacts extends PureComponent {
     }
   };
 
-  componentWillReceiveProps(nextProps) {
-    if (this.props.contacts.length === 0 && nextProps.contacts.length) {
-      this.props.navigateToContact(nextProps.contacts[0].id)();
-    }
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   if (this.props.contacts.length === 0 && nextProps.contacts.length) {
+  //     this.props.navigateToContact(nextProps.contacts[0].id)();
+  //   }
+  // }
 
   render() {
     const {contacts, isFetching, isSearching} = this.props;
