@@ -4,6 +4,8 @@ import {View, FlatList, ActivityIndicator, Text} from 'react-native';
 
 import {Navbar, EmptyActivity} from 'components';
 import {commonStyles} from 'theme';
+import {getLabel} from 'utils/gifts';
+import {styles} from './Gifts.styles';
 
 export class Gifts extends PureComponent {
   static propTypes = {
@@ -32,10 +34,23 @@ export class Gifts extends PureComponent {
   };
 
   renderItem = ({item, index}) => {
-    // const {gifts} = this.props;
-    // const gift = gifts[index];
+    const {gifts} = this.props;
+    const gift = gifts[index];
+    console.log(gift);
 
-    return <Text>Text {index}</Text>;
+    return (
+      <View style={styles.giftContainer}>
+        <Text style={styles.name}>{gift.name}</Text>
+        <View style={styles.badgeContainer}>
+          <View style={styles.badge}>
+            <Text style={styles.badgeText}>{getLabel(gift)}</Text>
+          </View>
+        </View>
+        {gift.description && (
+          <Text style={styles.descriptionText}>{gift.description}</Text>
+        )}
+      </View>
+    );
   };
 
   render() {
