@@ -1,0 +1,109 @@
+import moment from 'moment';
+import React, {PureComponent} from 'react';
+import {ActivityIndicator, FlatList, Text, View} from 'react-native';
+
+import {EmptyActivity, Navbar} from '@components';
+import {IReminder} from '@models';
+import {IRouterBackOperation} from '@redux/router';
+import {commonStyles} from '@theme';
+import {styles} from './Reminders.styles';
+
+interface IRemindersProps {
+  back: IRouterBackOperation;
+  getRemindersByContact: () => void;
+  reminders: IReminder[];
+  isFetching: boolean;
+}
+
+export class Reminders extends PureComponent<IRemindersProps, {}> {
+  public componentWillMount() {
+    this.props.getRemindersByContact();
+  }
+
+  public keyExtractor = (item, index) => String(item.id);
+
+  public renderFooter = () => {
+    const {isFetching} = this.props;
+
+    if (!isFetching) {
+      return null;
+    }
+
+    return (
+      <ActivityIndicator style={commonStyles.activityIndicator} size="large" />
+    );
+  };
+
+  public getFrequencyLabel(type) {
+    if (type === 'year') {
+      return 'every year';
+    }
+    if (type === 'month') {
+      return 'every month';
+    }
+    if (type === 'day') {
+      return 'every day';
+    }
+    if (type === 'one_time') {
+      return 'one time';
+    }
+  }
+
+  public renderItem = ({item, index}) => {
+    const {reminders} = this.props;
+    const reminder = reminders[index];
+
+    const nextDate = moment(reminder.next_expected_date);
+
+    return (
+      <View style={styles.reminderContainer}>
+        <View style={styles.dateContainer}>
+          <Text style={styles.date}>{nextDate.format('MMM DD')}</Text>
+          <Text style={styles.dateYear}>{nextDate.format('YYYY')}</Text>
+        </View>
+
+        <View style={commonStyles.flex}>
+          <Text>{reminder.title}</Text>
+          {reminder.description ? (
+            <Text style={styles.descriptionText}>{reminder.description}</Text>
+          ) : null}
+
+          <View style={commonStyles.row}>
+            <Text style={styles.descriptionText}>{nextDate.fromNow()}</Text>
+            <View style={styles.badge}>
+              <Text style={styles.badgeText}>
+                {this.getFrequencyLabel(reminder.frequency_type)}
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    );
+  };
+
+  public render() {
+    const {back, reminders, getRemindersByContact, isFetching} = this.props;
+
+    return (
+      <View style={commonStyles.flex}>
+        <Navbar title="Reminders" onBack={back} />
+        {isFetching || reminders.length ? (
+          <FlatList
+            data={reminders}
+            renderItem={this.renderItem}
+            keyExtractor={this.keyExtractor}
+            ListFooterComponent={this.renderFooter}
+            onEndReached={getRemindersByContact}
+            onEndReachedThreshold={0.5}
+          />
+        ) : (
+          <EmptyActivity
+            image={require('./assets/empty-reminders.png')}
+            title="Be reminded at the right time, for things that matter."
+            subtitle="Your memory might let you down - we won’t."
+          />
+        )}
+      </View>
+    );
+  }
+}
