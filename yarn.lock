@@ -5037,9 +5037,9 @@ react-native-splash-screen@^3.0.6:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/react-native-splash-screen/-/react-native-splash-screen-3.0.6.tgz#c0bbf2c8ae40a313c4c7044f55e569414ff68332"
 
-react-native-svg-charts@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-svg-charts/-/react-native-svg-charts-3.0.2.tgz#91e30a23d05797d27c5c7368ba8b15809ca52e9a"
+react-native-svg-charts@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-svg-charts/-/react-native-svg-charts-4.0.0.tgz#65082f43c0a0306d727eca9128aa0a7ed139593d"
   dependencies:
     d3-array "^1.2.0"
     d3-interpolate-path "2.0.0"
