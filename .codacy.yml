@@ -9,7 +9,7 @@ engines:
    enabled: true
 
 exclude_paths:
-  - '*.spec.js'
+  - '*.spec.ts'
   - '**/__tests__/**'
   - 'ios/**/*'
   - 'android/**/*'
