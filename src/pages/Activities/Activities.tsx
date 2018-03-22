@@ -69,7 +69,7 @@ export class Activities extends PureComponent<IActivitiesProps, {}> {
     return (
       <View style={styles.activityContainer}>
         <View style={commonStyles.row}>
-          <Text style={styles.textLeft}>Activity</Text>
+          <Text style={styles.textLeft}>{activity.summary}</Text>
           <View style={commonStyles.flex} />
           <Text style={styles.textRight}>
             {moment(activity.date_it_happened).fromNow()}
