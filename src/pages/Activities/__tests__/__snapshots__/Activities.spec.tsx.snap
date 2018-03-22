@@ -34,6 +34,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
         Object {
           "date_it_happened": "1991-12-17",
           "description": "My description",
+          "summary": "Activity title",
         },
       ]
     }
@@ -88,7 +89,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
         }
       }
     >
-      Activity
+      Activity title
     </Text>
     <View
       style={
@@ -146,10 +147,12 @@ exports[`Pages Activities should renders correctly with activities and fetching 
         Object {
           "date_it_happened": "1991-12-17",
           "description": "My description",
+          "summary": "Activity title",
         },
         Object {
           "date_it_happened": "1993-12-17",
           "description": "My description 2",
+          "summary": "Activity title 2",
         },
       ]
     }
@@ -204,7 +207,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
         }
       }
     >
-      Activity
+      Activity title
     </Text>
     <View
       style={
@@ -271,7 +274,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
         }
       }
     >
-      Activity
+      Activity title 2
     </Text>
     <View
       style={

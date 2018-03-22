@@ -44,7 +44,11 @@ describe('Pages', () => {
 
     it('should renders correctly with activities and fetching', () => {
       const activities = [
-        {description: 'My description', date_it_happened: '1991-12-17'},
+        {
+          summary: 'Activity title',
+          description: 'My description',
+          date_it_happened: '1991-12-17',
+        },
       ];
       const tree = shallow(
         <Activities
@@ -63,8 +67,16 @@ describe('Pages', () => {
 
     it('should renders correctly with activities and fetching', () => {
       const activities = [
-        {description: 'My description', date_it_happened: '1991-12-17'},
-        {description: 'My description 2', date_it_happened: '1993-12-17'},
+        {
+          summary: 'Activity title',
+          description: 'My description',
+          date_it_happened: '1991-12-17',
+        },
+        {
+          summary: 'Activity title 2',
+          description: 'My description 2',
+          date_it_happened: '1993-12-17',
+        },
       ];
       const tree = shallow(
         <Activities
@@ -86,8 +98,16 @@ describe('Pages', () => {
 
     it('should display the activity indicator in the footer if it is fetching', () => {
       const activities = [
-        {description: 'My description', date_it_happened: '1991-12-17'},
-        {description: 'My description 2', date_it_happened: '1993-12-17'},
+        {
+          summary: 'Activity title',
+          description: 'My description',
+          date_it_happened: '1991-12-17',
+        },
+        {
+          summary: 'Activity title 2',
+          description: 'My description 2',
+          date_it_happened: '1993-12-17',
+        },
       ];
       const tree = shallow(
         <Activities
@@ -103,8 +123,16 @@ describe('Pages', () => {
 
     it('should not display the activity indicator in the footer if it is not fetching', () => {
       const activities = [
-        {description: 'My description', date_it_happened: '1991-12-17'},
-        {description: 'My description 2', date_it_happened: '1993-12-17'},
+        {
+          summary: 'Activity title',
+          description: 'My description',
+          date_it_happened: '1991-12-17',
+        },
+        {
+          summary: 'Activity title 2',
+          description: 'My description 2',
+          date_it_happened: '1993-12-17',
+        },
       ];
       const tree = shallow(
         <Activities
