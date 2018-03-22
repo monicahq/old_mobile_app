@@ -1,3 +1,4 @@
+import {IRootAction} from '@models';
 import {NavigationState} from 'react-navigation';
 import {combineReducers} from 'redux';
 
@@ -54,6 +55,7 @@ import {
   tasksReducer,
 } from './tasks/reducer';
 import {ITokenState, tokenReducer} from './user/reducer';
+import {LOGOUT} from './user/types';
 
 export interface IAppState {
   router: NavigationState;
@@ -78,7 +80,7 @@ export interface IAppState {
   beta: IBetaState;
 }
 
-const rootReducer = combineReducers<IAppState>({
+const appReducer = combineReducers<IAppState>({
   router: routerReducer,
   token: tokenReducer,
   contacts: contactsReducer,
@@ -100,5 +102,13 @@ const rootReducer = combineReducers<IAppState>({
   getTasksByContact: getTasksByContactReducer,
   tasks: tasksReducer,
 });
+
+const rootReducer = (state: IAppState, action: IRootAction) => {
+  if (action.type === LOGOUT) {
+    state = undefined;
+  }
+
+  return appReducer(state, action);
+};
 
 export default rootReducer;
