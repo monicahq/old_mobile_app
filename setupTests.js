@@ -13,6 +13,9 @@ jest.mock('react-native-splash-screen', () => {
   };
 });
 
+jest.mock('./package.json', () => ({
+  version: '1.0.0'
+}))
 
 // Setup react 16 adapter for enzyme
 import Enzyme from 'enzyme';
