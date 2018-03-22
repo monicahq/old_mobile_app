@@ -1,5 +1,7 @@
+// tslint:disable-next-line:no-var-requires
+const {version} = require('../../../package.json');
 import React, {PureComponent} from 'react';
-import {Platform, Switch, Text, View} from 'react-native';
+import {Platform, Switch, Text, TouchableOpacity, View} from 'react-native';
 
 import {Button, Navbar} from '@components';
 import {
@@ -30,25 +32,39 @@ export class Settings extends PureComponent<ISettingsProps, {}> {
         <Navbar title="Settings" />
 
         <View style={[commonStyles.flex, styles.container]}>
-          <View style={styles.betaContainer}>
-            <View style={styles.rowCentered}>
-              <Switch
-                value={beta}
-                onValueChange={subscribeBeta}
-                thumbTintColor={
-                  (Platform.OS === 'android' && primaryColor) || null
-                }
-              />
-              <Text style={styles.betaTitle}>Early Beta access.</Text>
-            </View>
-
-            <Text style={styles.betaSubtitle}>
-              Please be careful ! You phone might automatically install a buggy
-              version of Monica on your phone.
+          <View style={styles.betaToggleContainer}>
+            <Text style={styles.betaTitle}>
+              Enable automatic beta installs.
             </Text>
+            <Switch
+              value={beta}
+              onValueChange={subscribeBeta}
+              thumbTintColor={
+                (Platform.OS === 'android' && primaryColor) || null
+              }
+            />
           </View>
 
-          <Button onPress={this.logout}>Logout</Button>
+          <View style={styles.betaInfo}>
+            <Text style={styles.betaSubtitle}>
+              If enabled, your application will automatically install beta
+              versions. That will let you test cutting edge features, but beware
+              though: you might install versions that are not stable yet.
+            </Text>
+            <Text style={styles.appVersion}>Version: {version}</Text>
+          </View>
+
+          <TouchableOpacity onPress={this.logout}>
+            <View style={styles.logoutContainer}>
+              <Text style={styles.logoutText}>Logout</Text>
+            </View>
+          </TouchableOpacity>
+
+          <View style={commonStyles.flex} />
+          <Text style={styles.freepik1}>
+            Most illustrations used in this app come from Freepik
+          </Text>
+          <Text style={styles.freepik2}>Designed by freepik.com</Text>
         </View>
       </View>
     );

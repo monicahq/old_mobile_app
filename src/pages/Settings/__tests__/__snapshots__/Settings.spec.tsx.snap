@@ -18,7 +18,7 @@ exports[`Pages Settings android should renders correctly 1`] = `
           "flex": 1,
         },
         Object {
-          "paddingHorizontal": 20,
+          "backgroundColor": "#E2E4E5",
         },
       ]
     }
@@ -26,38 +26,42 @@ exports[`Pages Settings android should renders correctly 1`] = `
     <View
       style={
         Object {
-          "paddingVertical": 20,
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "flexDirection": "row",
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
         }
       }
     >
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Object {
-            "alignItems": "center",
-            "flexDirection": "row",
+            "flex": 1,
+            "fontSize": 14,
           }
         }
       >
-        <Switch
-          disabled={false}
-          onValueChange={[MockFunction]}
-          thumbTintColor="#355974"
-          value={true}
-        />
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "fontSize": 16,
-              "paddingHorizontal": 10,
-            }
-          }
-        >
-          Early Beta access.
-        </Text>
-      </View>
+        Enable automatic beta installs.
+      </Text>
+      <Switch
+        disabled={false}
+        onValueChange={[MockFunction]}
+        thumbTintColor="#355974"
+        value={true}
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
+        }
+      }
+    >
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -65,20 +69,92 @@ exports[`Pages Settings android should renders correctly 1`] = `
         style={
           Object {
             "fontSize": 12,
-            "marginTop": 5,
           }
         }
       >
-        Please be careful ! You phone might automatically install a buggy version of Monica on your phone.
+        If enabled, your application will automatically install beta versions. That will let you test cutting edge features, but beware though: you might install versions that are not stable yet.
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#676767",
+            "fontSize": 12,
+            "marginTop": 10,
+          }
+        }
+      >
+        Version: 
+        1.0.0
       </Text>
     </View>
-    <Button
-      disabled={false}
-      loading={false}
+    <TouchableOpacity
+      activeOpacity={0.2}
       onPress={[Function]}
     >
-      Logout
-    </Button>
+      <View
+        style={
+          Object {
+            "backgroundColor": "white",
+            "paddingHorizontal": 20,
+            "paddingVertical": 15,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#1361cb",
+            }
+          }
+        >
+          Logout
+        </Text>
+      </View>
+    </TouchableOpacity>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 10,
+          "marginTop": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Most illustrations used in this app come from Freepik
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Designed by freepik.com
+    </Text>
   </View>
 </View>
 `;
@@ -101,7 +177,7 @@ exports[`Pages Settings android should renders correctly 2`] = `
           "flex": 1,
         },
         Object {
-          "paddingHorizontal": 20,
+          "backgroundColor": "#E2E4E5",
         },
       ]
     }
@@ -109,38 +185,42 @@ exports[`Pages Settings android should renders correctly 2`] = `
     <View
       style={
         Object {
-          "paddingVertical": 20,
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "flexDirection": "row",
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
         }
       }
     >
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Object {
-            "alignItems": "center",
-            "flexDirection": "row",
+            "flex": 1,
+            "fontSize": 14,
           }
         }
       >
-        <Switch
-          disabled={false}
-          onValueChange={[MockFunction]}
-          thumbTintColor="#355974"
-          value={false}
-        />
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "fontSize": 16,
-              "paddingHorizontal": 10,
-            }
-          }
-        >
-          Early Beta access.
-        </Text>
-      </View>
+        Enable automatic beta installs.
+      </Text>
+      <Switch
+        disabled={false}
+        onValueChange={[MockFunction]}
+        thumbTintColor="#355974"
+        value={false}
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
+        }
+      }
+    >
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -148,20 +228,92 @@ exports[`Pages Settings android should renders correctly 2`] = `
         style={
           Object {
             "fontSize": 12,
-            "marginTop": 5,
           }
         }
       >
-        Please be careful ! You phone might automatically install a buggy version of Monica on your phone.
+        If enabled, your application will automatically install beta versions. That will let you test cutting edge features, but beware though: you might install versions that are not stable yet.
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#676767",
+            "fontSize": 12,
+            "marginTop": 10,
+          }
+        }
+      >
+        Version: 
+        1.0.0
       </Text>
     </View>
-    <Button
-      disabled={false}
-      loading={false}
+    <TouchableOpacity
+      activeOpacity={0.2}
       onPress={[Function]}
     >
-      Logout
-    </Button>
+      <View
+        style={
+          Object {
+            "backgroundColor": "white",
+            "paddingHorizontal": 20,
+            "paddingVertical": 15,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#1361cb",
+            }
+          }
+        >
+          Logout
+        </Text>
+      </View>
+    </TouchableOpacity>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 10,
+          "marginTop": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Most illustrations used in this app come from Freepik
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Designed by freepik.com
+    </Text>
   </View>
 </View>
 `;
@@ -184,7 +336,7 @@ exports[`Pages Settings ios should renders correctly 1`] = `
           "flex": 1,
         },
         Object {
-          "paddingHorizontal": 20,
+          "backgroundColor": "#E2E4E5",
         },
       ]
     }
@@ -192,38 +344,42 @@ exports[`Pages Settings ios should renders correctly 1`] = `
     <View
       style={
         Object {
-          "paddingVertical": 20,
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "flexDirection": "row",
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
         }
       }
     >
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Object {
-            "alignItems": "center",
-            "flexDirection": "row",
+            "flex": 1,
+            "fontSize": 14,
           }
         }
       >
-        <Switch
-          disabled={false}
-          onValueChange={[MockFunction]}
-          thumbTintColor={null}
-          value={true}
-        />
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "fontSize": 16,
-              "paddingHorizontal": 10,
-            }
-          }
-        >
-          Early Beta access.
-        </Text>
-      </View>
+        Enable automatic beta installs.
+      </Text>
+      <Switch
+        disabled={false}
+        onValueChange={[MockFunction]}
+        thumbTintColor={null}
+        value={true}
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
+        }
+      }
+    >
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -231,20 +387,92 @@ exports[`Pages Settings ios should renders correctly 1`] = `
         style={
           Object {
             "fontSize": 12,
-            "marginTop": 5,
           }
         }
       >
-        Please be careful ! You phone might automatically install a buggy version of Monica on your phone.
+        If enabled, your application will automatically install beta versions. That will let you test cutting edge features, but beware though: you might install versions that are not stable yet.
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#676767",
+            "fontSize": 12,
+            "marginTop": 10,
+          }
+        }
+      >
+        Version: 
+        1.0.0
       </Text>
     </View>
-    <Button
-      disabled={false}
-      loading={false}
+    <TouchableOpacity
+      activeOpacity={0.2}
       onPress={[Function]}
     >
-      Logout
-    </Button>
+      <View
+        style={
+          Object {
+            "backgroundColor": "white",
+            "paddingHorizontal": 20,
+            "paddingVertical": 15,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#1361cb",
+            }
+          }
+        >
+          Logout
+        </Text>
+      </View>
+    </TouchableOpacity>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 10,
+          "marginTop": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Most illustrations used in this app come from Freepik
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Designed by freepik.com
+    </Text>
   </View>
 </View>
 `;
@@ -267,7 +495,7 @@ exports[`Pages Settings ios should renders correctly 2`] = `
           "flex": 1,
         },
         Object {
-          "paddingHorizontal": 20,
+          "backgroundColor": "#E2E4E5",
         },
       ]
     }
@@ -275,38 +503,42 @@ exports[`Pages Settings ios should renders correctly 2`] = `
     <View
       style={
         Object {
-          "paddingVertical": 20,
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "flexDirection": "row",
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
         }
       }
     >
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Object {
-            "alignItems": "center",
-            "flexDirection": "row",
+            "flex": 1,
+            "fontSize": 14,
           }
         }
       >
-        <Switch
-          disabled={false}
-          onValueChange={[MockFunction]}
-          thumbTintColor={null}
-          value={false}
-        />
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "fontSize": 16,
-              "paddingHorizontal": 10,
-            }
-          }
-        >
-          Early Beta access.
-        </Text>
-      </View>
+        Enable automatic beta installs.
+      </Text>
+      <Switch
+        disabled={false}
+        onValueChange={[MockFunction]}
+        thumbTintColor={null}
+        value={false}
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
+        }
+      }
+    >
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -314,20 +546,92 @@ exports[`Pages Settings ios should renders correctly 2`] = `
         style={
           Object {
             "fontSize": 12,
-            "marginTop": 5,
           }
         }
       >
-        Please be careful ! You phone might automatically install a buggy version of Monica on your phone.
+        If enabled, your application will automatically install beta versions. That will let you test cutting edge features, but beware though: you might install versions that are not stable yet.
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#676767",
+            "fontSize": 12,
+            "marginTop": 10,
+          }
+        }
+      >
+        Version: 
+        1.0.0
       </Text>
     </View>
-    <Button
-      disabled={false}
-      loading={false}
+    <TouchableOpacity
+      activeOpacity={0.2}
       onPress={[Function]}
     >
-      Logout
-    </Button>
+      <View
+        style={
+          Object {
+            "backgroundColor": "white",
+            "paddingHorizontal": 20,
+            "paddingVertical": 15,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#1361cb",
+            }
+          }
+        >
+          Logout
+        </Text>
+      </View>
+    </TouchableOpacity>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 10,
+          "marginTop": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Most illustrations used in this app come from Freepik
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Designed by freepik.com
+    </Text>
   </View>
 </View>
 `;
