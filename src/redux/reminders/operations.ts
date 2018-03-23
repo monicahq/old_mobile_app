@@ -21,7 +21,7 @@ export function getRemindersByContact(contactId: number) {
     try {
       const res = await API.Reminders.getAllByContact(
         contactId,
-        state.getRemindersByContact.fetchedPageCount + 1
+        (state.getRemindersByContact.fetchedPageCount[contactId] || 0) + 1
       );
       dispatch(actions.getRemindersByContactSuccess(contactId, res.data));
     } catch (e) {

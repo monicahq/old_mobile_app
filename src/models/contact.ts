@@ -20,6 +20,11 @@ interface IAgeDate {
 }
 
 interface IContactInformation {
+  career: {
+    job?: string;
+    company?: string;
+    linkedin_profile_url?: string;
+  };
   avatar: {
     default_avatar_color: string;
     url: string;

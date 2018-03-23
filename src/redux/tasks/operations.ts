@@ -21,7 +21,7 @@ export function getTasksByContact(contactId: number) {
     try {
       const res = await API.Tasks.getAllByContact(
         contactId,
-        state.getTasksByContact.fetchedPageCount + 1
+        (state.getTasksByContact.fetchedPageCount[contactId] || 0) + 1
       );
       dispatch(actions.getTasksByContactSuccess(contactId, res.data));
     } catch (e) {

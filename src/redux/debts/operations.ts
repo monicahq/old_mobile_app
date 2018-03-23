@@ -21,7 +21,7 @@ export function getDebtsByContact(contactId: number) {
     try {
       const res = await API.Debts.getAllByContact(
         contactId,
-        state.getDebtsByContact.fetchedPageCount + 1
+        (state.getDebtsByContact.fetchedPageCount[contactId] || 0) + 1
       );
       dispatch(actions.getDebtsByContactSuccess(contactId, res.data));
     } catch (e) {

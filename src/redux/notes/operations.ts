@@ -21,7 +21,7 @@ export function getNotesByContact(contactId: number) {
     try {
       const res = await API.Notes.getAllByContact(
         contactId,
-        state.getNotesByContact.fetchedPageCount + 1
+        (state.getNotesByContact.fetchedPageCount[contactId] || 0) + 1
       );
       dispatch(actions.getNotesByContactSuccess(contactId, res.data));
     } catch (e) {

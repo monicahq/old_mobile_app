@@ -21,7 +21,7 @@ export function getGiftsByContact(contactId: number) {
     try {
       const res = await API.Gifts.getAllByContact(
         contactId,
-        state.getGiftsByContact.fetchedPageCount + 1
+        (state.getGiftsByContact.fetchedPageCount[contactId] || 0) + 1
       );
       dispatch(actions.getGiftsByContactSuccess(contactId, res.data));
     } catch (e) {
