@@ -1,0 +1,637 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages Settings android should renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    title="Settings"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "backgroundColor": "#E2E4E5",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "flexDirection": "row",
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "flex": 1,
+            "fontSize": 14,
+          }
+        }
+      >
+        Enable automatic beta installs.
+      </Text>
+      <Switch
+        disabled={false}
+        onValueChange={[MockFunction]}
+        thumbTintColor="#355974"
+        value={true}
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+          }
+        }
+      >
+        If enabled, your application will automatically install beta versions. That will let you test cutting edge features, but beware though: you might install versions that are not stable yet.
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#676767",
+            "fontSize": 12,
+            "marginTop": 10,
+          }
+        }
+      >
+        Version: 
+        1.0.0
+      </Text>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "white",
+            "paddingHorizontal": 20,
+            "paddingVertical": 15,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#1361cb",
+            }
+          }
+        >
+          Logout
+        </Text>
+      </View>
+    </TouchableOpacity>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 10,
+          "marginTop": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Most illustrations used in this app come from Freepik
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Designed by freepik.com
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Pages Settings android should renders correctly 2`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    title="Settings"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "backgroundColor": "#E2E4E5",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "flexDirection": "row",
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "flex": 1,
+            "fontSize": 14,
+          }
+        }
+      >
+        Enable automatic beta installs.
+      </Text>
+      <Switch
+        disabled={false}
+        onValueChange={[MockFunction]}
+        thumbTintColor="#355974"
+        value={false}
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+          }
+        }
+      >
+        If enabled, your application will automatically install beta versions. That will let you test cutting edge features, but beware though: you might install versions that are not stable yet.
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#676767",
+            "fontSize": 12,
+            "marginTop": 10,
+          }
+        }
+      >
+        Version: 
+        1.0.0
+      </Text>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "white",
+            "paddingHorizontal": 20,
+            "paddingVertical": 15,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#1361cb",
+            }
+          }
+        >
+          Logout
+        </Text>
+      </View>
+    </TouchableOpacity>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 10,
+          "marginTop": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Most illustrations used in this app come from Freepik
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Designed by freepik.com
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Pages Settings ios should renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    title="Settings"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "backgroundColor": "#E2E4E5",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "flexDirection": "row",
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "flex": 1,
+            "fontSize": 14,
+          }
+        }
+      >
+        Enable automatic beta installs.
+      </Text>
+      <Switch
+        disabled={false}
+        onValueChange={[MockFunction]}
+        thumbTintColor={null}
+        value={true}
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+          }
+        }
+      >
+        If enabled, your application will automatically install beta versions. That will let you test cutting edge features, but beware though: you might install versions that are not stable yet.
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#676767",
+            "fontSize": 12,
+            "marginTop": 10,
+          }
+        }
+      >
+        Version: 
+        1.0.0
+      </Text>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "white",
+            "paddingHorizontal": 20,
+            "paddingVertical": 15,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#1361cb",
+            }
+          }
+        >
+          Logout
+        </Text>
+      </View>
+    </TouchableOpacity>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 10,
+          "marginTop": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Most illustrations used in this app come from Freepik
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Designed by freepik.com
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Pages Settings ios should renders correctly 2`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    title="Settings"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "backgroundColor": "#E2E4E5",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "flexDirection": "row",
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "flex": 1,
+            "fontSize": 14,
+          }
+        }
+      >
+        Enable automatic beta installs.
+      </Text>
+      <Switch
+        disabled={false}
+        onValueChange={[MockFunction]}
+        thumbTintColor={null}
+        value={false}
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+          }
+        }
+      >
+        If enabled, your application will automatically install beta versions. That will let you test cutting edge features, but beware though: you might install versions that are not stable yet.
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#676767",
+            "fontSize": 12,
+            "marginTop": 10,
+          }
+        }
+      >
+        Version: 
+        1.0.0
+      </Text>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "white",
+            "paddingHorizontal": 20,
+            "paddingVertical": 15,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#1361cb",
+            }
+          }
+        >
+          Logout
+        </Text>
+      </View>
+    </TouchableOpacity>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 10,
+          "marginTop": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Most illustrations used in this app come from Freepik
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#676767",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Designed by freepik.com
+    </Text>
+  </View>
+</View>
+`;

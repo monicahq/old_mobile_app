@@ -1,0 +1,284 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages Tasks should display the task indicator in the footer if it is fetching 1`] = `
+<ActivityIndicator
+  animating={true}
+  color="#999999"
+  hidesWhenStopped={true}
+  size="large"
+  style={
+    Object {
+      "marginVertical": 20,
+    }
+  }
+/>
+`;
+
+exports[`Pages Tasks should renders correctly with tasks and fetching 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    onBack={[MockFunction]}
+    title="Tasks"
+  />
+  <FlatList
+    ListFooterComponent={[Function]}
+    data={
+      Array [
+        Object {
+          "completed": false,
+          "title": "My title",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReached={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+    onEndReachedThreshold={0.5}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</View>
+`;
+
+exports[`Pages Tasks should renders correctly with tasks and fetching 2`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderBottomWidth": 0.5,
+      "borderColor": "#E2E4E5",
+      "flexDirection": "row",
+      "paddingHorizontal": 15,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Checkbox
+    checked={false}
+  />
+  <View
+    style={
+      Object {
+        "paddingLeft": 15,
+        "paddingRight": 30,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      My title
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Pages Tasks should renders correctly with tasks and fetching 3`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    onBack={[MockFunction]}
+    title="Tasks"
+  />
+  <FlatList
+    ListFooterComponent={[Function]}
+    data={
+      Array [
+        Object {
+          "completed": false,
+          "title": "My title",
+        },
+        Object {
+          "completed": true,
+          "description": "My desc",
+          "title": "My title 2",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReached={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+    onEndReachedThreshold={0.5}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</View>
+`;
+
+exports[`Pages Tasks should renders correctly with tasks and fetching 4`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderBottomWidth": 0.5,
+      "borderColor": "#E2E4E5",
+      "flexDirection": "row",
+      "paddingHorizontal": 15,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Checkbox
+    checked={false}
+  />
+  <View
+    style={
+      Object {
+        "paddingLeft": 15,
+        "paddingRight": 30,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      My title
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Pages Tasks should renders correctly with tasks and fetching 5`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderBottomWidth": 0.5,
+      "borderColor": "#E2E4E5",
+      "flexDirection": "row",
+      "paddingHorizontal": 15,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Checkbox
+    checked={true}
+  />
+  <View
+    style={
+      Object {
+        "paddingLeft": 15,
+        "paddingRight": 30,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      My title 2
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#818181",
+          "fontSize": 14,
+          "marginTop": 5,
+        }
+      }
+    >
+      My desc
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Pages Tasks should renders correctly without tasks and fetching 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    onBack={[MockFunction]}
+    title="Tasks"
+  />
+  <FlatList
+    ListFooterComponent={[Function]}
+    data={Array []}
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReached={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+    onEndReachedThreshold={0.5}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</View>
+`;
+
+exports[`Pages Tasks should renders correctly without tasks and not fetching 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    onBack={[MockFunction]}
+    title="Tasks"
+  />
+  <EmptyActivity
+    image={1}
+    subtitle="Let Monica manage stuff for you."
+    title="You have no excuses not to be multitask anymore."
+  />
+</View>
+`;

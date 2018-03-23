@@ -9,7 +9,7 @@ install:
   - yarn
 before_script: greenkeeper-lockfile-update
 script:
-  - npm run flow
+  - yarn tsc
   - npm test -- --coverage --runInBand
   - codecov
 after_script: greenkeeper-lockfile-upload

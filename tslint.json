@@ -1,0 +1,27 @@
+{
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "prettier": [true, {
+      "singleQuote": true,
+      "trailingComma": "es5",
+      "bracketSpacing": false
+    }],
+    "no-console": {
+      "severity": "warning",
+      "options": ["log", "info", "time"]
+    },
+    "no-submodule-imports": false,
+    "no-string-literal": false,
+    "object-literal-sort-keys": false,
+    "max-file-line-count": [true, 300],
+    "no-unused-variable": true,
+    "no-unused-expression": true,
+    "cyclomatic-complexity": [true, 20],
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    "no-implicit-dependencies": false,
+    "max-classes-per-file": false
+}
+}
