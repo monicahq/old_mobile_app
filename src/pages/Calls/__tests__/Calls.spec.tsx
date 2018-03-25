@@ -112,6 +112,38 @@ describe('Pages', () => {
       expect(tree.instance().renderFooter()).toBeNull();
     });
 
+    it('should not display the header if it is fetching', () => {
+      const calls = [
+        {called_at: '2016-10-07T21:00:56Z', content: 'My content'},
+        {called_at: '2016-08-07T21:00:56Z', content: 'My content 2'},
+      ];
+      const tree = shallow(
+        <Calls
+          back={back}
+          getCallsByContact={getCallsByContact}
+          isFetching={true}
+          calls={calls as any}
+        />
+      );
+      expect(tree.instance().renderHeader()).toBeNull();
+    });
+
+    it('should display the header if it is not fetching', () => {
+      const calls = [
+        {called_at: '2016-10-07T21:00:56Z', content: 'My content'},
+        {called_at: '2016-08-07T21:00:56Z', content: 'My content 2'},
+      ];
+      const tree = shallow(
+        <Calls
+          back={back}
+          getCallsByContact={getCallsByContact}
+          isFetching={false}
+          calls={calls as any}
+        />
+      );
+      expect(toJson(shallow(tree.instance().renderHeader()))).toMatchSnapshot();
+    });
+
     it('should have a keyExtractor', () => {
       const calls = [{id: 1}, {id: 2}];
       const tree = shallow(

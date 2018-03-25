@@ -96,6 +96,56 @@ describe('Pages', () => {
       ).toMatchSnapshot();
     });
 
+    it('should not display the header if it is fetching', () => {
+      const activities = [
+        {
+          summary: 'Activity title',
+          description: 'My description',
+          date_it_happened: '1991-12-17',
+        },
+        {
+          summary: 'Activity title 2',
+          description: 'My description 2',
+          date_it_happened: '1993-12-17',
+        },
+      ];
+      const tree = shallow(
+        <Activities
+          contact={contact as any}
+          back={back}
+          getActivitiesByContact={getActivitiesByContact}
+          isFetching={true}
+          activities={activities as any}
+        />
+      );
+      expect(tree.instance().renderHeader()).toBeNull();
+    });
+
+    it('should display the header if it is not fetching', () => {
+      const activities = [
+        {
+          summary: 'Activity title',
+          description: 'My description',
+          date_it_happened: '1991-12-17',
+        },
+        {
+          summary: 'Activity title 2',
+          description: 'My description 2',
+          date_it_happened: '1993-12-17',
+        },
+      ];
+      const tree = shallow(
+        <Activities
+          contact={contact as any}
+          back={back}
+          getActivitiesByContact={getActivitiesByContact}
+          isFetching={false}
+          activities={activities as any}
+        />
+      );
+      expect(toJson(shallow(tree.instance().renderHeader()))).toMatchSnapshot();
+    });
+
     it('should display the activity indicator in the footer if it is fetching', () => {
       const activities = [
         {

@@ -1,0 +1,625 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Tabbar should renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F8F7F7",
+      "borderColor": "#979797",
+      "borderTopWidth": 0.5,
+      "flexDirection": "row",
+      "height": 48,
+    }
+  }
+>
+  <Connect(ActionSheet) />
+  <DummyTouchableNativeFeedback
+    key="Dashboard"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#1361cb"
+        name="gauge"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            Object {
+              "color": "#1361cb",
+            },
+          ]
+        }
+      >
+        Dashboard
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+  <DummyTouchableNativeFeedback
+    key="Contacts"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="users"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Contacts
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+  <DummyTouchableNativeFeedback
+    key="Add"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="plus-circled"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Add
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+  <DummyTouchableNativeFeedback
+    key="Journal"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="list"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Journal
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+  <DummyTouchableNativeFeedback
+    key="Settings"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="cog"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Settings
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+</View>
+`;
+
+exports[`Components Tabbar should renders correctly 2`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F8F7F7",
+      "borderColor": "#979797",
+      "borderTopWidth": 0.5,
+      "flexDirection": "row",
+      "height": 48,
+    }
+  }
+>
+  <Connect(ActionSheet) />
+  <DummyTouchableNativeFeedback
+    key="Dashboard"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="gauge"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Dashboard
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+  <DummyTouchableNativeFeedback
+    key="Contacts"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#1361cb"
+        name="users"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            Object {
+              "color": "#1361cb",
+            },
+          ]
+        }
+      >
+        Contacts
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+  <DummyTouchableNativeFeedback
+    key="Add"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="plus-circled"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Add
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+  <DummyTouchableNativeFeedback
+    key="Journal"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="list"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Journal
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+  <DummyTouchableNativeFeedback
+    key="Settings"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="cog"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Settings
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+</View>
+`;
+
+exports[`Components Tabbar should renders correctly 3`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F8F7F7",
+      "borderColor": "#979797",
+      "borderTopWidth": 0.5,
+      "flexDirection": "row",
+      "height": 48,
+    }
+  }
+>
+  <Connect(ActionSheet) />
+  <DummyTouchableNativeFeedback
+    key="Dashboard"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="gauge"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Dashboard
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+  <DummyTouchableNativeFeedback
+    key="Contacts"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#1361cb"
+        name="users"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            Object {
+              "color": "#1361cb",
+            },
+          ]
+        }
+      >
+        Contacts
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+  <DummyTouchableNativeFeedback
+    key="Add"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="plus-circled"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Add
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+  <DummyTouchableNativeFeedback
+    key="Journal"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="list"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Journal
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+  <DummyTouchableNativeFeedback
+    key="Settings"
+    onPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="cog"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Settings
+      </Text>
+    </View>
+  </DummyTouchableNativeFeedback>
+</View>
+`;

@@ -1,5 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Pages Calls should display the header if it is not fetching 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "paddingHorizontal": 15,
+    }
+  }
+>
+  <LastTwoYearsStatistics
+    count1={3}
+    count2={6}
+    image={1}
+    title1="calls made in 2017"
+    title2="calls made in 2016"
+  />
+</View>
+`;
+
 exports[`Pages Calls should display the loading indicator in the footer if it is fetching 1`] = `
 <ActivityIndicator
   animating={true}
