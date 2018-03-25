@@ -67,7 +67,9 @@ describe('Redux', () => {
             },
             getRemindersByContact: {
               isFetching: false,
-              fetchedPageCount,
+              fetchedPageCount: {
+                [contactId]: fetchedPageCount,
+              },
             },
           });
           getAllByContact.mockReturnValue(Promise.resolve(res));
@@ -95,7 +97,9 @@ describe('Redux', () => {
             },
             getRemindersByContact: {
               isFetching: false,
-              fetchedPageCount,
+              fetchedPageCount: {
+                [contactId]: fetchedPageCount,
+              },
             },
           });
           getAllByContact.mockReturnValue(Promise.reject(error));

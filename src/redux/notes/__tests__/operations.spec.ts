@@ -67,7 +67,9 @@ describe('Redux', () => {
             },
             getNotesByContact: {
               isFetching: false,
-              fetchedPageCount,
+              fetchedPageCount: {
+                [contactId]: fetchedPageCount,
+              },
             },
           });
           getAllByContact.mockReturnValue(Promise.resolve(res));
@@ -95,7 +97,9 @@ describe('Redux', () => {
             },
             getNotesByContact: {
               isFetching: false,
-              fetchedPageCount,
+              fetchedPageCount: {
+                [contactId]: fetchedPageCount,
+              },
             },
           });
           getAllByContact.mockReturnValue(Promise.reject(error));

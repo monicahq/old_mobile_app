@@ -20,7 +20,7 @@ describe('API', () => {
       await service.getAll(page, limit);
       expect(api.get.mock.calls.length).toBe(1);
       expect(api.get.mock.calls[0]).toEqual([
-        '/api/contacts',
+        '/api/contacts?with=contactfields',
         {body: {page, limit}},
       ]);
     });

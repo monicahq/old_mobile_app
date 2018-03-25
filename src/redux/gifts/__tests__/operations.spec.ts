@@ -68,7 +68,9 @@ describe('Redux', () => {
             },
             getGiftsByContact: {
               isFetching: false,
-              fetchedPageCount,
+              fetchedPageCount: {
+                [contactId]: fetchedPageCount,
+              },
             },
           });
           getAllByContact.mockReturnValue(Promise.resolve(res));
@@ -96,7 +98,9 @@ describe('Redux', () => {
             },
             getGiftsByContact: {
               isFetching: false,
-              fetchedPageCount,
+              fetchedPageCount: {
+                [contactId]: fetchedPageCount,
+              },
             },
           });
           getAllByContact.mockReturnValue(Promise.reject(error));
