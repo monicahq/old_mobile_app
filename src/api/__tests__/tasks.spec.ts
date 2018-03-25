@@ -21,7 +21,7 @@ describe('API', () => {
       expect(api.get.mock.calls.length).toBe(1);
       expect(api.get.mock.calls[0]).toEqual([
         '/api/contacts/' + contactId + '/tasks',
-        {body: {page, limit}},
+        {body: {page, limit, sort: 'completed_at'}},
       ]);
     });
 
