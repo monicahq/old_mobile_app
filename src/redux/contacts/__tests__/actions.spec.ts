@@ -2,6 +2,9 @@ import {
   getContactsFailed,
   getContactsFetched,
   getContactsSuccess,
+  searchContactsFailed,
+  searchContactsFetched,
+  searchContactsSuccess,
 } from '../actions';
 import * as types from '../types';
 
@@ -28,6 +31,33 @@ describe('Redux', () => {
         const error = new Error('My error');
         expect(getContactsFailed(error)).toEqual({
           type: types.GET_ALL_FAILED,
+          error: true,
+          payload: error,
+        });
+      });
+
+      it('searchContactsFetched', () => {
+        const query = 'my-query';
+        expect(searchContactsFetched(query)).toEqual({
+          query,
+          type: types.SEARCH_FETCHED,
+        });
+      });
+
+      it('searchContactsSuccess', () => {
+        const items = ['item2', 'item1'];
+        const count = 5;
+        expect(searchContactsSuccess(items as any, count)).toEqual({
+          type: types.SEARCH_SUCCESS,
+          items,
+          count,
+        });
+      });
+
+      it('searchContactsFailed', () => {
+        const error = new Error('My error');
+        expect(searchContactsFailed(error)).toEqual({
+          type: types.SEARCH_FAILED,
           error: true,
           payload: error,
         });

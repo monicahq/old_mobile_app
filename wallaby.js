@@ -7,7 +7,7 @@ module.exports = function (wallaby) {
       'src/**/*.ts',
       'src/**/*.tsx',
       {pattern: 'src/**/*.json', instrument: false},
-      'setupJest.ts',
+      {pattern: 'setupJest.ts', instrument: false},
       'tsconfig.json',
       'package.json',
       '!src/**/*.spec.ts',

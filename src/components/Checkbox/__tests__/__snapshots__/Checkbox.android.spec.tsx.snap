@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Checkbox Android should renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderRadius": 10,
+        "height": 20,
+        "justifyContent": "center",
+        "width": 20,
+      },
+      Object {
+        "backgroundColor": "#057CFC",
+      },
+    ]
+  }
+>
+  <Icon
+    allowFontScaling={false}
+    color="white"
+    name="ios-checkmark"
+    size={60}
+  />
+</View>
+`;
+
+exports[`Components Checkbox Android should renders correctly 2`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderRadius": 10,
+        "height": 20,
+        "justifyContent": "center",
+        "width": 20,
+      },
+      Object {
+        "borderColor": "#979797",
+        "borderWidth": 0.5,
+      },
+    ]
+  }
+/>
+`;
