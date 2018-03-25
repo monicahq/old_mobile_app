@@ -22,7 +22,7 @@ export class ContactInfos extends PureComponent<
   IContactInfosState
 > {
   public state = {
-    index: 1,
+    index: 2,
   };
   public setSegmentedControlState = event =>
     this.setState({index: event.nativeEvent.selectedSegmentIndex});

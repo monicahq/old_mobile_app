@@ -21,7 +21,7 @@ export function getActivitiesByContact(contactId: number) {
     try {
       const res = await API.Activities.getAllByContact(
         contactId,
-        state.getActivitiesByContact.fetchedPageCount + 1
+        (state.getActivitiesByContact.fetchedPageCount[contactId] || 0) + 1
       );
       dispatch(actions.getActivitiesByContactSuccess(contactId, res.data));
     } catch (e) {

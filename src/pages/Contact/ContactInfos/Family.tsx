@@ -1,6 +1,7 @@
 import React, {PureComponent} from 'react';
 import {Text, View} from 'react-native';
 
+import {ListItem} from '@components';
 import {IContact} from '@models';
 import {getAge, getFamily} from '@utils/contacts';
 import {styles} from './Family.styles';
@@ -22,20 +23,15 @@ export class Family extends PureComponent<IMeetProps, {}> {
 
         {people.map((person, index) => {
           const age = getAge(person);
+          const title =
+            person.first_name + person.last_name + (age ? ', age' : '');
           return (
-            <View
+            <ListItem
               key={person.id}
-              style={[
-                styles.row,
-                index !== people.length - 1 ? styles.notLastRow : null,
-              ]}
-            >
-              <Text>
-                {person.first_name} {person.last_name}
-              </Text>
-              {age && <Text>, {age}</Text>}
-              <Text style={styles.typeText}>({person.type})</Text>
-            </View>
+              lastItem={index === people.length - 1}
+              title={title}
+              subtitle={'(' + person.type + ')'}
+            />
           );
         })}
       </View>

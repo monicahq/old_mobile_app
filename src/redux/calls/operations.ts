@@ -21,7 +21,7 @@ export function getCallsByContact(contactId: number) {
     try {
       const res = await API.Calls.getAllByContact(
         contactId,
-        state.getCallsByContact.fetchedPageCount + 1
+        (state.getCallsByContact.fetchedPageCount[contactId] || 0) + 1
       );
       dispatch(actions.getCallsByContactSuccess(contactId, res.data));
     } catch (e) {
