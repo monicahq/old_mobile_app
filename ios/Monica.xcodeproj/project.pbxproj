@@ -1476,7 +1476,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\nexport BUNDLE_CONFIG=rn-cli.config.js\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
 		150EEDD4A7C20BE0FA1FAB0A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1822,7 +1822,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Monica/Monica.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = MVHSH3DLRY;
 				HEADER_SEARCH_PATHS = (
@@ -1858,7 +1858,7 @@
 				CODE_SIGN_ENTITLEMENTS = Monica/Monica.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = MVHSH3DLRY;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
