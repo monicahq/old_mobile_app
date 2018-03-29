@@ -5,6 +5,7 @@
   "scripts": {
     "commit": "commit",
     "commitmsg": "commitlint -e $GIT_PARAMS",
+    "changelog": "standard-changelog",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
@@ -71,6 +72,7 @@
     "react-dom": "~16.2.0",
     "react-native-typescript-transformer": "~1.2.3",
     "react-test-renderer": "16.3.0-alpha.1",
+    "standard-changelog": "^1.0.18",
     "ts-jest": "~22.4.2",
     "tslint": "~5.9.1",
     "tslint-config-prettier": "~1.10.0",
