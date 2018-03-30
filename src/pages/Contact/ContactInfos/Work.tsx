@@ -24,7 +24,7 @@ export class Work extends PureComponent<IWorkProps, {}> {
     return (
       <View style={styles.container}>
         {items.length === 0 && (
-          <Text style={styles.noWorkInfo}>{I18n.t('contacts:wor.none')}</Text>
+          <Text style={styles.noWorkInfo}>{I18n.t('contacts:work.none')}</Text>
         )}
         {items.map((item, index) => (
           <ListItem

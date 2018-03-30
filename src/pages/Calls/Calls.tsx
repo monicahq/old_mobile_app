@@ -4,7 +4,7 @@ import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 
 import {EmptyActivity, LastTwoYearsStatistics, Navbar} from '@components';
 import {I18n} from '@i18n';
-import {ICall} from '@src/models';
+import {ICall, IMetaStatistics} from '@src/models';
 import {IRouterBackOperation} from '@src/redux/router';
 import {commonStyles} from '@theme';
 import {styles} from './Calls.styles';
@@ -14,6 +14,7 @@ interface ICallsProps {
   getCallsByContact: () => void;
   calls: ICall[];
   isFetching: boolean;
+  statistics: IMetaStatistics;
 }
 
 export class Calls extends PureComponent<ICallsProps, {}> {
@@ -24,20 +25,22 @@ export class Calls extends PureComponent<ICallsProps, {}> {
   public keyExtractor = (item, index) => String(item.id);
 
   public renderHeader = () => {
-    const {isFetching} = this.props;
+    const {isFetching, statistics} = this.props;
 
     if (isFetching) {
       return null;
     }
 
+    const keys = Object.keys(statistics).reverse();
+
     return (
       <View style={styles.headerContainer}>
         <LastTwoYearsStatistics
           image={require('@assets/icons/phone.png')}
-          title1={I18n.t('common:yearDisplay', {year: 2017})}
-          count1={3}
-          title2={I18n.t('common:yearDisplay', {year: 2016})}
-          count2={6}
+          title1={I18n.t('common:yearDisplay', {year: keys[0]})}
+          count1={statistics[keys[0]]}
+          title2={I18n.t('common:yearDisplay', {year: keys[1]})}
+          count2={statistics[keys[1]]}
         />
       </View>
     );

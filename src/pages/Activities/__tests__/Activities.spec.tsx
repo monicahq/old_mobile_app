@@ -16,6 +16,7 @@ describe('Pages', () => {
 
     it('should renders correctly without activities and fetching', () => {
       const activities = [];
+      const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Activities
           contact={contact as any}
@@ -23,6 +24,7 @@ describe('Pages', () => {
           getActivitiesByContact={getActivitiesByContact}
           isFetching={true}
           activities={activities}
+          statistics={statistics}
         />
       );
       expect(toJson(tree)).toMatchSnapshot();
@@ -30,6 +32,7 @@ describe('Pages', () => {
 
     it('should renders correctly without activities and not fetching', () => {
       const activities = [];
+      const statistics = {};
       const tree = shallow(
         <Activities
           back={back}
@@ -37,6 +40,7 @@ describe('Pages', () => {
           getActivitiesByContact={getActivitiesByContact}
           isFetching={false}
           activities={activities}
+          statistics={statistics}
         />
       );
       expect(toJson(tree)).toMatchSnapshot();
@@ -50,6 +54,7 @@ describe('Pages', () => {
           date_it_happened: '1991-12-17',
         },
       ];
+      const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Activities
           contact={contact as any}
@@ -57,6 +62,7 @@ describe('Pages', () => {
           getActivitiesByContact={getActivitiesByContact}
           isFetching={true}
           activities={activities as any}
+          statistics={statistics}
         />
       );
       expect(toJson(tree)).toMatchSnapshot();
@@ -78,6 +84,7 @@ describe('Pages', () => {
           date_it_happened: '1993-12-17',
         },
       ];
+      const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Activities
           contact={contact as any}
@@ -85,6 +92,7 @@ describe('Pages', () => {
           getActivitiesByContact={getActivitiesByContact}
           isFetching={false}
           activities={activities as any}
+          statistics={statistics}
         />
       );
       expect(toJson(tree)).toMatchSnapshot();
@@ -109,6 +117,7 @@ describe('Pages', () => {
           date_it_happened: '1993-12-17',
         },
       ];
+      const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Activities
           contact={contact as any}
@@ -116,6 +125,7 @@ describe('Pages', () => {
           getActivitiesByContact={getActivitiesByContact}
           isFetching={true}
           activities={activities as any}
+          statistics={statistics}
         />
       );
       expect(tree.instance().renderHeader()).toBeNull();
@@ -134,6 +144,7 @@ describe('Pages', () => {
           date_it_happened: '1993-12-17',
         },
       ];
+      const statistics = {'2017': 100, '2015': 20};
       const tree = shallow(
         <Activities
           contact={contact as any}
@@ -141,6 +152,7 @@ describe('Pages', () => {
           getActivitiesByContact={getActivitiesByContact}
           isFetching={false}
           activities={activities as any}
+          statistics={statistics}
         />
       );
       expect(toJson(shallow(tree.instance().renderHeader()))).toMatchSnapshot();
@@ -159,6 +171,7 @@ describe('Pages', () => {
           date_it_happened: '1993-12-17',
         },
       ];
+      const statistics = {'2017': 2300, '2015': 10};
       const tree = shallow(
         <Activities
           contact={contact as any}
@@ -166,6 +179,7 @@ describe('Pages', () => {
           getActivitiesByContact={getActivitiesByContact}
           isFetching={true}
           activities={activities as any}
+          statistics={statistics}
         />
       );
       expect(toJson(shallow(tree.instance().renderFooter()))).toMatchSnapshot();
@@ -184,6 +198,7 @@ describe('Pages', () => {
           date_it_happened: '1993-12-17',
         },
       ];
+      const statistics = {'2020': 100, '2015': 20};
       const tree = shallow(
         <Activities
           contact={contact as any}
@@ -191,6 +206,7 @@ describe('Pages', () => {
           getActivitiesByContact={getActivitiesByContact}
           isFetching={false}
           activities={activities as any}
+          statistics={statistics}
         />
       );
       expect(tree.instance().renderFooter()).toBeNull();
@@ -198,6 +214,7 @@ describe('Pages', () => {
 
     it('should have a keyExtractor', () => {
       const activities = [{id: 1}, {id: 2}];
+      const statistics = {'2017': 100, '2015': 20};
       const tree = shallow(
         <Activities
           contact={contact as any}
@@ -205,6 +222,7 @@ describe('Pages', () => {
           getActivitiesByContact={getActivitiesByContact}
           isFetching={false}
           activities={activities as any}
+          statistics={statistics}
         />
       );
       expect(tree.instance().keyExtractor(activities[0])).toBe('1');

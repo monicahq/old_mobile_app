@@ -74,6 +74,7 @@ frisbee.interceptor.register({
     setNetworkActivityIndicator();
 
     if (__DEV__) {
+      // tslint:disable-next-line:no-console
       console.info('REQUEST', response.url, response.body);
     }
     return response;

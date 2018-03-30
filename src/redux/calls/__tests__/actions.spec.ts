@@ -19,10 +19,14 @@ describe('Redux', () => {
       it('getCallsByContactSuccess', () => {
         const contactId = 5;
         const calls = ['item2', 'item1'];
-        expect(getCallsByContactSuccess(contactId, calls as any)).toEqual({
+        const statistics = {2016: 10};
+        expect(
+          getCallsByContactSuccess(contactId, calls as any, statistics)
+        ).toEqual({
           type: types.GET_CALLS_BY_CONTACT_SUCCESS,
           calls,
           contactId,
+          statistics,
         });
       });
 

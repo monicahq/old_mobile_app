@@ -1,4 +1,4 @@
-import {IActivity} from '@models';
+import {IActivity, IMetaStatistics} from '@models';
 import {createAction} from 'typesafe-actions';
 import {$call} from 'utility-types';
 import * as types from './types';
@@ -13,10 +13,15 @@ export const getActivitiesByContactFetched = createAction(
 
 export const getActivitiesByContactSuccess = createAction(
   types.GET_ACTIVITIES_BY_CONTACT_SUCCESS,
-  (contactId: number, activities: IActivity[]) => ({
+  (
+    contactId: number,
+    activities: IActivity[],
+    statistics: IMetaStatistics
+  ) => ({
     type: types.GET_ACTIVITIES_BY_CONTACT_SUCCESS,
     activities,
     contactId,
+    statistics,
   })
 );
 

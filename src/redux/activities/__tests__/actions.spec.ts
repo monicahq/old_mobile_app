@@ -19,12 +19,18 @@ describe('Redux', () => {
       it('getActivitiesByContactSuccess', () => {
         const contactId = 5;
         const activities = ['item2', 'item1'];
+        const statistics = {2016: 10};
         expect(
-          getActivitiesByContactSuccess(contactId, activities as any)
+          getActivitiesByContactSuccess(
+            contactId,
+            activities as any,
+            statistics
+          )
         ).toEqual({
           type: types.GET_ACTIVITIES_BY_CONTACT_SUCCESS,
           activities,
           contactId,
+          statistics,
         });
       });
 
