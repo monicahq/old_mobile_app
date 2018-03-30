@@ -5,11 +5,11 @@ import {Checkbox} from '../Checkbox.ios';
 
 describe('Components', () => {
   describe('Checkbox IOS', () => {
-    const defaultOnPress = {
-      onPress: () => {
-        return;
-      },
-    };
+    // const defaultOnPress = {
+    //   onPress: () => {
+    //     return;
+    //   },
+    // };
 
     it('should renders correctly', () => {
       expect(toJson(shallow(<Checkbox checked={true} />))).toMatchSnapshot();

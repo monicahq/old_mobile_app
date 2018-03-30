@@ -1,9 +1,10 @@
-import {Button, TextInput} from '@components';
-import {commonStyles} from '@theme';
 import {InjectedFormikProps} from 'formik';
 import React, {PureComponent} from 'react';
 import {Text} from 'react-native';
 
+import {Button, TextInput} from '@components';
+import {I18n} from '@i18n';
+import {commonStyles} from '@theme';
 import {IProps, IValues} from './LoginForm.model';
 
 export class LoginForm extends PureComponent<
@@ -28,10 +29,10 @@ export class LoginForm extends PureComponent<
     return (
       <TextInput
         key={0}
-        title="Your email"
+        title={I18n.t('auth:yourEmail')}
         // @ts-ignore: TODO wait for react-native @types to be updated
         keyboardType="email-address"
-        placeholder="email@example.com"
+        placeholder={I18n.t('auth:emailPlaceholder')}
         returnKeyType="next"
         onChangeText={this.setFieldValue('email')}
         onSubmitEditing={this.focusField('passwordTextInput')}
@@ -52,7 +53,7 @@ export class LoginForm extends PureComponent<
       <TextInput
         key={1}
         ref={this.passwordTextInputRef}
-        title="Your password"
+        title={I18n.t('auth:yourPassword')}
         // @ts-ignore: TODO wait for react-native @types to be updated
         returnKeyType="send"
         secureTextEntry={true}
@@ -75,8 +76,8 @@ export class LoginForm extends PureComponent<
       <Button
         key={2}
         onPress={isValid ? handleSubmit : this.setAllTouched}
-        title="Sign in"
-        loadingTitle="Signin in"
+        title={I18n.t('auth:signin')}
+        loadingTitle={I18n.t('auth:signinIn')}
         disabled={isSubmitting}
         loading={isSubmitting}
       />,

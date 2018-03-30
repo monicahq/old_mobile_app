@@ -46,8 +46,7 @@ exports[`Components ContactListItem should renders correctly 1`] = `
           }
         }
       >
-        Last updated 
-        testDate
+        Last updated on testDate
       </Text>
     </View>
   </View>
@@ -102,8 +101,7 @@ exports[`Components ContactListItem should renders correctly 2`] = `
           }
         }
       >
-        Last updated 
-        testDate
+        Last updated on testDate
       </Text>
     </View>
   </View>

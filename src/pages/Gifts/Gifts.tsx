@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 
 import {EmptyActivity, Navbar} from '@components';
+import {I18n} from '@i18n';
 import {IGift} from '@models';
 import {IRouterBackOperation} from '@models/operations';
 import {commonStyles} from '@theme';
@@ -58,7 +59,7 @@ export class Gifts extends PureComponent<IGiftsProps, {}> {
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title="Gifts" onBack={back} />
+        <Navbar title={I18n.t('gifts:gifts')} onBack={back} />
         {isFetching || gifts.length ? (
           <FlatList
             data={gifts}
@@ -71,8 +72,8 @@ export class Gifts extends PureComponent<IGiftsProps, {}> {
         ) : (
           <EmptyActivity
             image={require('./assets/empty-gifts.png')}
-            title="Is there a better way to show how much you appreciate someone than to offer a gift?"
-            subtitle="Yes, there is. But a gift is still a nice touch."
+            title={I18n.t('gifts:emptyTitle')}
+            subtitle={I18n.t('gifts:emptySubtitle')}
           />
         )}
       </View>

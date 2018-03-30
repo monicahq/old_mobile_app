@@ -1,6 +1,6 @@
-import {PixelRatio, StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 
-import {mutedTextColor, primaryColor} from '@theme';
+import {mutedTextColor} from '@theme';
 
 export const styles = StyleSheet.create({
   container: {

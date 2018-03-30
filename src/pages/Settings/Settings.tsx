@@ -3,7 +3,8 @@ const {version} = require('../../../package.json');
 import React, {PureComponent} from 'react';
 import {Platform, Switch, Text, TouchableOpacity, View} from 'react-native';
 
-import {Button, Navbar} from '@components';
+import {Navbar} from '@components';
+import {I18n} from '@i18n';
 import {
   IBetaSubscribeOperation,
   IRouterGoToLaunchScreenOperation,
@@ -29,12 +30,12 @@ export class Settings extends PureComponent<ISettingsProps, {}> {
     const {beta, subscribeBeta} = this.props;
     return (
       <View style={commonStyles.flex}>
-        <Navbar title="Settings" />
+        <Navbar title={I18n.t('settings:settings')} />
 
         <View style={[commonStyles.flex, styles.container]}>
           <View style={styles.betaToggleContainer}>
             <Text style={styles.betaTitle}>
-              Enable automatic beta installs.
+              {I18n.t('settings:betaInstall')}
             </Text>
             <Switch
               value={beta}
@@ -47,24 +48,22 @@ export class Settings extends PureComponent<ISettingsProps, {}> {
 
           <View style={styles.betaInfo}>
             <Text style={styles.betaSubtitle}>
-              If enabled, your application will automatically install beta
-              versions. That will let you test cutting edge features, but beware
-              though: you might install versions that are not stable yet.
+              {I18n.t('settings:betaInstallExplanation')}
             </Text>
-            <Text style={styles.appVersion}>Version: {version}</Text>
+            <Text style={styles.appVersion}>
+              {I18n.t('settings:version', {version})}
+            </Text>
           </View>
 
           <TouchableOpacity onPress={this.logout}>
             <View style={styles.logoutContainer}>
-              <Text style={styles.logoutText}>Logout</Text>
+              <Text style={styles.logoutText}>{I18n.t('settings:logout')}</Text>
             </View>
           </TouchableOpacity>
 
           <View style={commonStyles.flex} />
-          <Text style={styles.freepik1}>
-            Most illustrations used in this app come from Freepik
-          </Text>
-          <Text style={styles.freepik2}>Designed by freepik.com</Text>
+          <Text style={styles.freepik1}>{I18n.t('settings:freepik1')}</Text>
+          <Text style={styles.freepik2}>{I18n.t('settings:freepik2')}</Text>
         </View>
       </View>
     );

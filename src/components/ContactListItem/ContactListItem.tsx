@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
 
 import {ContactAvatar} from '@components';
+import {I18n} from '@i18n';
 import {IContact} from '@models';
 import {commonStyles} from '@theme';
 import {getLastUpdatedDate} from '@utils/contacts';
@@ -26,7 +27,9 @@ export class ContactListItem extends PureComponent<IContactListItemProps> {
               {contact.first_name} {contact.last_name}
             </Text>
             <Text style={commonStyles.mutedText}>
-              Last updated {getLastUpdatedDate(contact)}
+              {I18n.t('common:lastUpdated', {
+                date: getLastUpdatedDate(contact),
+              })}
             </Text>
           </View>
         </View>

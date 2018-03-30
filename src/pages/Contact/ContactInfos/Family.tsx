@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 import {Text, View} from 'react-native';
 
 import {ListItem} from '@components';
+import {I18n} from '@i18n';
 import {IContact} from '@models';
 import {getAge, getFamily} from '@utils/contacts';
 import {styles} from './Family.styles';
@@ -18,13 +19,13 @@ export class Family extends PureComponent<IMeetProps, {}> {
     return (
       <View style={styles.container}>
         {people.length === 0 && (
-          <Text style={styles.noFamily}>No family member</Text>
+          <Text style={styles.noFamily}>{I18n.t('contacts:family.none')}</Text>
         )}
 
         {people.map((person, index) => {
           const age = getAge(person);
           const title =
-            person.first_name + person.last_name + (age ? ', age' : '');
+            person.first_name + person.last_name + (age ? ', ' + age : '');
           return (
             <ListItem
               key={person.id}

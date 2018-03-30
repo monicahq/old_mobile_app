@@ -4,6 +4,7 @@
     "paths": {
       "@api/*": ["src/api/*"],
       "@api": ["src/api/index"],
+      "@i18n": ["src/i18n/index"],
       "@models/*": ["src/models/*"],
       "@models": ["src/models/index"],
       "@theme/*": ["src/theme/*"],

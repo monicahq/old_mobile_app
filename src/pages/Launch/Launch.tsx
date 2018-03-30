@@ -3,6 +3,7 @@ import {Image, Text, View} from 'react-native';
 import SafeAreaView from 'react-native-safe-area-view';
 
 import {Button} from '@components';
+import {I18n} from '@i18n';
 import {commonStyles, forceInset, preAuthScreensStyles} from '@theme';
 
 interface ILaunchProps {
@@ -24,14 +25,15 @@ export class Launch extends PureComponent<ILaunchProps, {}> {
           <Image source={require('./assets/launch.png')} />
 
           <Text style={preAuthScreensStyles.primaryText}>
-            Keep track of every interaction with your friend and family!
+            {I18n.t('auth:launch1')}
           </Text>
           <Text style={preAuthScreensStyles.secondaryText}>
-            Remember when you last called, what you talked about, the name of
-            their kids or what they prefer to eat!
+            {I18n.t('auth:launch2')}
           </Text>
 
-          <Button onPress={navigate('Login')}>Get started</Button>
+          <Button onPress={navigate('Login')}>
+            {I18n.t('common:getstarted')}
+          </Button>
         </View>
 
         <View style={commonStyles.flex} />

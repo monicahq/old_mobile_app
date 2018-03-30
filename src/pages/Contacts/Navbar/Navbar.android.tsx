@@ -2,11 +2,17 @@ import React, {PureComponent} from 'react';
 import SearchBar from 'react-native-searchbar';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+import {I18n} from '@i18n';
 import {commonStyles} from '@theme';
 import {INavbarProps} from './Navbar.props';
 
 const actions = [
-  {title: 'Search', iconName: 'search', iconSize: 30, show: 'always'},
+  {
+    title: I18n.t('common:search'),
+    iconName: 'search',
+    iconSize: 30,
+    show: 'always',
+  },
 ];
 
 export class Navbar extends PureComponent<INavbarProps, {}> {
@@ -30,7 +36,7 @@ export class Navbar extends PureComponent<INavbarProps, {}> {
       <Icon.ToolbarAndroid
         logo={require('@assets/logo.png')}
         key={0}
-        title="  Contacts"
+        title={'  ' + I18n.t('contacts:contacts')}
         titleColor="white"
         onActionSelected={this.onActionSelected}
         style={commonStyles.toolbarAndroid}
@@ -39,7 +45,7 @@ export class Navbar extends PureComponent<INavbarProps, {}> {
       <SearchBar
         key={1}
         ref={this.searchBarRef}
-        placeholder="Search your contacts..."
+        placeholder={I18n.t('contacts:search')}
         onBlur={this.hide}
         handleSearch={this.props.onSearchTextChanged}
         onBack={this.onBack}

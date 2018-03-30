@@ -33,6 +33,7 @@ exports[`Pages Reminders should renders correctly with reminders and fetching 1`
         Object {
           "body": "My body",
           "created_at": "1991-12-17",
+          "frequency_type": "year",
         },
       ]
     }
@@ -162,7 +163,9 @@ exports[`Pages Reminders should renders correctly with reminders and fetching 2`
               "fontSize": 13,
             }
           }
-        />
+        >
+          every year
+        </Text>
       </View>
     </View>
   </View>
@@ -188,10 +191,12 @@ exports[`Pages Reminders should renders correctly with reminders and fetching 3`
         Object {
           "body": "My body",
           "created_at": "1991-12-17",
+          "frequency_type": "month",
         },
         Object {
           "body": "My body 2",
           "created_at": "1993-12-17",
+          "frequency_type": "all_time",
         },
       ]
     }
@@ -321,7 +326,9 @@ exports[`Pages Reminders should renders correctly with reminders and fetching 4`
               "fontSize": 13,
             }
           }
-        />
+        >
+          every month
+        </Text>
       </View>
     </View>
   </View>
@@ -432,7 +439,9 @@ exports[`Pages Reminders should renders correctly with reminders and fetching 5`
               "fontSize": 13,
             }
           }
-        />
+        >
+          frequency.all_time
+        </Text>
       </View>
     </View>
   </View>

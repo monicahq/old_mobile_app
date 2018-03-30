@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 
 import {Checkbox, EmptyActivity, Navbar} from '@components';
+import {I18n} from '@i18n';
 import {ITask} from '@models';
 import {IRouterBackOperation} from '@redux/router';
 import {commonStyles} from '@theme';
@@ -55,7 +56,7 @@ export class Tasks extends PureComponent<ITasksProps, {}> {
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title="Tasks" onBack={back} />
+        <Navbar title={I18n.t('tasks:tasks')} onBack={back} />
         {isFetching || tasks.length ? (
           <FlatList
             data={tasks}
@@ -68,8 +69,8 @@ export class Tasks extends PureComponent<ITasksProps, {}> {
         ) : (
           <EmptyActivity
             image={require('./assets/empty-tasks.png')}
-            title="You have no excuses not to be multitask anymore."
-            subtitle="Let Monica manage stuff for you."
+            title={I18n.t('tasks:emptyTitle')}
+            subtitle={I18n.t('tasks:emptySubtitle')}
           />
         )}
       </View>

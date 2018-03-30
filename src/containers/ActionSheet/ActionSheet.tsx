@@ -1,11 +1,13 @@
-import {IRouterNavigateOperation} from '@models/operations';
 import React, {PureComponent} from 'react';
 import RNActionSheet from 'react-native-actionsheet';
 
+import {I18n} from '@i18n';
+import {IRouterNavigateOperation} from '@models/operations';
+
 const CANCEL_INDEX = 0;
 const options = [
-  'Cancel',
-  'Add a contact',
+  I18n.t('common:cancel'),
+  I18n.t('common:add'),
   // 'Log an activity',
   // 'Log a call',
   // 'Add a reminder',

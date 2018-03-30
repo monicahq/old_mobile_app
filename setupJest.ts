@@ -1,3 +1,5 @@
+(global as any).isJestRunning = true;
+
 const mockRnCodePush = () => Component => Component;
 Object.assign(mockRnCodePush, {
   CheckFrequency: 0,
@@ -9,6 +11,12 @@ jest.mock('react-native-splash-screen', () => {
   return {
     hide: jest.fn(),
     show: jest.fn(),
+  };
+});
+
+jest.mock('react-native-device-info', () => {
+  return {
+    getDeviceLocale: () => 'en',
   };
 });
 

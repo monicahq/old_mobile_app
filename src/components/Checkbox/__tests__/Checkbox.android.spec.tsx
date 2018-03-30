@@ -5,11 +5,11 @@ import {Checkbox} from '../Checkbox.android';
 
 describe('Components', () => {
   describe('Checkbox Android', () => {
-    const defaultOnPress = {
-      onPress: () => {
-        return;
-      },
-    };
+    // const defaultOnPress = {
+    //   onPress: () => {
+    //     return;
+    //   },
+    // };
 
     it('should renders correctly', () => {
       expect(toJson(shallow(<Checkbox checked={true} />))).toMatchSnapshot();
