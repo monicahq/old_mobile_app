@@ -521,9 +521,9 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-native@^0.52.19":
-  version "0.52.19"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.52.19.tgz#28655fa82751e5bdb9d2bef7d03c1ddb75fe4c68"
+"@types/react-native@^0.52.21":
+  version "0.52.21"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.52.21.tgz#132bded2b9251b0a7f5c6562f1cf8976122be163"
   dependencies:
     "@types/react" "*"
 
@@ -5598,9 +5598,9 @@ react-native-code-push@~5.3.2:
     plist "1.2.0"
     xcode "0.9.2"
 
-react-native-device-info@~0.21.0:
-  version "0.21.2"
-  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-0.21.2.tgz#82209bf529f5cae7eab1d6512b1cfb03e29ced30"
+react-native-device-info@~0.21.4:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-0.21.4.tgz#364d893b3e00d4422c7b02e7e26952fe181f57d2"
 
 react-native-dismiss-keyboard@1.0.0:
   version "1.0.0"
@@ -5641,9 +5641,9 @@ react-native-safe-area-view@^0.7.0, react-native-safe-area-view@~0.7.0:
   dependencies:
     hoist-non-react-statics "^2.3.1"
 
-react-native-search-bar@~3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/react-native-search-bar/-/react-native-search-bar-3.4.0.tgz#cedbdc3cc53c177fe5bdf5129cf7401d8c9b4abb"
+react-native-search-bar@~3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/react-native-search-bar/-/react-native-search-bar-3.4.1.tgz#01f38a0df81c25e60404721c488492eab6266f82"
   dependencies:
     prop-types "^15.5.10"
 
@@ -5700,9 +5700,9 @@ react-native-vector-icons@^4.4.2, react-native-vector-icons@~4.5.0:
     prop-types "^15.5.10"
     yargs "^8.0.2"
 
-react-native@0.54.3:
-  version "0.54.3"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.54.3.tgz#e32807ab7ddc70811418101b73a482639d09ccca"
+react-native@0.54.4:
+  version "0.54.4"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.54.4.tgz#19c6c598f6acf04f1c032fe9a1812f0c640fa8b7"
   dependencies:
     absolute-path "^0.0.0"
     art "^0.10.0"
@@ -5837,9 +5837,9 @@ react-transform-hmr@^1.0.4:
     global "^4.3.0"
     react-proxy "^1.1.7"
 
-react@~16.3.0-alpha.1:
-  version "16.3.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.3.0-alpha.2.tgz#91e2b82bb985b23e7b6555f810e1fd94894afce2"
+react@~16.3.0:
+  version "16.3.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.3.0.tgz#fc5a01c68f91e9b38e92cf83f7b795ebdca8ddff"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"

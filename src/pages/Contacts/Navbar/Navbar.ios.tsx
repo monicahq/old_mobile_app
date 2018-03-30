@@ -27,7 +27,6 @@ export class Navbar extends PureComponent<INavbarProps, {}> {
             searchBarStyle="minimal"
             textColor="#ACACAC"
             onChangeText={this.props.onSearchTextChanged}
-            // @ts-ignore: TODO wait for PR to be accepted and push to npm https://github.com/umhan35/react-native-search-bar/pull/147
             style={styles.searchBar}
           />
         }
