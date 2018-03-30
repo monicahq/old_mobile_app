@@ -30,7 +30,6 @@ exports[`Pages Activities should display the header if it is not fetching 1`] = 
     title1="In 2017"
     title2="In 2015"
   />
-  <YearChart />
 </View>
 `;
 

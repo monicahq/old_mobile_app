@@ -2,12 +2,7 @@ import moment from 'moment';
 import React, {PureComponent} from 'react';
 import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 
-import {
-  EmptyActivity,
-  LastTwoYearsStatistics,
-  Navbar,
-  YearChart,
-} from '@components';
+import {EmptyActivity, LastTwoYearsStatistics, Navbar} from '@components';
 import {I18n} from '@i18n';
 import {IActivity, IContact, IMetaStatistics} from '@models';
 import {IRouterBackOperation} from '@models/operations';
@@ -48,8 +43,6 @@ export class Activities extends PureComponent<IActivitiesProps, {}> {
           title2={I18n.t('common:yearDisplay', {year: keys[1]})}
           count2={statistics[keys[1]]}
         />
-
-        <YearChart />
       </View>
     );
   };
