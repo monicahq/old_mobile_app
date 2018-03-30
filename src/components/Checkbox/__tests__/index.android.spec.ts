@@ -1,4 +1,3 @@
-import {Platform} from 'react-native';
 import {Checkbox} from '../index';
 
 jest.mock('../Checkbox.android', () => ({Checkbox: 'android'}));

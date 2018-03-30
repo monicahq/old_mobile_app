@@ -2,12 +2,12 @@ import React, {PureComponent} from 'react';
 import {ScrollView, Text, View} from 'react-native';
 
 import {ContactAvatar, Navbar} from '@components';
+import {I18n} from '@i18n';
+import {IRouterBackOperation} from '@redux/router';
+import {IContact} from '@src/models';
 import {commonStyles} from '@theme';
 import {getAge} from '@utils/contacts';
 import {styles} from './Contact.styles';
-
-import {IRouterBackOperation} from '@redux/router';
-import {IContact} from '@src/models';
 import {ContactActivityRow} from './ContactActivityRow/ContactActivityRow';
 import {ContactInfos} from './ContactInfos/ContactInfos';
 
@@ -42,7 +42,9 @@ export class Contact extends PureComponent<IContactProps, {}> {
           <Text style={styles.title}>
             {contact.first_name} {contact.last_name}
           </Text>
-          {!!age && <Text style={styles.subtitle}>{age} years</Text>}
+          {!!age && (
+            <Text style={styles.subtitle}>{I18n.t('contacts:age', {age})}</Text>
+          )}
         </View>
 
         <ScrollView style={styles.scrollView}>
@@ -53,43 +55,43 @@ export class Contact extends PureComponent<IContactProps, {}> {
             <ContactActivityRow
               onPress={navigate('Calls', contact.id)}
               image={require('@assets/icons/phone.png')}
-              title="Phone calls"
+              title={I18n.t('calls:calls')}
               count={contact.statistics.number_of_calls}
             />
             <ContactActivityRow
               onPress={navigate('Activities', contact.id)}
               image={require('@assets/icons/activities.png')}
-              title="Activities"
+              title={I18n.t('activities:activities')}
               count={contact.statistics.number_of_activities}
             />
             <ContactActivityRow
               onPress={navigate('Reminders', contact.id)}
               image={require('@assets/icons/reminders.png')}
-              title="Reminders"
+              title={I18n.t('reminders:reminders')}
               count={contact.statistics.number_of_reminders}
             />
             <ContactActivityRow
               onPress={navigate('Tasks', contact.id)}
               image={require('@assets/icons/tasks.png')}
-              title="Tasks"
+              title={I18n.t('tasks:tasks')}
               count={contact.statistics.number_of_tasks}
             />
             <ContactActivityRow
               onPress={navigate('Notes', contact.id)}
               image={require('@assets/icons/notes.png')}
-              title="Notes"
+              title={I18n.t('notes:notes')}
               count={contact.statistics.number_of_notes}
             />
             <ContactActivityRow
               onPress={navigate('Gifts', contact.id)}
               image={require('@assets/icons/gift.png')}
-              title="Gifts"
+              title={I18n.t('gifts:gifts')}
               count={contact.statistics.number_of_gifts}
             />
             <ContactActivityRow
               onPress={navigate('Debts', contact.id)}
               image={require('@assets/icons/debts.png')}
-              title="Debts"
+              title={I18n.t('debts:debts')}
               count={contact.statistics.number_of_debts}
               last={true}
             />

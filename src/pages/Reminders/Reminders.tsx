@@ -3,6 +3,7 @@ import React, {PureComponent} from 'react';
 import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 
 import {EmptyActivity, Navbar} from '@components';
+import {I18n} from '@i18n';
 import {IReminder} from '@models';
 import {IRouterBackOperation} from '@redux/router';
 import {commonStyles} from '@theme';
@@ -34,21 +35,6 @@ export class Reminders extends PureComponent<IRemindersProps, {}> {
     );
   };
 
-  public getFrequencyLabel(type) {
-    if (type === 'year') {
-      return 'every year';
-    }
-    if (type === 'month') {
-      return 'every month';
-    }
-    if (type === 'day') {
-      return 'every day';
-    }
-    if (type === 'one_time') {
-      return 'one time';
-    }
-  }
-
   public renderItem = ({item, index}) => {
     const {reminders} = this.props;
     const reminder = reminders[index];
@@ -72,7 +58,7 @@ export class Reminders extends PureComponent<IRemindersProps, {}> {
             <Text style={styles.descriptionText}>{nextDate.fromNow()}</Text>
             <View style={styles.badge}>
               <Text style={styles.badgeText}>
-                {this.getFrequencyLabel(reminder.frequency_type)}
+                {I18n.t('reminders:frequency.' + reminder.frequency_type)}
               </Text>
             </View>
           </View>
@@ -86,7 +72,7 @@ export class Reminders extends PureComponent<IRemindersProps, {}> {
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title="Reminders" onBack={back} />
+        <Navbar title={I18n.t('reminders:reminders')} onBack={back} />
         {isFetching || reminders.length ? (
           <FlatList
             data={reminders}
@@ -99,8 +85,8 @@ export class Reminders extends PureComponent<IRemindersProps, {}> {
         ) : (
           <EmptyActivity
             image={require('./assets/empty-reminders.png')}
-            title="Be reminded at the right time, for things that matter."
-            subtitle="Your memory might let you down - we won’t."
+            title={I18n.t('reminders:emptyTitle')}
+            subtitle={I18n.t('reminders:emptySubtitle')}
           />
         )}
       </View>

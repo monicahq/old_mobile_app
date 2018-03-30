@@ -3,6 +3,7 @@ import React, {PureComponent} from 'react';
 import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 
 import {EmptyActivity, LastTwoYearsStatistics, Navbar} from '@components';
+import {I18n} from '@i18n';
 import {ICall} from '@src/models';
 import {IRouterBackOperation} from '@src/redux/router';
 import {commonStyles} from '@theme';
@@ -33,9 +34,9 @@ export class Calls extends PureComponent<ICallsProps, {}> {
       <View style={styles.headerContainer}>
         <LastTwoYearsStatistics
           image={require('@assets/icons/phone.png')}
-          title1="calls made in 2017"
+          title1={I18n.t('common:yearDisplay', {year: 2017})}
           count1={3}
-          title2="calls made in 2016"
+          title2={I18n.t('common:yearDisplay', {year: 2016})}
           count2={6}
         />
       </View>
@@ -77,7 +78,7 @@ export class Calls extends PureComponent<ICallsProps, {}> {
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title="Calls" onBack={back} />
+        <Navbar title={I18n.t('calls:calls')} onBack={back} />
         {isFetching || calls.length ? (
           <FlatList
             data={calls}
@@ -91,8 +92,8 @@ export class Calls extends PureComponent<ICallsProps, {}> {
         ) : (
           <EmptyActivity
             image={require('./assets/empty-calls.png')}
-            title="Enter details about phone calls you make."
-            subtitle="So you can refer to it at a later time."
+            title={I18n.t('calls:emptyTitle')}
+            subtitle={I18n.t('calls:emptySubtitle')}
           />
         )}
       </View>

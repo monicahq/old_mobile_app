@@ -40,7 +40,9 @@ describe('Pages', () => {
     });
 
     it('should renders correctly with reminders and fetching', () => {
-      const reminders = [{body: 'My body', created_at: '1991-12-17'}];
+      const reminders = [
+        {body: 'My body', created_at: '1991-12-17', frequency_type: 'year'},
+      ];
       const tree = shallow(
         <Reminders
           back={back}
@@ -57,8 +59,12 @@ describe('Pages', () => {
 
     it('should renders correctly with reminders and fetching', () => {
       const reminders = [
-        {body: 'My body', created_at: '1991-12-17'},
-        {body: 'My body 2', created_at: '1993-12-17'},
+        {body: 'My body', created_at: '1991-12-17', frequency_type: 'month'},
+        {
+          body: 'My body 2',
+          created_at: '1993-12-17',
+          frequency_type: 'all_time',
+        },
       ];
       const tree = shallow(
         <Reminders

@@ -3,6 +3,7 @@ import React, {PureComponent} from 'react';
 import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 
 import {EmptyActivity, Navbar} from '@components';
+import {I18n} from '@i18n';
 import {INote} from '@models';
 import {IRouterBackOperation} from '@redux/router';
 import {commonStyles} from '@theme';
@@ -51,7 +52,7 @@ export class Notes extends PureComponent<INotesProps, {}> {
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title="Notes" onBack={back} />
+        <Navbar title={I18n.t('notes:notes')} onBack={back} />
         {isFetching || notes.length ? (
           <FlatList
             data={notes}
@@ -64,8 +65,8 @@ export class Notes extends PureComponent<INotesProps, {}> {
         ) : (
           <EmptyActivity
             image={require('./assets/empty-notes.png')}
-            title="Notes are great to record precious details about your contacts."
-            subtitle="Just write down what you have in mind."
+            title={I18n.t('notes:emptyTitle')}
+            subtitle={I18n.t('notes:emptySubtitle')}
           />
         )}
       </View>

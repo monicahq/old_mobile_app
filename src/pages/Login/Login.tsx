@@ -4,6 +4,7 @@ import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import SafeAreaView from 'react-native-safe-area-view';
 
 import {Back} from '@components';
+import {I18n} from '@i18n';
 import {IRouterBackOperation, IUserSetTokenOperation} from '@models/operations';
 import {commonStyles, forceInset, preAuthScreensStyles} from '@theme';
 import {LoginFormContainer} from './form/LoginFormContainer';
@@ -38,7 +39,7 @@ export class Login extends PureComponent<ILoginProps, {}> {
             <Image source={require('./assets/login.png')} />
 
             <Text style={preAuthScreensStyles.primaryText}>
-              Sign in with your account
+              {I18n.t('auth:signinTitle')}
             </Text>
 
             <LoginFormContainer onSuccess={this.onSuccessFormResult} />

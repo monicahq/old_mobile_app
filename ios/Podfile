@@ -6,16 +6,13 @@ target 'Monica' do
   # use_frameworks!
 
   # Pods for Monica
-  pod 'AppCenter/Crashes', '~> 1.1.0'
-  pod 'AppCenter/Analytics', '~> 1.1.0'
-  pod 'AppCenterReactNativeShared', '~> 1.1.0'
+  pod 'AppCenter/Crashes', '~> 1.5.0'
+  pod 'AppCenter/Analytics', '~> 1.5.0'
+  pod 'AppCenterReactNativeShared', '~> 1.4.0'
 
   
 
-  pod 'CodePush', :path => '../node_modules/react-native-code-push'
-
-  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
-
+  platform :ios, '9.0'
   target 'MonicaTests' do
     inherit! :search_paths
     # Pods for testing

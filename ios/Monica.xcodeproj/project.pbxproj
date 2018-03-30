@@ -35,6 +35,7 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* MonicaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MonicaTests.m */; };
 		31BF604C83A240B0A21BC8A7 /* libRNSearchBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3A4C66B8CF4DA8A6EB4672 /* libRNSearchBar.a */; };
+		380CDA6853174CEAA593D920 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92898BC662F047579206F233 /* libRNDeviceInfo.a */; };
 		455525826A034EA284AA79F8 /* libAppCenterReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EC22BC4C444A5EA6C3C43F /* libAppCenterReactNative.a */; };
 		596DFFFED913F75ACAF80689 /* libPods-Monica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6119222B9CCF49641184FC21 /* libPods-Monica.a */; };
 		5DDD0E0B2A3E4D868D1C891D /* libAppCenterReactNativeCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4936C84C42442E82CA8825 /* libAppCenterReactNativeCrashes.a */; };
@@ -42,6 +43,7 @@
 		77D932C7D6D84FF38B4A65F1 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C47BEF267B843C092E32597 /* SimpleLineIcons.ttf */; };
 		8278D84F342F4D8A8EDADBB9 /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E03D550E2374D12B9E0CAED /* AppCenter-Config.plist */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		9802CEB7D9F7435889C88930 /* libRNDeviceInfo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7618D6D8E34CE5897CEF9D /* libRNDeviceInfo-tvOS.a */; };
 		A2CB4DF011C04EF4B7EF4DF1 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9958279E98B841BBBF181AAC /* Zocial.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B963C0FE7C56412696AEF51D /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86FD8B24A8F94C36882FB534 /* Entypo.ttf */; };
@@ -358,6 +360,20 @@
 			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
 			remoteInfo = "privatedata-tvOS";
 		};
+		E46CD892206E714000A073A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FB397B1CB8F4EB8A42B92B6 /* RNDeviceInfo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA5891D81BA9A9FC002B4DB2;
+			remoteInfo = RNDeviceInfo;
+		};
+		E46CD894206E714000A073A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FB397B1CB8F4EB8A42B92B6 /* RNDeviceInfo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E72EC1401F7ABB5A0001BC90;
+			remoteInfo = "RNDeviceInfo-tvOS";
+		};
 		E4944D9A201447D60066E6C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4A0D1ABD50A94C56A4297F83 /* RNSearchBar.xcodeproj */;
@@ -437,8 +453,10 @@
 		2D02E47B1E0B4A5D006451C7 /* Monica-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Monica-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Monica-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Monica-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7618D6D8E34CE5897CEF9D /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; };
 		395E41DC347AE0FDA6D51A35 /* Pods-Monica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Monica/Pods-Monica.release.xcconfig"; sourceTree = "<group>"; };
 		3B4936C84C42442E82CA8825 /* libAppCenterReactNativeCrashes.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNativeCrashes.a; sourceTree = "<group>"; };
+		3FB397B1CB8F4EB8A42B92B6 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
 		42EC22BC4C444A5EA6C3C43F /* libAppCenterReactNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNative.a; sourceTree = "<group>"; };
 		4327C5F72E984FCBA6B751E6 /* AppCenterReactNativeCrashes.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AppCenterReactNativeCrashes.xcodeproj; path = "../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes.xcodeproj"; sourceTree = "<group>"; };
 		44245FEA341E4ECEBB8BB1B1 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
@@ -460,6 +478,7 @@
 		890EA193B3B0FB188E5DCEB3 /* libPods-Monica-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Monica-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F4356627A743548E11E186 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		8F620B006F50454398B88C55 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		92898BC662F047579206F233 /* libRNDeviceInfo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNDeviceInfo.a; sourceTree = "<group>"; };
 		9958279E98B841BBBF181AAC /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		9E4CC379EC3BC47263484755 /* libPods-MonicaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MonicaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C584A5554FB9176F0A223C /* Pods-MonicaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonicaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonicaTests/Pods-MonicaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -515,6 +534,7 @@
 				596DFFFED913F75ACAF80689 /* libPods-Monica.a in Frameworks */,
 				CF5D85A54D664640B047509F /* libAppCenterReactNativeAnalytics.a in Frameworks */,
 				5DDD0E0B2A3E4D868D1C891D /* libAppCenterReactNativeCrashes.a in Frameworks */,
+				380CDA6853174CEAA593D920 /* libRNDeviceInfo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +551,7 @@
 				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
 				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
 				2156734524CD77D435B91C3C /* libPods-Monica-tvOS.a in Frameworks */,
+				9802CEB7D9F7435889C88930 /* libRNDeviceInfo-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,6 +755,7 @@
 				7CC6BF390FDE49FCAB7141D0 /* AppCenterReactNative.xcodeproj */,
 				AF227C28B5194DE5AD277226 /* AppCenterReactNativeAnalytics.xcodeproj */,
 				4327C5F72E984FCBA6B751E6 /* AppCenterReactNativeCrashes.xcodeproj */,
+				3FB397B1CB8F4EB8A42B92B6 /* RNDeviceInfo.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -817,6 +839,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E46CD88E206E714000A073A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E46CD893206E714000A073A2 /* libRNDeviceInfo.a */,
+				E46CD895206E714000A073A2 /* libRNDeviceInfo-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E4944D97201447D60066E6C8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -834,6 +865,8 @@
 				42EC22BC4C444A5EA6C3C43F /* libAppCenterReactNative.a */,
 				F26CC304FFE14A6B9997811B /* libAppCenterReactNativeAnalytics.a */,
 				3B4936C84C42442E82CA8825 /* libAppCenterReactNativeCrashes.a */,
+				92898BC662F047579206F233 /* libRNDeviceInfo.a */,
+				2D7618D6D8E34CE5897CEF9D /* libRNDeviceInfo-tvOS.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -1072,6 +1105,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = E46CD88E206E714000A073A2 /* Products */;
+					ProjectRef = 3FB397B1CB8F4EB8A42B92B6 /* RNDeviceInfo.xcodeproj */;
 				},
 				{
 					ProductGroup = E4944D97201447D60066E6C8 /* Products */;
@@ -1379,6 +1416,20 @@
 			fileType = archive.ar;
 			path = "libprivatedata-tvOS.a";
 			remoteRef = E4692FA7201764EA0080A72E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E46CD893206E714000A073A2 /* libRNDeviceInfo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNDeviceInfo.a;
+			remoteRef = E46CD892206E714000A073A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E46CD895206E714000A073A2 /* libRNDeviceInfo-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNDeviceInfo-tvOS.a";
+			remoteRef = E46CD894206E714000A073A2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		E4944D9B201447D60066E6C8 /* libRNSearchBar.a */ = {
@@ -1755,6 +1806,7 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 				);
 				INFOPLIST_FILE = MonicaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1767,10 +1819,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
+					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monica.app/Monica";
@@ -1792,6 +1847,7 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 				);
 				INFOPLIST_FILE = MonicaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1804,10 +1860,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
+					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monica.app/Monica";
@@ -1833,6 +1892,7 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 				);
 				INFOPLIST_FILE = Monica/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1868,6 +1928,7 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 				);
 				INFOPLIST_FILE = Monica/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1905,6 +1966,7 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 				);
 				INFOPLIST_FILE = "Monica-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1916,10 +1978,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Monica-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1950,6 +2015,7 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 				);
 				INFOPLIST_FILE = "Monica-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1961,10 +2027,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Monica-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1996,6 +2065,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Monica-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2021,6 +2092,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",

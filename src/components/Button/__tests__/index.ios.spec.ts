@@ -1,4 +1,3 @@
-import {Platform} from 'react-native';
 import {Button} from '../index';
 
 jest.mock('../Button.android', () => ({Button: 'android'}));

@@ -1,4 +1,3 @@
-import {Platform} from 'react-native';
 import {Back} from '../index';
 
 jest.mock('../Back.android', () => ({Back: 'android'}));

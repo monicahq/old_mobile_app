@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 
 import {EmptyActivity, Navbar} from '@components';
+import {I18n} from '@i18n';
 import {IDebt} from '@models';
 import {IRouterBackOperation} from '@models/operations';
 import {commonStyles} from '@theme';
@@ -47,11 +48,11 @@ export class Debts extends PureComponent<IDebtsProps, {}> {
             ]}
           >
             {debt.in_debt === 'yes' && (
-              <Text style={styles.badgeText}>You owe</Text>
+              <Text style={styles.badgeText}>{I18n.t('debts:youOwe')}</Text>
             )}
             {debt.in_debt === 'no' && (
               <Text style={styles.badgeText}>
-                {debt.contact.first_name} owes you
+                {I18n.t('debts:owesYou', {name: debt.contact.first_name})}
               </Text>
             )}
           </View>
@@ -68,7 +69,7 @@ export class Debts extends PureComponent<IDebtsProps, {}> {
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title="Debts" onBack={back} />
+        <Navbar title={I18n.t('debts:debts')} onBack={back} />
         {isFetching || debts.length ? (
           <FlatList
             data={debts}
@@ -81,8 +82,8 @@ export class Debts extends PureComponent<IDebtsProps, {}> {
         ) : (
           <EmptyActivity
             image={require('./assets/empty-debts.png')}
-            title="Money doesn’t buy happiness."
-            subtitle="But having no debts that you owe is a way to stay happy in your friendship."
+            title={I18n.t('debts:emptyTitle')}
+            subtitle={I18n.t('debts:emptySubtitle')}
           />
         )}
       </View>

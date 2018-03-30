@@ -1,12 +1,14 @@
+import React, {PureComponent} from 'react';
+import {ActivityIndicator, FlatList, Text, View} from 'react-native';
+
 import {ContactListItem, EmptyActivity} from '@components';
+import {I18n} from '@i18n';
 import {IContact} from '@models';
 import {
   IContactsGetOperation,
   IContactsSearchOperation,
 } from '@models/operations';
 import {commonStyles} from '@theme';
-import React, {PureComponent} from 'react';
-import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 import {styles} from './Contacts.styles';
 import {Navbar} from './Navbar/Navbar';
 
@@ -44,9 +46,14 @@ export class Contacts extends PureComponent<IContactsProps, {}> {
 
     return (
       <View style={styles.header}>
-        <Text style={commonStyles.mutedText}>You have </Text>
+        <Text style={commonStyles.mutedText}>
+          {I18n.t('contacts:countHeader.before', {count})}{' '}
+        </Text>
         <Text>{count}</Text>
-        <Text style={commonStyles.mutedText}> contacts.</Text>
+        <Text style={commonStyles.mutedText}>
+          {' '}
+          {I18n.t('contacts:countHeader.after', {count})}.
+        </Text>
       </View>
     );
   };
@@ -98,8 +105,8 @@ export class Contacts extends PureComponent<IContactsProps, {}> {
     const {contacts, isFetching, isSearching} = this.props;
 
     const title = isSearching
-      ? 'No contact found.'
-      : 'To add your first contact, use the “+” button below.';
+      ? I18n.t('contacts:none')
+      : I18n.t('contacts:addOne');
 
     return (
       <View style={commonStyles.flex}>

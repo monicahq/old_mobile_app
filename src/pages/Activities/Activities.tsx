@@ -8,6 +8,7 @@ import {
   Navbar,
   YearChart,
 } from '@components';
+import {I18n} from '@i18n';
 import {IActivity, IContact} from '@models';
 import {IRouterBackOperation} from '@models/operations';
 import {commonStyles} from '@theme';
@@ -39,9 +40,9 @@ export class Activities extends PureComponent<IActivitiesProps, {}> {
       <View style={styles.headerContainer}>
         <LastTwoYearsStatistics
           image={require('@assets/icons/activities.png')}
-          title1="in 2017"
+          title1={I18n.t('common:yearDisplay', {year: 2017})}
           count1={3}
-          title2="in 2016"
+          title2={I18n.t('common:yearDisplay', {year: 2016})}
           count2={6}
         />
 
@@ -93,7 +94,7 @@ export class Activities extends PureComponent<IActivitiesProps, {}> {
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title="Activities" onBack={back} />
+        <Navbar title={I18n.t('activities:activities')} onBack={back} />
         {isFetching || activities.length ? (
           <FlatList
             data={activities}
@@ -107,12 +108,8 @@ export class Activities extends PureComponent<IActivitiesProps, {}> {
         ) : (
           <EmptyActivity
             image={require('./assets/empty-activities.png')}
-            title={
-              'Have you done an activity with ' +
-              contact.first_name +
-              ' lately?'
-            }
-            subtitle="Keep track of what you’ve done."
+            title={I18n.t('activities:emptyTitle', {name: contact.first_name})}
+            subtitle={I18n.t('activities:emptySubtitle')}
           />
         )}
       </View>

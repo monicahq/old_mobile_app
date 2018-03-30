@@ -86,8 +86,7 @@ exports[`Pages Settings android should renders correctly 1`] = `
           }
         }
       >
-        Version: 
-        1.0.0
+        Version: 1.0.0
       </Text>
     </View>
     <TouchableOpacity
@@ -245,8 +244,7 @@ exports[`Pages Settings android should renders correctly 2`] = `
           }
         }
       >
-        Version: 
-        1.0.0
+        Version: 1.0.0
       </Text>
     </View>
     <TouchableOpacity
@@ -404,8 +402,7 @@ exports[`Pages Settings ios should renders correctly 1`] = `
           }
         }
       >
-        Version: 
-        1.0.0
+        Version: 1.0.0
       </Text>
     </View>
     <TouchableOpacity
@@ -563,8 +560,7 @@ exports[`Pages Settings ios should renders correctly 2`] = `
           }
         }
       >
-        Version: 
-        1.0.0
+        Version: 1.0.0
       </Text>
     </View>
     <TouchableOpacity

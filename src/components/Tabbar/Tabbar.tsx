@@ -6,38 +6,38 @@ import {
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
-// import Icon from 'react-native-vector-icons/MaterialIcons';
+import {NavigationScreenProp, NavigationState} from 'react-navigation';
+
+import {I18n} from '@i18n';
+import {ActionSheet} from '../../containers/ActionSheet';
 import {FontelloIcon} from '../FontelloIcon';
 import {activeTextColor, iconSize, styles, textColor} from './Tabbar.styles';
-
-import {NavigationScreenProp, NavigationState} from 'react-navigation';
-import {ActionSheet} from '../../containers/ActionSheet';
 
 const Touchable =
   Platform.OS === 'ios' ? TouchableWithoutFeedback : TouchableNativeFeedback;
 
 const routes = [
   {
-    name: 'Dashboard',
+    name: I18n.t('common:dashboard'),
     routeName: 'Dashboard',
     icon: 'gauge',
   },
   {
-    name: 'Contacts',
+    name: I18n.t('contacts:contacts'),
     routeName: 'Contacts',
     icon: 'users',
   },
   {
-    name: 'Add',
+    name: I18n.t('common:add'),
     icon: 'plus-circled',
   },
   {
-    name: 'Journal',
+    name: I18n.t('common:journal'),
     routeName: 'Journal',
     icon: 'list',
   },
   {
-    name: 'Settings',
+    name: I18n.t('common:settings'),
     routeName: 'Settings',
     icon: 'cog',
   },

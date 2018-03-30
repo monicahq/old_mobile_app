@@ -27,8 +27,8 @@ exports[`Pages Activities should display the header if it is not fetching 1`] = 
     count1={3}
     count2={6}
     image={1}
-    title1="in 2017"
-    title2="in 2016"
+    title1="In 2017"
+    title2="In 2016"
   />
   <YearChart />
 </View>

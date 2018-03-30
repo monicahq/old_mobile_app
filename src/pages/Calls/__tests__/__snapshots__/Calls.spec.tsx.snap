@@ -13,8 +13,8 @@ exports[`Pages Calls should display the header if it is not fetching 1`] = `
     count1={3}
     count2={6}
     image={1}
-    title1="calls made in 2017"
-    title2="calls made in 2016"
+    title1="In 2017"
+    title2="In 2016"
   />
 </View>
 `;
@@ -43,7 +43,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 1`] = `
 >
   <Navbar
     onBack={[MockFunction]}
-    title="Calls"
+    title="Phone calls"
   />
   <FlatList
     ListFooterComponent={[Function]}
@@ -159,7 +159,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 3`] = `
 >
   <Navbar
     onBack={[MockFunction]}
-    title="Calls"
+    title="Phone calls"
   />
   <FlatList
     ListFooterComponent={[Function]}
@@ -342,7 +342,7 @@ exports[`Pages Calls should renders correctly without calls and fetching 1`] = `
 >
   <Navbar
     onBack={[MockFunction]}
-    title="Calls"
+    title="Phone calls"
   />
   <FlatList
     ListFooterComponent={[Function]}
@@ -380,7 +380,7 @@ exports[`Pages Calls should renders correctly without calls and not fetching 1`]
 >
   <Navbar
     onBack={[MockFunction]}
-    title="Calls"
+    title="Phone calls"
   />
   <EmptyActivity
     image={1}

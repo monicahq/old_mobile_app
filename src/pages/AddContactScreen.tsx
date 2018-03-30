@@ -3,6 +3,7 @@ import {View} from 'react-native';
 import {connect} from 'react-redux';
 
 import {Navbar, UnderConstruction} from '@components';
+import {I18n} from '@i18n';
 import {IRouterBackOperation} from '@models/operations';
 import {back as backOperation} from '@redux/router';
 import {commonStyles} from '@theme';
@@ -16,7 +17,7 @@ export class AddContact extends PureComponent<IAddContactProps, {}> {
     const {back} = this.props;
     return (
       <View style={commonStyles.flex}>
-        <Navbar title="Add a contact" onBack={back} />
+        <Navbar title={I18n.t('contacts:add')} onBack={back} />
         <UnderConstruction />
       </View>
     );

@@ -1,4 +1,3 @@
-import {Platform} from 'react-native';
 import {Navbar} from '../index';
 
 jest.mock('../Navbar.android', () => ({Navbar: 'android'}));

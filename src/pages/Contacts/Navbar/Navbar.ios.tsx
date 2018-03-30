@@ -3,6 +3,7 @@ import {Image} from 'react-native';
 import NavigationBar from 'react-native-navbar';
 import SearchBar from 'react-native-search-bar';
 
+import {I18n} from '@i18n';
 import {navbarColor, statusBarLightContent} from '@theme';
 import {INavbarProps} from './Navbar.props';
 import {styles} from './Navbar.styles';
@@ -13,13 +14,13 @@ export class Navbar extends PureComponent<INavbarProps, {}> {
       <NavigationBar
         leftButton={
           <Image
-          source={require('@assets/logo.png')}
-          style={styles.navbarLogo}
+            source={require('@assets/logo.png')}
+            style={styles.navbarLogo}
           />
         }
         title={
           <SearchBar
-            placeholder="Search your contacts"
+            placeholder={I18n.t('contacts:search')}
             hideBackground={true}
             showsCancelButtonWhileEditing={false}
             autoCapitalize="words"

@@ -314,8 +314,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 5`] = `
           }
         }
       >
-        Bill
-         owes you
+        Bill owes you
       </Text>
     </View>
     <Text

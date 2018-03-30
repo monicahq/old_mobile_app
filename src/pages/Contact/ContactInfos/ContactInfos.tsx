@@ -1,6 +1,7 @@
 import React, {PureComponent} from 'react';
 import {SegmentedControlIOS} from 'react-native';
 
+import {I18n} from '@i18n';
 import {IContact} from '@models';
 import {primaryColor} from '@theme';
 import {Contact} from './Contact';
@@ -8,7 +9,12 @@ import {Family} from './Family';
 import {Meet} from './Meet';
 import {Work} from './Work';
 
-const values = ['Family', 'How you met', 'Work info', 'Contact'];
+const values = [
+  I18n.t('contacts:family.family'),
+  I18n.t('contacts:meet.how'),
+  I18n.t('contacts:work.work'),
+  I18n.t('contacts:contact.contact'),
+];
 
 interface IContactInfosProps {
   contact: IContact;
