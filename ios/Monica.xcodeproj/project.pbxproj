@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -344,16 +345,16 @@
 			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
 			remoteInfo = "privatedata-tvOS";
 		};
-		E46CD892206E714000A073A2 /* PBXContainerItemProxy */ = {
+		E46CDA71206EE82300A073A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3FB397B1CB8F4EB8A42B92B6 /* RNDeviceInfo.xcodeproj */;
+			containerPortal = E46CDA42206EE82300A073A2 /* RNDeviceInfo.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = DA5891D81BA9A9FC002B4DB2;
 			remoteInfo = RNDeviceInfo;
 		};
-		E46CD894206E714000A073A2 /* PBXContainerItemProxy */ = {
+		E46CDA73206EE82300A073A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3FB397B1CB8F4EB8A42B92B6 /* RNDeviceInfo.xcodeproj */;
+			containerPortal = E46CDA42206EE82300A073A2 /* RNDeviceInfo.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E72EC1401F7ABB5A0001BC90;
 			remoteInfo = "RNDeviceInfo-tvOS";
@@ -440,7 +441,6 @@
 		2D7618D6D8E34CE5897CEF9D /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; };
 		395E41DC347AE0FDA6D51A35 /* Pods-Monica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Monica/Pods-Monica.release.xcconfig"; sourceTree = "<group>"; };
 		3B4936C84C42442E82CA8825 /* libAppCenterReactNativeCrashes.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNativeCrashes.a; sourceTree = "<group>"; };
-		3FB397B1CB8F4EB8A42B92B6 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
 		42EC22BC4C444A5EA6C3C43F /* libAppCenterReactNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNative.a; sourceTree = "<group>"; };
 		4327C5F72E984FCBA6B751E6 /* AppCenterReactNativeCrashes.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AppCenterReactNativeCrashes.xcodeproj; path = "../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes.xcodeproj"; sourceTree = "<group>"; };
 		44245FEA341E4ECEBB8BB1B1 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
@@ -472,6 +472,7 @@
 		CCBDA125F6B34D44A7ABF2A8 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		D2896115BDBA43A5DD5F3E18 /* libPods-Monica-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Monica-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E301807F26A54523B49FF417 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		E46CDA42206EE82300A073A2 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/ios/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
 		E47722B0202EA08800931C68 /* fontello.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = fontello.ttf; path = ../src/components/FontelloIcon/fontello.ttf; sourceTree = "<group>"; };
 		E4ADC8DB201A009D0087AC93 /* Monica.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Monica.entitlements; path = Monica/Monica.entitlements; sourceTree = "<group>"; };
 		E4DE843D201824000012CEAE /* CodePush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
@@ -717,6 +718,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				E46CDA42206EE82300A073A2 /* RNDeviceInfo.xcodeproj */,
 				E4DE843D201824000012CEAE /* CodePush.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -736,7 +738,6 @@
 				7CC6BF390FDE49FCAB7141D0 /* AppCenterReactNative.xcodeproj */,
 				AF227C28B5194DE5AD277226 /* AppCenterReactNativeAnalytics.xcodeproj */,
 				4327C5F72E984FCBA6B751E6 /* AppCenterReactNativeCrashes.xcodeproj */,
-				3FB397B1CB8F4EB8A42B92B6 /* RNDeviceInfo.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -811,11 +812,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E46CD88E206E714000A073A2 /* Products */ = {
+		E46CDA43206EE82300A073A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E46CD893206E714000A073A2 /* libRNDeviceInfo.a */,
-				E46CD895206E714000A073A2 /* libRNDeviceInfo-tvOS.a */,
+				E46CDA72206EE82300A073A2 /* libRNDeviceInfo.a */,
+				E46CDA74206EE82300A073A2 /* libRNDeviceInfo-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1079,8 +1080,8 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = E46CD88E206E714000A073A2 /* Products */;
-					ProjectRef = 3FB397B1CB8F4EB8A42B92B6 /* RNDeviceInfo.xcodeproj */;
+					ProductGroup = E46CDA43206EE82300A073A2 /* Products */;
+					ProjectRef = E46CDA42206EE82300A073A2 /* RNDeviceInfo.xcodeproj */;
 				},
 				{
 					ProductGroup = E4944D97201447D60066E6C8 /* Products */;
@@ -1330,13 +1331,6 @@
 			remoteRef = E42D3FA8200DC4190054C620 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E42E60212047A54600F4DDCF /* libRNSVG-tvOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libRNSVG-tvOS.a";
-			remoteRef = E42E60202047A54600F4DDCF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		E4692F9E201764EA0080A72E /* libthird-party.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1379,18 +1373,18 @@
 			remoteRef = E4692FA7201764EA0080A72E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E46CD893206E714000A073A2 /* libRNDeviceInfo.a */ = {
+		E46CDA72206EE82300A073A2 /* libRNDeviceInfo.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNDeviceInfo.a;
-			remoteRef = E46CD892206E714000A073A2 /* PBXContainerItemProxy */;
+			remoteRef = E46CDA71206EE82300A073A2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E46CD895206E714000A073A2 /* libRNDeviceInfo-tvOS.a */ = {
+		E46CDA74206EE82300A073A2 /* libRNDeviceInfo-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRNDeviceInfo-tvOS.a";
-			remoteRef = E46CD894206E714000A073A2 /* PBXContainerItemProxy */;
+			remoteRef = E46CDA73206EE82300A073A2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		E4944D9B201447D60066E6C8 /* libRNSearchBar.a */ = {
@@ -1772,9 +1766,7 @@
 				INFOPLIST_FILE = MonicaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1805,9 +1797,7 @@
 				INFOPLIST_FILE = MonicaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1826,7 +1816,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Monica/Monica.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 20;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = MVHSH3DLRY;
 				HEADER_SEARCH_PATHS = (
@@ -1863,7 +1853,7 @@
 				CODE_SIGN_ENTITLEMENTS = Monica/Monica.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = MVHSH3DLRY;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1915,9 +1905,7 @@
 				);
 				INFOPLIST_FILE = "Monica-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1956,9 +1944,7 @@
 				);
 				INFOPLIST_FILE = "Monica-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1986,9 +1972,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Monica-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Monica-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -2011,9 +1995,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Monica-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Monica-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
