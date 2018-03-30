@@ -58,8 +58,10 @@ describe('Redux', () => {
         });
 
         it('should trigger fetch action (success)', async () => {
+          const statistics = {2014: 30};
           const res = {
             data: ['a'],
+            meta: {statistics},
           };
           const fetchedPageCount = 3;
           const getState = () => ({
@@ -80,7 +82,11 @@ describe('Redux', () => {
             getActivitiesByContactFetched(contactId),
           ]);
           expect(dispatch.mock.calls[1]).toEqual([
-            getActivitiesByContactSuccess(contactId, res.data as any),
+            getActivitiesByContactSuccess(
+              contactId,
+              res.data as any,
+              statistics
+            ),
           ]);
           expect(getAllByContact.mock.calls.length).toBe(1);
           expect(getAllByContact.mock.calls[0]).toEqual([

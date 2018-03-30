@@ -23,7 +23,13 @@ export function getActivitiesByContact(contactId: number) {
         contactId,
         (state.getActivitiesByContact.fetchedPageCount[contactId] || 0) + 1
       );
-      dispatch(actions.getActivitiesByContactSuccess(contactId, res.data));
+      dispatch(
+        actions.getActivitiesByContactSuccess(
+          contactId,
+          res.data,
+          res.meta.statistics
+        )
+      );
     } catch (e) {
       dispatch(actions.getActivitiesByContactFailed(e));
     }

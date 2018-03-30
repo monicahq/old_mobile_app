@@ -12,3 +12,7 @@ export * from './task';
 export interface IPageCountByContact {
   [contactId: number]: number;
 }
+
+export interface IMetaStatistics {
+  [year: string]: number;
+}

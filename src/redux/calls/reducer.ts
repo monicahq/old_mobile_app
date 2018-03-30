@@ -1,4 +1,9 @@
-import {ICall, IPageCountByContact, IRootAction} from '@models';
+import {
+  ICall,
+  IMetaStatistics,
+  IPageCountByContact,
+  IRootAction,
+} from '@models';
 import * as types from './types';
 
 export interface ICallsState {
@@ -9,6 +14,7 @@ export interface ICallsGetByContactState {
   isFetching: boolean;
   lastUpdated: number;
   fetchedPageCount: IPageCountByContact;
+  statistics: IMetaStatistics;
 }
 
 const getByContactInitialState = {
@@ -16,6 +22,7 @@ const getByContactInitialState = {
   isFetching: false,
   lastUpdated: null,
   fetchedPageCount: {},
+  statistics: {},
 };
 
 export const callsReducer = (
@@ -60,6 +67,7 @@ export const getByContactReducer = (
         ...state,
         isFetching: false,
         lastUpdated: +new Date(),
+        statistics: action.statistics,
       };
 
     case types.GET_CALLS_BY_CONTACT_FAILED:

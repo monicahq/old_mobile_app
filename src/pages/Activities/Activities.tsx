@@ -9,7 +9,7 @@ import {
   YearChart,
 } from '@components';
 import {I18n} from '@i18n';
-import {IActivity, IContact} from '@models';
+import {IActivity, IContact, IMetaStatistics} from '@models';
 import {IRouterBackOperation} from '@models/operations';
 import {commonStyles} from '@theme';
 import {styles} from './Activities.styles';
@@ -20,6 +20,7 @@ interface IActivitiesProps {
   contact: IContact;
   activities: IActivity[];
   isFetching: boolean;
+  statistics: IMetaStatistics;
 }
 
 export class Activities extends PureComponent<IActivitiesProps, {}> {
@@ -30,20 +31,22 @@ export class Activities extends PureComponent<IActivitiesProps, {}> {
   public keyExtractor = (item, index) => String(item.id);
 
   public renderHeader = () => {
-    const {isFetching} = this.props;
+    const {isFetching, statistics} = this.props;
 
     if (isFetching) {
       return null;
     }
 
+    const keys = Object.keys(statistics).reverse();
+
     return (
       <View style={styles.headerContainer}>
         <LastTwoYearsStatistics
           image={require('@assets/icons/activities.png')}
-          title1={I18n.t('common:yearDisplay', {year: 2017})}
-          count1={3}
-          title2={I18n.t('common:yearDisplay', {year: 2016})}
-          count2={6}
+          title1={I18n.t('common:yearDisplay', {year: keys[0]})}
+          count1={statistics[keys[0]]}
+          title2={I18n.t('common:yearDisplay', {year: keys[1]})}
+          count2={statistics[keys[1]]}
         />
 
         <YearChart />

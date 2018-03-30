@@ -59,6 +59,7 @@ describe('Pages', () => {
           'contact',
           'activities',
           'isFetching',
+          'statistics',
         ]);
       });
 

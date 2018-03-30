@@ -18,6 +18,7 @@ describe('Redux', () => {
             fetchedPageCount: {},
             isFetching: false,
             lastUpdated: null,
+            statistics: {},
           });
         });
 
@@ -40,6 +41,7 @@ describe('Redux', () => {
         it('should handle success', () => {
           const contactId = 5;
           const activities = ['a'];
+          const statistics = {'2017': 100, '2015': 20};
           const initialState = getByContactReducer(undefined, {} as any);
           let state = getByContactReducer(
             initialState,
@@ -47,7 +49,11 @@ describe('Redux', () => {
           );
           state = getByContactReducer(
             state,
-            getActivitiesByContactSuccess(contactId, activities as any)
+            getActivitiesByContactSuccess(
+              contactId,
+              activities as any,
+              statistics
+            )
           );
 
           expect(state).toEqual({
@@ -57,6 +63,7 @@ describe('Redux', () => {
             },
             isFetching: false,
             lastUpdated: state.lastUpdated,
+            statistics,
           });
         });
 
@@ -93,11 +100,16 @@ describe('Redux', () => {
 
         it('should add contacts when success is returned', () => {
           const contactId = 5;
+          const statistics = {'2017': 100, '2012': 20};
           const activities = [{id: 1, body: 'a'}, {id: 2, body: 'b'}];
           let state = activitiesReducer(undefined, {} as any);
           state = activitiesReducer(
             state,
-            getActivitiesByContactSuccess(contactId, activities as any)
+            getActivitiesByContactSuccess(
+              contactId,
+              activities as any,
+              statistics
+            )
           );
 
           expect(state).toEqual({

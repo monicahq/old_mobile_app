@@ -55,7 +55,11 @@ describe('Pages', () => {
 
       it('should contains every key', () => {
         const props = mapStateToProps(defaultState as any, additionalProps);
-        expect(Object.keys(props)).toEqual(['calls', 'isFetching']);
+        expect(Object.keys(props)).toEqual([
+          'calls',
+          'isFetching',
+          'statistics',
+        ]);
       });
 
       it('should return isFetching to true if it is fetching', () => {

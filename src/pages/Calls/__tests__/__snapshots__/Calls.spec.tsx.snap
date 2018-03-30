@@ -10,11 +10,11 @@ exports[`Pages Calls should display the header if it is not fetching 1`] = `
   }
 >
   <LastTwoYearsStatistics
-    count1={3}
-    count2={6}
+    count1={100}
+    count2={1}
     image={1}
-    title1="In 2017"
-    title2="In 2016"
+    title1="In 2018"
+    title2="In 2015"
   />
 </View>
 `;

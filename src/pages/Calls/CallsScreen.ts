@@ -10,6 +10,7 @@ export const mapStateToProps = (state: IAppState, {navigation}) => {
   return {
     calls: (contact.calls || []).map(callId => state.calls[callId]),
     isFetching: state.getCallsByContact.isFetching,
+    statistics: state.getCallsByContact.statistics,
   };
 };
 

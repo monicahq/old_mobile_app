@@ -13,6 +13,7 @@ export const mapStateToProps = (state: IAppState, {navigation}) => {
       activityId => state.activities[activityId]
     ),
     isFetching: state.getActivitiesByContact.isFetching,
+    statistics: state.getActivitiesByContact.statistics,
   };
 };
 

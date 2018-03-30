@@ -1,4 +1,9 @@
-import {IActivity, IPageCountByContact, IRootAction} from '@models';
+import {
+  IActivity,
+  IMetaStatistics,
+  IPageCountByContact,
+  IRootAction,
+} from '@models';
 import * as types from './types';
 
 export interface IActivitiesState {
@@ -9,6 +14,7 @@ export interface IActivitiesGetByContactState {
   isFetching: boolean;
   lastUpdated: number;
   fetchedPageCount: IPageCountByContact;
+  statistics: IMetaStatistics;
 }
 
 const getByContactInitialState = {
@@ -16,6 +22,7 @@ const getByContactInitialState = {
   isFetching: false,
   lastUpdated: null,
   fetchedPageCount: {},
+  statistics: {},
 };
 
 export const activitiesReducer = (
@@ -60,6 +67,7 @@ export const getByContactReducer = (
         ...state,
         isFetching: false,
         lastUpdated: +new Date(),
+        statistics: action.statistics,
       };
 
     case types.GET_ACTIVITIES_BY_CONTACT_FAILED:

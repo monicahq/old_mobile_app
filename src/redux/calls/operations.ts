@@ -23,7 +23,13 @@ export function getCallsByContact(contactId: number) {
         contactId,
         (state.getCallsByContact.fetchedPageCount[contactId] || 0) + 1
       );
-      dispatch(actions.getCallsByContactSuccess(contactId, res.data));
+      dispatch(
+        actions.getCallsByContactSuccess(
+          contactId,
+          res.data,
+          res.meta.statistics
+        )
+      );
     } catch (e) {
       dispatch(actions.getCallsByContactFailed(e));
     }

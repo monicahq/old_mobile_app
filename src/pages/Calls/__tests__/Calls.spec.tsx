@@ -15,12 +15,14 @@ describe('Pages', () => {
 
     it('should renders correctly without calls and fetching', () => {
       const calls = [];
+      const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
           back={back}
           getCallsByContact={getCallsByContact}
           isFetching={true}
           calls={calls}
+          statistics={statistics}
         />
       );
       expect(toJson(tree)).toMatchSnapshot();
@@ -28,12 +30,14 @@ describe('Pages', () => {
 
     it('should renders correctly without calls and not fetching', () => {
       const calls = [];
+      const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
           back={back}
           getCallsByContact={getCallsByContact}
           isFetching={false}
           calls={calls}
+          statistics={statistics}
         />
       );
       expect(toJson(tree)).toMatchSnapshot();
@@ -44,12 +48,14 @@ describe('Pages', () => {
         {called_at: '2016-10-07T21:00:56Z', content: 'My content'},
         {called_at: '2016-08-07T21:00:56Z', content: 'My content 2'},
       ];
+      const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
           back={back}
           getCallsByContact={getCallsByContact}
           isFetching={true}
           calls={calls as any}
+          statistics={statistics}
         />
       );
       expect(toJson(tree)).toMatchSnapshot();
@@ -63,12 +69,14 @@ describe('Pages', () => {
         {called_at: '2016-10-07T21:00:56Z', content: 'My content'},
         {called_at: '2016-08-07T21:00:56Z', content: 'My content 2'},
       ];
+      const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
           back={back}
           getCallsByContact={getCallsByContact}
           isFetching={false}
           calls={calls as any}
+          statistics={statistics}
         />
       );
       expect(toJson(tree)).toMatchSnapshot();
@@ -85,12 +93,14 @@ describe('Pages', () => {
         {called_at: '2016-10-07T21:00:56Z', content: 'My content'},
         {called_at: '2016-08-07T21:00:56Z', content: 'My content 2'},
       ];
+      const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
           back={back}
           getCallsByContact={getCallsByContact}
           isFetching={true}
           calls={calls as any}
+          statistics={statistics}
         />
       );
       expect(toJson(shallow(tree.instance().renderFooter()))).toMatchSnapshot();
@@ -101,12 +111,14 @@ describe('Pages', () => {
         {called_at: '2016-10-07T21:00:56Z', content: 'My content'},
         {called_at: '2016-08-07T21:00:56Z', content: 'My content 2'},
       ];
+      const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
           back={back}
           getCallsByContact={getCallsByContact}
           isFetching={false}
           calls={calls as any}
+          statistics={statistics}
         />
       );
       expect(tree.instance().renderFooter()).toBeNull();
@@ -117,12 +129,14 @@ describe('Pages', () => {
         {called_at: '2016-10-07T21:00:56Z', content: 'My content'},
         {called_at: '2016-08-07T21:00:56Z', content: 'My content 2'},
       ];
+      const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
           back={back}
           getCallsByContact={getCallsByContact}
           isFetching={true}
           calls={calls as any}
+          statistics={statistics}
         />
       );
       expect(tree.instance().renderHeader()).toBeNull();
@@ -133,12 +147,14 @@ describe('Pages', () => {
         {called_at: '2016-10-07T21:00:56Z', content: 'My content'},
         {called_at: '2016-08-07T21:00:56Z', content: 'My content 2'},
       ];
+      const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
           back={back}
           getCallsByContact={getCallsByContact}
           isFetching={false}
           calls={calls as any}
+          statistics={statistics}
         />
       );
       expect(toJson(shallow(tree.instance().renderHeader()))).toMatchSnapshot();
@@ -146,12 +162,14 @@ describe('Pages', () => {
 
     it('should have a keyExtractor', () => {
       const calls = [{id: 1}, {id: 2}];
+      const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
           back={back}
           getCallsByContact={getCallsByContact}
           isFetching={false}
           calls={calls as any}
+          statistics={statistics}
         />
       );
       expect(tree.instance().keyExtractor(calls[0])).toBe('1');
