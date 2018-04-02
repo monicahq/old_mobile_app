@@ -40,7 +40,7 @@
     "react-native-search-bar": "~3.4.1",
     "react-native-searchbar": "~1.14.0",
     "react-native-splash-screen": "~3.0.6",
-    "react-native-vector-icons": "~4.5.0",
+    "react-native-vector-icons": "~4.6.0",
     "react-navigation": "~1.5.8",
     "react-navigation-redux-helpers": "~1.0.1",
     "react-redux": "~5.0.7",
