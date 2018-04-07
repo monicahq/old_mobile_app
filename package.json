@@ -7,7 +7,7 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "android": "node node_modules/react-native/local-cli/cli.js run-android --appIdSuffix debug",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "test": "jest",
     "lint": "tslint -p tsconfig.json",

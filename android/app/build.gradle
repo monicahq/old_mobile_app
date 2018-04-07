@@ -117,16 +117,17 @@ android {
         }
     }
      signingConfigs {
-        release {
-            "git clone git@gitlab.com:monicahq/mobile-credentials.git".execute()
+      debug {}
+      release {
+          "git clone git@gitlab.com:monicahq/mobile-credentials.git".execute()
 
-            if (project.hasProperty('MONICA_RELEASE_STORE_FILE')) {
-                storeFile file(MONICA_RELEASE_STORE_FILE)
-                storePassword new File('mobile-credentials/android/monica-store-password').text
-                keyAlias MONICA_RELEASE_KEY_ALIAS
-                keyPassword new File('mobile-credentials/android/monica-key-password').text
-            }
-        }
+          if (project.hasProperty('MONICA_RELEASE_STORE_FILE')) {
+              storeFile file(MONICA_RELEASE_STORE_FILE)
+              storePassword new File('mobile-credentials/android/monica-store-password').text
+              keyAlias MONICA_RELEASE_KEY_ALIAS
+              keyPassword new File('mobile-credentials/android/monica-key-password').text
+          }
+      }
     }
     buildTypes {
         debug {
