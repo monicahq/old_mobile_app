@@ -5405,9 +5405,11 @@ react-lifecycles-compat@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-1.0.2.tgz#551d8b1d156346e5fcf30ffac9b32ce3f78b8850"
 
-react-native-actionsheet@~2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/react-native-actionsheet/-/react-native-actionsheet-2.3.0.tgz#a9552a356dc5939829062353804d5e5609e8f969"
+react-native-actionsheet@~2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/react-native-actionsheet/-/react-native-actionsheet-2.4.0.tgz#325a6da4d3eebf9652e690f51ceebb546491582a"
+  dependencies:
+    babel-eslint "^8.2.2"
 
 react-native-code-push@~5.3.2:
   version "5.3.2"
