@@ -1,3 +1,14 @@
+<a name="0.4.1"></a>
+## [0.4.1](https://github.com/monicahq/chandler/compare/0.4.0...0.4.1) (2018-04-07)
+
+
+### Bug Fixes
+
+* **android:** react-native-device-info is now included ([f435c5e](https://github.com/monicahq/chandler/commit/f435c5e))
+* **package:** update i18next to version 11.1.1 ([8e73e14](https://github.com/monicahq/chandler/commit/8e73e14)), closes [#159](https://github.com/monicahq/chandler/issues/159)
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/monicahq/chandler/compare/0.3.0...0.4.0) (2018-03-30)
 
