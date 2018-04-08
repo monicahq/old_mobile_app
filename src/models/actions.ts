@@ -4,6 +4,7 @@ import {ICallsActions} from '@redux/calls/actions';
 import {IContactsActions} from '@redux/contacts/actions';
 import {IDebtsActions} from '@redux/debts/actions';
 import {IGiftsActions} from '@redux/gifts/actions';
+import {INetworkActions} from '@redux/network/actions';
 import {INotesActions} from '@redux/notes/actions';
 import {IRemindersActions} from '@redux/reminders/actions';
 import {IRouterActions} from '@redux/router/actions';
@@ -21,4 +22,5 @@ export type IRootAction =
   | INotesActions
   | IRemindersActions
   | ITasksActions
-  | IDebtsActions;
+  | IDebtsActions
+  | INetworkActions;

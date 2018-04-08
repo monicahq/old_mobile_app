@@ -181,7 +181,6 @@ export const getAllReducer = (
         ...state,
         error: null,
         isFetching: true,
-        lastUpdated: state.lastUpdated,
         fetchedPageCount: state.fetchedPageCount + 1,
       };
 

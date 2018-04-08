@@ -1,4 +1,5 @@
-import {IRootAction} from '@models';
+import {INetworkReducer, IRootAction} from '@models';
+import {reducer as network} from 'react-native-offline';
 import {NavigationState} from 'react-navigation';
 import {combineReducers} from 'redux';
 
@@ -35,6 +36,7 @@ import {
   IGiftsGetByContactState,
   IGiftsState,
 } from './gifts/reducer';
+import {INetworkQueueState, networkQueueReducer} from './network/reducer';
 import {
   getByContactReducer as getNotesByContactReducer,
   INotesGetByContactState,
@@ -78,6 +80,8 @@ export interface IAppState {
   getTasksByContact: ITasksGetByContactState;
   tasks: ITasksState;
   beta: IBetaState;
+  network: INetworkReducer;
+  networkQueue: INetworkQueueState;
 }
 
 const appReducer = combineReducers<IAppState>({
@@ -101,6 +105,8 @@ const appReducer = combineReducers<IAppState>({
   reminders: remindersReducer,
   getTasksByContact: getTasksByContactReducer,
   tasks: tasksReducer,
+  network,
+  networkQueue: networkQueueReducer,
 });
 
 const rootReducer = (state: IAppState, action: IRootAction) => {

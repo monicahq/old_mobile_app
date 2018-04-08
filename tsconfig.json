@@ -11,6 +11,8 @@
       "@theme": ["src/theme/index"],
       "@components/*": ["src/components/*"],
       "@components": ["src/components/index"],
+      "@containers/*": ["src/containers/*"],
+      "@containers": ["src/containers/index"],
       "@utils/*": ["src/utils/*"],
       "@utils": ["src/utils/index"],
       "@redux/*": ["src/redux/*"],

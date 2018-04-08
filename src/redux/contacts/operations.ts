@@ -1,13 +1,15 @@
 import * as actions from './actions';
 
 import {API} from '@api';
+import {IAppState, IThunk} from '@models';
+import {addToQueue} from '../network';
 
 export type IContactsGetOperation = () => any;
 export type IContactsSearchOperation = (query?) => any;
 
 export function getContacts() {
   return async (dispatch, getState) => {
-    const state = getState();
+    const state: IAppState = getState();
     if (
       state.getAllContacts.isFetching ||
       state.getAllContacts.count === state.getAllContacts.items.length
@@ -16,20 +18,29 @@ export function getContacts() {
     }
     dispatch(actions.getContactsFetched());
 
-    try {
-      const res = await API.Contacts.getAll(
-        state.getAllContacts.fetchedPageCount + 1
-      );
-      dispatch(actions.getContactsSuccess(res.data, res.meta.total));
-    } catch (e) {
-      dispatch(actions.getContactsFailed(e));
+    const call = async () => {
+      try {
+        const res = await API.Contacts.getAll(
+          state.getAllContacts.fetchedPageCount + 1
+        );
+        dispatch(actions.getContactsSuccess(res.data, res.meta.total));
+      } catch (e) {
+        dispatch(actions.getContactsFailed(e));
+      }
+    };
+
+    if (state.network.isConnected) {
+      call();
+    } else {
+      console.log('dasdasd');
+      dispatch(addToQueue(call));
     }
   };
 }
 
 export function searchContacts(query?) {
-  const thunk = async (dispatch, getState) => {
-    const state = getState();
+  const thunk: IThunk = async (dispatch, getState) => {
+    const state: IAppState = getState();
 
     if (query === undefined) {
       query = state.searchContacts.query;
@@ -60,8 +71,8 @@ export function searchContacts(query?) {
       dispatch(actions.searchContactsFailed(e));
     }
   };
-  // TODO replace any
-  (thunk as any).meta = {
+
+  thunk.meta = {
     debounce: {
       time: 300,
       key: 'TRACK_CONTACTS_SEARCH',
