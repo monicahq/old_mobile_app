@@ -59,7 +59,7 @@
     "@types/i18next": "^8.4.3",
     "@types/jest": "^22.2.2",
     "@types/react": "^16.0.41",
-    "@types/react-native": "^0.52.21",
+    "@types/react-native": "^0.55.1",
     "@types/react-navigation": "^1.2.3",
     "@types/react-redux": "^5.0.15",
     "babel-eslint": "^8.2.2",
