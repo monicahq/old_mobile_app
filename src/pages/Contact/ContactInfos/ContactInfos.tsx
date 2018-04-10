@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {SegmentedControlIOS} from 'react-native';
+import SegmentedControlTab from 'react-native-segmented-control-tab';
 
 import {I18n} from '@i18n';
 import {IContact} from '@models';
@@ -30,8 +30,8 @@ export class ContactInfos extends PureComponent<
   public state = {
     index: 2,
   };
-  public setSegmentedControlState = event =>
-    this.setState({index: event.nativeEvent.selectedSegmentIndex});
+  public setSegmentedControlState = index =>
+    this.setState({index: index});
 
   public render() {
     const {index} = this.state;
@@ -41,12 +41,13 @@ export class ContactInfos extends PureComponent<
       index === 0 ? Family : index === 1 ? Meet : index === 2 ? Work : Contact;
 
     return [
-      <SegmentedControlIOS
+      <SegmentedControlTab
         key={0}
-        tintColor={primaryColor}
+ //       tintColor={primaryColor}
         values={values}
         selectedIndex={index}
-        onChange={this.setSegmentedControlState}
+//        onChange={this.setSegmentedControlState}
+        onTabPress={this.setSegmentedControlState}
       />,
       <Elem key={1} contact={contact} />,
     ];
