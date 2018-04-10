@@ -32,8 +32,14 @@ export function getContacts() {
     if (state.network.isConnected) {
       call();
     } else {
-      console.log('dasdasd');
       dispatch(addToQueue(call));
+
+      setTimeout(() => {
+        const statea: IAppState = getState();
+        statea.networkQueue.map(cb => {
+          cb();
+        });
+      }, 2000);
     }
   };
 }
