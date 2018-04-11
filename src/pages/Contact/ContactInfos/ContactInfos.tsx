@@ -30,9 +30,7 @@ export class ContactInfos extends PureComponent<
   public state = {
     index: 2,
   };
-  public setSegmentedControlState = index =>
-    this.setState({index: index});
-
+  public setSegmentedControlState = index => this.setState({index});
   public render() {
     const {index} = this.state;
     const {contact} = this.props;
@@ -43,10 +41,9 @@ export class ContactInfos extends PureComponent<
     return [
       <SegmentedControlTab
         key={0}
- //       tintColor={primaryColor}
+        activeTabStyle={{backgroundColor: {primaryColor}}}
         values={values}
         selectedIndex={index}
-//        onChange={this.setSegmentedControlState}
         onTabPress={this.setSegmentedControlState}
       />,
       <Elem key={1} contact={contact} />,
