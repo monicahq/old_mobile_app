@@ -1,7 +1,14 @@
 import {PixelRatio, StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
-  nameContainer: {
+  topAndroidContainer: {
+    paddingTop: 10,
+    paddingBottom: 10,
+    borderColor: '#E2E4E5',
+    borderBottomWidth: 1 / PixelRatio.get(),
+    alignItems: 'center',
+  },
+  topIosContainer: {
     paddingTop: 45,
     paddingBottom: 10,
     borderColor: '#E2E4E5',

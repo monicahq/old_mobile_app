@@ -1,12 +1,12 @@
 import React, {PureComponent} from 'react';
-import {ScrollView, Text, View} from 'react-native';
+import {Platform, ScrollView, Text, View} from 'react-native';
 
 import {ContactAvatar, Navbar} from '@components';
 import {I18n} from '@i18n';
 import {IRouterBackOperation} from '@redux/router';
 import {IContact} from '@src/models';
 import {commonStyles} from '@theme';
-import {getAge} from '@utils/contacts';
+import {getAge, getName} from '@utils/contacts';
 import {styles} from './Contact.styles';
 import {ContactActivityRow} from './ContactActivityRow/ContactActivityRow';
 import {ContactInfos} from './ContactInfos/ContactInfos';
@@ -25,27 +25,34 @@ export class Contact extends PureComponent<IContactProps, {}> {
     const {contact, back, navigate} = this.props;
 
     const age = getAge(contact);
+    const ageText = !!age && (
+      <Text style={styles.subtitle}>{I18n.t('contacts:age', {age})}</Text>
+    );
+    const name = getName(contact);
+    const isAndroid = Platform.OS === 'android';
+    const avatar = (
+      <ContactAvatar
+        contact={contact}
+        size={76}
+        style={!isAndroid && styles.contactImage}
+      />
+    );
 
     return (
       <View style={[commonStyles.flex, commonStyles.bgWhite]}>
-        <Navbar
-          title={
-            <ContactAvatar
-              contact={contact}
-              size={76}
-              style={styles.contactImage}
-            />
-          }
-          onBack={back}
-        />
-        <View style={styles.nameContainer}>
-          <Text style={styles.title}>
-            {contact.first_name} {contact.last_name}
-          </Text>
-          {!!age && (
-            <Text style={styles.subtitle}>{I18n.t('contacts:age', {age})}</Text>
-          )}
-        </View>
+        <Navbar title={isAndroid ? name : avatar} onBack={back} />
+        {isAndroid && (
+          <View style={styles.topAndroidContainer}>
+            {avatar}
+            {ageText}
+          </View>
+        )}
+        {!isAndroid && (
+          <View style={styles.topIosContainer}>
+            <Text style={styles.title}>{name}</Text>
+            {ageText}
+          </View>
+        )}
 
         <ScrollView style={styles.scrollView}>
           <View style={[styles.bloc, styles.paddingVertical]}>
