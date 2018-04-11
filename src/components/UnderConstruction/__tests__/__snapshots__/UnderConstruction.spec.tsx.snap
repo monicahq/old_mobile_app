@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components UnderConstruction should renders correctly 1`] = `
-<View
+<Component
   style={
     Object {
       "alignItems": "center",
@@ -9,7 +9,7 @@ exports[`Components UnderConstruction should renders correctly 1`] = `
     }
   }
 >
-  <View
+  <Component
     style={
       Object {
         "flex": 1,
@@ -34,12 +34,12 @@ exports[`Components UnderConstruction should renders correctly 1`] = `
   >
     This page is under construction.
   </Text>
-  <View
+  <Component
     style={
       Object {
         "flex": 1,
       }
     }
   />
-</View>
+</Component>
 `;

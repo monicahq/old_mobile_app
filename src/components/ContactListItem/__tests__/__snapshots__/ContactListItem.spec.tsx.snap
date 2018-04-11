@@ -5,7 +5,7 @@ exports[`Components ContactListItem should renders correctly 1`] = `
   activeOpacity={0.2}
   onPress={[MockFunction]}
 >
-  <View
+  <Component
     style={
       Array [
         Object {
@@ -21,7 +21,7 @@ exports[`Components ContactListItem should renders correctly 1`] = `
       contact={Object {}}
       size={50}
     />
-    <View
+    <Component
       style={
         Object {
           "justifyContent": "center",
@@ -48,8 +48,8 @@ exports[`Components ContactListItem should renders correctly 1`] = `
       >
         Last updated on testDate
       </Text>
-    </View>
-  </View>
+    </Component>
+  </Component>
 </TouchableOpacity>
 `;
 
@@ -58,7 +58,7 @@ exports[`Components ContactListItem should renders correctly 2`] = `
   activeOpacity={0.2}
   onPress={[MockFunction]}
 >
-  <View
+  <Component
     style={
       Array [
         Object {
@@ -76,7 +76,7 @@ exports[`Components ContactListItem should renders correctly 2`] = `
       contact={Object {}}
       size={50}
     />
-    <View
+    <Component
       style={
         Object {
           "justifyContent": "center",
@@ -103,7 +103,7 @@ exports[`Components ContactListItem should renders correctly 2`] = `
       >
         Last updated on testDate
       </Text>
-    </View>
-  </View>
+    </Component>
+  </Component>
 </TouchableOpacity>
 `;

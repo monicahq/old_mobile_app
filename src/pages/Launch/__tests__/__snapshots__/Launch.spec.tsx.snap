@@ -16,14 +16,14 @@ exports[`Components Launch should renders correctly 1`] = `
     }
   }
 >
-  <View
+  <Component
     style={
       Object {
         "flex": 1,
       }
     }
   />
-  <View
+  <Component
     style={
       Object {
         "alignItems": "center",
@@ -73,8 +73,8 @@ exports[`Components Launch should renders correctly 1`] = `
     >
       Get started
     </Button>
-  </View>
-  <View
+  </Component>
+  <Component
     style={
       Object {
         "flex": 1,

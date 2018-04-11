@@ -5,7 +5,7 @@ exports[`Components Button Android should renders correctly 1`] = `
   disabled={false}
   onPress={[Function]}
 >
-  <View
+  <Component
     style={
       Array [
         Object {
@@ -36,7 +36,7 @@ exports[`Components Button Android should renders correctly 1`] = `
     >
       TEST
     </Text>
-  </View>
+  </Component>
 </DummyTouchableNativeFeedback>
 `;
 
@@ -45,7 +45,7 @@ exports[`Components Button Android should renders correctly 2`] = `
   disabled={false}
   onPress={[Function]}
 >
-  <View
+  <Component
     style={
       Array [
         Object {
@@ -76,7 +76,7 @@ exports[`Components Button Android should renders correctly 2`] = `
     >
       QDWDQW
     </Text>
-  </View>
+  </Component>
 </DummyTouchableNativeFeedback>
 `;
 
@@ -85,7 +85,7 @@ exports[`Components Button Android should renders correctly 3`] = `
   disabled={false}
   onPress={[Function]}
 >
-  <View
+  <Component
     style={
       Array [
         Object {
@@ -127,7 +127,7 @@ exports[`Components Button Android should renders correctly 3`] = `
         }
       }
     />
-  </View>
+  </Component>
 </DummyTouchableNativeFeedback>
 `;
 
@@ -136,7 +136,7 @@ exports[`Components Button Android should renders correctly 4`] = `
   disabled={true}
   onPress={[Function]}
 >
-  <View
+  <Component
     style={
       Array [
         Object {
@@ -169,6 +169,6 @@ exports[`Components Button Android should renders correctly 4`] = `
     >
       QDWDQW
     </Text>
-  </View>
+  </Component>
 </DummyTouchableNativeFeedback>
 `;

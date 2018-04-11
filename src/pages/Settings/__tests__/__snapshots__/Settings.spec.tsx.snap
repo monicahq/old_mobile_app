@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages Settings android should renders correctly 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -11,7 +11,7 @@ exports[`Pages Settings android should renders correctly 1`] = `
   <Navbar
     title="Settings"
   />
-  <View
+  <Component
     style={
       Array [
         Object {
@@ -23,7 +23,7 @@ exports[`Pages Settings android should renders correctly 1`] = `
       ]
     }
   >
-    <View
+    <Component
       style={
         Object {
           "alignItems": "center",
@@ -53,8 +53,8 @@ exports[`Pages Settings android should renders correctly 1`] = `
         thumbTintColor="#355974"
         value={true}
       />
-    </View>
-    <View
+    </Component>
+    <Component
       style={
         Object {
           "paddingHorizontal": 20,
@@ -88,12 +88,12 @@ exports[`Pages Settings android should renders correctly 1`] = `
       >
         Version: 1.0.0
       </Text>
-    </View>
+    </Component>
     <TouchableOpacity
       activeOpacity={0.2}
       onPress={[Function]}
     >
-      <View
+      <Component
         style={
           Object {
             "backgroundColor": "white",
@@ -114,9 +114,9 @@ exports[`Pages Settings android should renders correctly 1`] = `
         >
           Logout
         </Text>
-      </View>
+      </Component>
     </TouchableOpacity>
-    <View
+    <Component
       style={
         Object {
           "flex": 1,
@@ -154,12 +154,12 @@ exports[`Pages Settings android should renders correctly 1`] = `
     >
       Designed by freepik.com
     </Text>
-  </View>
-</View>
+  </Component>
+</Component>
 `;
 
 exports[`Pages Settings android should renders correctly 2`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -169,7 +169,7 @@ exports[`Pages Settings android should renders correctly 2`] = `
   <Navbar
     title="Settings"
   />
-  <View
+  <Component
     style={
       Array [
         Object {
@@ -181,7 +181,7 @@ exports[`Pages Settings android should renders correctly 2`] = `
       ]
     }
   >
-    <View
+    <Component
       style={
         Object {
           "alignItems": "center",
@@ -211,8 +211,8 @@ exports[`Pages Settings android should renders correctly 2`] = `
         thumbTintColor="#355974"
         value={false}
       />
-    </View>
-    <View
+    </Component>
+    <Component
       style={
         Object {
           "paddingHorizontal": 20,
@@ -246,12 +246,12 @@ exports[`Pages Settings android should renders correctly 2`] = `
       >
         Version: 1.0.0
       </Text>
-    </View>
+    </Component>
     <TouchableOpacity
       activeOpacity={0.2}
       onPress={[Function]}
     >
-      <View
+      <Component
         style={
           Object {
             "backgroundColor": "white",
@@ -272,9 +272,9 @@ exports[`Pages Settings android should renders correctly 2`] = `
         >
           Logout
         </Text>
-      </View>
+      </Component>
     </TouchableOpacity>
-    <View
+    <Component
       style={
         Object {
           "flex": 1,
@@ -312,12 +312,12 @@ exports[`Pages Settings android should renders correctly 2`] = `
     >
       Designed by freepik.com
     </Text>
-  </View>
-</View>
+  </Component>
+</Component>
 `;
 
 exports[`Pages Settings ios should renders correctly 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -327,7 +327,7 @@ exports[`Pages Settings ios should renders correctly 1`] = `
   <Navbar
     title="Settings"
   />
-  <View
+  <Component
     style={
       Array [
         Object {
@@ -339,7 +339,7 @@ exports[`Pages Settings ios should renders correctly 1`] = `
       ]
     }
   >
-    <View
+    <Component
       style={
         Object {
           "alignItems": "center",
@@ -369,8 +369,8 @@ exports[`Pages Settings ios should renders correctly 1`] = `
         thumbTintColor={null}
         value={true}
       />
-    </View>
-    <View
+    </Component>
+    <Component
       style={
         Object {
           "paddingHorizontal": 20,
@@ -404,12 +404,12 @@ exports[`Pages Settings ios should renders correctly 1`] = `
       >
         Version: 1.0.0
       </Text>
-    </View>
+    </Component>
     <TouchableOpacity
       activeOpacity={0.2}
       onPress={[Function]}
     >
-      <View
+      <Component
         style={
           Object {
             "backgroundColor": "white",
@@ -430,9 +430,9 @@ exports[`Pages Settings ios should renders correctly 1`] = `
         >
           Logout
         </Text>
-      </View>
+      </Component>
     </TouchableOpacity>
-    <View
+    <Component
       style={
         Object {
           "flex": 1,
@@ -470,12 +470,12 @@ exports[`Pages Settings ios should renders correctly 1`] = `
     >
       Designed by freepik.com
     </Text>
-  </View>
-</View>
+  </Component>
+</Component>
 `;
 
 exports[`Pages Settings ios should renders correctly 2`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -485,7 +485,7 @@ exports[`Pages Settings ios should renders correctly 2`] = `
   <Navbar
     title="Settings"
   />
-  <View
+  <Component
     style={
       Array [
         Object {
@@ -497,7 +497,7 @@ exports[`Pages Settings ios should renders correctly 2`] = `
       ]
     }
   >
-    <View
+    <Component
       style={
         Object {
           "alignItems": "center",
@@ -527,8 +527,8 @@ exports[`Pages Settings ios should renders correctly 2`] = `
         thumbTintColor={null}
         value={false}
       />
-    </View>
-    <View
+    </Component>
+    <Component
       style={
         Object {
           "paddingHorizontal": 20,
@@ -562,12 +562,12 @@ exports[`Pages Settings ios should renders correctly 2`] = `
       >
         Version: 1.0.0
       </Text>
-    </View>
+    </Component>
     <TouchableOpacity
       activeOpacity={0.2}
       onPress={[Function]}
     >
-      <View
+      <Component
         style={
           Object {
             "backgroundColor": "white",
@@ -588,9 +588,9 @@ exports[`Pages Settings ios should renders correctly 2`] = `
         >
           Logout
         </Text>
-      </View>
+      </Component>
     </TouchableOpacity>
-    <View
+    <Component
       style={
         Object {
           "flex": 1,
@@ -628,6 +628,6 @@ exports[`Pages Settings ios should renders correctly 2`] = `
     >
       Designed by freepik.com
     </Text>
-  </View>
-</View>
+  </Component>
+</Component>
 `;

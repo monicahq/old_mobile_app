@@ -34,7 +34,7 @@ exports[`Pages Activities should display the header if it is not fetching 1`] = 
 `;
 
 exports[`Pages Activities should renders correctly with activities and fetching 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -76,7 +76,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</View>
+</Component>
 `;
 
 exports[`Pages Activities should renders correctly with activities and fetching 2`] = `
@@ -91,7 +91,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
     }
   }
 >
-  <View
+  <Component
     style={
       Object {
         "flexDirection": "row",
@@ -110,7 +110,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
     >
       Activity title
     </Text>
-    <View
+    <Component
       style={
         Object {
           "flex": 1,
@@ -129,7 +129,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
     >
       25 years ago
     </Text>
-  </View>
+  </Component>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -147,7 +147,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
 `;
 
 exports[`Pages Activities should renders correctly with activities and fetching 3`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -194,7 +194,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</View>
+</Component>
 `;
 
 exports[`Pages Activities should renders correctly with activities and fetching 4`] = `
@@ -209,7 +209,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
     }
   }
 >
-  <View
+  <Component
     style={
       Object {
         "flexDirection": "row",
@@ -228,7 +228,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
     >
       Activity title
     </Text>
-    <View
+    <Component
       style={
         Object {
           "flex": 1,
@@ -247,7 +247,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
     >
       25 years ago
     </Text>
-  </View>
+  </Component>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -276,7 +276,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
     }
   }
 >
-  <View
+  <Component
     style={
       Object {
         "flexDirection": "row",
@@ -295,7 +295,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
     >
       Activity title 2
     </Text>
-    <View
+    <Component
       style={
         Object {
           "flex": 1,
@@ -314,7 +314,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
     >
       23 years ago
     </Text>
-  </View>
+  </Component>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -332,7 +332,7 @@ exports[`Pages Activities should renders correctly with activities and fetching 
 `;
 
 exports[`Pages Activities should renders correctly without activities and fetching 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -366,11 +366,11 @@ exports[`Pages Activities should renders correctly without activities and fetchi
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</View>
+</Component>
 `;
 
 exports[`Pages Activities should renders correctly without activities and not fetching 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -386,5 +386,5 @@ exports[`Pages Activities should renders correctly without activities and not fe
     subtitle="Keep track of what you’ve done."
     title="Have you done an activity with Theo lately?"
   />
-</View>
+</Component>
 `;

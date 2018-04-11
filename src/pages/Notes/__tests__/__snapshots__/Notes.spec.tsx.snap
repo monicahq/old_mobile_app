@@ -15,7 +15,7 @@ exports[`Pages Notes should display the activity indicator in the footer if it i
 `;
 
 exports[`Pages Notes should renders correctly with notes and fetching 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -55,7 +55,7 @@ exports[`Pages Notes should renders correctly with notes and fetching 1`] = `
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</View>
+</Component>
 `;
 
 exports[`Pages Notes should renders correctly with notes and fetching 2`] = `
@@ -94,7 +94,7 @@ exports[`Pages Notes should renders correctly with notes and fetching 2`] = `
 `;
 
 exports[`Pages Notes should renders correctly with notes and fetching 3`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -138,7 +138,7 @@ exports[`Pages Notes should renders correctly with notes and fetching 3`] = `
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</View>
+</Component>
 `;
 
 exports[`Pages Notes should renders correctly with notes and fetching 4`] = `
@@ -212,7 +212,7 @@ exports[`Pages Notes should renders correctly with notes and fetching 5`] = `
 `;
 
 exports[`Pages Notes should renders correctly without notes and fetching 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -245,11 +245,11 @@ exports[`Pages Notes should renders correctly without notes and fetching 1`] = `
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</View>
+</Component>
 `;
 
 exports[`Pages Notes should renders correctly without notes and not fetching 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -265,5 +265,5 @@ exports[`Pages Notes should renders correctly without notes and not fetching 1`]
     subtitle="Just write down what you have in mind."
     title="Notes are great to record precious details about your contacts."
   />
-</View>
+</Component>
 `;
