@@ -81,6 +81,6 @@ exports[`Components Navbar IOS should renders correctly 3`] = `
   }
   style={Object {}}
   tintColor="#355974"
-  title={<View />}
+  title={<Component />}
 />
 `;

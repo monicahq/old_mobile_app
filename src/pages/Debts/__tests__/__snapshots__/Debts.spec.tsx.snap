@@ -15,7 +15,7 @@ exports[`Pages Debts should display the activity indicator in the footer if it i
 `;
 
 exports[`Pages Debts should renders correctly with debts and fetching 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -58,7 +58,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 1`] = `
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</View>
+</Component>
 `;
 
 exports[`Pages Debts should renders correctly with debts and fetching 2`] = `
@@ -73,7 +73,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 2`] = `
     }
   }
 >
-  <View
+  <Component
     style={
       Object {
         "flexDirection": "row",
@@ -81,7 +81,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 2`] = `
       }
     }
   >
-    <View
+    <Component
       style={
         Array [
           Object {
@@ -108,7 +108,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 2`] = `
       >
         You owe
       </Text>
-    </View>
+    </Component>
     <Text
       accessible={true}
       allowFontScaling={true}
@@ -122,7 +122,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 2`] = `
     >
       $
     </Text>
-  </View>
+  </Component>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -139,7 +139,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 2`] = `
 `;
 
 exports[`Pages Debts should renders correctly with debts and fetching 3`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -189,7 +189,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 3`] = `
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</View>
+</Component>
 `;
 
 exports[`Pages Debts should renders correctly with debts and fetching 4`] = `
@@ -204,7 +204,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 4`] = `
     }
   }
 >
-  <View
+  <Component
     style={
       Object {
         "flexDirection": "row",
@@ -212,7 +212,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 4`] = `
       }
     }
   >
-    <View
+    <Component
       style={
         Array [
           Object {
@@ -239,7 +239,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 4`] = `
       >
         You owe
       </Text>
-    </View>
+    </Component>
     <Text
       accessible={true}
       allowFontScaling={true}
@@ -253,7 +253,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 4`] = `
     >
       $
     </Text>
-  </View>
+  </Component>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -281,7 +281,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 5`] = `
     }
   }
 >
-  <View
+  <Component
     style={
       Object {
         "flexDirection": "row",
@@ -289,7 +289,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 5`] = `
       }
     }
   >
-    <View
+    <Component
       style={
         Array [
           Object {
@@ -316,7 +316,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 5`] = `
       >
         Bill owes you
       </Text>
-    </View>
+    </Component>
     <Text
       accessible={true}
       allowFontScaling={true}
@@ -330,7 +330,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 5`] = `
     >
       $
     </Text>
-  </View>
+  </Component>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -347,7 +347,7 @@ exports[`Pages Debts should renders correctly with debts and fetching 5`] = `
 `;
 
 exports[`Pages Debts should renders correctly without debts and fetching 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -380,11 +380,11 @@ exports[`Pages Debts should renders correctly without debts and fetching 1`] = `
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</View>
+</Component>
 `;
 
 exports[`Pages Debts should renders correctly without debts and not fetching 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -400,5 +400,5 @@ exports[`Pages Debts should renders correctly without debts and not fetching 1`]
     subtitle="But having no debts that you owe is a way to stay happy in your friendship."
     title="Money doesn’t buy happiness."
   />
-</View>
+</Component>
 `;

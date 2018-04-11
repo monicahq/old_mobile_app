@@ -32,14 +32,14 @@ exports[`Pages Login should renders correctly 1`] = `
     <Back
       onPress={[MockFunction]}
     />
-    <View
+    <Component
       style={
         Object {
           "flex": 1,
         }
       }
     />
-    <View
+    <Component
       style={
         Object {
           "alignItems": "center",
@@ -71,8 +71,8 @@ exports[`Pages Login should renders correctly 1`] = `
       <LoginFormContainer
         onSuccess={[Function]}
       />
-    </View>
-    <View
+    </Component>
+    <Component
       style={
         Object {
           "flex": 1,

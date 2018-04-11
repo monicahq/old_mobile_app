@@ -47,7 +47,7 @@ exports[`Components ContactAvatar should renders correctly 2`] = `
 `;
 
 exports[`Components ContactAvatar should renders correctly 3`] = `
-<View
+<Component
   style={
     Array [
       Object {
@@ -79,11 +79,11 @@ exports[`Components ContactAvatar should renders correctly 3`] = `
   >
     TM
   </Text>
-</View>
+</Component>
 `;
 
 exports[`Components ContactAvatar should renders correctly 4`] = `
-<View
+<Component
   style={
     Array [
       Object {
@@ -115,5 +115,5 @@ exports[`Components ContactAvatar should renders correctly 4`] = `
   >
     TM
   </Text>
-</View>
+</Component>
 `;

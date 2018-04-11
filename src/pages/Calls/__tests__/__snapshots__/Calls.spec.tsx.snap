@@ -34,7 +34,7 @@ exports[`Pages Calls should display the loading indicator in the footer if it is
 `;
 
 exports[`Pages Calls should renders correctly with calls and fetching 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -79,7 +79,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 1`] = `
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</View>
+</Component>
 `;
 
 exports[`Pages Calls should renders correctly with calls and fetching 2`] = `
@@ -94,7 +94,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 2`] = `
     }
   }
 >
-  <View
+  <Component
     style={
       Object {
         "flexDirection": "row",
@@ -113,7 +113,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 2`] = `
     >
       You called
     </Text>
-    <View
+    <Component
       style={
         Object {
           "flex": 1,
@@ -132,7 +132,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 2`] = `
     >
       4 months ago
     </Text>
-  </View>
+  </Component>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -150,7 +150,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 2`] = `
 `;
 
 exports[`Pages Calls should renders correctly with calls and fetching 3`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -195,7 +195,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 3`] = `
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</View>
+</Component>
 `;
 
 exports[`Pages Calls should renders correctly with calls and fetching 4`] = `
@@ -210,7 +210,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 4`] = `
     }
   }
 >
-  <View
+  <Component
     style={
       Object {
         "flexDirection": "row",
@@ -229,7 +229,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 4`] = `
     >
       You called
     </Text>
-    <View
+    <Component
       style={
         Object {
           "flex": 1,
@@ -248,7 +248,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 4`] = `
     >
       4 months ago
     </Text>
-  </View>
+  </Component>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -277,7 +277,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 5`] = `
     }
   }
 >
-  <View
+  <Component
     style={
       Object {
         "flexDirection": "row",
@@ -296,7 +296,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 5`] = `
     >
       You called
     </Text>
-    <View
+    <Component
       style={
         Object {
           "flex": 1,
@@ -315,7 +315,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 5`] = `
     >
       6 months ago
     </Text>
-  </View>
+  </Component>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -333,7 +333,7 @@ exports[`Pages Calls should renders correctly with calls and fetching 5`] = `
 `;
 
 exports[`Pages Calls should renders correctly without calls and fetching 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -367,11 +367,11 @@ exports[`Pages Calls should renders correctly without calls and fetching 1`] = `
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</View>
+</Component>
 `;
 
 exports[`Pages Calls should renders correctly without calls and not fetching 1`] = `
-<View
+<Component
   style={
     Object {
       "flex": 1,
@@ -387,5 +387,5 @@ exports[`Pages Calls should renders correctly without calls and not fetching 1`]
     subtitle="So you can refer to it at a later time."
     title="Enter details about phone calls you make."
   />
-</View>
+</Component>
 `;

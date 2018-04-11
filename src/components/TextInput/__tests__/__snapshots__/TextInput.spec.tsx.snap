@@ -2,7 +2,7 @@
 
 exports[`Components TextInput android should renders correctly 1`] = `
 Array [
-  <View
+  <Component
     key="0"
     style={
       Object {
@@ -32,7 +32,7 @@ Array [
 
 exports[`Components TextInput android should renders correctly 2`] = `
 Array [
-  <View
+  <Component
     key="0"
     style={
       Object {
@@ -62,7 +62,7 @@ Array [
 
 exports[`Components TextInput ios should renders correctly 1`] = `
 Array [
-  <View
+  <Component
     key="0"
     style={
       Object {
@@ -92,7 +92,7 @@ Array [
 
 exports[`Components TextInput ios should renders correctly 2`] = `
 Array [
-  <View
+  <Component
     key="0"
     style={
       Object {
@@ -122,7 +122,7 @@ Array [
 
 exports[`Components TextInput ios should renders correctly 3`] = `
 Array [
-  <View
+  <Component
     key="0"
     style={
       Object {
@@ -152,7 +152,7 @@ Array [
 
 exports[`Components TextInput ios should renders correctly 4`] = `
 Array [
-  <View
+  <Component
     key="0"
     style={
       Object {
