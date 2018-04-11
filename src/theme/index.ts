@@ -33,6 +33,21 @@ export const commonStyles = StyleSheet.create({
   },
 });
 
+export const segmentedControlGroupStyles = StyleSheet.create({
+  tabStyle: {
+    borderColor: primaryColor,
+  },
+  activeTabStyle: {
+    backgroundColor: primaryColor,
+  },
+  tabTextStyle: {
+    color: primaryColor,
+  },
+  activeTabTextStyle: {
+    color: 'white',
+  },
+});
+
 export const hitSlop = {
   top: 15,
   left: 15,

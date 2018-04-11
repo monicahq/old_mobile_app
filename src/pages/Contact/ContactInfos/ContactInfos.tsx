@@ -3,7 +3,7 @@ import SegmentedControlTab from 'react-native-segmented-control-tab';
 
 import {I18n} from '@i18n';
 import {IContact} from '@models';
-import {primaryColor} from '@theme';
+import {primaryColor, segmentedControlGroupStyles} from '@theme';
 import {Contact} from './Contact';
 import {Family} from './Family';
 import {Meet} from './Meet';
@@ -41,7 +41,10 @@ export class ContactInfos extends PureComponent<
     return [
       <SegmentedControlTab
         key={0}
-        activeTabStyle={{backgroundColor: {primaryColor}}}
+        tabStyle={segmentedControlGroupStyles.tabStyle}
+        tabTextStyle={segmentedControlGroupStyles.tabTextStyle}
+        activeTabTextStyle={segmentedControlGroupStyles.activeTabTextStyle}
+        activeTabStyle={segmentedControlGroupStyles.activeTabStyle}
         values={values}
         selectedIndex={index}
         onTabPress={this.setSegmentedControlState}
