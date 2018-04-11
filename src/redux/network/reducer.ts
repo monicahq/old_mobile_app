@@ -6,7 +6,6 @@ export type INetworkQueueState = Array<(...args) => void>;
 export const networkQueueReducer = (state = [], action: IRootAction) => {
   switch (action.type) {
     case types.ADD_TO_QUEUE:
-      console.log(action.call, [...state, action.call]);
       return [...state, action.call];
   }
   return state;

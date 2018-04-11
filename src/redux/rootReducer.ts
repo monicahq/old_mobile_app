@@ -110,8 +110,25 @@ const appReducer = combineReducers<IAppState>({
 });
 
 const rootReducer = (state: IAppState, action: IRootAction) => {
+  /**
+   * Logout handling
+   */
   if (action.type === LOGOUT) {
     state = undefined;
+  }
+
+  /**
+   * Network queue handling
+   */
+  if (state && state.network.isConnected && state.networkQueue.length) {
+    console.log('RUN QUEUE');
+    state.networkQueue.forEach(callback => {
+      callback();
+    });
+    state = {
+      ...state,
+      networkQueue: [],
+    };
   }
 
   return appReducer(state, action);

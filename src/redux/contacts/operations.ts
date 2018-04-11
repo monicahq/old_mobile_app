@@ -33,13 +33,6 @@ export function getContacts() {
       call();
     } else {
       dispatch(addToQueue(call));
-
-      setTimeout(() => {
-        const statea: IAppState = getState();
-        statea.networkQueue.map(cb => {
-          cb();
-        });
-      }, 2000);
     }
   };
 }

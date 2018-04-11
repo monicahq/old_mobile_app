@@ -12,12 +12,7 @@ const rnNavigationMiddleware = createReactNavigationReduxMiddleware(
   state => state.nav
 );
 
-const enhancers = [
-  // createNetworkMiddleware(),
-  createDebounce(),
-  thunk,
-  rnNavigationMiddleware,
-];
+const enhancers = [createDebounce(), thunk, rnNavigationMiddleware];
 
 export default function configureStore(callback: () => void) {
   const c: any = __DEV__ ? composeWithDevTools : compose; // TODO fix any
@@ -25,11 +20,12 @@ export default function configureStore(callback: () => void) {
 
   const store = createStore(rootReducer, undefined, enhancer);
 
-  checkInternetAccess(3000, 'qwdqiuwdiuqwdiu').then((isConnected: boolean) => {
+  checkInternetAccess().then((isConnected: boolean) => {
     store.dispatch({
       type: offlineActionTypes.CONNECTION_CHANGE,
       payload: isConnected,
     });
+
     callback();
   });
   return store;

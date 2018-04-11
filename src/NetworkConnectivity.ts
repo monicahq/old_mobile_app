@@ -5,7 +5,7 @@ export const networkConnectivity = (
   Component: React.ComponentType<any>
 ): React.ComponentType<any> =>
   withNetworkConnectivity({
-    pingServerUrl:
-      'https://qwodijqiwudhoqwiufhqioweufhqwoiuefhqwiouehfqwiouef.com',
+    // pingServerUrl:
+    //   'https://qwodijqiwudhoqwiufhqioweufhqwoiuefhqwiouehfqwiouef.com',
     withRedux: true,
   })(Component);
