@@ -12,9 +12,10 @@ export const contacts = {
   addOne: 'To add your first contact, use the “+” button below.',
   search: 'Search your contacts',
 
-  family: {
-    family: 'Family',
-    none: 'No family member',
+  relationships: {
+    relationships: 'Relationships',
+    relations: 'Relations',
+    none: 'No relashionship',
   },
   meet: {
     how: 'How you met',

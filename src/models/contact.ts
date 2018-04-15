@@ -1,15 +1,19 @@
-interface IContactFamily {
-  kids: {
+interface IContactRelationships {
+  family: {
     total: number;
-    kids: IContact[];
+    contacts: IContact[];
   };
-  progenitors: {
+  friend: {
     total: number;
-    progenitors: IContact[];
+    contacts: IContact[];
   };
-  partners: {
+  love: {
     total: number;
-    partners: IContact[];
+    contacts: IContact[];
+  };
+  work: {
+    total: number;
+    contacts: IContact[];
   };
 }
 
@@ -30,7 +34,7 @@ interface IContactInformation {
     url: string;
     source: 'external' | 'internal';
   };
-  family: IContactFamily;
+  relationships: IContactRelationships;
   dates: {
     birthdate: IAgeDate;
     deceased_date: IAgeDate;

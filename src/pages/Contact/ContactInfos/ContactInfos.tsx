@@ -5,12 +5,12 @@ import {I18n} from '@i18n';
 import {IContact} from '@models';
 import {primaryColor, segmentedControlGroupStyles} from '@theme';
 import {Contact} from './Contact';
-import {Family} from './Family';
 import {Meet} from './Meet';
+import {Relationships} from './Relationships';
 import {Work} from './Work';
 
 const values = [
-  I18n.t('contacts:family.family'),
+  I18n.t('contacts:relationships.relations'),
   I18n.t('contacts:meet.how'),
   I18n.t('contacts:work.work'),
   I18n.t('contacts:contact.contact'),
@@ -36,7 +36,13 @@ export class ContactInfos extends PureComponent<
     const {contact} = this.props;
 
     const Elem =
-      index === 0 ? Family : index === 1 ? Meet : index === 2 ? Work : Contact;
+      index === 0
+        ? Relationships
+        : index === 1
+          ? Meet
+          : index === 2
+            ? Work
+            : Contact;
 
     return [
       <SegmentedControlTab

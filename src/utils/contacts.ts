@@ -47,14 +47,12 @@ export const getInitials = (contact: IContact): string => {
   ).toUpperCase();
 };
 
-export const getFamily = (contact: IContact) => {
-  const {kids, partners, progenitors} = contact.information.family;
+export const getRelationships = (contact: IContact) => {
+  const {family, friend, love, work} = contact.information.relationships;
   return [
-    ...partners.partners.map(person => ({...person, type: 'Partner'})),
-    ...kids.kids.map(person => ({...person, type: 'Kid'})),
-    ...progenitors.progenitors.map(person => ({
-      ...person,
-      type: 'Progenitor',
-    })),
+    ...family.contacts.map(person => ({...person, type: 'Family'})),
+    ...friend.contacts.map(person => ({...person, type: 'Friend'})),
+    ...love.contacts.map(person => ({...person, type: 'Loved one'})),
+    ...work.contacts.map(person => ({...person, type: 'Work'})),
   ];
 };
