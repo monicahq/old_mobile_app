@@ -1,4 +1,5 @@
 import React, {PureComponent} from 'react';
+import {withNetworkConnectivity} from 'react-native-offline';
 import {
   addNavigationHelpers,
   NavigationDispatch,
@@ -13,8 +14,8 @@ import {CodePushContainer} from '@src/containers/CodePush/CodePushContainer';
 import {InitialStateContainer} from '@src/containers/InitialState/InitialStateContainer';
 import {AppNavigator} from '@src/navigator/AppNavigator';
 import {codePush} from './CodePush';
+import {networkConnectivity} from './NetworkConnectivity';
 
-const store = configureStore();
 const addListener = createReduxBoundAddListener('root');
 
 interface ICustomAppNavigatorProps extends React.Props<CustomAppNavigator> {
@@ -43,12 +44,25 @@ class CustomAppNavigator extends PureComponent<ICustomAppNavigatorProps, {}> {
 
 const AppWithNavigationState = connect((state: IAppState) => ({
   router: state.router,
-}))(CustomAppNavigator as any);
+}))(networkConnectivity(CustomAppNavigator as any));
 
-class AppWithoutCodePush extends PureComponent<{}, {}> {
+class AppWithoutCodePush extends PureComponent<
+  {},
+  {isLoading: boolean; store: any}
+> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoading: true,
+      store: configureStore(() => this.setState({isLoading: false})),
+    };
+  }
   public render() {
+    if (this.state.isLoading) {
+      return null;
+    }
     return (
-      <Provider store={store}>
+      <Provider store={this.state.store}>
         <AppWithNavigationState />
       </Provider>
     );

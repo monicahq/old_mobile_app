@@ -4,14 +4,17 @@ import NavigationBar from 'react-native-navbar';
 import SearchBar from 'react-native-search-bar';
 
 import {I18n} from '@i18n';
+
+import {NetworkStatusContainer} from '@containers/NetworkStatus';
 import {navbarColor, statusBarLightContent} from '@theme';
 import {INavbarProps} from './Navbar.props';
 import {styles} from './Navbar.styles';
 
 export class Navbar extends PureComponent<INavbarProps, {}> {
   public render() {
-    return (
+    return [
       <NavigationBar
+        key={0}
         leftButton={
           <Image
             source={require('@assets/logo.png')}
@@ -30,9 +33,10 @@ export class Navbar extends PureComponent<INavbarProps, {}> {
             style={styles.searchBar}
           />
         }
+        rightButton={<NetworkStatusContainer />}
         tintColor={navbarColor}
         statusBar={statusBarLightContent}
-      />
-    );
+      />,
+    ];
   }
 }

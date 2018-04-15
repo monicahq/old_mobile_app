@@ -3254,6 +3254,10 @@ hoek@4.x.x:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.0.tgz#72d9d0754f7fe25ca2d01ad8f8f9a9449a89526d"
 
+hoist-non-react-statics@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
+
 hoist-non-react-statics@^2.2.0, hoist-non-react-statics@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.3.1.tgz#343db84c6018c650778898240135a1420ee22ce0"
@@ -5615,6 +5619,14 @@ react-native-navbar@~2.1.0:
   dependencies:
     prop-types "^15.5.10"
 
+react-native-offline@Mokto/react-native-offline:
+  version "3.7.3"
+  resolved "https://codeload.github.com/Mokto/react-native-offline/tar.gz/61e780aa4560d27bb9a3c3f7b38b5fb27254631b"
+  dependencies:
+    hoist-non-react-statics "^1.2.0"
+    lodash "^4.17.4"
+    redux-saga "^0.16.0"
+
 react-native-safe-area-view@^0.7.0, react-native-safe-area-view@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.7.0.tgz#38f5ab9368d6ef9e5d18ab64212938af3ec39421"
@@ -5944,6 +5956,14 @@ redent@^2.0.0:
 redux-debounced@~0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/redux-debounced/-/redux-debounced-0.4.0.tgz#905557c5a4d75f259e1600a60ce934d890967f07"
+
+redux-devtools-extension@^2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/redux-devtools-extension/-/redux-devtools-extension-2.13.2.tgz#e0f9a8e8dfca7c17be92c7124958a3b94eb2911d"
+
+redux-saga@^0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-0.16.0.tgz#0a231db0a1489301dd980f6f2f88d8ced418f724"
 
 redux-thunk@~2.2.0:
   version "2.2.0"

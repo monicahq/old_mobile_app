@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 import SearchBar from 'react-native-searchbar';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+import {NetworkStatusContainer} from '@containers/NetworkStatus';
 import {I18n} from '@i18n';
 import {commonStyles} from '@theme';
 import {INavbarProps} from './Navbar.props';
@@ -50,6 +51,7 @@ export class Navbar extends PureComponent<INavbarProps, {}> {
         handleSearch={this.props.onSearchTextChanged}
         onBack={this.onBack}
       />,
+      <NetworkStatusContainer key={2} />,
     ];
   }
 }

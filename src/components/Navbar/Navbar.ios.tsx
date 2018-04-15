@@ -3,6 +3,7 @@ import {TouchableOpacity} from 'react-native';
 import NavigationBar from 'react-native-navbar';
 import Icon from 'react-native-vector-icons/Ionicons';
 
+import {NetworkStatusContainer} from '@containers/NetworkStatus';
 import {hitSlop, navbarColor, statusBarLightContent} from '@theme';
 import {INavbarProps} from './Navbar.props';
 import {styles} from './Navbar.styles';
@@ -11,8 +12,9 @@ export class Navbar extends PureComponent<INavbarProps> {
   public render() {
     const {onBack, title} = this.props;
 
-    return (
+    return [
       <NavigationBar
+        key={0}
         leftButton={
           onBack && (
             <TouchableOpacity
@@ -24,10 +26,11 @@ export class Navbar extends PureComponent<INavbarProps> {
             </TouchableOpacity>
           )
         }
+        rightButton={<NetworkStatusContainer />}
         title={typeof title === 'string' ? {title, tintColor: 'white'} : title}
         tintColor={navbarColor}
         statusBar={statusBarLightContent}
-      />
-    );
+      />,
+    ];
   }
 }
