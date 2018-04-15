@@ -4,22 +4,24 @@ import {Text, View} from 'react-native';
 import {ListItem} from '@components';
 import {I18n} from '@i18n';
 import {IContact} from '@models';
-import {getAge, getFamily} from '@utils/contacts';
-import {styles} from './Family.styles';
+import {getAge, getRelationships} from '@utils/contacts';
+import {styles} from './Relationships.styles';
 
 interface IMeetProps {
   contact: IContact;
 }
 
-export class Family extends PureComponent<IMeetProps, {}> {
+export class Relationships extends PureComponent<IMeetProps, {}> {
   public render() {
     const {contact} = this.props;
-    const people = getFamily(contact);
+    const people = getRelationships(contact);
 
     return (
       <View style={styles.container}>
         {people.length === 0 && (
-          <Text style={styles.noFamily}>{I18n.t('contacts:family.none')}</Text>
+          <Text style={styles.noFamily}>
+            {I18n.t('contacts:relationships.none')}
+          </Text>
         )}
 
         {people.map((person, index) => {

@@ -3,9 +3,9 @@ import {
   getAge,
   getAvatarColor,
   getAvatarUrl,
-  getFamily,
   getInitials,
   getLastUpdatedDate,
+  getRelationships,
 } from '../contacts';
 
 describe('Utils', () => {
@@ -48,35 +48,40 @@ describe('Utils', () => {
       });
     });
 
-    describe('getFamily', () => {
-      it('should handler partners, kids, progenitors (in order)', () => {
-        const kid1 = {
+    describe('getRelationships', () => {
+      it('should handler family, friends, love, work (in order)', () => {
+        const family1 = {
           first_name: 'Theo',
         };
-        const prog1 = {
+        const friend1 = {
           first_name: 'Daddy',
         };
-        const partner1 = {
+        const love1 = {
           first_name: 'Louis',
         };
-        const partner2 = {
+        const love2 = {
           first_name: 'Guillaume',
+        };
+        const work1 = {
+          first_name: 'Guillaume from work',
         };
         const contact = {
           information: {
-            family: {
-              kids: {kids: [kid1]},
-              progenitors: {progenitors: [prog1]},
-              partners: {partners: [partner1, partner2]},
+            relationships: {
+              family: {contacts: [family1]},
+              friend: {contacts: [friend1]},
+              love: {contacts: [love1, love2]},
+              work: {contacts: [work1]},
             },
           },
         };
-        const family = getFamily(contact as any);
-        expect(family.length).toBe(4);
-        expect(family[0]).toEqual({...partner1, type: 'Partner'});
-        expect(family[1]).toEqual({...partner2, type: 'Partner'});
-        expect(family[2]).toEqual({...kid1, type: 'Kid'});
-        expect(family[3]).toEqual({...prog1, type: 'Progenitor'});
+        const relations = getRelationships(contact as any);
+        expect(relations.length).toBe(5);
+        expect(relations[0]).toEqual({...family1, type: 'Family'});
+        expect(relations[1]).toEqual({...friend1, type: 'Friend'});
+        expect(relations[2]).toEqual({...love1, type: 'Loved one'});
+        expect(relations[3]).toEqual({...love2, type: 'Loved one'});
+        expect(relations[4]).toEqual({...work1, type: 'Work'});
       });
     });
 
