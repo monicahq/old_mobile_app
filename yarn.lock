@@ -5941,9 +5941,9 @@ redent@^2.0.0:
     indent-string "^3.0.0"
     strip-indent "^2.0.0"
 
-redux-debounced@~0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/redux-debounced/-/redux-debounced-0.4.0.tgz#905557c5a4d75f259e1600a60ce934d890967f07"
+redux-debounced@~0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/redux-debounced/-/redux-debounced-0.5.0.tgz#4dde27a3e66ea428afe78215f30a27f22714605b"
 
 redux-thunk@~2.2.0:
   version "2.2.0"
