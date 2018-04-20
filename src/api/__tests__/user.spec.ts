@@ -21,10 +21,9 @@ describe('API', () => {
       expect(api.post.mock.calls.length).toBe(1);
 
       const call = api.post.mock.calls[0];
-      expect(call[0]).toBe('/oauth/token');
+      expect(call[0]).toBe('/oauth/login');
       expect(call[1].body.username).toBe(email);
       expect(call[1].body.password).toBe(password);
-      expect(call[1].body.grant_type).toBe('password');
     });
 
     it('login success', async () => {
