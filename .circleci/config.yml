@@ -94,9 +94,9 @@ workflows:
 
       - hold_testflight:
           type: approval
-          requires:
-           - typescript_check
-           - test
+          # requires:
+          #  - typescript_check
+          #  - test
       - deploy_testflight:
           requires:
             - hold_testflight
@@ -104,9 +104,9 @@ workflows:
 
       - hold_codepush_staging:
           type: approval
-          requires:
-           - typescript_check
-           - test
+          # requires:
+          #  - typescript_check
+          #  - test
       - deploy_codepush_staging:
           requires:
             - hold_codepush_staging
