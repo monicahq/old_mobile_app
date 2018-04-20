@@ -45,7 +45,7 @@ jobs:
   test:
     docker:
       - image: circleci/node:8.9
-    parallelism: 3
+    # parallelism: 3
 
     working_directory: ~/repo
     steps:
@@ -54,12 +54,9 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
-      # - run: yarn test --runInBand --testResultsProcessor="./node_modules/jest-junit-reporter"
-      # - run: mkdir test-results && mv test-report.xml test-results
-      # - store_test_results:
-      #     path: test-results
-      - run: npm test --silent -- --listTests > test_filenames.txt
-      - run: yarn test --runInBand --findRelatedTests $(circleci tests split --total=3 test_filenames.txt | tr '\r\n' ' ') --testResultsProcessor="./node_modules/jest-junit-reporter"
+      # - run: npm test --silent -- --listTests > test_filenames.txt
+      # - run: yarn test --runInBand --findRelatedTests $(circleci tests split --total=3 test_filenames.txt | tr '\r\n' ' ') --testResultsProcessor="./node_modules/jest-junit-reporter"
+      - run: yarn test --runInBand --testResultsProcessor="./node_modules/jest-junit-reporter"
       - run: mkdir test-results && mv test-report.xml test-results
       - store_test_results:
           path: test-results
