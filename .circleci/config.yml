@@ -61,7 +61,16 @@ jobs:
       - store_test_results:
           path: test-results
 
-  deploy:
+  deploy_testflight:
+    docker:
+      - image: circleci/node:8.9
+    # parallelism: 3
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+  
+  deploy_codepush_staging:
     docker:
       - image: circleci/node:8.9
     # parallelism: 3
@@ -74,18 +83,31 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - build
-      - typescript_check:
-          requires:
-            - build
-      - test:
-          requires:
-            - build
-      - hold:
+      # - build
+      # - typescript_check:
+      #     requires:
+      #       - build
+      # - test:
+      #     requires:
+      #       - build
+
+
+      - hold_testflight:
           type: approval
           requires:
            - typescript_check
            - test
-      - deploy:
+      - deploy_testflight:
           requires:
-            - hold
+            - hold_testflight
+
+
+      - hold_codepush_staging:
+          type: approval
+          requires:
+           - typescript_check
+           - test
+      - deploy_codepush_staging:
+          requires:
+            - hold_codepush_staging
+            
