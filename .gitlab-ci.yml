@@ -1,0 +1,21 @@
+image: steveedson/ci
+
+stages:
+  - build
+
+cache:
+  untracked: true
+  key: "$CI_PROJECT_ID"
+  paths:
+    - node_modules/
+    - _site/vendor/
+    - .bundled/
+    - .yarn
+
+build:
+  stage: build
+  script:
+    - ls -l
+    - yarn config set cache-folder .yarn
+    - yarn install
+    - ...
