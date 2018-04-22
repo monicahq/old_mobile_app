@@ -19,3 +19,4 @@ build:
     - yarn config set cache-folder .yarn
     - yarn install
     - yarn test
+    
