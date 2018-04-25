@@ -828,13 +828,13 @@ appcenter-link-scripts@1.5.0:
     which "^1.2.11"
     xcode "^0.8.9"
 
-appcenter@1.4.0, appcenter@~1.4.0:
+appcenter@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/appcenter/-/appcenter-1.4.0.tgz#dd5215c0985e3ee02935a03a0b33fa04338a45b0"
   dependencies:
     appcenter-link-scripts "1.4.0"
 
-appcenter@1.5.0:
+appcenter@1.5.0, appcenter@~1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/appcenter/-/appcenter-1.5.0.tgz#231c1b9aa515d2d6016abc0706062537d84e0e61"
   dependencies:
