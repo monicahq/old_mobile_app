@@ -19,8 +19,8 @@
     "clean": "watchman watch-del-all && rm -rf node_modules && yarn && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/haste-map-react-native-packager-*"
   },
   "dependencies": {
-    "appcenter": "~1.4.0",
-    "appcenter-analytics": "~1.4.0",
+    "appcenter": "~1.5.0",
+    "appcenter-analytics": "~1.5.0",
     "appcenter-crashes": "~1.5.0",
     "babel-core": "~6.26.0",
     "babel-preset-es2015": "^6.24.1",
