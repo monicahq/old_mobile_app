@@ -630,9 +630,9 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-native@^0.52.21":
-  version "0.52.21"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.52.21.tgz#132bded2b9251b0a7f5c6562f1cf8976122be163"
+"@types/react-native@^0.55.4":
+  version "0.55.4"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.55.4.tgz#866005d86490e2fd60543b143b2a5ac208aa925b"
   dependencies:
     "@types/react" "*"
 
