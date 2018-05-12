@@ -24,7 +24,8 @@
     "allowSyntheticDefaultImports": true,
     "lib": [ "dom", "es2015", "es2016" ],
     "outDir": "./dist",
-    "types": ["react", "react-native", "jest"]
+    "types": ["react", "react-native", "jest"],
+    "skipLibCheck": true
   },
   "include": [
     "./src/**/*.ts",

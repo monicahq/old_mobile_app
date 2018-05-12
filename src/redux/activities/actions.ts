@@ -1,42 +1,26 @@
 import {IActivity, IMetaStatistics} from '@models';
-import {createAction} from 'typesafe-actions';
-import {$call} from 'utility-types';
+import {action, ActionsUnion} from 'typesafe-actions';
 import * as types from './types';
 
-export const getActivitiesByContactFetched = createAction(
-  types.GET_ACTIVITIES_BY_CONTACT_FETCHED,
-  (contactId: number) => ({
+export const getActivitiesByContactFetched = (contactId: number) =>
+  action(types.GET_ACTIVITIES_BY_CONTACT_FETCHED, {
     type: types.GET_ACTIVITIES_BY_CONTACT_FETCHED,
     contactId,
-  })
-);
+  });
 
-export const getActivitiesByContactSuccess = createAction(
-  types.GET_ACTIVITIES_BY_CONTACT_SUCCESS,
-  (
-    contactId: number,
-    activities: IActivity[],
-    statistics: IMetaStatistics
-  ) => ({
+export const getActivitiesByContactSuccess = (
+  contactId: number,
+  activities: IActivity[],
+  statistics: IMetaStatistics
+) =>
+  action(types.GET_ACTIVITIES_BY_CONTACT_SUCCESS, {
     type: types.GET_ACTIVITIES_BY_CONTACT_SUCCESS,
     activities,
     contactId,
     statistics,
-  })
-);
+  });
 
-export const getActivitiesByContactFailed = createAction(
-  types.GET_ACTIVITIES_BY_CONTACT_FAILED,
-  (error: Error) => ({
-    type: types.GET_ACTIVITIES_BY_CONTACT_FAILED,
-    error: true,
-    payload: error,
-  })
-);
-
-const actions = [
-  getActivitiesByContactFetched,
-  getActivitiesByContactSuccess,
-  getActivitiesByContactFailed,
-].map($call);
-export type IActivitiesActions = typeof actions[number];
+export const getActivitiesByContactFailed = (error: Error) =>
+  action(types.GET_ACTIVITIES_BY_CONTACT_FAILED, {
+    error,
+  });

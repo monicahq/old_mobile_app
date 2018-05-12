@@ -33,7 +33,7 @@ export const activitiesReducer = (
     // GET ALL SUCCESS
     case types.GET_ACTIVITIES_BY_CONTACT_SUCCESS:
       const activities = {...state};
-      action.activities.forEach(item => {
+      action.payload.activities.forEach(item => {
         if (!activities[item.id]) {
           activities[item.id] = item;
         }
@@ -57,8 +57,8 @@ export const getByContactReducer = (
         error: null,
         isFetching: true,
         fetchedPageCount: {
-          [action.contactId]:
-            (state.fetchedPageCount[action.contactId] || 0) + 1,
+          [action.payload.contactId]:
+            (state.fetchedPageCount[action.payload.contactId] || 0) + 1,
         },
       };
 
@@ -67,14 +67,14 @@ export const getByContactReducer = (
         ...state,
         isFetching: false,
         lastUpdated: +new Date(),
-        statistics: action.statistics,
+        statistics: action.payload.statistics,
       };
 
     case types.GET_ACTIVITIES_BY_CONTACT_FAILED:
       return {
         ...state,
         isFetching: false,
-        error: action.payload,
+        error: action.payload.error,
       };
   }
 

@@ -7,7 +7,7 @@ import {
 import {createReduxBoundAddListener} from 'react-navigation-redux-helpers';
 import {connect, Provider} from 'react-redux';
 
-import {IAppState} from '@models';
+import {IRootState} from '@models';
 import configureStore from '@redux/configureStore';
 import {CodePushContainer} from '@src/containers/CodePush/CodePushContainer';
 import {InitialStateContainer} from '@src/containers/InitialState/InitialStateContainer';
@@ -41,7 +41,7 @@ class CustomAppNavigator extends PureComponent<ICustomAppNavigatorProps, {}> {
   }
 }
 
-const AppWithNavigationState = connect((state: IAppState) => ({
+const AppWithNavigationState = connect((state: IRootState) => ({
   router: state.router,
 }))(CustomAppNavigator as any);
 

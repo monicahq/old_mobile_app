@@ -44,6 +44,7 @@ const searchInitialState = {
   query: '',
   error: null,
   isFetching: false,
+  lastUpdated: null,
   fetchedPageCount: 0,
   items: [],
   count: null,
@@ -59,7 +60,7 @@ export const contactsReducer = (
     // GET ALL SUCCESS
     case types.GET_ALL_SUCCESS:
       const contacts = {...state};
-      action.items.forEach(item => {
+      action.payload.items.forEach(item => {
         if (!contacts[item.id]) {
           contacts[item.id] = item;
         }
@@ -68,7 +69,7 @@ export const contactsReducer = (
     // SEARCH SUCCESS
     case types.SEARCH_SUCCESS:
       const contactsSearch = {...state};
-      action.items.forEach(item => {
+      action.payload.items.forEach(item => {
         if (!contactsSearch[item.id]) {
           contactsSearch[item.id] = item;
         }
@@ -76,92 +77,92 @@ export const contactsReducer = (
       return contactsSearch;
 
     case noteTypes.GET_NOTES_BY_CONTACT_SUCCESS:
-      contactId = action.contactId;
+      contactId = action.payload.contactId;
       return {
         ...state,
         [contactId]: {
           ...state[contactId],
           notes: [
             ...(state[contactId].notes || []),
-            ...action.notes.map(note => note.id),
+            ...action.payload.notes.map(note => note.id),
           ],
         },
       };
 
     case debtTypes.GET_DEBTS_BY_CONTACT_SUCCESS:
-      contactId = action.contactId;
+      contactId = action.payload.contactId;
       return {
         ...state,
         [contactId]: {
           ...state[contactId],
           debts: [
             ...(state[contactId].debts || []),
-            ...action.debts.map(debt => debt.id),
+            ...action.payload.debts.map(debt => debt.id),
           ],
         },
       };
 
     case activityTypes.GET_ACTIVITIES_BY_CONTACT_SUCCESS:
-      contactId = action.contactId;
+      contactId = action.payload.contactId;
       return {
         ...state,
         [contactId]: {
           ...state[contactId],
           activities: [
             ...(state[contactId].activities || []),
-            ...action.activities.map(activity => activity.id),
+            ...action.payload.activities.map(activity => activity.id),
           ],
         },
       };
 
     case giftTypes.GET_GIFTS_BY_CONTACT_SUCCESS:
-      contactId = action.contactId;
+      contactId = action.payload.contactId;
       return {
         ...state,
         [contactId]: {
           ...state[contactId],
           gifts: [
             ...(state[contactId].gifts || []),
-            ...action.gifts.map(gift => gift.id),
+            ...action.payload.gifts.map(gift => gift.id),
           ],
         },
       };
 
     case reminderTypes.GET_REMINDERS_BY_CONTACT_SUCCESS:
-      contactId = action.contactId;
+      contactId = action.payload.contactId;
       return {
         ...state,
         [contactId]: {
           ...state[contactId],
           reminders: [
             ...(state[contactId].reminders || []),
-            ...action.reminders.map(reminder => reminder.id),
+            ...action.payload.reminders.map(reminder => reminder.id),
           ],
         },
       };
 
     case taskTypes.GET_TASKS_BY_CONTACT_SUCCESS:
-      contactId = action.contactId;
+      contactId = action.payload.contactId;
       return {
         ...state,
         [contactId]: {
           ...state[contactId],
           tasks: [
             ...(state[contactId].tasks || []),
-            ...action.tasks.map(task => task.id),
+            ...action.payload.tasks.map(task => task.id),
           ],
         },
       };
 
     case callTypes.GET_CALLS_BY_CONTACT_SUCCESS:
-      contactId = action.contactId;
+      contactId = action.payload.contactId;
       return {
         ...state,
         [contactId]: {
           ...state[contactId],
           calls: [
             ...(state[contactId].calls || []),
-            ...action.calls.map(call => call.id),
+            ...action.payload.calls.map(call => call.id),
           ],
         },
       };
@@ -191,8 +192,8 @@ export const getAllReducer = (
         ...state,
         isFetching: false,
         lastUpdated: +new Date(),
-        items: [...state.items, ...action.items.map(item => item.id)],
-        count: action.count,
+        items: [...state.items, ...action.payload.items.map(item => item.id)],
+        count: action.payload.count,
       };
 
     // GET ALL FAILED
@@ -200,7 +201,7 @@ export const getAllReducer = (
       return {
         ...state,
         isFetching: false,
-        error: action.payload,
+        error: action.payload.error,
       };
   }
 
@@ -214,26 +215,27 @@ export const searchReducer = (
   switch (action.type) {
     // GET ALL FETCHED
     case types.SEARCH_FETCHED:
-      const sameQuery = action.query === state.query;
+      const sameQuery = action.payload.query === state.query;
       return {
         ...state,
         items: sameQuery ? state.items : [],
         count: sameQuery ? state.count : 0,
-        query: action.query,
+        query: action.payload.query,
         error: null,
-        isFetching: action.query !== '',
+        isFetching: action.payload.query !== '',
         fetchedPageCount: sameQuery ? state.fetchedPageCount + 1 : 1,
       };
 
     // GET ALL SUCCESS
     case types.SEARCH_SUCCESS:
-      const items = action.items.map(item => item.id);
+      const items = action.payload.items.map(item => item.id);
       return {
         ...state,
         isFetching: false,
+        lastUpdated: +new Date(),
         items:
           state.fetchedPageCount === 1 ? items : [...state.items, ...items],
-        count: action.count,
+        count: action.payload.count,
       };
 
     // GET ALL FAILED
@@ -241,7 +243,7 @@ export const searchReducer = (
       return {
         ...state,
         isFetching: false,
-        error: action.payload,
+        error: action.payload.error,
       };
   }
 

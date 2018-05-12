@@ -11,7 +11,7 @@ export class User {
     try {
       const resp = await this.api.post('/oauth/login', {
         body: {
-          username: email,
+          email,
           password,
         },
       });

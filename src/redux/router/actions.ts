@@ -1,28 +1,18 @@
 import {NavigationState} from 'react-navigation';
-import {createAction} from 'typesafe-actions';
-import {$call} from 'utility-types';
+import {action, ActionsUnion} from 'typesafe-actions';
 import * as types from './types';
 
-export const navigate = createAction(
-  types.NAVIGATE,
-  (routeName: string, params?: any) => ({
-    type: types.NAVIGATE,
+export const navigate = (routeName: string, params?: any) =>
+  action(types.NAVIGATE, {
     routeName,
     params,
-  })
-);
+  });
 
-export const back = createAction(types.BACK);
+export const back = () => action(types.BACK);
 
-export const setState = createAction(
-  types.SET_STATE,
-  (state: NavigationState) => ({
-    type: types.SET_STATE,
+export const setState = (state: NavigationState) =>
+  action(types.SET_STATE, {
     state,
-  })
-);
+  });
 
-export const goToLaunchScreen = createAction(types.GO_TO_LAUNCH_SCREEN);
-
-const actions = [navigate, back, setState, goToLaunchScreen].map($call);
-export type IRouterActions = typeof actions[number];
+export const goToLaunchScreen = () => action(types.GO_TO_LAUNCH_SCREEN);

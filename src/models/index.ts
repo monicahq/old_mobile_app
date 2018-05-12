@@ -1,4 +1,4 @@
-export {IAppState} from '@redux/rootReducer';
+export {IRootState} from '@redux/rootReducer';
 export {IRootAction} from './actions';
 export * from './contact';
 export * from './activity';

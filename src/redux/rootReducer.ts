@@ -57,7 +57,7 @@ import {
 import {ITokenState, tokenReducer} from './user/reducer';
 import {LOGOUT} from './user/types';
 
-export interface IAppState {
+export interface IRootState {
   router: NavigationState;
   token: ITokenState;
   contacts: IContactsState;
@@ -80,7 +80,7 @@ export interface IAppState {
   beta: IBetaState;
 }
 
-const appReducer = combineReducers<IAppState>({
+const appReducer = combineReducers<IRootState, IRootAction>({
   router: routerReducer,
   token: tokenReducer,
   contacts: contactsReducer,
@@ -103,7 +103,7 @@ const appReducer = combineReducers<IAppState>({
   tasks: tasksReducer,
 });
 
-const rootReducer = (state: IAppState, action: IRootAction) => {
+const rootReducer = (state: IRootState, action: IRootAction) => {
   if (action.type === LOGOUT) {
     state = undefined;
   }

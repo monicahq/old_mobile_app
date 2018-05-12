@@ -1,4 +1,4 @@
-import {IAppState} from '@models';
+import {IRootState} from '@models';
 import {connect, Dispatch} from 'react-redux';
 import {Action} from 'redux';
 
@@ -14,7 +14,7 @@ export interface IContactProps {
 }
 
 export const ContactScreen = connect(
-  (state: IAppState, props: IContactProps) => ({
+  (state: IRootState, props: IContactProps) => ({
     contact: state.contacts[props.navigation.state.params],
   }),
   (dispatch: Dispatch<Action>) => ({

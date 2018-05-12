@@ -2,7 +2,7 @@ import {PureComponent} from 'react';
 import {AppState, Platform} from 'react-native';
 import codePush from 'react-native-code-push';
 
-import {IAppState} from '@models';
+import {IRootState} from '@models';
 
 const betaDeploymentKey =
   Platform.OS === 'ios'
@@ -10,7 +10,7 @@ const betaDeploymentKey =
     : 'GERRrABwyzmQs-9gv8DTs0AE1O6GrkZolEVSz';
 
 interface ICodePushProps {
-  beta: IAppState['beta'];
+  beta: IRootState['beta'];
 }
 
 export class CodePush extends PureComponent<ICodePushProps, {}> {

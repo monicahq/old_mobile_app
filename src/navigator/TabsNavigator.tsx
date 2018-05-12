@@ -22,11 +22,7 @@ import {SettingsScreen} from '@src/pages/Settings/SettingsScreen';
 
 interface ICustomTabViewProps {
   navigation: NavigationScreenProp<NavigationState>;
-  router: NavigationRouter<
-    NavigationState,
-    NavigationAction,
-    NavigationStackScreenOptions
-  >;
+  router: NavigationRouter<NavigationState, NavigationStackScreenOptions>;
 }
 
 class CustomTabView extends PureComponent<ICustomTabViewProps, {}> {
