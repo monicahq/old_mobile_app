@@ -26,7 +26,7 @@ export const giftsReducer = (
     // GET ALL SUCCESS
     case types.GET_GIFTS_BY_CONTACT_SUCCESS:
       const gifts = {...state};
-      action.gifts.forEach(item => {
+      action.payload.gifts.forEach(item => {
         if (!gifts[item.id]) {
           gifts[item.id] = item;
         }
@@ -50,8 +50,8 @@ export const getByContactReducer = (
         error: null,
         isFetching: true,
         fetchedPageCount: {
-          [action.contactId]:
-            (state.fetchedPageCount[action.contactId] || 0) + 1,
+          [action.payload.contactId]:
+            (state.fetchedPageCount[action.payload.contactId] || 0) + 1,
         },
       };
 
@@ -66,7 +66,7 @@ export const getByContactReducer = (
       return {
         ...state,
         isFetching: false,
-        error: action.payload,
+        error: action.payload.error,
       };
   }
 

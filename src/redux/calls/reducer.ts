@@ -33,7 +33,7 @@ export const callsReducer = (
     // GET ALL SUCCESS
     case types.GET_CALLS_BY_CONTACT_SUCCESS:
       const calls = {...state};
-      action.calls.forEach(item => {
+      action.payload.calls.forEach(item => {
         if (!calls[item.id]) {
           calls[item.id] = item;
         }
@@ -57,8 +57,8 @@ export const getByContactReducer = (
         error: null,
         isFetching: true,
         fetchedPageCount: {
-          [action.contactId]:
-            (state.fetchedPageCount[action.contactId] || 0) + 1,
+          [action.payload.contactId]:
+            (state.fetchedPageCount[action.payload.contactId] || 0) + 1,
         },
       };
 
@@ -67,14 +67,14 @@ export const getByContactReducer = (
         ...state,
         isFetching: false,
         lastUpdated: +new Date(),
-        statistics: action.statistics,
+        statistics: action.payload.statistics,
       };
 
     case types.GET_CALLS_BY_CONTACT_FAILED:
       return {
         ...state,
         isFetching: false,
-        error: action.payload,
+        error: action.payload.error,
       };
   }
 

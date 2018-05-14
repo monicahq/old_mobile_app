@@ -1,4 +1,4 @@
-import {IAppState} from '@redux/rootReducer';
+import {IRootState} from '@redux/rootReducer';
 import {connect} from 'react-redux';
 
 import {getContacts, searchContacts} from '@redux/contacts';
@@ -6,7 +6,7 @@ import {navigate} from '@redux/router';
 import {Contacts} from './Contacts';
 
 export const ContactsScreen = connect(
-  (state: IAppState) => {
+  (state: IRootState) => {
     const isSearching = state.searchContacts.query !== '';
     const obj = isSearching ? state.searchContacts : state.getAllContacts;
 

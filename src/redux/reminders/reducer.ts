@@ -26,7 +26,7 @@ export const remindersReducer = (
     // GET ALL SUCCESS
     case types.GET_REMINDERS_BY_CONTACT_SUCCESS:
       const reminders = {...state};
-      action.reminders.forEach(item => {
+      action.payload.reminders.forEach(item => {
         if (!reminders[item.id]) {
           reminders[item.id] = item;
         }
@@ -50,8 +50,8 @@ export const getByContactReducer = (
         error: null,
         isFetching: true,
         fetchedPageCount: {
-          [action.contactId]:
-            (state.fetchedPageCount[action.contactId] || 0) + 1,
+          [action.payload.contactId]:
+            (state.fetchedPageCount[action.payload.contactId] || 0) + 1,
         },
       };
 
@@ -66,7 +66,7 @@ export const getByContactReducer = (
       return {
         ...state,
         isFetching: false,
-        error: action.payload,
+        error: action.payload.error,
       };
   }
 

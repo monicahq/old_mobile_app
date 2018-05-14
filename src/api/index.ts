@@ -14,7 +14,7 @@ import {User} from './user';
 
 const frisbee = new Frisbee({
   baseURI: __DEV__
-    ? 'https://monica-staging.frb.io'
+    ? 'https://staging.monicahq.com'
     : 'https://app.monicahq.com',
   headers: {
     Accept: 'application/json',

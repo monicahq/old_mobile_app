@@ -1,11 +1,11 @@
-import {IAppState} from '@models';
+import {IRootState} from '@models';
 import {connect} from 'react-redux';
 
 import {getCallsByContact} from '@redux/calls';
 import {back} from '@redux/router';
 import {Calls} from './Calls';
 
-export const mapStateToProps = (state: IAppState, {navigation}) => {
+export const mapStateToProps = (state: IRootState, {navigation}) => {
   const contact = state.contacts[navigation.state.params];
   return {
     calls: (contact.calls || []).map(callId => state.calls[callId]),

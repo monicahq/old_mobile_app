@@ -19,7 +19,7 @@ export const betaReducer = (
     case types.SUBSCRIBE_BETA:
       return {
         ready: true,
-        isSubscribed: action.isSubscribed,
+        isSubscribed: action.payload.isSubscribed,
       };
   }
 

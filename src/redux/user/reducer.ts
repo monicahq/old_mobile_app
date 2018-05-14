@@ -9,7 +9,7 @@ export const tokenReducer = (
 ): ITokenState => {
   switch (action.type) {
     case types.SET_TOKEN:
-      return action.token;
+      return action.payload.token;
     case types.LOGOUT:
       return null;
   }

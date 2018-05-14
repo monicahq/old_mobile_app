@@ -1,24 +1,30 @@
-import {IActivitiesActions} from '@redux/activities/actions';
-import {IBetaActions} from '@redux/beta/actions';
-import {ICallsActions} from '@redux/calls/actions';
-import {IContactsActions} from '@redux/contacts/actions';
-import {IDebtsActions} from '@redux/debts/actions';
-import {IGiftsActions} from '@redux/gifts/actions';
-import {INotesActions} from '@redux/notes/actions';
-import {IRemindersActions} from '@redux/reminders/actions';
-import {IRouterActions} from '@redux/router/actions';
-import {ITasksActions} from '@redux/tasks/actions';
-import {IUserActions} from '@redux/user/actions';
+import {ActionsUnion} from 'typesafe-actions';
 
-export type IRootAction =
-  | IBetaActions
-  | IContactsActions
-  | IUserActions
-  | IRouterActions
-  | IActivitiesActions
-  | ICallsActions
-  | IGiftsActions
-  | INotesActions
-  | IRemindersActions
-  | ITasksActions
-  | IDebtsActions;
+import * as activitiesActions from '@redux/activities/actions';
+import * as betaActions from '@redux/beta/actions';
+import * as callsActions from '@redux/calls/actions';
+
+import * as contactsActions from '@redux/contacts/actions';
+import * as debtsActions from '@redux/debts/actions';
+import * as giftsActions from '@redux/gifts/actions';
+import * as notesActions from '@redux/notes/actions';
+import * as remindersActions from '@redux/reminders/actions';
+import * as routerActions from '@redux/router/actions';
+import * as tasksActions from '@redux/tasks/actions';
+import * as userActions from '@redux/user/actions';
+
+const actions = {
+  activitiesActions,
+  betaActions,
+  callsActions,
+  contactsActions,
+  debtsActions,
+  giftsActions,
+  notesActions,
+  remindersActions,
+  routerActions,
+  tasksActions,
+  userActions,
+};
+
+export type IRootAction = ActionsUnion<typeof actions>;

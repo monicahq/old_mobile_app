@@ -14,14 +14,20 @@ export const routerReducer = (
   action: IRootAction
 ): NavigationState => {
   if (action.type === types.BACK || action.type === types.NAVIGATE) {
-    const nextState = AppNavigator.router.getStateForAction(action, state);
+    const nextState = AppNavigator.router.getStateForAction(
+      // TODO fix this mess
+      (action as any).payload
+        ? {type: action.type, ...(action as any).payload}
+        : (action as any),
+      state
+    );
     return nextState || state;
   }
   if (action.type === types.GO_TO_LAUNCH_SCREEN) {
     return initialState();
   }
   if (action.type === types.SET_STATE) {
-    return {...action.state};
+    return {...action.payload.state};
   }
 
   return state;

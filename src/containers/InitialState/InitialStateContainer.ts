@@ -1,5 +1,5 @@
-import {connect} from 'react-redux';
-import {Action, Dispatch} from 'redux';
+import {connect, Dispatch} from 'react-redux';
+import {Action} from 'redux';
 
 import {subscribeBeta} from '@redux/beta';
 import {getContacts} from '@redux/contacts';

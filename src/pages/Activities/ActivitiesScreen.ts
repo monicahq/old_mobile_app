@@ -1,11 +1,11 @@
-import {IAppState} from '@models';
+import {IRootState} from '@models';
 import {connect} from 'react-redux';
 
 import {getActivitiesByContact} from '@redux/activities';
 import {back} from '@redux/router';
 import {Activities} from './Activities';
 
-export const mapStateToProps = (state: IAppState, {navigation}) => {
+export const mapStateToProps = (state: IRootState, {navigation}) => {
   const contact = state.contacts[navigation.state.params];
   return {
     contact,
