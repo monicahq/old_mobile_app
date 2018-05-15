@@ -15,7 +15,9 @@ describe('Redux', () => {
 
         expect(navigate(routeName)).toEqual({
           type: types.NAVIGATE,
-          routeName,
+          payload: {
+            routeName,
+          },
         });
       });
 
@@ -29,7 +31,7 @@ describe('Redux', () => {
         const state = {index: 0, routes: []};
         expect(setState(state)).toEqual({
           type: types.SET_STATE,
-          state,
+          payload: {state},
         });
       });
     });

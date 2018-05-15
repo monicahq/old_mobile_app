@@ -11,7 +11,7 @@ describe('Redux', () => {
       it('getGiftsByContactFetched', () => {
         expect(getGiftsByContactFetched(3)).toEqual({
           type: types.GET_GIFTS_BY_CONTACT_FETCHED,
-          contactId: 3,
+          payload: {contactId: 3},
         });
       });
 
@@ -20,8 +20,10 @@ describe('Redux', () => {
         const gifts = ['item2', 'item1'];
         expect(getGiftsByContactSuccess(contactId, gifts as any)).toEqual({
           type: types.GET_GIFTS_BY_CONTACT_SUCCESS,
-          gifts,
-          contactId,
+          payload: {
+            gifts,
+            contactId,
+          },
         });
       });
 
@@ -29,8 +31,7 @@ describe('Redux', () => {
         const error = new Error('My error');
         expect(getGiftsByContactFailed(error)).toEqual({
           type: types.GET_GIFTS_BY_CONTACT_FAILED,
-          error: true,
-          payload: error,
+          payload: {error},
         });
       });
     });

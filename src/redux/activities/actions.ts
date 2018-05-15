@@ -4,7 +4,6 @@ import * as types from './types';
 
 export const getActivitiesByContactFetched = (contactId: number) =>
   action(types.GET_ACTIVITIES_BY_CONTACT_FETCHED, {
-    type: types.GET_ACTIVITIES_BY_CONTACT_FETCHED,
     contactId,
   });
 
@@ -14,7 +13,6 @@ export const getActivitiesByContactSuccess = (
   statistics: IMetaStatistics
 ) =>
   action(types.GET_ACTIVITIES_BY_CONTACT_SUCCESS, {
-    type: types.GET_ACTIVITIES_BY_CONTACT_SUCCESS,
     activities,
     contactId,
     statistics,

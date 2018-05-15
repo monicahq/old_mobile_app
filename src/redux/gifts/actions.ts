@@ -4,7 +4,6 @@ import * as types from './types';
 
 export const getGiftsByContactFetched = (contactId: number) =>
   action(types.GET_GIFTS_BY_CONTACT_FETCHED, {
-    type: types.GET_GIFTS_BY_CONTACT_FETCHED,
     contactId,
   });
 

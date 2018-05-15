@@ -7,14 +7,16 @@ describe('Redux', () => {
       it('subscribeBeta true', () => {
         expect(subscribeBeta(true)).toEqual({
           type: types.SUBSCRIBE_BETA,
-          isSubscribed: true,
+          payload: {
+            isSubscribed: true,
+          },
         });
       });
 
       it('subscribeBeta false', () => {
         expect(subscribeBeta(false)).toEqual({
           type: types.SUBSCRIBE_BETA,
-          isSubscribed: false,
+          payload: {isSubscribed: false},
         });
       });
     });

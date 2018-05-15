@@ -11,7 +11,7 @@ describe('Redux', () => {
       it('getTasksByContactFetched', () => {
         expect(getTasksByContactFetched(4)).toEqual({
           type: types.GET_TASKS_BY_CONTACT_FETCHED,
-          contactId: 4,
+          payload: {contactId: 4},
         });
       });
 
@@ -20,8 +20,10 @@ describe('Redux', () => {
         const tasks = ['item2', 'item1'];
         expect(getTasksByContactSuccess(contactId, tasks as any)).toEqual({
           type: types.GET_TASKS_BY_CONTACT_SUCCESS,
-          tasks,
-          contactId,
+          payload: {
+            tasks,
+            contactId,
+          },
         });
       });
 
@@ -29,8 +31,7 @@ describe('Redux', () => {
         const error = new Error('My error');
         expect(getTasksByContactFailed(error)).toEqual({
           type: types.GET_TASKS_BY_CONTACT_FAILED,
-          error: true,
-          payload: error,
+          payload: {error},
         });
       });
     });

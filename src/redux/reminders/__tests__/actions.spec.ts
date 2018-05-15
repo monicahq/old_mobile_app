@@ -11,7 +11,7 @@ describe('Redux', () => {
       it('getRemindersByContactFetched', () => {
         expect(getRemindersByContactFetched(4)).toEqual({
           type: types.GET_REMINDERS_BY_CONTACT_FETCHED,
-          contactId: 4,
+          payload: {contactId: 4},
         });
       });
 
@@ -22,8 +22,10 @@ describe('Redux', () => {
           getRemindersByContactSuccess(contactId, reminders as any)
         ).toEqual({
           type: types.GET_REMINDERS_BY_CONTACT_SUCCESS,
-          reminders,
-          contactId,
+          payload: {
+            reminders,
+            contactId,
+          },
         });
       });
 
@@ -31,8 +33,7 @@ describe('Redux', () => {
         const error = new Error('My error');
         expect(getRemindersByContactFailed(error)).toEqual({
           type: types.GET_REMINDERS_BY_CONTACT_FAILED,
-          error: true,
-          payload: error,
+          payload: {error},
         });
       });
     });

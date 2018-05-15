@@ -22,8 +22,10 @@ describe('Redux', () => {
         const count = 5;
         expect(getContactsSuccess(items as any, count)).toEqual({
           type: types.GET_ALL_SUCCESS,
-          items,
-          count,
+          payload: {
+            items,
+            count,
+          },
         });
       });
 
@@ -31,15 +33,14 @@ describe('Redux', () => {
         const error = new Error('My error');
         expect(getContactsFailed(error)).toEqual({
           type: types.GET_ALL_FAILED,
-          error: true,
-          payload: error,
+          payload: {error},
         });
       });
 
       it('searchContactsFetched', () => {
         const query = 'my-query';
         expect(searchContactsFetched(query)).toEqual({
-          query,
+          payload: {query},
           type: types.SEARCH_FETCHED,
         });
       });
@@ -49,8 +50,10 @@ describe('Redux', () => {
         const count = 5;
         expect(searchContactsSuccess(items as any, count)).toEqual({
           type: types.SEARCH_SUCCESS,
-          items,
-          count,
+          payload: {
+            items,
+            count,
+          },
         });
       });
 
@@ -58,8 +61,7 @@ describe('Redux', () => {
         const error = new Error('My error');
         expect(searchContactsFailed(error)).toEqual({
           type: types.SEARCH_FAILED,
-          error: true,
-          payload: error,
+          payload: {error},
         });
       });
     });

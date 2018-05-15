@@ -11,7 +11,7 @@ describe('Redux', () => {
       it('getNotesByContactFetched', () => {
         expect(getNotesByContactFetched(3)).toEqual({
           type: types.GET_NOTES_BY_CONTACT_FETCHED,
-          contactId: 3,
+          payload: {contactId: 3},
         });
       });
 
@@ -20,8 +20,10 @@ describe('Redux', () => {
         const notes = ['item2', 'item1'];
         expect(getNotesByContactSuccess(contactId, notes as any)).toEqual({
           type: types.GET_NOTES_BY_CONTACT_SUCCESS,
-          notes,
-          contactId,
+          payload: {
+            notes,
+            contactId,
+          },
         });
       });
 
@@ -29,8 +31,7 @@ describe('Redux', () => {
         const error = new Error('My error');
         expect(getNotesByContactFailed(error)).toEqual({
           type: types.GET_NOTES_BY_CONTACT_FAILED,
-          error: true,
-          payload: error,
+          payload: {error},
         });
       });
     });

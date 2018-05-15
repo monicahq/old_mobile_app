@@ -12,7 +12,7 @@ describe('Redux', () => {
         const contactId = 10;
         expect(getActivitiesByContactFetched(contactId)).toEqual({
           type: types.GET_ACTIVITIES_BY_CONTACT_FETCHED,
-          contactId,
+          payload: {contactId},
         });
       });
 
@@ -27,10 +27,13 @@ describe('Redux', () => {
             statistics
           )
         ).toEqual({
+          meta: undefined,
           type: types.GET_ACTIVITIES_BY_CONTACT_SUCCESS,
-          activities,
-          contactId,
-          statistics,
+          payload: {
+            activities,
+            contactId,
+            statistics,
+          },
         });
       });
 
@@ -38,8 +41,7 @@ describe('Redux', () => {
         const error = new Error('My error');
         expect(getActivitiesByContactFailed(error)).toEqual({
           type: types.GET_ACTIVITIES_BY_CONTACT_FAILED,
-          error: true,
-          payload: error,
+          payload: {error},
         });
       });
     });

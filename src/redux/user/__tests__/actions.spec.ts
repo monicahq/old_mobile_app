@@ -14,7 +14,9 @@ describe('Redux', () => {
         const token = 'my-token';
         expect(setToken(token)).toEqual({
           type: types.SET_TOKEN,
-          token,
+          payload: {
+            token,
+          },
         });
       });
     });

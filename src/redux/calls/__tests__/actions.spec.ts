@@ -12,7 +12,7 @@ describe('Redux', () => {
         const contactId = 10;
         expect(getCallsByContactFetched(contactId)).toEqual({
           type: types.GET_CALLS_BY_CONTACT_FETCHED,
-          contactId,
+          payload: {contactId},
         });
       });
 
@@ -24,9 +24,11 @@ describe('Redux', () => {
           getCallsByContactSuccess(contactId, calls as any, statistics)
         ).toEqual({
           type: types.GET_CALLS_BY_CONTACT_SUCCESS,
-          calls,
-          contactId,
-          statistics,
+          payload: {
+            calls,
+            contactId,
+            statistics,
+          },
         });
       });
 
@@ -34,8 +36,7 @@ describe('Redux', () => {
         const error = new Error('My error');
         expect(getCallsByContactFailed(error)).toEqual({
           type: types.GET_CALLS_BY_CONTACT_FAILED,
-          error: true,
-          payload: error,
+          payload: {error},
         });
       });
     });
