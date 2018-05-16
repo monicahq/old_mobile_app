@@ -9,4 +9,10 @@ export const common = {
   cancel: 'Cancel',
   yearDisplay: 'In {{year}}',
   getstarted: 'Get started',
+  yourMonicaUrl: 'You Monica server url',
+
+  form: {
+    required: 'Is required',
+    invalid: 'Is invalid',
+  },
 };
