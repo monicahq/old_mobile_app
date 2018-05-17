@@ -20,8 +20,8 @@
   },
   "dependencies": {
     "appcenter": "1.5.1",
-    "appcenter-analytics": "1.5.0",
     "appcenter-crashes": "1.5.1",
+    "appcenter-analytics": "1.5.1",
     "babel-core": "6.26.3",
     "babel-preset-es2015": "^6.24.1",
     "base-64": "0.1.0",
