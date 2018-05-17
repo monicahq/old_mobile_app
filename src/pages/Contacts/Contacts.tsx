@@ -104,9 +104,13 @@ export class Contacts extends PureComponent<IContactsProps, {}> {
   public render() {
     const {contacts, isFetching, isSearching} = this.props;
 
-    const title = isSearching
+    const emptyTitle = isSearching
       ? I18n.t('contacts:none')
       : I18n.t('contacts:addOne');
+
+    const emptyImage = isSearching
+      ? require('./assets/no-results.png')
+      : require('./assets/no-contacts.png');
 
     return (
       <View style={commonStyles.flex}>
@@ -122,10 +126,7 @@ export class Contacts extends PureComponent<IContactsProps, {}> {
             onEndReachedThreshold={0.5}
           />
         ) : (
-          <EmptyActivity
-            image={require('./assets/no-contacts.png')}
-            title={title}
-          />
+          <EmptyActivity image={emptyImage} title={emptyTitle} />
         )}
       </View>
     );
