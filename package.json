@@ -50,7 +50,7 @@
     "redux-devtools-extension": "^2.13.2",
     "redux-thunk": "2.2.0",
     "tslib": "1.9.0",
-    "typesafe-actions": "2.0.0-rc.1"
+    "typesafe-actions": "2.0.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.2.0",
