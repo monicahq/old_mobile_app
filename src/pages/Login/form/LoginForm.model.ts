@@ -4,4 +4,5 @@ export interface IProps {
 export interface IValues {
   email: string;
   password: string;
+  url: string;
 }

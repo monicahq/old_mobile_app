@@ -1,7 +1,7 @@
 import Frisbee from 'frisbee';
 import {AsyncStorage, Platform, StatusBar} from 'react-native';
 
-import {tokenKey} from '@src/storage-keys';
+import {tokenKey, urlKey} from '@src/storage-keys';
 import {Activities} from './activities';
 import {Calls} from './calls';
 import {Contacts} from './contacts';
@@ -13,9 +13,7 @@ import {Tasks} from './tasks';
 import {User} from './user';
 
 const frisbee = new Frisbee({
-  baseURI: __DEV__
-    ? 'https://staging.monicahq.com'
-    : 'https://app.monicahq.com',
+  baseURI: 'https://app.monicahq.com',
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
@@ -25,6 +23,10 @@ const frisbee = new Frisbee({
 export const API = {
   setToken: (token: string) => {
     frisbee.jwt(token);
+  },
+  setUrl: async (url: string) => {
+    frisbee.opts.baseURI = url;
+    AsyncStorage.setItem(urlKey, url);
   },
   User: new User(frisbee),
   Contacts: new Contacts(frisbee),
@@ -36,6 +38,18 @@ export const API = {
   Reminders: new Reminders(frisbee),
   Tasks: new Tasks(frisbee),
 };
+
+// Get url from phone storage and add it as base url
+(async () => {
+  try {
+    const url = await AsyncStorage.getItem(urlKey);
+    if (url) {
+      frisbee.opts.baseURI = url;
+    }
+  } catch (err) {
+    console.warn(err);
+  }
+})();
 
 // Get token from phone storage and add it to headers
 (async () => {

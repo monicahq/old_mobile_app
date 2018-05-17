@@ -12,6 +12,7 @@ export class LoginForm extends PureComponent<
   {}
 > {
   public passwordTextInput = {};
+  public urlTextInput = {};
 
   public setFieldValue = fieldName => text =>
     this.props.setFieldValue(fieldName, text);
@@ -39,7 +40,7 @@ export class LoginForm extends PureComponent<
         onBlur={this.setFieldTouched('email')}
         value={values.email}
         touched={touched.email}
-        error={errors.email}
+        error={I18n.t(errors.email)}
       />
     );
   }
@@ -55,14 +56,36 @@ export class LoginForm extends PureComponent<
         ref={this.passwordTextInputRef}
         title={I18n.t('auth:yourPassword')}
         // @ts-ignore: TODO wait for react-native @types to be updated
-        returnKeyType="send"
+        returnKeyType="next"
         secureTextEntry={true}
         onChangeText={this.setFieldValue('password')}
-        onSubmitEditing={isValid ? handleSubmit : null}
+        onSubmitEditing={this.focusField('urlTextInput')}
         onBlur={this.setFieldTouched('password')}
         value={values.password}
         touched={touched.password}
-        error={errors.password}
+        error={I18n.t(errors.password)}
+      />
+    );
+  }
+
+  public urlTextInputRef = ref => (this.urlTextInput = ref);
+
+  public getUrlField() {
+    const {values, touched, errors, isValid, handleSubmit} = this.props;
+
+    return (
+      <TextInput
+        key={2}
+        ref={this.urlTextInputRef}
+        title={I18n.t('common:yourMonicaUrl')}
+        // @ts-ignore: TODO wait for react-native @types to be updated
+        returnKeyType="send"
+        onChangeText={this.setFieldValue('url')}
+        onSubmitEditing={isValid ? handleSubmit : null}
+        onBlur={this.setFieldTouched('url')}
+        value={values.url}
+        touched={touched.url}
+        error={I18n.t(errors.url)}
       />
     );
   }
@@ -73,8 +96,9 @@ export class LoginForm extends PureComponent<
     return [
       this.getEmailField(),
       this.getPasswordField(),
+      this.getUrlField(),
       <Button
-        key={2}
+        key={3}
         onPress={isValid ? handleSubmit : this.setAllTouched}
         title={I18n.t('auth:signin')}
         loadingTitle={I18n.t('auth:signinIn')}
