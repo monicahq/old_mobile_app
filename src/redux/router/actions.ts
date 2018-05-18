@@ -1,5 +1,5 @@
 import {NavigationState} from 'react-navigation';
-import {action, ActionsUnion} from 'typesafe-actions';
+import {action} from 'typesafe-actions';
 import * as types from './types';
 
 export const navigate = (routeName: string, params?: any) =>

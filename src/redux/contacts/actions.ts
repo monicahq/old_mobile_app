@@ -1,5 +1,5 @@
 import {IContact} from '@models';
-import {action, ActionsUnion} from 'typesafe-actions';
+import {action} from 'typesafe-actions';
 import * as types from './types';
 
 /**

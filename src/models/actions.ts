@@ -1,4 +1,4 @@
-import {ActionsUnion} from 'typesafe-actions';
+import {ActionType} from 'typesafe-actions';
 
 import * as activitiesActions from '@redux/activities/actions';
 import * as betaActions from '@redux/beta/actions';
@@ -27,4 +27,4 @@ const actions = {
   userActions,
 };
 
-export type IRootAction = ActionsUnion<typeof actions>;
+export type IRootAction = ActionType<typeof actions>;
