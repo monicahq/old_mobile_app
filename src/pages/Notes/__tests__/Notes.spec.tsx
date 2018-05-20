@@ -5,11 +5,11 @@ import {Notes} from '../Notes';
 
 describe('Pages', () => {
   describe('Notes', () => {
-    let back;
+    let pop;
     let getNotesByContact;
 
     beforeEach(() => {
-      back = jest.fn();
+      pop = jest.fn();
       getNotesByContact = jest.fn();
     });
 
@@ -17,7 +17,7 @@ describe('Pages', () => {
       const notes = [];
       const tree = shallow(
         <Notes
-          back={back}
+          pop={pop}
           getNotesByContact={getNotesByContact}
           isFetching={true}
           notes={notes}
@@ -30,7 +30,7 @@ describe('Pages', () => {
       const notes = [];
       const tree = shallow(
         <Notes
-          back={back}
+          pop={pop}
           getNotesByContact={getNotesByContact}
           isFetching={false}
           notes={notes}
@@ -43,7 +43,7 @@ describe('Pages', () => {
       const notes = [{body: 'My body', created_at: '1991-12-17'}];
       const tree = shallow(
         <Notes
-          back={back}
+          pop={pop}
           getNotesByContact={getNotesByContact}
           isFetching={true}
           notes={notes as any}
@@ -62,7 +62,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Notes
-          back={back}
+          pop={pop}
           getNotesByContact={getNotesByContact}
           isFetching={false}
           notes={notes as any}
@@ -84,7 +84,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Notes
-          back={back}
+          pop={pop}
           getNotesByContact={getNotesByContact}
           isFetching={true}
           notes={notes as any}
@@ -100,7 +100,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Notes
-          back={back}
+          pop={pop}
           getNotesByContact={getNotesByContact}
           isFetching={false}
           notes={notes as any}
@@ -113,7 +113,7 @@ describe('Pages', () => {
       const notes = [{id: 1}, {id: 2}];
       const tree = shallow(
         <Notes
-          back={back}
+          pop={pop}
           getNotesByContact={getNotesByContact}
           isFetching={false}
           notes={notes as any}

@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 
+import {pop} from '@navigator/NavigationService';
 import {getNotesByContact} from '@redux/notes';
-import {back} from '@redux/router';
 import {Notes} from './Notes';
 
 export const mapStateToProps = (state, {navigation}) => {
@@ -13,7 +13,7 @@ export const mapStateToProps = (state, {navigation}) => {
 };
 
 export const mapDispatchToProps = (dispatch, {navigation}) => ({
-  back: () => dispatch(back()),
+  pop,
   getNotesByContact: () => dispatch(getNotesByContact(navigation.state.params)),
 });
 

@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 
-import {back} from '@redux/router';
+import {pop} from '@navigator/NavigationService';
 import {getTasksByContact} from '@redux/tasks';
 import {Tasks} from './Tasks';
 
@@ -13,7 +13,7 @@ export const mapStateToProps = (state, {navigation}) => {
 };
 
 export const mapDispatchToProps = (dispatch, {navigation}) => ({
-  back: () => dispatch(back()),
+  pop,
   getTasksByContact: () => dispatch(getTasksByContact(navigation.state.params)),
 });
 

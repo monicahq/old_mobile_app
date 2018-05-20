@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 
+import {pop} from '@navigator/NavigationService';
 import {getGiftsByContact} from '@redux/gifts';
-import {back} from '@redux/router';
 import {Gifts} from './Gifts';
 
 export const mapStateToProps = (state, {navigation}) => {
@@ -13,7 +13,7 @@ export const mapStateToProps = (state, {navigation}) => {
 };
 
 export const mapDispatchToProps = (dispatch, {navigation}) => ({
-  back: () => dispatch(back()),
+  pop,
   getGiftsByContact: () => dispatch(getGiftsByContact(navigation.state.params)),
 });
 

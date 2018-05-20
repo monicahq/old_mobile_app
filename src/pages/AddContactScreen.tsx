@@ -4,20 +4,19 @@ import {connect} from 'react-redux';
 
 import {Navbar, UnderConstruction} from '@components';
 import {I18n} from '@i18n';
-import {IRouterBackOperation} from '@models/operations';
-import {back as backOperation} from '@redux/router';
-import {commonStyles} from '@theme';
+import {IPopAction, pop as popAction} from '@navigator/NavigationService';
+import {appScreensStyles} from '@theme';
 
 interface IAddContactProps {
-  back: IRouterBackOperation;
+  pop: IPopAction;
 }
 
-export class AddContact extends PureComponent<IAddContactProps, {}> {
+export class AddContact extends PureComponent<IAddContactProps> {
   public render() {
-    const {back} = this.props;
+    const {pop} = this.props;
     return (
-      <View style={commonStyles.flex}>
-        <Navbar title={I18n.t('contacts:add')} onBack={back} />
+      <View style={appScreensStyles.container}>
+        <Navbar title={I18n.t('contacts:add')} onBack={pop} />
         <UnderConstruction />
       </View>
     );
@@ -25,5 +24,5 @@ export class AddContact extends PureComponent<IAddContactProps, {}> {
 }
 
 export const AddContactScreen = connect(null, dispatch => ({
-  back: () => dispatch(backOperation()),
+  pop: () => popAction(),
 }))(AddContact);

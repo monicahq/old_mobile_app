@@ -4,13 +4,13 @@ import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 
 import {EmptyActivity, LastTwoYearsStatistics, Navbar} from '@components';
 import {I18n} from '@i18n';
+import {IPopAction} from '@navigator/NavigationService';
 import {ICall, IMetaStatistics} from '@src/models';
-import {IRouterBackOperation} from '@src/redux/router';
 import {commonStyles} from '@theme';
 import {styles} from './Calls.styles';
 
 interface ICallsProps {
-  back: IRouterBackOperation;
+  pop: IPopAction;
   getCallsByContact: () => void;
   calls: ICall[];
   isFetching: boolean;
@@ -77,11 +77,11 @@ export class Calls extends PureComponent<ICallsProps, {}> {
   };
 
   public render() {
-    const {back, calls, getCallsByContact, isFetching} = this.props;
+    const {pop, calls, getCallsByContact, isFetching} = this.props;
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title={I18n.t('calls:calls')} onBack={back} />
+        <Navbar title={I18n.t('calls:calls')} onBack={pop} />
         {isFetching || calls.length ? (
           <FlatList
             data={calls}

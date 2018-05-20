@@ -5,12 +5,12 @@ import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 import {EmptyActivity, Navbar} from '@components';
 import {I18n} from '@i18n';
 import {IReminder} from '@models';
-import {IRouterBackOperation} from '@redux/router';
+import {IPopAction} from '@navigator/NavigationService';
 import {commonStyles} from '@theme';
 import {styles} from './Reminders.styles';
 
 interface IRemindersProps {
-  back: IRouterBackOperation;
+  pop: IPopAction;
   getRemindersByContact: () => void;
   reminders: IReminder[];
   isFetching: boolean;
@@ -68,11 +68,11 @@ export class Reminders extends PureComponent<IRemindersProps, {}> {
   };
 
   public render() {
-    const {back, reminders, getRemindersByContact, isFetching} = this.props;
+    const {pop, reminders, getRemindersByContact, isFetching} = this.props;
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title={I18n.t('reminders:reminders')} onBack={back} />
+        <Navbar title={I18n.t('reminders:reminders')} onBack={pop} />
         {isFetching || reminders.length ? (
           <FlatList
             data={reminders}

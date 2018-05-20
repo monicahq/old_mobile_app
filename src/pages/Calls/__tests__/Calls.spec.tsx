@@ -5,11 +5,11 @@ import {Calls} from '../Calls';
 
 describe('Pages', () => {
   describe('Calls', () => {
-    let back;
+    let pop;
     let getCallsByContact;
 
     beforeEach(() => {
-      back = jest.fn();
+      pop = jest.fn();
       getCallsByContact = jest.fn();
     });
 
@@ -18,7 +18,7 @@ describe('Pages', () => {
       const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
-          back={back}
+          pop={pop}
           getCallsByContact={getCallsByContact}
           isFetching={true}
           calls={calls}
@@ -33,7 +33,7 @@ describe('Pages', () => {
       const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
-          back={back}
+          pop={pop}
           getCallsByContact={getCallsByContact}
           isFetching={false}
           calls={calls}
@@ -51,7 +51,7 @@ describe('Pages', () => {
       const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
-          back={back}
+          pop={pop}
           getCallsByContact={getCallsByContact}
           isFetching={true}
           calls={calls as any}
@@ -72,7 +72,7 @@ describe('Pages', () => {
       const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
-          back={back}
+          pop={pop}
           getCallsByContact={getCallsByContact}
           isFetching={false}
           calls={calls as any}
@@ -96,7 +96,7 @@ describe('Pages', () => {
       const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
-          back={back}
+          pop={pop}
           getCallsByContact={getCallsByContact}
           isFetching={true}
           calls={calls as any}
@@ -114,7 +114,7 @@ describe('Pages', () => {
       const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
-          back={back}
+          pop={pop}
           getCallsByContact={getCallsByContact}
           isFetching={false}
           calls={calls as any}
@@ -132,7 +132,7 @@ describe('Pages', () => {
       const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
-          back={back}
+          pop={pop}
           getCallsByContact={getCallsByContact}
           isFetching={true}
           calls={calls as any}
@@ -150,7 +150,7 @@ describe('Pages', () => {
       const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
-          back={back}
+          pop={pop}
           getCallsByContact={getCallsByContact}
           isFetching={false}
           calls={calls as any}
@@ -165,7 +165,7 @@ describe('Pages', () => {
       const statistics = {'2018': 100, '2015': 1};
       const tree = shallow(
         <Calls
-          back={back}
+          pop={pop}
           getCallsByContact={getCallsByContact}
           isFetching={false}
           calls={calls as any}

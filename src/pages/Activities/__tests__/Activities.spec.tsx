@@ -5,12 +5,12 @@ import {Activities} from '../Activities';
 
 describe('Pages', () => {
   describe('Activities', () => {
-    let back;
+    let pop;
     let getActivitiesByContact;
     const contact = {first_name: 'Theo'};
 
     beforeEach(() => {
-      back = jest.fn();
+      pop = jest.fn();
       getActivitiesByContact = jest.fn();
     });
 
@@ -20,7 +20,7 @@ describe('Pages', () => {
       const tree = shallow(
         <Activities
           contact={contact as any}
-          back={back}
+          pop={pop}
           getActivitiesByContact={getActivitiesByContact}
           isFetching={true}
           activities={activities}
@@ -35,7 +35,7 @@ describe('Pages', () => {
       const statistics = {};
       const tree = shallow(
         <Activities
-          back={back}
+          pop={pop}
           contact={contact as any}
           getActivitiesByContact={getActivitiesByContact}
           isFetching={false}
@@ -58,7 +58,7 @@ describe('Pages', () => {
       const tree = shallow(
         <Activities
           contact={contact as any}
-          back={back}
+          pop={pop}
           getActivitiesByContact={getActivitiesByContact}
           isFetching={true}
           activities={activities as any}
@@ -88,7 +88,7 @@ describe('Pages', () => {
       const tree = shallow(
         <Activities
           contact={contact as any}
-          back={back}
+          pop={pop}
           getActivitiesByContact={getActivitiesByContact}
           isFetching={false}
           activities={activities as any}
@@ -121,7 +121,7 @@ describe('Pages', () => {
       const tree = shallow(
         <Activities
           contact={contact as any}
-          back={back}
+          pop={pop}
           getActivitiesByContact={getActivitiesByContact}
           isFetching={true}
           activities={activities as any}
@@ -148,7 +148,7 @@ describe('Pages', () => {
       const tree = shallow(
         <Activities
           contact={contact as any}
-          back={back}
+          pop={pop}
           getActivitiesByContact={getActivitiesByContact}
           isFetching={false}
           activities={activities as any}
@@ -175,7 +175,7 @@ describe('Pages', () => {
       const tree = shallow(
         <Activities
           contact={contact as any}
-          back={back}
+          pop={pop}
           getActivitiesByContact={getActivitiesByContact}
           isFetching={true}
           activities={activities as any}
@@ -202,7 +202,7 @@ describe('Pages', () => {
       const tree = shallow(
         <Activities
           contact={contact as any}
-          back={back}
+          pop={pop}
           getActivitiesByContact={getActivitiesByContact}
           isFetching={false}
           activities={activities as any}
@@ -218,7 +218,7 @@ describe('Pages', () => {
       const tree = shallow(
         <Activities
           contact={contact as any}
-          back={back}
+          pop={pop}
           getActivitiesByContact={getActivitiesByContact}
           isFetching={false}
           activities={activities as any}

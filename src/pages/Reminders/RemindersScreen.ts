@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 
+import {pop} from '@navigator/NavigationService';
 import {getRemindersByContact} from '@redux/reminders';
-import {back} from '@redux/router';
 import {Reminders} from './Reminders';
 
 export const mapStateToProps = (state, {navigation}) => {
@@ -15,7 +15,7 @@ export const mapStateToProps = (state, {navigation}) => {
 };
 
 export const mapDispatchToProps = (dispatch, {navigation}) => ({
-  back: () => dispatch(back()),
+  pop,
   getRemindersByContact: () =>
     dispatch(getRemindersByContact(navigation.state.params)),
 });

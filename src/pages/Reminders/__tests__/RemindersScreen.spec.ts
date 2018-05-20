@@ -1,5 +1,4 @@
 import {getRemindersByContact} from '@redux/reminders';
-import {back} from '@redux/router';
 import {mapDispatchToProps, mapStateToProps} from '../RemindersScreen';
 
 jest.mock('@redux/reminders', () => ({
@@ -23,15 +22,15 @@ describe('Pages', () => {
     describe('mapDispatchToProps', () => {
       it('should contains every key', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);
-        expect(Object.keys(props)).toEqual(['back', 'getRemindersByContact']);
+        expect(Object.keys(props)).toEqual(['pop', 'getRemindersByContact']);
       });
 
-      it('back should return a back action trigger', () => {
-        const props = mapDispatchToProps(dispatch, additionalProps);
-        props.back();
-        expect(dispatch.mock.calls.length).toBe(1);
-        expect(dispatch.mock.calls[0]).toEqual([back()]);
-      });
+      // it('back should return a back action trigger', () => {
+      //   const props = mapDispatchToProps(dispatch, additionalProps);
+      //   props.back();
+      //   expect(dispatch.mock.calls.length).toBe(1);
+      //   expect(dispatch.mock.calls[0]).toEqual([back()]);
+      // });
 
       it('getRemindersByContact should return a getRemindersByContact action trigger', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);

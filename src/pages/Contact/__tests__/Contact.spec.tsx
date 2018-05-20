@@ -4,7 +4,7 @@ import {Contact} from '../Contact';
 
 describe('Pages', () => {
   describe('Contact', () => {
-    const back = jest.fn();
+    const pop = jest.fn();
     const navigate = jest.fn();
     navigate.mockReturnValue(jest.fn());
     const contact = {
@@ -21,7 +21,7 @@ describe('Pages', () => {
 
     it('should not have a componentWillReceiveProps method', () => {
       const tree = shallow(
-        <Contact back={back} navigate={navigate} contact={contact as any} />
+        <Contact pop={pop} navigate={navigate} contact={contact as any} />
       );
       expect(tree.instance().componentWillMount).toBeUndefined();
     });

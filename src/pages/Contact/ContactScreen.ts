@@ -2,7 +2,7 @@ import {IRootState} from '@models';
 import {connect, Dispatch} from 'react-redux';
 import {Action} from 'redux';
 
-import {back, navigate} from '@redux/router';
+import {navigate, pop} from '@navigator/NavigationService';
 import {Contact} from './Contact';
 
 export interface IContactProps {
@@ -18,8 +18,7 @@ export const ContactScreen = connect(
     contact: state.contacts[props.navigation.state.params],
   }),
   (dispatch: Dispatch<Action>) => ({
-    back: () => dispatch(back()),
-    navigate: (routeName, contactId) => () =>
-      dispatch(navigate(routeName, contactId)),
+    pop,
+    navigate: (routeName, contactId) => () => navigate(routeName, contactId),
   })
 )(Contact);

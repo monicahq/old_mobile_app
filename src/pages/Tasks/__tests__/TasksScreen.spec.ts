@@ -1,4 +1,3 @@
-import {back} from '@redux/router';
 import {getTasksByContact} from '@redux/tasks';
 import {mapDispatchToProps, mapStateToProps} from '../TasksScreen';
 
@@ -23,15 +22,15 @@ describe('Pages', () => {
     describe('mapDispatchToProps', () => {
       it('should contains every key', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);
-        expect(Object.keys(props)).toEqual(['back', 'getTasksByContact']);
+        expect(Object.keys(props)).toEqual(['pop', 'getTasksByContact']);
       });
 
-      it('back should return a back action trigger', () => {
-        const props = mapDispatchToProps(dispatch, additionalProps);
-        props.back();
-        expect(dispatch.mock.calls.length).toBe(1);
-        expect(dispatch.mock.calls[0]).toEqual([back()]);
-      });
+      // it('pop should return a pop action trigger', () => {
+      //   const props = mapDispatchToProps(dispatch, additionalProps);
+      //   props.pop();
+      //   expect(dispatch.mock.calls.length).toBe(1);
+      //   expect(dispatch.mock.calls[0]).toEqual([pop()]);
+      // });
 
       it('getTasksByContact should return a getTasksByContact action trigger', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);

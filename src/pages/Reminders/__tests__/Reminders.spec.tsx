@@ -5,11 +5,11 @@ import {Reminders} from '../Reminders';
 
 describe('Pages', () => {
   describe('Reminders', () => {
-    let back;
+    let pop;
     let getRemindersByContact;
 
     beforeEach(() => {
-      back = jest.fn();
+      pop = jest.fn();
       getRemindersByContact = jest.fn();
     });
 
@@ -17,7 +17,7 @@ describe('Pages', () => {
       const reminders = [];
       const tree = shallow(
         <Reminders
-          back={back}
+          pop={pop}
           getRemindersByContact={getRemindersByContact}
           isFetching={true}
           reminders={reminders}
@@ -30,7 +30,7 @@ describe('Pages', () => {
       const reminders = [];
       const tree = shallow(
         <Reminders
-          back={back}
+          pop={pop}
           getRemindersByContact={getRemindersByContact}
           isFetching={false}
           reminders={reminders}
@@ -45,7 +45,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Reminders
-          back={back}
+          pop={pop}
           getRemindersByContact={getRemindersByContact}
           isFetching={true}
           reminders={reminders as any}
@@ -68,7 +68,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Reminders
-          back={back}
+          pop={pop}
           getRemindersByContact={getRemindersByContact}
           isFetching={false}
           reminders={reminders as any}
@@ -90,7 +90,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Reminders
-          back={back}
+          pop={pop}
           getRemindersByContact={getRemindersByContact}
           isFetching={true}
           reminders={reminders as any}
@@ -106,7 +106,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Reminders
-          back={back}
+          pop={pop}
           getRemindersByContact={getRemindersByContact}
           isFetching={false}
           reminders={reminders as any}
@@ -119,7 +119,7 @@ describe('Pages', () => {
       const reminders = [{id: 1}, {id: 2}];
       const tree = shallow(
         <Reminders
-          back={back}
+          pop={pop}
           getRemindersByContact={getRemindersByContact}
           isFetching={false}
           reminders={reminders as any}

@@ -5,11 +5,11 @@ import {Tasks} from '../Tasks';
 
 describe('Pages', () => {
   describe('Tasks', () => {
-    let back;
+    let pop;
     let getTasksByContact;
 
     beforeEach(() => {
-      back = jest.fn();
+      pop = jest.fn();
       getTasksByContact = jest.fn();
     });
 
@@ -17,7 +17,7 @@ describe('Pages', () => {
       const tasks = [];
       const tree = shallow(
         <Tasks
-          back={back}
+          pop={pop}
           getTasksByContact={getTasksByContact}
           isFetching={true}
           tasks={tasks}
@@ -30,7 +30,7 @@ describe('Pages', () => {
       const tasks = [];
       const tree = shallow(
         <Tasks
-          back={back}
+          pop={pop}
           getTasksByContact={getTasksByContact}
           isFetching={false}
           tasks={tasks}
@@ -43,7 +43,7 @@ describe('Pages', () => {
       const tasks = [{title: 'My title', completed: false}];
       const tree = shallow(
         <Tasks
-          back={back}
+          pop={pop}
           getTasksByContact={getTasksByContact}
           isFetching={true}
           tasks={tasks as any}
@@ -62,7 +62,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Tasks
-          back={back}
+          pop={pop}
           getTasksByContact={getTasksByContact}
           isFetching={false}
           tasks={tasks as any}
@@ -84,7 +84,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Tasks
-          back={back}
+          pop={pop}
           getTasksByContact={getTasksByContact}
           isFetching={true}
           tasks={tasks as any}
@@ -100,7 +100,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Tasks
-          back={back}
+          pop={pop}
           getTasksByContact={getTasksByContact}
           isFetching={false}
           tasks={tasks as any}
@@ -113,7 +113,7 @@ describe('Pages', () => {
       const tasks = [{id: 1}, {id: 2}];
       const tree = shallow(
         <Tasks
-          back={back}
+          pop={pop}
           getTasksByContact={getTasksByContact}
           isFetching={false}
           tasks={tasks as any}

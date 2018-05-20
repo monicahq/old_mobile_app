@@ -8,7 +8,7 @@ import {
   IContactsGetOperation,
   IContactsSearchOperation,
 } from '@models/operations';
-import {commonStyles} from '@theme';
+import {appScreensStyles, commonStyles} from '@theme';
 import {styles} from './Contacts.styles';
 import {Navbar} from './Navbar/Navbar';
 
@@ -113,7 +113,7 @@ export class Contacts extends PureComponent<IContactsProps, {}> {
       : require('./assets/no-contacts.png');
 
     return (
-      <View style={commonStyles.flex}>
+      <View style={appScreensStyles.container}>
         <Navbar onSearchTextChanged={this.onSearchTextChanged} />
         {isFetching || contacts.length ? (
           <FlatList

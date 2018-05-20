@@ -5,11 +5,11 @@ import {Debts} from '../Debts';
 
 describe('Pages', () => {
   describe('Debts', () => {
-    let back;
+    let pop;
     let getDebtsByContact;
 
     beforeEach(() => {
-      back = jest.fn();
+      pop = jest.fn();
       getDebtsByContact = jest.fn();
     });
 
@@ -17,7 +17,7 @@ describe('Pages', () => {
       const debts = [];
       const tree = shallow(
         <Debts
-          back={back}
+          pop={pop}
           getDebtsByContact={getDebtsByContact}
           isFetching={true}
           debts={debts}
@@ -30,7 +30,7 @@ describe('Pages', () => {
       const debts = [];
       const tree = shallow(
         <Debts
-          back={back}
+          pop={pop}
           getDebtsByContact={getDebtsByContact}
           isFetching={false}
           debts={debts}
@@ -45,7 +45,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Debts
-          back={back}
+          pop={pop}
           getDebtsByContact={getDebtsByContact}
           isFetching={true}
           debts={debts as any}
@@ -64,7 +64,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Debts
-          back={back}
+          pop={pop}
           getDebtsByContact={getDebtsByContact}
           isFetching={false}
           debts={debts as any}
@@ -86,7 +86,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Debts
-          back={back}
+          pop={pop}
           getDebtsByContact={getDebtsByContact}
           isFetching={true}
           debts={debts as any}
@@ -102,7 +102,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Debts
-          back={back}
+          pop={pop}
           getDebtsByContact={getDebtsByContact}
           isFetching={false}
           debts={debts as any}
@@ -115,7 +115,7 @@ describe('Pages', () => {
       const debts = [{id: 1}, {id: 2}];
       const tree = shallow(
         <Debts
-          back={back}
+          pop={pop}
           getDebtsByContact={getDebtsByContact}
           isFetching={false}
           debts={debts as any}

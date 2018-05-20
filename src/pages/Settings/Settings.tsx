@@ -7,7 +7,6 @@ import {Navbar} from '@components';
 import {I18n} from '@i18n';
 import {
   IBetaSubscribeOperation,
-  IRouterGoToLaunchScreenOperation,
   IUserLogoutOperation,
 } from '@models/operations';
 import {commonStyles, primaryColor} from '@theme';
@@ -17,7 +16,7 @@ interface ISettingsProps {
   beta: boolean;
   subscribeBeta: IBetaSubscribeOperation;
   logout: IUserLogoutOperation;
-  goToLaunchScreen: IRouterGoToLaunchScreenOperation;
+  goToLaunchScreen: any; // TODO FIX THIS
 }
 
 export class Settings extends PureComponent<ISettingsProps, {}> {

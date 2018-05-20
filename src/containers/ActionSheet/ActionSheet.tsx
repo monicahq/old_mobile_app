@@ -2,7 +2,8 @@ import React, {PureComponent} from 'react';
 import RNActionSheet from 'react-native-actionsheet';
 
 import {I18n} from '@i18n';
-import {IRouterNavigateOperation} from '@models/operations';
+
+import {INavigateAction} from '@navigator/NavigationService';
 
 const CANCEL_INDEX = 0;
 const options = [
@@ -15,7 +16,7 @@ const options = [
 ];
 
 interface IActionSheetProps {
-  navigate: IRouterNavigateOperation;
+  navigate: INavigateAction;
 }
 
 export class ActionSheet extends PureComponent<IActionSheetProps, {}> {

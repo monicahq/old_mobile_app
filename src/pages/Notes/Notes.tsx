@@ -5,12 +5,12 @@ import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 import {EmptyActivity, Navbar} from '@components';
 import {I18n} from '@i18n';
 import {INote} from '@models';
-import {IRouterBackOperation} from '@redux/router';
+import {IPopAction} from '@navigator/NavigationService';
 import {commonStyles} from '@theme';
 import {styles} from './Notes.styles';
 
 interface INotesProps {
-  back: IRouterBackOperation;
+  pop: IPopAction;
   getNotesByContact: () => void;
   notes: INote[];
   isFetching: boolean;
@@ -48,11 +48,11 @@ export class Notes extends PureComponent<INotesProps, {}> {
   };
 
   public render() {
-    const {back, notes, getNotesByContact, isFetching} = this.props;
+    const {pop, notes, getNotesByContact, isFetching} = this.props;
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title={I18n.t('notes:notes')} onBack={back} />
+        <Navbar title={I18n.t('notes:notes')} onBack={pop} />
         {isFetching || notes.length ? (
           <FlatList
             data={notes}
