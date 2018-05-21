@@ -12,11 +12,19 @@ describe('Pages', () => {
     it('should renders correctly', () => {
       const setToken = jest.fn();
       const navigate = jest.fn();
-      const back = jest.fn();
+      const navigateToAppStack = jest.fn();
+      const pop = jest.fn();
 
       expect(
         toJson(
-          shallow(<Login setToken={setToken} navigate={navigate} back={back} />)
+          shallow(
+            <Login
+              setToken={setToken}
+              navigate={navigate}
+              pop={pop}
+              navigateToAppStack={navigateToAppStack}
+            />
+          )
         )
       ).toMatchSnapshot();
     });
@@ -26,11 +34,17 @@ describe('Pages', () => {
       const navigate = jest.fn().mockReturnValue(() => {
         return;
       });
-      const back = jest.fn();
+      const navigateToAppStack = jest.fn();
+      const pop = jest.fn();
       const token = 'my-token';
 
       const tree = shallow(
-        <Login setToken={setToken} navigate={navigate} back={back} />
+        <Login
+          setToken={setToken}
+          navigate={navigate}
+          navigateToAppStack={navigateToAppStack}
+          pop={pop}
+        />
       );
       expect(tree.find('LoginFormContainer').length).toBe(1);
       tree.find('LoginFormContainer').prop('onSuccess')({
@@ -45,21 +59,26 @@ describe('Pages', () => {
       const setToken = jest.fn();
       const navigateCall = jest.fn();
       const navigate = jest.fn().mockReturnValue(navigateCall);
-      const back = jest.fn();
+      const navigateToAppStack = jest.fn();
+      const pop = jest.fn();
       const token = 'my-token';
 
       const tree = shallow(
-        <Login setToken={setToken} navigate={navigate} back={back} />
+        <Login
+          setToken={setToken}
+          navigate={navigate}
+          navigateToAppStack={navigateToAppStack}
+          pop={pop}
+        />
       );
       expect(tree.find('LoginFormContainer').length).toBe(1);
       tree.find('LoginFormContainer').prop('onSuccess')({
         access_token: token,
       });
 
-      expect(navigate.mock.calls.length).toBe(1);
-      expect(navigate.mock.calls[0]).toEqual(['Tabs']);
-      expect(navigateCall.mock.calls.length).toBe(1);
-      expect(navigateCall.mock.calls[0]).toEqual([]);
+      expect(navigateToAppStack.mock.calls.length).toBe(1);
+      expect(navigateToAppStack.mock.calls[0]).toEqual([]);
+      expect(navigateCall.mock.calls.length).toBe(0);
     });
   });
 });

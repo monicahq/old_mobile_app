@@ -5,14 +5,13 @@ import SplashScreen from 'react-native-splash-screen';
 import {
   IBetaSubscribeOperation,
   IContactsGetOperation,
-  IRouterSetStateOperation,
   IUserSetTokenOperation,
 } from '@models/operations';
-import {AppNavigator} from '@src/navigator/AppNavigator';
+import {INavigateAction} from '@navigator/NavigationService';
 import {betaKey, tokenKey} from '@src/storage-keys';
 
 interface IInitialStateProps {
-  setRouterState: IRouterSetStateOperation;
+  navigate: INavigateAction;
   subscribeBeta: IBetaSubscribeOperation;
   setToken: IUserSetTokenOperation;
   getContacts: IContactsGetOperation;
@@ -20,7 +19,7 @@ interface IInitialStateProps {
 
 export class InitialState extends PureComponent<IInitialStateProps, {}> {
   public async componentWillMount() {
-    const {setRouterState, setToken, getContacts, subscribeBeta} = this.props;
+    const {setToken, getContacts, subscribeBeta, navigate} = this.props;
 
     try {
       const [token, beta] = await Promise.all([
@@ -32,14 +31,13 @@ export class InitialState extends PureComponent<IInitialStateProps, {}> {
 
       if (!token) {
         SplashScreen.hide();
+        navigate('Auth');
         return;
       }
       setToken(token);
       getContacts();
-      setRouterState(dashboardState);
-      setTimeout(() => {
-        SplashScreen.hide();
-      }, 400);
+      SplashScreen.hide();
+      navigate('App');
     } catch (e) {
       return;
     }
@@ -48,15 +46,3 @@ export class InitialState extends PureComponent<IInitialStateProps, {}> {
     return null;
   }
 }
-
-const tabsState = AppNavigator.router.getStateForAction(
-  {type: 'Navigation/NAVIGATE', routeName: 'Tabs'},
-  AppNavigator.router.getStateForAction(
-    AppNavigator.router.getActionForPathAndParams('Launch')
-  )
-);
-
-const dashboardState = AppNavigator.router.getStateForAction(
-  {type: 'Navigation/NAVIGATE', routeName: 'Contacts'},
-  tabsState
-);

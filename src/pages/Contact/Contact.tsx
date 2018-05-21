@@ -3,9 +3,9 @@ import {Platform, ScrollView, Text, View} from 'react-native';
 
 import {ContactAvatar, Navbar} from '@components';
 import {I18n} from '@i18n';
-import {IRouterBackOperation} from '@redux/router';
+import {IPopAction} from '@navigator/NavigationService';
 import {IContact} from '@src/models';
-import {commonStyles} from '@theme';
+import {appScreensStyles} from '@theme';
 import {getAge, getName} from '@utils/contacts';
 import {styles} from './Contact.styles';
 import {ContactActivityRow} from './ContactActivityRow/ContactActivityRow';
@@ -13,7 +13,7 @@ import {ContactInfos} from './ContactInfos/ContactInfos';
 
 interface IContactProps {
   contact: IContact;
-  back: IRouterBackOperation;
+  pop: IPopAction;
   navigate: (routeName: string, params?: any) => () => any;
 }
 
@@ -22,7 +22,7 @@ export class Contact extends PureComponent<IContactProps, {}> {
   //   this.props.navigate('Gifts', this.props.contact.id)();
   // }
   public render() {
-    const {contact, back, navigate} = this.props;
+    const {contact, pop, navigate} = this.props;
 
     const age = getAge(contact);
     const ageText = !!age && (
@@ -39,8 +39,8 @@ export class Contact extends PureComponent<IContactProps, {}> {
     );
 
     return (
-      <View style={[commonStyles.flex, commonStyles.bgWhite]}>
-        <Navbar title={isAndroid ? name : avatar} onBack={back} />
+      <View style={appScreensStyles.container}>
+        <Navbar title={isAndroid ? name : avatar} onBack={pop} />
         {isAndroid && (
           <View style={styles.topAndroidContainer}>
             {avatar}

@@ -1,8 +1,8 @@
 import {IRootState} from '@redux/rootReducer';
 import {connect} from 'react-redux';
 
+import {navigate} from '@navigator/NavigationService';
 import {getContacts, searchContacts} from '@redux/contacts';
-import {navigate} from '@redux/router';
 import {Contacts} from './Contacts';
 
 export const ContactsScreen = connect(
@@ -22,7 +22,7 @@ export const ContactsScreen = connect(
       getContacts: () => dispatch(getContacts()),
       searchContacts: query => dispatch(searchContacts(query)),
       navigateToContact: (contactId: number) => () =>
-        dispatch(navigate('Contact', contactId)),
+        navigate('Contact', contactId),
     };
   }
 )(Contacts);

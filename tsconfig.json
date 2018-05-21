@@ -14,6 +14,7 @@
       "@utils/*": ["src/utils/*"],
       "@utils": ["src/utils/index"],
       "@redux/*": ["src/redux/*"],
+      "@navigator/*": ["src/navigator/*"],
       "@src/*": ["src/*"],
     },
     "importHelpers": true,

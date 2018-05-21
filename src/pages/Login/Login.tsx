@@ -5,25 +5,27 @@ import SafeAreaView from 'react-native-safe-area-view';
 
 import {Back} from '@components';
 import {I18n} from '@i18n';
-import {IRouterBackOperation, IUserSetTokenOperation} from '@models/operations';
+import {IUserSetTokenOperation} from '@models/operations';
+import {IPopAction} from '@navigator/NavigationService';
 import {commonStyles, forceInset, preAuthScreensStyles} from '@theme';
 import {LoginFormContainer} from './form/LoginFormContainer';
 
 interface ILoginProps {
-  back: IRouterBackOperation;
+  pop: IPopAction;
+  navigateToAppStack: () => any;
   navigate: (routeName) => () => any;
   setToken: IUserSetTokenOperation;
 }
 
 export class Login extends PureComponent<ILoginProps, {}> {
   public onSuccessFormResult = res => {
-    const {setToken, navigate} = this.props;
+    const {setToken, navigateToAppStack} = this.props;
     setToken(res.access_token);
-    navigate('Tabs')();
+    navigateToAppStack();
   };
 
   public render() {
-    const {back} = this.props;
+    const {pop} = this.props;
     // const {navigate} = this.props;
 
     return (
@@ -32,7 +34,7 @@ export class Login extends PureComponent<ILoginProps, {}> {
           forceInset={forceInset}
           style={preAuthScreensStyles.container}
         >
-          <Back onPress={back} />
+          <Back onPress={pop} />
           <View style={commonStyles.flex} />
 
           <View style={preAuthScreensStyles.centeredBlock}>

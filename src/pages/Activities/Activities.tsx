@@ -5,12 +5,12 @@ import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 import {EmptyActivity, LastTwoYearsStatistics, Navbar} from '@components';
 import {I18n} from '@i18n';
 import {IActivity, IContact, IMetaStatistics} from '@models';
-import {IRouterBackOperation} from '@models/operations';
+import {IPopAction} from '@navigator/NavigationService';
 import {commonStyles} from '@theme';
 import {styles} from './Activities.styles';
 
 interface IActivitiesProps {
-  back: IRouterBackOperation;
+  pop: IPopAction; // TODO: fix this
   getActivitiesByContact: () => void;
   contact: IContact;
   activities: IActivity[];
@@ -81,7 +81,7 @@ export class Activities extends PureComponent<IActivitiesProps, {}> {
 
   public render() {
     const {
-      back,
+      pop,
       activities,
       getActivitiesByContact,
       isFetching,
@@ -90,7 +90,7 @@ export class Activities extends PureComponent<IActivitiesProps, {}> {
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title={I18n.t('activities:activities')} onBack={back} />
+        <Navbar title={I18n.t('activities:activities')} onBack={pop} />
         {isFetching || activities.length ? (
           <FlatList
             data={activities}

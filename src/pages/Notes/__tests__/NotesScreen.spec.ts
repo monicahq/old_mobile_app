@@ -1,5 +1,4 @@
 import {getNotesByContact} from '@redux/notes';
-import {back} from '@redux/router';
 import {mapDispatchToProps, mapStateToProps} from '../NotesScreen';
 
 jest.mock('@redux/notes', () => ({
@@ -23,15 +22,15 @@ describe('Pages', () => {
     describe('mapDispatchToProps', () => {
       it('should contains every key', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);
-        expect(Object.keys(props)).toEqual(['back', 'getNotesByContact']);
+        expect(Object.keys(props)).toEqual(['pop', 'getNotesByContact']);
       });
 
-      it('back should return a back action trigger', () => {
-        const props = mapDispatchToProps(dispatch, additionalProps);
-        props.back();
-        expect(dispatch.mock.calls.length).toBe(1);
-        expect(dispatch.mock.calls[0]).toEqual([back()]);
-      });
+      // it('back should return a back action trigger', () => {
+      //   const props = mapDispatchToProps(dispatch, additionalProps);
+      //   props.back();
+      //   expect(dispatch.mock.calls.length).toBe(1);
+      //   expect(dispatch.mock.calls[0]).toEqual([back()]);
+      // });
 
       it('getNotesByContact should return a getNotesByContact action trigger', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);

@@ -1,7 +1,6 @@
 import {mapDispatchToProps, mapStateToProps} from '../SettingsScreen';
 
 import {subscribeBeta} from '@redux/beta';
-import {goToLaunchScreen} from '@redux/router';
 import {logout} from '@redux/user';
 
 describe('Pages', () => {
@@ -36,12 +35,12 @@ describe('Pages', () => {
         ]);
       });
 
-      it('back should trigger goLaunchScreen action', () => {
-        const props = mapDispatchToProps(dispatch);
-        props.goToLaunchScreen();
-        expect(dispatch.mock.calls.length).toBe(1);
-        expect(dispatch.mock.calls[0]).toEqual([goToLaunchScreen()]);
-      });
+      // it('back should trigger goLaunchScreen action', () => {
+      //   const props = mapDispatchToProps(dispatch);
+      //   props.goToLaunchScreen();
+      //   expect(dispatch.mock.calls.length).toBe(1);
+      //   expect(dispatch.mock.calls[0]).toEqual([goToLaunchScreen()]);
+      // });
 
       it('back should trigger logout action', () => {
         const props = mapDispatchToProps(dispatch);

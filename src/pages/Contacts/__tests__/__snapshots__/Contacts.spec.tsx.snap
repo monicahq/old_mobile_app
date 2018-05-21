@@ -4,6 +4,7 @@ exports[`Pages Contacts should renders correctly with contacts and fetching 1`] 
 <Component
   style={
     Object {
+      "backgroundColor": "white",
       "flex": 1,
     }
   }
@@ -48,6 +49,7 @@ exports[`Pages Contacts should renders correctly with contacts and not fetching 
 <Component
   style={
     Object {
+      "backgroundColor": "white",
       "flex": 1,
     }
   }
@@ -92,6 +94,7 @@ exports[`Pages Contacts should renders correctly without contacts (even in the d
 <Component
   style={
     Object {
+      "backgroundColor": "white",
       "flex": 1,
     }
   }
@@ -110,6 +113,7 @@ exports[`Pages Contacts should renders correctly without contacts and fetching 1
 <Component
   style={
     Object {
+      "backgroundColor": "white",
       "flex": 1,
     }
   }

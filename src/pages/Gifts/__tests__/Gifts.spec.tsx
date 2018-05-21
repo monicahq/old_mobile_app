@@ -5,11 +5,11 @@ import {Gifts} from '../Gifts';
 
 describe('Pages', () => {
   describe('Gifts', () => {
-    let back;
+    let pop;
     let getGiftsByContact;
 
     beforeEach(() => {
-      back = jest.fn();
+      pop = jest.fn();
       getGiftsByContact = jest.fn();
     });
 
@@ -17,7 +17,7 @@ describe('Pages', () => {
     //   const gifts = [];
     //   const tree = shallow(
     //     <Gifts
-    //       back={back}
+    //       pop={pop}
     //       getGiftsByContact={getGiftsByContact}
     //       isFetching={true}
     //       gifts={gifts as any}
@@ -30,7 +30,7 @@ describe('Pages', () => {
     //   const gifts = [];
     //   const tree = shallow(
     //     <Gifts
-    //       back={back}
+    //       pop={pop}
     //       getGiftsByContact={getGiftsByContact}
     //       isFetching={false}
     //       gifts={gifts as any}
@@ -43,7 +43,7 @@ describe('Pages', () => {
     //   const gifts = [{body: 'My body', created_at: '1991-12-17'}];
     //   const tree = shallow(
     //     <Gifts
-    //       back={back}
+    //       pop={pop}
     //       getGiftsByContact={getGiftsByContact}
     //       isFetching={true}
     //       gifts={gifts as any}
@@ -62,7 +62,7 @@ describe('Pages', () => {
     //   ];
     //   const tree = shallow(
     //     <Gifts
-    //       back={back}
+    //       pop={pop}
     //       getGiftsByContact={getGiftsByContact}
     //       isFetching={false}
     //       gifts={gifts as any}
@@ -84,7 +84,7 @@ describe('Pages', () => {
     //   ];
     //   const tree = shallow(
     //     <Gifts
-    //       back={back}
+    //       pop={pop}
     //       getGiftsByContact={getGiftsByContact}
     //       isFetching={true}
     //       gifts={gifts as any}
@@ -100,7 +100,7 @@ describe('Pages', () => {
       ];
       const tree = shallow(
         <Gifts
-          back={back}
+          pop={pop}
           getGiftsByContact={getGiftsByContact}
           isFetching={false}
           gifts={gifts as any}
@@ -113,7 +113,7 @@ describe('Pages', () => {
       const gifts = [{id: 1}, {id: 2}];
       const tree = shallow(
         <Gifts
-          back={back}
+          pop={pop}
           getGiftsByContact={getGiftsByContact}
           isFetching={false}
           gifts={gifts as any}

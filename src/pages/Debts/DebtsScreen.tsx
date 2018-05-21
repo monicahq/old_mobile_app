@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 
+import {pop} from '@navigator/NavigationService';
 import {getDebtsByContact} from '@redux/debts';
-import {back} from '@redux/router';
 import {Debts} from './Debts';
 
 export const mapStateToProps = (state, {navigation}) => {
@@ -13,7 +13,7 @@ export const mapStateToProps = (state, {navigation}) => {
 };
 
 export const mapDispatchToProps = (dispatch, {navigation}) => ({
-  back: () => dispatch(back()),
+  pop,
   getDebtsByContact: () => dispatch(getDebtsByContact(navigation.state.params)),
 });
 

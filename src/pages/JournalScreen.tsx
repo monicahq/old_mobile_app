@@ -3,10 +3,10 @@ import {View} from 'react-native';
 
 import {Navbar, UnderConstruction} from '@components';
 import {I18n} from '@i18n';
-import {commonStyles} from '@theme';
+import {appScreensStyles} from '@theme';
 
 export const JournalScreen = () => (
-  <View style={commonStyles.flex}>
+  <View style={appScreensStyles.container}>
     <Navbar title={I18n.t('common:journal')} />
     <UnderConstruction />
   </View>

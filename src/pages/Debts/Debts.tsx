@@ -4,12 +4,12 @@ import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 import {EmptyActivity, Navbar} from '@components';
 import {I18n} from '@i18n';
 import {IDebt} from '@models';
-import {IRouterBackOperation} from '@models/operations';
+import {IPopAction} from '@navigator/NavigationService';
 import {commonStyles} from '@theme';
 import {styles} from './Debts.styles';
 
 interface IDebtsProps {
-  back: IRouterBackOperation;
+  pop: IPopAction;
   getDebtsByContact: () => void;
   debts: IDebt[];
   isFetching: boolean;
@@ -65,11 +65,11 @@ export class Debts extends PureComponent<IDebtsProps, {}> {
   };
 
   public render() {
-    const {back, debts, getDebtsByContact, isFetching} = this.props;
+    const {pop, debts, getDebtsByContact, isFetching} = this.props;
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title={I18n.t('debts:debts')} onBack={back} />
+        <Navbar title={I18n.t('debts:debts')} onBack={pop} />
         {isFetching || debts.length ? (
           <FlatList
             data={debts}

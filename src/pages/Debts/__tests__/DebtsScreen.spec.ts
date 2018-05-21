@@ -1,5 +1,4 @@
 import {getDebtsByContact} from '@redux/debts';
-import {back} from '@redux/router';
 import {mapDispatchToProps, mapStateToProps} from '../DebtsScreen';
 
 jest.mock('@redux/debts', () => ({
@@ -23,15 +22,15 @@ describe('Pages', () => {
     describe('mapDispatchToProps', () => {
       it('should contains every key', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);
-        expect(Object.keys(props)).toEqual(['back', 'getDebtsByContact']);
+        expect(Object.keys(props)).toEqual(['pop', 'getDebtsByContact']);
       });
 
-      it('back should return a back action trigger', () => {
-        const props = mapDispatchToProps(dispatch, additionalProps);
-        props.back();
-        expect(dispatch.mock.calls.length).toBe(1);
-        expect(dispatch.mock.calls[0]).toEqual([back()]);
-      });
+      // it('back should return a back action trigger', () => {
+      //   const props = mapDispatchToProps(dispatch, additionalProps);
+      //   props.back();
+      //   expect(dispatch.mock.calls.length).toBe(1);
+      //   expect(dispatch.mock.calls[0]).toEqual([back()]);
+      // });
 
       it('getDebtsByContact should return a getDebtsByContact action trigger', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);

@@ -4,13 +4,13 @@ import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 import {EmptyActivity, Navbar} from '@components';
 import {I18n} from '@i18n';
 import {IGift} from '@models';
-import {IRouterBackOperation} from '@models/operations';
+import {IPopAction} from '@navigator/NavigationService';
 import {commonStyles} from '@theme';
 import {getLabel} from '@utils/gifts';
 import {styles} from './Gifts.styles';
 
 interface IGiftsProps {
-  back: IRouterBackOperation;
+  pop: IPopAction;
   getGiftsByContact: () => void;
   gifts: IGift[];
   isFetching: boolean;
@@ -55,11 +55,11 @@ export class Gifts extends PureComponent<IGiftsProps, {}> {
   };
 
   public render() {
-    const {back, gifts, getGiftsByContact, isFetching} = this.props;
+    const {pop, gifts, getGiftsByContact, isFetching} = this.props;
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title={I18n.t('gifts:gifts')} onBack={back} />
+        <Navbar title={I18n.t('gifts:gifts')} onBack={pop} />
         {isFetching || gifts.length ? (
           <FlatList
             data={gifts}

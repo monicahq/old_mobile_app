@@ -1,5 +1,4 @@
 import {IRootAction} from '@models';
-import {NavigationState} from 'react-navigation';
 import {combineReducers} from 'redux';
 
 import {
@@ -47,7 +46,7 @@ import {
   IRemindersState,
   remindersReducer,
 } from './reminders/reducer';
-import {routerReducer} from './router/reducer';
+
 import {
   getByContactReducer as getTasksByContactReducer,
   ITasksGetByContactState,
@@ -58,7 +57,6 @@ import {ITokenState, tokenReducer} from './user/reducer';
 import {LOGOUT} from './user/types';
 
 export interface IRootState {
-  router: NavigationState;
   token: ITokenState;
   contacts: IContactsState;
   getAllContacts: IGetAllContactsState;
@@ -81,7 +79,6 @@ export interface IRootState {
 }
 
 const appReducer = combineReducers<IRootState, IRootAction>({
-  router: routerReducer,
   token: tokenReducer,
   contacts: contactsReducer,
   getAllContacts: getAllReducer,

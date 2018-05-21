@@ -1,8 +1,8 @@
 import {IRootState} from '@models';
 import {connect} from 'react-redux';
 
+import {pop} from '@navigator/NavigationService';
 import {getActivitiesByContact} from '@redux/activities';
-import {back} from '@redux/router';
 import {Activities} from './Activities';
 
 export const mapStateToProps = (state: IRootState, {navigation}) => {
@@ -18,7 +18,7 @@ export const mapStateToProps = (state: IRootState, {navigation}) => {
 };
 
 export const mapDispatchToProps = (dispatch, {navigation}) => ({
-  back: () => dispatch(back()),
+  pop,
   getActivitiesByContact: () =>
     dispatch(getActivitiesByContact(navigation.state.params)),
 });

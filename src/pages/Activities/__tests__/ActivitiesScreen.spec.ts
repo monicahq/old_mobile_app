@@ -1,5 +1,4 @@
 import {getActivitiesByContact} from '@redux/activities';
-import {back} from '@redux/router';
 import {mapDispatchToProps, mapStateToProps} from '../ActivitiesScreen';
 
 jest.mock('@redux/activities', () => ({
@@ -23,15 +22,15 @@ describe('Pages', () => {
     describe('mapDispatchToProps', () => {
       it('should contains every key', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);
-        expect(Object.keys(props)).toEqual(['back', 'getActivitiesByContact']);
+        expect(Object.keys(props)).toEqual(['pop', 'getActivitiesByContact']);
       });
 
-      it('back should return a back action trigger', () => {
-        const props = mapDispatchToProps(dispatch, additionalProps);
-        props.back();
-        expect(dispatch.mock.calls.length).toBe(1);
-        expect(dispatch.mock.calls[0]).toEqual([back()]);
-      });
+      // it('pop should return a pop action trigger', () => {
+      //   const props = mapDispatchToProps(dispatch, additionalProps);
+      //   props.pop();
+      //   expect(dispatch.mock.calls.length).toBe(1);
+      //   expect(dispatch.mock.calls[0]).toEqual([pop()]);
+      // });
 
       it('getActivitiesByContact should return a getActivitiesByContact action trigger', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);

@@ -1,5 +1,5 @@
+import {navigate} from '@navigator/NavigationService';
 import {subscribeBeta} from '@redux/beta';
-import {goToLaunchScreen} from '@redux/router';
 import {logout} from '@redux/user';
 import {connect} from 'react-redux';
 
@@ -11,7 +11,7 @@ export const mapStateToProps = state => ({
 
 export const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout()),
-  goToLaunchScreen: () => dispatch(goToLaunchScreen()),
+  goToLaunchScreen: () => navigate('Auth'),
   subscribeBeta: isSubscribed => dispatch(subscribeBeta(isSubscribed)),
 });
 

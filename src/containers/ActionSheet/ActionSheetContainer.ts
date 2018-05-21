@@ -1,17 +1,13 @@
 import {connect} from 'react-redux';
 
-import {navigate} from '@redux/router';
+import {navigate} from '@navigator/NavigationService';
 import {ActionSheet} from './ActionSheet';
 
 export const ActionSheetContainer = connect(
   null,
-  dispatch => {
-    return {
-      navigate: routeName => {
-        dispatch(navigate(routeName));
-      },
-    };
-  },
+  dispatch => ({
+    navigate: routeName => navigate(routeName),
+  }),
   null,
   {withRef: true}
 )(ActionSheet);

@@ -4,12 +4,12 @@ import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 import {Checkbox, EmptyActivity, Navbar} from '@components';
 import {I18n} from '@i18n';
 import {ITask} from '@models';
-import {IRouterBackOperation} from '@redux/router';
+import {IPopAction} from '@navigator/NavigationService';
 import {commonStyles} from '@theme';
 import {styles} from './Tasks.styles';
 
 interface ITasksProps {
-  back: IRouterBackOperation;
+  pop: IPopAction;
   getTasksByContact: () => void;
   tasks: ITask[];
   isFetching: boolean;
@@ -52,11 +52,11 @@ export class Tasks extends PureComponent<ITasksProps, {}> {
   };
 
   public render() {
-    const {back, tasks, getTasksByContact, isFetching} = this.props;
+    const {pop, tasks, getTasksByContact, isFetching} = this.props;
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title={I18n.t('tasks:tasks')} onBack={back} />
+        <Navbar title={I18n.t('tasks:tasks')} onBack={pop} />
         {isFetching || tasks.length ? (
           <FlatList
             data={tasks}

@@ -1,5 +1,4 @@
 import {getCallsByContact} from '@redux/calls';
-import {back} from '@redux/router';
 import {mapDispatchToProps, mapStateToProps} from '../CallsScreen';
 
 jest.mock('@redux/calls', () => ({
@@ -23,14 +22,7 @@ describe('Pages', () => {
     describe('mapDispatchToProps', () => {
       it('should contains every key', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);
-        expect(Object.keys(props)).toEqual(['back', 'getCallsByContact']);
-      });
-
-      it('back should return a back action trigger', () => {
-        const props = mapDispatchToProps(dispatch, additionalProps);
-        props.back();
-        expect(dispatch.mock.calls.length).toBe(1);
-        expect(dispatch.mock.calls[0]).toEqual([back()]);
+        expect(Object.keys(props)).toEqual(['pop', 'getCallsByContact']);
       });
 
       it('getCallsByContact should return a getCallsByContact action trigger', () => {

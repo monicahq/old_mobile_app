@@ -1,13 +1,14 @@
 import {connect} from 'react-redux';
 
-import {back, navigate} from '@redux/router';
+import {navigate, pop} from '@navigator/NavigationService';
 import {setToken} from '@redux/user';
 import {Login} from './Login';
 
 export const mapDispatchToProps = dispatch => {
   return {
-    navigate: routeName => () => dispatch(navigate(routeName)),
-    back: () => dispatch(back()),
+    navigate: routeName => () => navigate(routeName),
+    navigateToAppStack: () => navigate('App'),
+    pop,
     setToken: token => dispatch(setToken(token)),
   };
 };

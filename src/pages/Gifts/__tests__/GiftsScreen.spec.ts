@@ -1,5 +1,4 @@
 import {getGiftsByContact} from '@redux/gifts';
-import {back} from '@redux/router';
 import {mapDispatchToProps, mapStateToProps} from '../GiftsScreen';
 
 jest.mock('@redux/gifts', () => ({
@@ -23,15 +22,15 @@ describe('Pages', () => {
     describe('mapDispatchToProps', () => {
       it('should contains every key', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);
-        expect(Object.keys(props)).toEqual(['back', 'getGiftsByContact']);
+        expect(Object.keys(props)).toEqual(['pop', 'getGiftsByContact']);
       });
 
-      it('back should return a back action trigger', () => {
-        const props = mapDispatchToProps(dispatch, additionalProps);
-        props.back();
-        expect(dispatch.mock.calls.length).toBe(1);
-        expect(dispatch.mock.calls[0]).toEqual([back()]);
-      });
+      // it('back should return a back action trigger', () => {
+      //   const props = mapDispatchToProps(dispatch, additionalProps);
+      //   props.back();
+      //   expect(dispatch.mock.calls.length).toBe(1);
+      //   expect(dispatch.mock.calls[0]).toEqual([back()]);
+      // });
 
       it('getGiftsByContact should return a getGiftsByContact action trigger', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);

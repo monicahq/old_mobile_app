@@ -9,7 +9,6 @@ import * as debtsActions from '@redux/debts/actions';
 import * as giftsActions from '@redux/gifts/actions';
 import * as notesActions from '@redux/notes/actions';
 import * as remindersActions from '@redux/reminders/actions';
-import * as routerActions from '@redux/router/actions';
 import * as tasksActions from '@redux/tasks/actions';
 import * as userActions from '@redux/user/actions';
 
@@ -22,7 +21,6 @@ const actions = {
   giftsActions,
   notesActions,
   remindersActions,
-  routerActions,
   tasksActions,
   userActions,
 };

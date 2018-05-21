@@ -3,7 +3,7 @@ import SegmentedControlTab from 'react-native-segmented-control-tab';
 
 import {I18n} from '@i18n';
 import {IContact} from '@models';
-import {primaryColor, segmentedControlGroupStyles} from '@theme';
+import {segmentedControlGroupStyles} from '@theme';
 import {Contact} from './Contact';
 import {Meet} from './Meet';
 import {Relationships} from './Relationships';
