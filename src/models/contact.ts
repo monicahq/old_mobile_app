@@ -1,19 +1,37 @@
 interface IContactRelationships {
   family: {
     total: number;
-    contacts: IContact[];
+    contacts: IRelationship[];
   };
   friend: {
     total: number;
-    contacts: IContact[];
+    contacts: IRelationship[];
   };
   love: {
     total: number;
-    contacts: IContact[];
+    contacts: IRelationship[];
   };
   work: {
     total: number;
-    contacts: IContact[];
+    contacts: IRelationship[];
+  };
+}
+
+interface IRelationship {
+  contact: IContact;
+  relationship: {
+    id: string;
+    name: string;
+  };
+}
+
+interface IContactField {
+  content: string;
+  contact_field_type: {
+    fontawesome_icon: string;
+    name: string;
+    protocol: string;
+    type: string;
   };
 }
 
@@ -39,6 +57,23 @@ interface IContactInformation {
     birthdate: IAgeDate;
     deceased_date: IAgeDate;
   };
+  how_you_met: {
+    first_met_date: IAgeDate;
+    first_met_through_contact: IContact;
+    general_information: string;
+  };
+}
+
+export interface IAddress {
+  city: string;
+  country: {
+    id: string;
+    name: string;
+  };
+  name: string;
+  postal_code: string;
+  province: string;
+  street: string;
 }
 
 export interface IContact {
@@ -56,6 +91,9 @@ export interface IContact {
     number_of_gifts: number;
     number_of_debts: number;
   };
+
+  addresses: IAddress[];
+  contactFields: IContactField[];
 
   reminders?: number[];
   gifts?: number[];

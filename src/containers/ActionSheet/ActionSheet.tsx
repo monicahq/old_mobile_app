@@ -8,7 +8,7 @@ import {INavigateAction} from '@navigator/NavigationService';
 const CANCEL_INDEX = 0;
 const options = [
   I18n.t('common:cancel'),
-  I18n.t('common:add'),
+  I18n.t('contacts:add'),
   // 'Log an activity',
   // 'Log a call',
   // 'Add a reminder',

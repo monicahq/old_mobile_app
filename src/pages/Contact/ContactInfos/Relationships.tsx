@@ -4,7 +4,7 @@ import {Text, View} from 'react-native';
 import {ListItem} from '@components';
 import {I18n} from '@i18n';
 import {IContact} from '@models';
-import {getAge, getRelationships} from '@utils/contacts';
+import {getAge, getName, getRelationships} from '@utils/contacts';
 import {styles} from './Relationships.styles';
 
 interface IMeetProps {
@@ -25,12 +25,11 @@ export class Relationships extends PureComponent<IMeetProps, {}> {
         )}
 
         {people.map((person, index) => {
-          const age = getAge(person);
-          const title =
-            person.first_name + person.last_name + (age ? ', ' + age : '');
+          const age = getAge(person.contact);
+          const title = getName(person.contact) + (age ? ', ' + age : '');
           return (
             <ListItem
-              key={person.id}
+              key={person.contact.id}
               lastItem={index === people.length - 1}
               title={title}
               subtitle={'(' + person.type + ')'}

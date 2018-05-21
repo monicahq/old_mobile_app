@@ -106,7 +106,7 @@ export class LoginForm extends PureComponent<
         loading={isSubmitting}
       />,
       status ? (
-        <Text key={3} style={commonStyles.errorMessage}>
+        <Text key={4} style={commonStyles.errorMessage}>
           {status}
         </Text>
       ) : null,

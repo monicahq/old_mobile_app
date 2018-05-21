@@ -1,4 +1,4 @@
-import {IContact} from '@models';
+import {IAddress, IContact} from '@models';
 import moment from 'moment';
 
 export const getName = (contact: IContact): string => {
@@ -55,4 +55,19 @@ export const getRelationships = (contact: IContact) => {
     ...love.contacts.map(person => ({...person, type: 'Loved one'})),
     ...work.contacts.map(person => ({...person, type: 'Work'})),
   ];
+};
+
+export const getAddressLabel = (address: IAddress) => {
+  let res = '';
+  if (address.street) {
+    res += ' ' + address.street;
+  }
+  if (address.postal_code) {
+    res += ' ' + address.postal_code;
+  }
+  if (address.city) {
+    res += ' ' + address.city;
+  }
+
+  return res.trim();
 };
