@@ -1,19 +1,27 @@
 interface IContactRelationships {
   family: {
     total: number;
-    contacts: IContact[];
+    contacts: IRelationship[];
   };
   friend: {
     total: number;
-    contacts: IContact[];
+    contacts: IRelationship[];
   };
   love: {
     total: number;
-    contacts: IContact[];
+    contacts: IRelationship[];
   };
   work: {
     total: number;
-    contacts: IContact[];
+    contacts: IRelationship[];
+  };
+}
+
+interface IRelationship {
+  contact: IContact;
+  relationship: {
+    id: string;
+    name: string;
   };
 }
 
