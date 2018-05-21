@@ -28,5 +28,6 @@ export const contacts = {
   },
   contact: {
     contact: 'Contact',
+    none: 'No contact information',
   },
 };

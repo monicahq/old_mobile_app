@@ -25,6 +25,16 @@ interface IRelationship {
   };
 }
 
+interface IContactField {
+  content: string;
+  contact_field_type: {
+    fontawesome_icon: string;
+    name: string;
+    protocol: string;
+    type: string;
+  };
+}
+
 interface IAgeDate {
   is_age_based?: boolean;
   is_year_unknown?: boolean;
@@ -54,6 +64,18 @@ interface IContactInformation {
   };
 }
 
+export interface IAddress {
+  city: string;
+  country: {
+    id: string;
+    name: string;
+  };
+  name: string;
+  postal_code: string;
+  province: string;
+  street: string;
+}
+
 export interface IContact {
   id: number;
   first_name: string;
@@ -69,6 +91,9 @@ export interface IContact {
     number_of_gifts: number;
     number_of_debts: number;
   };
+
+  addresses: IAddress[];
+  contactFields: IContactField[];
 
   reminders?: number[];
   gifts?: number[];
