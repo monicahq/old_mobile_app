@@ -21,6 +21,7 @@ export class ContactAvatar extends PureComponent<IContactAvatar> {
     if (avatar) {
       return (
         <Image
+          // @ts-ignore TODO Fix this
           source={{uri: getAvatarUrl(contact)}}
           style={[styles.avatar, sizeStyle, style]}
         />
