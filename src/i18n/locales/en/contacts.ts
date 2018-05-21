@@ -19,6 +19,8 @@ export const contacts = {
   },
   meet: {
     how: 'How you met',
+    through: 'Met through {{name}}',
+    none: 'No meet information',
   },
   work: {
     work: 'Work info',

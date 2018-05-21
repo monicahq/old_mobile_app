@@ -47,6 +47,11 @@ interface IContactInformation {
     birthdate: IAgeDate;
     deceased_date: IAgeDate;
   };
+  how_you_met: {
+    first_met_date: IAgeDate;
+    first_met_through_contact: IContact;
+    general_information: string;
+  };
 }
 
 export interface IContact {
