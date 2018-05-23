@@ -16,7 +16,7 @@ export class Checkbox extends PureComponent<ICheckboxProps> {
           checked ? styles.checkedContainer : styles.uncheckedContainer,
         ]}
       >
-        {checked && <Icon name="ios-checkmark" size={60} color="white" />}
+        {checked && <Icon name="ios-checkmark" size={20} color="white" />}
       </View>
     );
   }

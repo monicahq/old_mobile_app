@@ -21,7 +21,7 @@ exports[`Components Checkbox Android should renders correctly 1`] = `
     allowFontScaling={false}
     color="white"
     name="ios-checkmark"
-    size={60}
+    size={20}
   />
 </Component>
 `;
