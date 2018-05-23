@@ -1,3 +1,25 @@
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/monicahq/chandler/compare/0.4.2...0.5.0) (2018-05-21)
+
+### Features
+
+* allows login on other monica instances ([7f1e224](https://github.com/monicahq/chandler/commit/7f1e224))
+* added met through information ([a5e76c8](https://github.com/monicahq/chandler/commit/a5e76c8))
+* display contact fields ([a30ca81](https://github.com/monicahq/chandler/commit/a30ca81))
+* use of a no contacts results image ([2b7ca99](https://github.com/monicahq/chandler/commit/2b7ca99))
+
+### Bug Fixes
+
+* contact relationships display ([f49a6f3](https://github.com/monicahq/chandler/commit/f49a6f3))
+* login + add contact labels ([ae65b7a](https://github.com/monicahq/chandler/commit/ae65b7a))
+* login react array key ([23b8463](https://github.com/monicahq/chandler/commit/23b8463))
+
+### Performance Improvements
+
+* upgraded react-navigation to 2.0.0 (+ auth flow support) ([f2c2e21](https://github.com/monicahq/chandler/commit/f2c2e21))
+
+
+
 <a name="0.4.2"></a>
 ## [0.4.2](https://github.com/monicahq/chandler/compare/0.4.1...0.4.2) (2018-04-15)
 

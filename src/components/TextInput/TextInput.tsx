@@ -27,8 +27,8 @@ export class TextInput extends PureComponent<ITextInputProps> {
     return [
       // TITLE + ERROR
       <View key={0} style={styles.title}>
-        {title && <Text>{title}</Text>}
-        {error &&
+        {!!title && <Text>{title}</Text>}
+        {!!error &&
           touched && (
             <View style={styles.flexRow}>
               <Text> - </Text>

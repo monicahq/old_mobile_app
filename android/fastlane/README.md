@@ -26,11 +26,6 @@ Submit a new Beta Build to Android Play store
 fastlane android version
 ```
 
-### android test
-```
-fastlane android test
-```
-
 
 ----
 

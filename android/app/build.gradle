@@ -102,8 +102,8 @@ android {
         applicationId "com.monicahq.app"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 4
-        versionName "0.1.1"
+        versionCode 5
+        versionName "0.5.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }

@@ -28,3 +28,4 @@ platform :android do
       version_name: options[:version],
     )
   end
+end
