@@ -223,7 +223,7 @@ export const searchReducer = (
         query: action.payload.query,
         error: null,
         isFetching: action.payload.query !== '',
-        fetchedPageCount: sameQuery ? state.fetchedPageCount + 1 : 1,
+        fetchedPageCount: sameQuery ? state.fetchedPageCount + 1 : 0,
       };
 
     // GET ALL SUCCESS

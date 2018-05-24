@@ -50,7 +50,7 @@ export function searchContacts(query?) {
 
     try {
       const res = await API.Contacts.getAll(
-        state.searchContacts.fetchedPageCount + 1,
+        getState().searchContacts.fetchedPageCount + 1,
         undefined,
         query
       );

@@ -72,8 +72,6 @@ export class Contacts extends PureComponent<IContactsProps, {}> {
 
   public componentWillMount() {
     const {contacts, getContacts, isFetching, searchContacts} = this.props;
-    // reset search
-    searchContacts('');
 
     if (!contacts.length && !isFetching) {
       getContacts();
