@@ -9,15 +9,15 @@ import {SettingsScreen} from '@src/pages/Settings/SettingsScreen';
 
 export const TabsNavigator = createBottomTabNavigator(
   {
-    Dashboard: {
-      screen: DashboardScreen,
-    },
+    // Dashboard: {
+    //   screen: DashboardScreen,
+    // },
     Contacts: {
       screen: ContactsScreen,
     },
-    Journal: {
-      screen: JournalScreen,
-    },
+    // Journal: {
+    //   screen: JournalScreen,
+    // },
     Settings: {
       screen: SettingsScreen,
     },

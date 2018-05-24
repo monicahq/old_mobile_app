@@ -17,25 +17,25 @@ const Touchable =
   Platform.OS === 'ios' ? TouchableWithoutFeedback : TouchableNativeFeedback;
 
 const routes = [
-  {
-    name: I18n.t('common:dashboard'),
-    routeName: 'Dashboard',
-    icon: 'gauge',
-  },
+  // {
+  //   name: I18n.t('common:dashboard'),
+  //   routeName: 'Dashboard',
+  //   icon: 'gauge',
+  // },
   {
     name: I18n.t('contacts:contacts'),
     routeName: 'Contacts',
     icon: 'users',
   },
-  {
-    name: I18n.t('common:add'),
-    icon: 'plus-circled',
-  },
-  {
-    name: I18n.t('common:journal'),
-    routeName: 'Journal',
-    icon: 'list',
-  },
+  // {
+  //   name: I18n.t('common:add'),
+  //   icon: 'plus-circled',
+  // },
+  // {
+  //   name: I18n.t('common:journal'),
+  //   routeName: 'Journal',
+  //   icon: 'list',
+  // },
   {
     name: I18n.t('common:settings'),
     routeName: 'Settings',

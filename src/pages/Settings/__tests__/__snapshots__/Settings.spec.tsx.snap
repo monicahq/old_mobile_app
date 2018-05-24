@@ -45,7 +45,7 @@ exports[`Pages Settings android should renders correctly 1`] = `
           }
         }
       >
-        Enable automatic beta installs.
+        Enable cutting edge features
       </Text>
       <Switch
         disabled={false}
@@ -72,7 +72,7 @@ exports[`Pages Settings android should renders correctly 1`] = `
           }
         }
       >
-        If enabled, your application will automatically install beta versions. That will let you test cutting edge features, but beware though: you might install versions that are not stable yet.
+        If enabled, your application will automatically install cutting edge features. Beware though: you might install versions that are not stable yet.
       </Text>
       <Text
         accessible={true}
@@ -203,7 +203,7 @@ exports[`Pages Settings android should renders correctly 2`] = `
           }
         }
       >
-        Enable automatic beta installs.
+        Enable cutting edge features
       </Text>
       <Switch
         disabled={false}
@@ -230,7 +230,7 @@ exports[`Pages Settings android should renders correctly 2`] = `
           }
         }
       >
-        If enabled, your application will automatically install beta versions. That will let you test cutting edge features, but beware though: you might install versions that are not stable yet.
+        If enabled, your application will automatically install cutting edge features. Beware though: you might install versions that are not stable yet.
       </Text>
       <Text
         accessible={true}
@@ -361,7 +361,7 @@ exports[`Pages Settings ios should renders correctly 1`] = `
           }
         }
       >
-        Enable automatic beta installs.
+        Enable cutting edge features
       </Text>
       <Switch
         disabled={false}
@@ -388,7 +388,7 @@ exports[`Pages Settings ios should renders correctly 1`] = `
           }
         }
       >
-        If enabled, your application will automatically install beta versions. That will let you test cutting edge features, but beware though: you might install versions that are not stable yet.
+        If enabled, your application will automatically install cutting edge features. Beware though: you might install versions that are not stable yet.
       </Text>
       <Text
         accessible={true}
@@ -519,7 +519,7 @@ exports[`Pages Settings ios should renders correctly 2`] = `
           }
         }
       >
-        Enable automatic beta installs.
+        Enable cutting edge features
       </Text>
       <Switch
         disabled={false}
@@ -546,7 +546,7 @@ exports[`Pages Settings ios should renders correctly 2`] = `
           }
         }
       >
-        If enabled, your application will automatically install beta versions. That will let you test cutting edge features, but beware though: you might install versions that are not stable yet.
+        If enabled, your application will automatically install cutting edge features. Beware though: you might install versions that are not stable yet.
       </Text>
       <Text
         accessible={true}
