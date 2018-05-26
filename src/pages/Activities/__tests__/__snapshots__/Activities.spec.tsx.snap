@@ -68,6 +68,12 @@ exports[`Pages Activities should renders correctly with activities and fetching 
         "calls": Array [
           Array [],
         ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
       }
     }
     onEndReachedThreshold={0.5}
@@ -185,6 +191,12 @@ exports[`Pages Activities should renders correctly with activities and fetching 
       [MockFunction] {
         "calls": Array [
           Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       }
     }
@@ -357,6 +369,12 @@ exports[`Pages Activities should renders correctly without activities and fetchi
       [MockFunction] {
         "calls": Array [
           Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       }
     }

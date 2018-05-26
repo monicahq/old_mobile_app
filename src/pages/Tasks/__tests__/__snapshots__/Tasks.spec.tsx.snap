@@ -47,6 +47,12 @@ exports[`Pages Tasks should renders correctly with tasks and fetching 1`] = `
         "calls": Array [
           Array [],
         ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
       }
     }
     onEndReachedThreshold={0.5}
@@ -130,6 +136,12 @@ exports[`Pages Tasks should renders correctly with tasks and fetching 3`] = `
       [MockFunction] {
         "calls": Array [
           Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       }
     }
@@ -251,6 +263,12 @@ exports[`Pages Tasks should renders correctly without tasks and fetching 1`] = `
       [MockFunction] {
         "calls": Array [
           Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       }
     }
