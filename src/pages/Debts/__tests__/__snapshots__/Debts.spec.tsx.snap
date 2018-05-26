@@ -50,6 +50,12 @@ exports[`Pages Debts should renders correctly with debts and fetching 1`] = `
         "calls": Array [
           Array [],
         ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
       }
     }
     onEndReachedThreshold={0.5}
@@ -180,6 +186,12 @@ exports[`Pages Debts should renders correctly with debts and fetching 3`] = `
       [MockFunction] {
         "calls": Array [
           Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       }
     }
@@ -371,6 +383,12 @@ exports[`Pages Debts should renders correctly without debts and fetching 1`] = `
       [MockFunction] {
         "calls": Array [
           Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       }
     }
