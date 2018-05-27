@@ -69,7 +69,7 @@
     "jest": "23.0.0",
     "greenkeeper-lockfile": "1.15.1",
     "jest-junit-reporter": "1.1.0",
-    "prettier": "1.12.1",
+    "prettier": "1.13.0",
     "react-dom": "16.4.0",
     "react-native-typescript-transformer": "1.2.9",
     "react-test-renderer": "16.4.0",
