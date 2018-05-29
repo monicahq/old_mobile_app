@@ -22,3 +22,4 @@ install:
 script:
 - npm run test:e2e:build
 - npm run test:e2e:ci
+
