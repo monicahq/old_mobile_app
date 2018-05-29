@@ -4,6 +4,10 @@ env:
   global:
   - NODE_VERSION=stable
 
+cache:
+  directories:
+    - node_modules
+
 install:
 - brew tap wix/brew
 - brew install applesimutils
@@ -14,6 +18,7 @@ install:
 
 - npm install -g react-native-cli
 - npm install -g detox-cli
+- npm install
 
 script:
 - npm run test:e2e:build
