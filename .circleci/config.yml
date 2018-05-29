@@ -42,10 +42,30 @@ jobs:
           - v1-dependencies-
       - run: yarn tsc
 
-  test:
-    docker:
-      - image: circleci/node:8.9
-    # parallelism: 3
+  # test:
+  #   docker:
+  #     - image: circleci/node:8.9
+  #   # parallelism: 3
+
+  #   working_directory: ~/repo
+  #   steps:
+  #     - checkout
+  #     - restore_cache:
+  #         keys:
+  #         - v1-dependencies-{{ checksum "package.json" }}
+  #         - v1-dependencies-
+  #     # - run: npm test --silent -- --listTests > test_filenames.txt
+  #     # - run: yarn test --runInBand --findRelatedTests $(circleci tests split --total=3 test_filenames.txt | tr '\r\n' ' ') --testResultsProcessor="./node_modules/jest-junit-reporter"
+  #     - run: yarn test --runInBand --coverage --testResultsProcessor="./node_modules/jest-junit-reporter" --no-watchman
+  #     - run: mkdir test-results && mv test-report.xml test-results
+  #     - run: bash <(curl -s https://codecov.io/bash)
+  #     - store_test_results:
+  #         path: test-results
+
+
+  e2e:
+    macos:
+      xcode: "9.0"
 
     working_directory: ~/repo
     steps:
@@ -54,13 +74,11 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
-      # - run: npm test --silent -- --listTests > test_filenames.txt
-      # - run: yarn test --runInBand --findRelatedTests $(circleci tests split --total=3 test_filenames.txt | tr '\r\n' ' ') --testResultsProcessor="./node_modules/jest-junit-reporter"
-      - run: yarn test --runInBand --coverage --testResultsProcessor="./node_modules/jest-junit-reporter" --no-watchman
-      - run: mkdir test-results && mv test-report.xml test-results
-      - run: bash <(curl -s https://codecov.io/bash)
-      - store_test_results:
-          path: test-results
+      - brew tap wix/brew
+      - brew install applesimutils
+      - yarn test:e2e:build
+      - yarn test:e2e:ci
+
 
 workflows:
   version: 2
@@ -73,5 +91,6 @@ workflows:
       - test:
           requires:
             - build
-
-            
+      # - e2e:
+      #     requires:
+      #       - build
