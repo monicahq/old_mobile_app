@@ -94,5 +94,3 @@ workflows:
       - e2e:
           requires:
             - build
-
-            
