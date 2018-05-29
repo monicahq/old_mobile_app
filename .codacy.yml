@@ -13,3 +13,6 @@ exclude_paths:
   - '**/__tests__/**'
   - 'ios/**/*'
   - 'android/**/*'
+  - 'e2e/**/*'
+  - 'e2e/*'
+  - 'jest.config.js'

@@ -27,7 +27,7 @@ export class Launch extends PureComponent<ILaunchProps, {}> {
             {I18n.t('auth:launch2')}
           </Text>
 
-          <Button onPress={navigate('Login')}>
+          <Button onPress={navigate('Login')} id="goToLogin">
             {I18n.t('common:getstarted')}
           </Button>
         </View>

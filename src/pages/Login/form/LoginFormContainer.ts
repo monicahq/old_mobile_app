@@ -1,4 +1,5 @@
 import {API} from '@api';
+import {I18n} from '@i18n';
 import {withFormik} from 'formik';
 import {LoginForm} from './LoginForm';
 import {IProps, IValues} from './LoginForm.model';
@@ -43,7 +44,7 @@ export const LoginFormContainer = withFormik<IProps, IValues>({
       if (res.access_token) {
         return props.onSuccess(res);
       }
-      setStatus('Bad credentials.');
+      setStatus(I18n.t('auth:badCredentials'));
       setSubmitting(false);
     } catch (err) {
       setStatus(err.message);

@@ -3,6 +3,7 @@ import {Text, TextInput as RNTextInput, View} from 'react-native';
 import {borderColor, styles} from './TextInput.styles';
 
 interface ITextInputProps {
+  id?: string;
   title: string;
   touched?: boolean;
   error?: string;
@@ -22,7 +23,7 @@ export class TextInput extends PureComponent<ITextInputProps> {
   public textInputRef = ref => (this.textInput = ref);
 
   public render() {
-    const {title, error, touched, ...props} = this.props;
+    const {title, error, touched, id, ...props} = this.props;
 
     return [
       // TITLE + ERROR
@@ -32,12 +33,15 @@ export class TextInput extends PureComponent<ITextInputProps> {
           touched && (
             <View style={styles.flexRow}>
               <Text> - </Text>
-              <Text style={styles.errorText}>{error}</Text>
+              <Text style={styles.errorText} testID={`input-error-${id}`}>
+                {error}
+              </Text>
             </View>
           )}
       </View>,
       // TEXTINPUT
       <RNTextInput
+        testID={`input-${id}`}
         ref={this.textInputRef}
         key={1}
         style={styles.textInput}

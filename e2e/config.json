@@ -1,0 +1,24 @@
+{
+  "setupTestFrameworkScriptFile" : "./init.js",
+  "transform": {
+    "^.+\\.ts?$": "ts-jest",
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "testMatch": [
+    "**/*.spec.{ts,tsx}"
+  ],
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json",
+    "node"
+  ],
+  "transformIgnorePatterns": [
+    "node_modules/(?!(jest-)?react-native|react-navigation|moment)"
+  ],
+  "globals": {
+    "jest": true
+  }
+}

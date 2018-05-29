@@ -1,0 +1,32 @@
+# language: objective-c
+os: osx
+osx_image: xcode9.3
+
+env:
+# - VERSION=iPhone7
+- VERSION=iPhoneX
+# - VERSION=iPhone5s
+- VERSION=iPhoneSE
+
+cache:
+  directories:
+    - node_modules
+
+install:
+- brew tap wix/brew
+- brew install applesimutils
+- curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+- export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+- nvm install stable
+- nvm use stable
+
+- npm install -g react-native-cli
+- npm install -g detox-cli
+- npm install
+- cd ios && pod install && cd ..
+- detox clean-framework-cache && detox build-framework-cache
+- npm run test:e2e:build:ci
+
+script:
+- npm run test:e2e:ci -- -c ios.sim.release.${VERSION}
+
