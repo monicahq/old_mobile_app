@@ -68,6 +68,7 @@ exports[`Components Launch should renders correctly 1`] = `
     </Text>
     <Button
       disabled={false}
+      id="goToLogin"
       loading={false}
       onPress={[Function]}
     >

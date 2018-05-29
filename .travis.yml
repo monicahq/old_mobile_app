@@ -1,9 +1,5 @@
 os: osx
 
-branches:
-  only:
-  - master
-
 env:
   global:
   - NODE_VERSION=stable
