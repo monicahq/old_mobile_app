@@ -17,6 +17,7 @@ jest.mock('react-native-splash-screen', () => {
 jest.mock('react-native-device-info', () => {
   return {
     getDeviceLocale: () => 'en',
+    getModel: () => 'iPhone SE',
   };
 });
 

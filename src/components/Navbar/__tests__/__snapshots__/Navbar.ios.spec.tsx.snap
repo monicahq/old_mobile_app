@@ -37,7 +37,11 @@ exports[`Components Navbar IOS should renders correctly 1`] = `
       "style": "light-content",
     }
   }
-  style={Object {}}
+  style={
+    Object {
+      "marginTop": 0,
+    }
+  }
   tintColor="#355974"
   title={
     Object {
@@ -58,7 +62,11 @@ exports[`Components Navbar IOS should renders correctly 2`] = `
       "style": "light-content",
     }
   }
-  style={Object {}}
+  style={
+    Object {
+      "marginTop": 0,
+    }
+  }
   tintColor="#355974"
   title={
     Object {
@@ -79,7 +87,11 @@ exports[`Components Navbar IOS should renders correctly 3`] = `
       "style": "light-content",
     }
   }
-  style={Object {}}
+  style={
+    Object {
+      "marginTop": 0,
+    }
+  }
   tintColor="#355974"
   title={<Component />}
 />

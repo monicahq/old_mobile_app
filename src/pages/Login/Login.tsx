@@ -1,13 +1,12 @@
 import React, {PureComponent} from 'react';
 import {Image, Text, View} from 'react-native';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
-import SafeAreaView from 'react-native-safe-area-view';
 
 import {Back} from '@components';
 import {I18n} from '@i18n';
 import {IUserSetTokenOperation} from '@models/operations';
 import {IPopAction} from '@navigator/NavigationService';
-import {commonStyles, forceInset, preAuthScreensStyles} from '@theme';
+import {commonStyles, preAuthScreensStyles} from '@theme';
 import {LoginFormContainer} from './form/LoginFormContainer';
 
 interface ILoginProps {
@@ -30,10 +29,7 @@ export class Login extends PureComponent<ILoginProps, {}> {
 
     return (
       <KeyboardAwareScrollView contentContainerStyle={commonStyles.flex}>
-        <SafeAreaView
-          forceInset={forceInset}
-          style={preAuthScreensStyles.container}
-        >
+        <View style={preAuthScreensStyles.container}>
           <Back onPress={pop} />
           <View style={commonStyles.flex} />
 
@@ -54,7 +50,7 @@ export class Login extends PureComponent<ILoginProps, {}> {
             linkTitle="Sign up"
             onPress={navigate('Signup')}
           /> */}
-        </SafeAreaView>
+        </View>
       </KeyboardAwareScrollView>
     );
   }

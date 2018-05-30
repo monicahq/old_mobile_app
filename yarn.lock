@@ -1156,7 +1156,14 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-jest@23.0.0, babel-jest@^23.0.0:
+babel-jest@23.0.1:
+  version "23.0.1"
+  resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-23.0.1.tgz#bbad3bf523fb202da05ed0a6540b48c84eed13a6"
+  dependencies:
+    babel-plugin-istanbul "^4.1.6"
+    babel-preset-jest "^23.0.1"
+
+babel-jest@^23.0.0:
   version "23.0.0"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-23.0.0.tgz#0e383a2aa6b3535e197db2929570a2182bd084e8"
   dependencies:
@@ -1197,6 +1204,10 @@ babel-plugin-jest-hoist@^22.4.3:
 babel-plugin-jest-hoist@^23.0.0:
   version "23.0.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-23.0.0.tgz#e61e68799f743391a1e6306ee270477aacf946c8"
+
+babel-plugin-jest-hoist@^23.0.1:
+  version "23.0.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-23.0.1.tgz#eaa11c964563aea9c21becef2bdf7853f7f3c148"
 
 babel-plugin-react-transform@^3.0.0:
   version "3.0.0"
@@ -1600,6 +1611,13 @@ babel-preset-jest@^23.0.0:
   resolved "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-23.0.0.tgz#49de0303f1b6875dcad6163eaa7eb8330d54824d"
   dependencies:
     babel-plugin-jest-hoist "^23.0.0"
+    babel-plugin-syntax-object-rest-spread "^6.13.0"
+
+babel-preset-jest@^23.0.1:
+  version "23.0.1"
+  resolved "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-23.0.1.tgz#631cc545c6cf021943013bcaf22f45d87fe62198"
+  dependencies:
+    babel-plugin-jest-hoist "^23.0.1"
     babel-plugin-syntax-object-rest-spread "^6.13.0"
 
 babel-preset-react-native@^4.0.0:
@@ -3132,9 +3150,9 @@ fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
 
-frisbee@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/frisbee/-/frisbee-2.0.4.tgz#0bf9cf4a5b3c3459ab4799d94fd1495177ce133e"
+frisbee@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/frisbee/-/frisbee-2.0.5.tgz#97051642ac4bca09bf3b7eb0b4328c4a864a23b3"
   dependencies:
     "@babel/runtime" "^7.0.0-beta.47"
     caseless "^0.12.0"
@@ -5816,9 +5834,9 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@1.12.1:
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.12.1.tgz#c1ad20e803e7749faf905a409d2367e06bbe7325"
+prettier@1.13.2:
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.13.2.tgz#412b87bc561cb11074d2877a33a38f78c2303cda"
 
 pretty-format@^22.4.3:
   version "22.4.3"
@@ -6073,9 +6091,9 @@ react-native-segmented-control-tab@3.2.2:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-splash-screen@3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/react-native-splash-screen/-/react-native-splash-screen-3.0.6.tgz#c0bbf2c8ae40a313c4c7044f55e569414ff68332"
+react-native-splash-screen@3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/react-native-splash-screen/-/react-native-splash-screen-3.0.7.tgz#352e87ad79ab1136e0e678a37b75cac0375b325f"
 
 react-native-tab-view@^0.0.77:
   version "0.0.77"
@@ -7442,9 +7460,9 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typesafe-actions@2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/typesafe-actions/-/typesafe-actions-2.0.3.tgz#5451a4f8bf0d1e79f7d12af7582cc5f12d490708"
+typesafe-actions@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/typesafe-actions/-/typesafe-actions-2.0.4.tgz#31c8f8df3566d549eb52edb64a75997e970c17d0"
 
 typescript@2.8.3:
   version "2.8.3"

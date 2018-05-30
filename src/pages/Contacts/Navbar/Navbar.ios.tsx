@@ -12,6 +12,7 @@ export class Navbar extends PureComponent<INavbarProps, {}> {
   public render() {
     return (
       <NavigationBar
+        style={styles.navbar}
         leftButton={
           <Image
             source={require('@assets/logo.png')}
