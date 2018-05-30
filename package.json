@@ -17,10 +17,10 @@
     "version:ios": "cd ios && bundle exec fastlane version version:$npm_package_version",
     "version:android": "cd android && bundle exec fastlane version version:$npm_package_version",
     "clean": "watchman watch-del-all && rm -rf node_modules && yarn && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/haste-map-react-native-packager-*",
-    "test:e2e": "detox test -c ios.sim.debug.iPhone7",
-    "test:e2e:build": "detox build -c ios.sim.debug",
+    "test:e2e": "detox test -c ios.sim.debug.iPhoneSE",
+    "test:e2e:build": "detox build -c ios.sim.debug.iPhoneSE",
     "test:e2e:ci": "detox test",
-    "test:e2e:build:ci": "detox build -c ios.sim.release.iPhone7"
+    "test:e2e:build:ci": "detox build"
   },
   "dependencies": {
     "appcenter": "1.5.1",

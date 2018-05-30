@@ -43,6 +43,7 @@ export class Form {
   public static async setValue(formName: string, value: string) {
     const input = this.getInput(formName);
 
+    await this.clickAnywhere();
     await input.tap();
     await input.clearText();
     await input.typeText(value);
@@ -54,7 +55,14 @@ export class Form {
   }
 
   public static async checkFormResult(error: string) {
+    await this.scrollToBottom();
     await expect(this.getFormResult()).toHaveText(I18n.t(error));
+  }
+
+  private static async scrollToBottom() {
+    await element(by.type('RCTView'))
+      .atIndex(0)
+      .scrollTo('bottom');
   }
 
   private static getInput(formName) {
