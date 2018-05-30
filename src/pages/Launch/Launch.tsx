@@ -1,10 +1,9 @@
 import React, {PureComponent} from 'react';
 import {Image, Text, View} from 'react-native';
-import SafeAreaView from 'react-native-safe-area-view';
 
 import {Button} from '@components';
 import {I18n} from '@i18n';
-import {commonStyles, forceInset, preAuthScreensStyles} from '@theme';
+import {commonStyles, preAuthScreensStyles} from '@theme';
 
 interface ILaunchProps {
   navigate: (routeName) => any;
@@ -15,10 +14,7 @@ export class Launch extends PureComponent<ILaunchProps, {}> {
     const {navigate} = this.props;
 
     return (
-      <SafeAreaView
-        forceInset={forceInset}
-        style={preAuthScreensStyles.container}
-      >
+      <View style={preAuthScreensStyles.container}>
         <View style={commonStyles.flex} />
 
         <View style={preAuthScreensStyles.centeredBlock}>
@@ -43,7 +39,7 @@ export class Launch extends PureComponent<ILaunchProps, {}> {
       linkTitle="Sign in"
       onPress={navigate('Login')}
     /> */}
-      </SafeAreaView>
+      </View>
     );
   }
 }

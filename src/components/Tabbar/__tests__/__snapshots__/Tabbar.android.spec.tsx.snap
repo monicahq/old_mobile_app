@@ -9,6 +9,7 @@ exports[`Components Tabbar should renders correctly 1`] = `
       "borderTopWidth": 0.5,
       "flexDirection": "row",
       "height": 48,
+      "paddingBottom": 0,
     }
   }
 >
@@ -101,6 +102,7 @@ exports[`Components Tabbar should renders correctly 2`] = `
       "borderTopWidth": 0.5,
       "flexDirection": "row",
       "height": 48,
+      "paddingBottom": 0,
     }
   }
 >
@@ -195,6 +197,7 @@ exports[`Components Tabbar should renders correctly 3`] = `
       "borderTopWidth": 0.5,
       "flexDirection": "row",
       "height": 48,
+      "paddingBottom": 0,
     }
   }
 >

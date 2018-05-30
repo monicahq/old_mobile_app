@@ -13,6 +13,7 @@ export class Navbar extends PureComponent<INavbarProps> {
 
     return (
       <NavigationBar
+        style={styles.navbar}
         leftButton={
           onBack && (
             <TouchableOpacity

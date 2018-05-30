@@ -1,9 +1,13 @@
 import {StyleSheet} from 'react-native';
+import DeviceInfo from 'react-native-device-info';
 
 export const primaryColor = '#355974';
 export const navbarColor = primaryColor;
 export const mutedTextColor = '#676767';
 export const statusBarLightContent = {style: 'light-content'};
+
+export const contraintTop = DeviceInfo.getModel() === 'iPhone X' ? 24 : 0;
+export const contraintBottom = DeviceInfo.getModel() === 'iPhone X' ? 16 : 0;
 
 export const commonStyles = StyleSheet.create({
   errorMessage: {
@@ -53,10 +57,6 @@ export const hitSlop = {
   left: 15,
   bottom: 15,
   right: 15,
-};
-
-export const forceInset = {
-  top: 'always',
 };
 
 export * from './preAuthScreen';
