@@ -3,7 +3,12 @@
 <h3 align="center">Personal Relationship Manager</h3>
 
 <p align="center">
-<a href="https://travis-ci.org/monicahq/chandler"><img src="https://travis-ci.org/monicahq/chandler.svg?branch=master" alt="Build Status"></a>
+<a href="https://travis-ci.org/monicahq/chandler"><img src="https://travis-ci.org/monicahq/chandler.svg?branch=develop" alt="Build Status"></a>
+<a href="https://circleci.com/gh/monicahq/chandler"><img src="https://circleci.com/gh/monicahq/chandler.svg?style=svg" alt="Build Status"></a>
+
+
+
+
 <a class="badge-align" href="https://www.codacy.com/app/Mokto/chandler?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=monicahq/chandler&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/39824871b63643c0b19ce4326d5f8c28"/></a>
 <a href="https://codecov.io/gh/monicahq/chandler"><img src="https://codecov.io/gh/monicahq/chandler/branch/develop/graph/badge.svg" /></a>
 <a href="https://david-dm.org/monicahq/chandler"><img src="https://david-dm.org/monicahq/chandler/status.svg" alt="License"></a>
@@ -36,7 +41,9 @@ Chandler is [Monica](https://github.com/monicahq/monica)'s official mobile app. 
 * add/edit debts
 * add/edit tasks
 
-Chandler is developed with [React Native](https://facebook.github.io/react-native/), a Facebook technology which allows you to build *real native* apps using only javascript. The philosophy behind this is `learn once, write everywhere`. [Facebook's post about React Native](https://code.facebook.com/posts/1014532261909640/react-native-bringing-modern-web-techniques-to-mobile/) explains it really well.
+
+* Chandler is developed with [React Native](https://facebook.github.io/react-native/), a Facebook technology which allows you to build *real native* apps using only javascript. The philosophy behind this is `learn once, write everywhere`. [Facebook's post about React Native](https://code.facebook.com/posts/1014532261909640/react-native-bringing-modern-web-techniques-to-mobile/) explains it really well.
+* CircleCI is running unit tests and checking typings. Travis is running E2E tests.
 
 ## Get started
 

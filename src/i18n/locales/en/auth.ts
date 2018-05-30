@@ -7,4 +7,5 @@ export const auth = {
   yourPassword: 'Your password',
   signin: 'Sign in',
   signinIn: 'Signin in',
+  badCredentials: 'Bad credentials',
 };

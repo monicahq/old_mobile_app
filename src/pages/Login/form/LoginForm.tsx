@@ -29,6 +29,7 @@ export class LoginForm extends PureComponent<
 
     return (
       <TextInput
+        id="email"
         key={0}
         title={I18n.t('auth:yourEmail')}
         // @ts-ignore: TODO wait for react-native @types to be updated
@@ -52,6 +53,7 @@ export class LoginForm extends PureComponent<
 
     return (
       <TextInput
+        id="password"
         key={1}
         ref={this.passwordTextInputRef}
         title={I18n.t('auth:yourPassword')}
@@ -75,6 +77,7 @@ export class LoginForm extends PureComponent<
 
     return (
       <TextInput
+        id="url"
         key={2}
         ref={this.urlTextInputRef}
         title={I18n.t('common:yourMonicaUrl')}
@@ -98,6 +101,7 @@ export class LoginForm extends PureComponent<
       this.getPasswordField(),
       this.getUrlField(),
       <Button
+        id="submit"
         key={3}
         onPress={isValid ? handleSubmit : this.setAllTouched}
         title={I18n.t('auth:signin')}
@@ -106,7 +110,7 @@ export class LoginForm extends PureComponent<
         loading={isSubmitting}
       />,
       status ? (
-        <Text key={4} style={commonStyles.errorMessage}>
+        <Text testID="formResult" key={4} style={commonStyles.errorMessage}>
           {status}
         </Text>
       ) : null,

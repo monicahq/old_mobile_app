@@ -18,10 +18,11 @@ export class Button extends PureComponent<IButtonProps> {
   }
 
   public render() {
-    const {onPress, disabled, loading} = this.props;
+    const {onPress, disabled, loading, id} = this.props;
 
     return (
       <TouchableOpacity
+        testID={id}
         style={[styles.button, disabled && styles.buttonDisabled]}
         onPress={onPress}
         disabled={disabled}
