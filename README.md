@@ -10,11 +10,13 @@
 
 
 <p align="center">
+  <a class="badge-align" href="https://slack.monicahq.com"><img src="https://slack.monicahq.com/badge.svg"></a>
   <a class="badge-align" href="https://www.codacy.com/app/Mokto/chandler?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=monicahq/chandler&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/39824871b63643c0b19ce4326d5f8c28"/></a>
   <a href="https://david-dm.org/monicahq/chandler"><img src="https://david-dm.org/monicahq/chandler/status.svg" alt="License"></a>
   <a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/monicahq/chandler.svg" /></a>
   <a href="https://github.com/djaiss/monica/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-AGPL-blue.svg" alt="License"></a>
 </p>
+
 
 * [Introduction](#introduction)
 * [Get started](#get-started)
