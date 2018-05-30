@@ -1,3 +1,22 @@
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/monicahq/chandler/compare/0.5.0...0.5.1) (2018-05-30)
+
+
+### Bug Fixes
+
+* iphone x layout ([#248](https://github.com/monicahq/chandler/issues/248)) ([a25b604](https://github.com/monicahq/chandler/commit/a25b604))
+
+## Packages
+* **package:** update react-navigation to version 2.0.4 ([#232](https://github.com/monicahq/chandler/issues/232)) ([5a2b5cd](https://github.com/monicahq/chandler/commit/5a2b5cd)), closes [#231](https://github.com/monicahq/chandler/issues/231)
+* **package:** update typesafe-actions to version 2.0.4 ([#235](https://github.com/monicahq/chandler/issues/235)) ([64b0668](https://github.com/monicahq/chandler/commit/64b0668))
+* **package:** update frisbee to version 2.0.5 ([#243](https://github.com/monicahq/chandler/issues/243)) ([a5e385d](https://github.com/monicahq/chandler/commit/a5e385d))
+* **package:** update react to version 16.4.0 ([ea548ed](https://github.com/monicahq/chandler/commit/ea548ed))
+* **package:** update react-native-code-push to version 5.3.4 ([854a1d2](https://github.com/monicahq/chandler/commit/854a1d2))
+* **package:** update react-native-splash-screen to version 3.0.7 ([#245](https://github.com/monicahq/chandler/issues/245)) ([78abfbb](https://github.com/monicahq/chandler/commit/78abfbb))
+* **package:** update react-navigation to version 2.0.2 ([2f02ebd](https://github.com/monicahq/chandler/commit/2f02ebd))
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/monicahq/chandler/compare/0.4.2...0.5.0) (2018-05-21)
 
@@ -13,6 +32,9 @@
 * contact relationships display ([f49a6f3](https://github.com/monicahq/chandler/commit/f49a6f3))
 * login + add contact labels ([ae65b7a](https://github.com/monicahq/chandler/commit/ae65b7a))
 * login react array key ([23b8463](https://github.com/monicahq/chandler/commit/23b8463))
+* **android:** checkbox icon size ([5a02013](https://github.com/monicahq/chandler/commit/5a02013))
+* search calling wrong pages ([2db911c](https://github.com/monicahq/chandler/commit/2db911c))
+* removed beta messages from the app for apple acceptation ([b3041d5](https://github.com/monicahq/chandler/commit/b3041d5))
 
 ### Performance Improvements
 
