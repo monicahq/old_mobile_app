@@ -1,0 +1,314 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Switch android should renders correctly 1`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 30,
+    }
+  }
+>
+  <Component
+    key="0"
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "height": 30,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      My title
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "red",
+        }
+      }
+      testID="switch-error-undefined"
+    >
+       
+    </Text>
+  </Component>
+  <Switch
+    disabled={false}
+    key="1"
+    onTintColor="#355974"
+    testID="input-undefined"
+    value={false}
+  />
+</Component>
+`;
+
+exports[`Components Switch android should renders correctly 2`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 30,
+    }
+  }
+>
+  <Component
+    key="0"
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "height": 30,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      My title
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "red",
+        }
+      }
+      testID="switch-error-undefined"
+    >
+       
+    </Text>
+  </Component>
+  <Switch
+    disabled={false}
+    key="1"
+    onTintColor="#355974"
+    testID="input-undefined"
+    value={false}
+  />
+</Component>
+`;
+
+exports[`Components Switch ios should renders correctly 1`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 30,
+    }
+  }
+>
+  <Component
+    key="0"
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "height": 30,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      My title
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "red",
+        }
+      }
+      testID="switch-error-undefined"
+    >
+       
+    </Text>
+  </Component>
+  <Switch
+    disabled={false}
+    key="1"
+    onTintColor="#355974"
+    testID="input-undefined"
+    value={false}
+  />
+</Component>
+`;
+
+exports[`Components Switch ios should renders correctly 2`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 30,
+    }
+  }
+>
+  <Component
+    key="0"
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "height": 30,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      My title
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "red",
+        }
+      }
+      testID="switch-error-undefined"
+    >
+       
+    </Text>
+  </Component>
+  <Switch
+    disabled={false}
+    key="1"
+    onTintColor="#355974"
+    testID="input-undefined"
+    value={false}
+  />
+</Component>
+`;
+
+exports[`Components Switch ios should renders correctly 3`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 30,
+    }
+  }
+>
+  <Component
+    key="0"
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "height": 30,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      My title
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "red",
+        }
+      }
+      testID="switch-error-undefined"
+    >
+       
+      my-error
+    </Text>
+  </Component>
+  <Switch
+    disabled={false}
+    key="1"
+    onTintColor="#355974"
+    testID="input-undefined"
+    value={false}
+  />
+</Component>
+`;
+
+exports[`Components Switch ios should renders correctly 4`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 30,
+    }
+  }
+>
+  <Component
+    key="0"
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "height": 30,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      My title
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "red",
+        }
+      }
+      testID="switch-error-undefined"
+    >
+       
+    </Text>
+  </Component>
+  <Switch
+    disabled={false}
+    key="1"
+    onTintColor="#355974"
+    testID="input-undefined"
+    value={false}
+  />
+</Component>
+`;

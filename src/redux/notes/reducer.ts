@@ -31,8 +31,14 @@ export const notesReducer = (
           notes[item.id] = item;
         }
       });
-
       return notes;
+    // UPDATE NOTE
+    case types.UPDATE_NOTE:
+      const notesFromUpdate = {...state};
+      notesFromUpdate[action.payload.id] = {
+        ...action.payload,
+      };
+      return notesFromUpdate;
   }
 
   return state;

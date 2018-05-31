@@ -33,6 +33,7 @@ exports[`Pages Contacts should renders correctly with contacts and fetching 1`] 
     horizontal={false}
     initialNumToRender={10}
     keyExtractor={[Function]}
+    keyboardDismissMode="on-drag"
     maxToRenderPerBatch={10}
     numColumns={1}
     onEndReached={[Function]}
@@ -78,6 +79,7 @@ exports[`Pages Contacts should renders correctly with contacts and not fetching 
     horizontal={false}
     initialNumToRender={10}
     keyExtractor={[Function]}
+    keyboardDismissMode="on-drag"
     maxToRenderPerBatch={10}
     numColumns={1}
     onEndReached={[Function]}
@@ -129,6 +131,7 @@ exports[`Pages Contacts should renders correctly without contacts and fetching 1
     horizontal={false}
     initialNumToRender={10}
     keyExtractor={[Function]}
+    keyboardDismissMode="on-drag"
     maxToRenderPerBatch={10}
     numColumns={1}
     onEndReached={[Function]}

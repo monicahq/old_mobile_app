@@ -22,7 +22,11 @@ describe('Pages', () => {
     describe('mapDispatchToProps', () => {
       it('should contains every key', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);
-        expect(Object.keys(props)).toEqual(['pop', 'getNotesByContact']);
+        expect(Object.keys(props)).toEqual([
+          'pop',
+          'navigateToNote',
+          'getNotesByContact',
+        ]);
       });
 
       // it('back should return a back action trigger', () => {

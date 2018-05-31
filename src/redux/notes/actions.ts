@@ -17,3 +17,5 @@ export const getNotesByContactFailed = (error: Error) =>
   action(types.GET_NOTES_BY_CONTACT_FAILED, {
     error,
   });
+
+export const updateNote = (note: INote) => action(types.UPDATE_NOTE, note);

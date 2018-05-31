@@ -7,6 +7,7 @@ import {CallsListScreen} from '@src/pages/Entities/Calls/List/CallsListScreen';
 import {DebtsListScreen} from '@src/pages/Entities/Debts/List/DebtsListScreen';
 import {GiftsListScreen} from '@src/pages/Entities/Gifts/List/GiftsListScreen';
 import {NotesListScreen} from '@src/pages/Entities/Notes/List/NotesListScreen';
+import {NoteUpsertScreen} from '@src/pages/Entities/Notes/Upsert/NoteUpsertScreen';
 import {RemindersListScreen} from '@src/pages/Entities/Reminders/List/RemindersListScreen';
 import {TasksListScreen} from '@src/pages/Entities/Tasks/List/TasksListScreen';
 import {TabsNavigator} from './TabsNavigator';
@@ -36,6 +37,9 @@ export const AppStack = createStackNavigator(
     },
     Notes: {
       screen: NotesListScreen,
+    },
+    NoteUpsert: {
+      screen: NoteUpsertScreen,
     },
     Reminders: {
       screen: RemindersListScreen,

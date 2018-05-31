@@ -21,4 +21,7 @@ export const styles = StyleSheet.create({
     borderBottomWidth: Platform.OS === 'ios' ? 1 / PixelRatio.get() : 0,
     marginBottom: 20,
   },
+  titleMultine: {
+    fontSize: 11,
+  },
 });

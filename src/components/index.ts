@@ -1,5 +1,4 @@
 export * from './Button';
-export * from './TextInput';
 export * from './Back';
 export * from './BottomNav';
 export * from './ContactListItem';
@@ -11,3 +10,6 @@ export * from './EmptyActivity';
 export * from './Checkbox';
 export * from './LastTwoYearsStatistics';
 export * from './ListItem';
+export * from './form/Switch';
+export * from './form/TextInput';
+export * from './form/FormListItem';

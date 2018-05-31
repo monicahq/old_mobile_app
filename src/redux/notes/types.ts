@@ -4,3 +4,4 @@ export const GET_NOTES_BY_CONTACT_SUCCESS =
   'Contacts/GET_NOTES_BY_CONTACT_SUCCESS';
 export const GET_NOTES_BY_CONTACT_FAILED =
   'Contacts/GET_NOTES_BY_CONTACT_FAILED';
+export const UPDATE_NOTE = 'Contacts/NOTE_UPDATE';

@@ -32,7 +32,6 @@ export class LoginForm extends PureComponent<
         id="email"
         key={0}
         title={I18n.t('auth:yourEmail')}
-        // @ts-ignore: TODO wait for react-native @types to be updated
         keyboardType="email-address"
         placeholder={I18n.t('auth:emailPlaceholder')}
         returnKeyType="next"
@@ -57,7 +56,6 @@ export class LoginForm extends PureComponent<
         key={1}
         ref={this.passwordTextInputRef}
         title={I18n.t('auth:yourPassword')}
-        // @ts-ignore: TODO wait for react-native @types to be updated
         returnKeyType="next"
         secureTextEntry={true}
         onChangeText={this.setFieldValue('password')}
@@ -81,7 +79,6 @@ export class LoginForm extends PureComponent<
         key={2}
         ref={this.urlTextInputRef}
         title={I18n.t('common:yourMonicaUrl')}
-        // @ts-ignore: TODO wait for react-native @types to be updated
         returnKeyType="send"
         onChangeText={this.setFieldValue('url')}
         onSubmitEditing={isValid ? handleSubmit : null}

@@ -1,12 +1,18 @@
 import React, {PureComponent} from 'react';
-import {Text, TextInput as RNTextInput, View} from 'react-native';
+import {
+  Text,
+  TextInput as RNTextInput,
+  TextInputProps,
+  View,
+} from 'react-native';
 import {borderColor, styles} from './TextInput.styles';
 
-interface ITextInputProps {
+interface ITextInputProps extends TextInputProps {
   id?: string;
   title: string;
   touched?: boolean;
   error?: string;
+  onSubmitEditing?: (...args) => void;
 }
 
 export class TextInput extends PureComponent<ITextInputProps> {
@@ -25,15 +31,20 @@ export class TextInput extends PureComponent<ITextInputProps> {
   public render() {
     const {title, error, touched, id, ...props} = this.props;
 
+    const multilineTextStyle = props.multiline ? styles.titleMultine : null;
+
     return [
       // TITLE + ERROR
       <View key={0} style={styles.title}>
-        {!!title && <Text>{title}</Text>}
+        {!!title && <Text style={multilineTextStyle}>{title}</Text>}
         {!!error &&
           touched && (
             <View style={styles.flexRow}>
-              <Text> - </Text>
-              <Text style={styles.errorText} testID={`input-error-${id}`}>
+              <Text style={multilineTextStyle}> - </Text>
+              <Text
+                style={[styles.errorText, multilineTextStyle]}
+                testID={`input-error-${id}`}
+              >
                 {error}
               </Text>
             </View>

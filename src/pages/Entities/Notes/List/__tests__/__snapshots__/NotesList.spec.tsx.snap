@@ -65,7 +65,8 @@ exports[`Pages Notes should renders correctly with notes and fetching 1`] = `
 `;
 
 exports[`Pages Notes should renders correctly with notes and fetching 2`] = `
-<View
+<TouchableOpacity
+  activeOpacity={0.2}
   style={
     Object {
       "backgroundColor": "white",
@@ -76,19 +77,28 @@ exports[`Pages Notes should renders correctly with notes and fetching 2`] = `
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <Component
     style={
       Object {
-        "fontSize": 12,
-        "marginBottom": 8,
+        "flexDirection": "row",
       }
     }
   >
-    December 17, 1991
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "flex": 1,
+          "fontSize": 12,
+          "marginBottom": 8,
+        }
+      }
+    >
+      December 17, 1991
+    </Text>
+  </Component>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -96,7 +106,7 @@ exports[`Pages Notes should renders correctly with notes and fetching 2`] = `
   >
     My body
   </Text>
-</View>
+</TouchableOpacity>
 `;
 
 exports[`Pages Notes should renders correctly with notes and fetching 3`] = `
@@ -154,7 +164,8 @@ exports[`Pages Notes should renders correctly with notes and fetching 3`] = `
 `;
 
 exports[`Pages Notes should renders correctly with notes and fetching 4`] = `
-<View
+<TouchableOpacity
+  activeOpacity={0.2}
   style={
     Object {
       "backgroundColor": "white",
@@ -165,19 +176,28 @@ exports[`Pages Notes should renders correctly with notes and fetching 4`] = `
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <Component
     style={
       Object {
-        "fontSize": 12,
-        "marginBottom": 8,
+        "flexDirection": "row",
       }
     }
   >
-    December 17, 1991
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "flex": 1,
+          "fontSize": 12,
+          "marginBottom": 8,
+        }
+      }
+    >
+      December 17, 1991
+    </Text>
+  </Component>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -185,11 +205,12 @@ exports[`Pages Notes should renders correctly with notes and fetching 4`] = `
   >
     My body
   </Text>
-</View>
+</TouchableOpacity>
 `;
 
 exports[`Pages Notes should renders correctly with notes and fetching 5`] = `
-<View
+<TouchableOpacity
+  activeOpacity={0.2}
   style={
     Object {
       "backgroundColor": "white",
@@ -200,19 +221,28 @@ exports[`Pages Notes should renders correctly with notes and fetching 5`] = `
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <Component
     style={
       Object {
-        "fontSize": 12,
-        "marginBottom": 8,
+        "flexDirection": "row",
       }
     }
   >
-    December 17, 1993
-  </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "flex": 1,
+          "fontSize": 12,
+          "marginBottom": 8,
+        }
+      }
+    >
+      December 17, 1993
+    </Text>
+  </Component>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -220,7 +250,7 @@ exports[`Pages Notes should renders correctly with notes and fetching 5`] = `
   >
     My body 2
   </Text>
-</View>
+</TouchableOpacity>
 `;
 
 exports[`Pages Notes should renders correctly without notes and fetching 1`] = `

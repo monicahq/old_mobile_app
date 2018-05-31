@@ -93,7 +93,7 @@ export class Contacts extends PureComponent<IContactsProps, {}> {
     }
   };
 
-  // componentWillReceiveProps(nextProps) {
+  // public componentWillReceiveProps(nextProps) {
   //   if (this.props.contacts.length === 0 && nextProps.contacts.length) {
   //     this.props.navigateToContact(nextProps.contacts[0].id)();
   //   }
@@ -122,6 +122,7 @@ export class Contacts extends PureComponent<IContactsProps, {}> {
             ListFooterComponent={this.renderFooter}
             onEndReached={this.onEndReached}
             onEndReachedThreshold={0.5}
+            keyboardDismissMode="on-drag"
           />
         ) : (
           <EmptyActivity image={emptyImage} title={emptyTitle} />

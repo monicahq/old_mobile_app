@@ -1,12 +1,13 @@
 import * as actions from './actions';
 
 import {API} from '@api';
+import {INote, IRootState} from '@models';
 
 export type INotesGetByContactOperation = (contactId: number) => any;
 
 export function getNotesByContact(contactId: number) {
   return async (dispatch, getState) => {
-    const state = getState();
+    const state: IRootState = getState();
     if (
       state.getNotesByContact.isFetching ||
       (state.contacts[contactId].notes &&
@@ -26,6 +27,21 @@ export function getNotesByContact(contactId: number) {
       dispatch(actions.getNotesByContactSuccess(contactId, res.data));
     } catch (e) {
       dispatch(actions.getNotesByContactFailed(e));
+    }
+  };
+}
+
+export function updateNote(note: INote) {
+  return async (dispatch, getState) => {
+    const state: IRootState = getState();
+    const oldNote = state.notes[note.id];
+
+    dispatch(actions.updateNote(note));
+
+    try {
+      await API.Notes.update(note);
+    } catch (e) {
+      dispatch(actions.updateNote(oldNote));
     }
   };
 }
