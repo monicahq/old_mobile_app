@@ -94,3 +94,9 @@ workflows:
       # - e2e:
       #     requires:
       #       - build
+
+experimental:
+  notify:
+    branches:
+      only:
+        - develop
