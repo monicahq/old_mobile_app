@@ -5,7 +5,7 @@ import {Text, View} from 'react-native';
 import {ListItem} from '@components';
 import {I18n} from '@i18n';
 import {IContact} from '@models';
-import {getAddressLabel, getAge} from '@utils/contacts';
+import {getAddressLabel} from '@utils/contacts';
 import {styles} from './Contact.styles';
 
 interface IContactProps {

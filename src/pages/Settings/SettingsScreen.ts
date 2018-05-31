@@ -15,6 +15,7 @@ export const mapDispatchToProps = dispatch => ({
   subscribeBeta: isSubscribed => dispatch(subscribeBeta(isSubscribed)),
 });
 
-export const SettingsScreen = connect(mapStateToProps, mapDispatchToProps)(
-  Settings
-);
+export const SettingsScreen = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Settings);

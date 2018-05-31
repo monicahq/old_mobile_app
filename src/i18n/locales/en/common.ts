@@ -5,7 +5,6 @@ export const common = {
   add: 'Add',
   journal: 'Journal',
   settings: 'Settings',
-  underConstruction: 'This page is under construction.',
   cancel: 'Cancel',
   yearDisplay: 'In {{year}}',
   getstarted: 'Get started',

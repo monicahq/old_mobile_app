@@ -1,14 +1,14 @@
 import {createStackNavigator} from 'react-navigation';
 
-import {ActivitiesScreen} from '@src/pages/Activities/ActivitiesScreen';
 import {AddContactScreen} from '@src/pages/AddContactScreen';
-import {CallsScreen} from '@src/pages/Calls/CallsScreen';
 import {ContactScreen} from '@src/pages/Contact/ContactScreen';
-import {DebtsScreen} from '@src/pages/Debts/DebtsScreen';
-import {GiftsScreen} from '@src/pages/Gifts/GiftsScreen';
-import {NotesScreen} from '@src/pages/Notes/NotesScreen';
-import {RemindersScreen} from '@src/pages/Reminders/RemindersScreen';
-import {TasksScreen} from '@src/pages/Tasks/TasksScreen';
+import {ActivitiesListScreen} from '@src/pages/Entities/Activities/List/ActivitiesListScreen';
+import {CallsListScreen} from '@src/pages/Entities/Calls/List/CallsListScreen';
+import {DebtsListScreen} from '@src/pages/Entities/Debts/List/DebtsListScreen';
+import {GiftsListScreen} from '@src/pages/Entities/Gifts/List/GiftsListScreen';
+import {NotesListScreen} from '@src/pages/Entities/Notes/List/NotesListScreen';
+import {RemindersListScreen} from '@src/pages/Entities/Reminders/List/RemindersListScreen';
+import {TasksListScreen} from '@src/pages/Entities/Tasks/List/TasksListScreen';
 import {TabsNavigator} from './TabsNavigator';
 
 export const AppStack = createStackNavigator(
@@ -23,25 +23,25 @@ export const AppStack = createStackNavigator(
       screen: ContactScreen,
     },
     Activities: {
-      screen: ActivitiesScreen,
+      screen: ActivitiesListScreen,
     },
     Calls: {
-      screen: CallsScreen,
+      screen: CallsListScreen,
     },
     Debts: {
-      screen: DebtsScreen,
+      screen: DebtsListScreen,
     },
     Gifts: {
-      screen: GiftsScreen,
+      screen: GiftsListScreen,
     },
     Notes: {
-      screen: NotesScreen,
+      screen: NotesListScreen,
     },
     Reminders: {
-      screen: RemindersScreen,
+      screen: RemindersListScreen,
     },
     Tasks: {
-      screen: TasksScreen,
+      screen: TasksListScreen,
     },
   },
   {

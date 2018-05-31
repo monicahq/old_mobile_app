@@ -3,8 +3,8 @@ import {createBottomTabNavigator} from 'react-navigation';
 import {Tabbar} from '../components/Tabbar/Tabbar';
 
 import {ContactsScreen} from '@src/pages/Contacts/ContactsScreen';
-import {DashboardScreen} from '@src/pages/DashboardScreen';
-import {JournalScreen} from '@src/pages/JournalScreen';
+// import {DashboardScreen} from '@src/pages/DashboardScreen';
+// import {JournalScreen} from '@src/pages/JournalScreen';
 import {SettingsScreen} from '@src/pages/Settings/SettingsScreen';
 
 export const TabsNavigator = createBottomTabNavigator(
