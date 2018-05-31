@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 import {View} from 'react-native';
 import {connect} from 'react-redux';
 
-import {Navbar, UnderConstruction} from '@components';
+import {Navbar} from '@components';
 import {I18n} from '@i18n';
 import {IPopAction, pop as popAction} from '@navigator/NavigationService';
 import {appScreensStyles} from '@theme';
@@ -17,12 +17,14 @@ export class AddContact extends PureComponent<IAddContactProps> {
     return (
       <View style={appScreensStyles.container}>
         <Navbar title={I18n.t('contacts:add')} onBack={pop} />
-        <UnderConstruction />
       </View>
     );
   }
 }
 
-export const AddContactScreen = connect(null, dispatch => ({
-  pop: () => popAction(),
-}))(AddContact);
+export const AddContactScreen = connect(
+  null,
+  dispatch => ({
+    pop: () => popAction(),
+  })
+)(AddContact);

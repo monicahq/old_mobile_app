@@ -1,7 +1,7 @@
 import {createStackNavigator} from 'react-navigation';
 
-import {LaunchScreen} from '@src/pages/Launch/LaunchScreen';
-import {LoginScreen} from '@src/pages/Login/LoginScreen';
+import {LaunchScreen} from '@src/pages/Auth/Launch/LaunchScreen';
+import {LoginScreen} from '@src/pages/Auth/Login/LoginScreen';
 
 export const AuthStack = createStackNavigator(
   {

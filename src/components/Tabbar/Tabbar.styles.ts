@@ -1,5 +1,4 @@
 import {PixelRatio, StyleSheet} from 'react-native';
-import DeviceInfo from 'react-native-device-info';
 
 import {contraintBottom} from '@theme';
 export const textColor = '#8d8d8d';
