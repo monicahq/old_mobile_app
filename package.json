@@ -54,7 +54,7 @@
     "typesafe-actions": "2.0.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "6.2.0",
+    "@commitlint/cli": "7.0.0",
     "@commitlint/config-conventional": "6.1.3",
     "@commitlint/prompt-cli": "6.1.3",
     "@types/cheerio": "0.22.7",
