@@ -9,6 +9,7 @@ export const common = {
   yearDisplay: 'In {{year}}',
   getstarted: 'Get started',
   yourMonicaUrl: 'Your Monica server url',
+  edit: 'Edit',
 
   form: {
     required: 'Is required',

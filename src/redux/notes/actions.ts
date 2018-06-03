@@ -19,3 +19,10 @@ export const getNotesByContactFailed = (error: Error) =>
   });
 
 export const updateNote = (note: INote) => action(types.UPDATE_NOTE, note);
+
+export const addNote = (note: INote) => action(types.ADD_NOTE, note);
+export const updateNoteId = (noteId: any, newId: any) =>
+  action(types.UPDATE_NOTE_ID, {noteId, newId});
+
+export const deleteNote = (note: INote, id?: any) =>
+  action(types.DELETE_NOTE, {note, id});

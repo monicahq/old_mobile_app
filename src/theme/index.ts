@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 import DeviceInfo from 'react-native-device-info';
 
-export const primaryColor = '#355974';
+export const primaryColor = '#325776';
 export const navbarColor = primaryColor;
 export const mutedTextColor = '#676767';
 export const statusBarLightContent = {style: 'light-content'};

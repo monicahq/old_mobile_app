@@ -10,7 +10,7 @@ export class Back extends PureComponent<IBackProps> {
     const {onPress} = this.props;
     return (
       <TouchableWithoutFeedback onPress={onPress}>
-        <Icon name="close" size={38} color="black" style={styles.icon} />
+        <Icon name="arrow-back" size={35} color="black" style={styles.icon} />
       </TouchableWithoutFeedback>
     );
   }

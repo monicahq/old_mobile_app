@@ -7,13 +7,17 @@ describe('Pages', () => {
   describe('Notes', () => {
     let pop;
     let updateNote;
-    let contactId;
+    let postNote;
+    let contact;
     let note;
 
     beforeEach(() => {
       pop = jest.fn();
       updateNote = jest.fn();
-      contactId = 5;
+      postNote = jest.fn();
+      contact = {
+        first_name: 'Theo',
+      };
       note = {body: 'c'};
     });
 
@@ -22,7 +26,8 @@ describe('Pages', () => {
         <NoteUpsert
           pop={pop}
           updateNote={updateNote}
-          contactId={contactId}
+          postNote={postNote}
+          contact={contact}
           note={note}
         />
       );

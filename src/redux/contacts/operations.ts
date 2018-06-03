@@ -56,7 +56,6 @@ export function searchContacts(query?) {
       );
       dispatch(actions.searchContactsSuccess(res.data, res.meta.total));
     } catch (e) {
-      console.warn(e);
       dispatch(actions.searchContactsFailed(e));
     }
   };

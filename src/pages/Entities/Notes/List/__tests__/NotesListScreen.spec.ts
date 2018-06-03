@@ -24,6 +24,7 @@ describe('Pages', () => {
         const props = mapDispatchToProps(dispatch, additionalProps);
         expect(Object.keys(props)).toEqual([
           'pop',
+          'navigateToAddNote',
           'navigateToNote',
           'getNotesByContact',
         ]);

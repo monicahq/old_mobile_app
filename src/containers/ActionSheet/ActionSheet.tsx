@@ -8,7 +8,8 @@ import {INavigateAction} from '@navigator/NavigationService';
 const CANCEL_INDEX = 0;
 const options = [
   I18n.t('common:cancel'),
-  I18n.t('contacts:add'),
+  // I18n.t('contacts:add'),
+  I18n.t('notes:add'),
   // 'Log an activity',
   // 'Log a call',
   // 'Add a reminder',
@@ -29,7 +30,7 @@ export class ActionSheet extends PureComponent<IActionSheetProps, {}> {
   public handlePress = i => {
     const {navigate} = this.props;
     if (i !== 0) {
-      navigate('AddContact');
+      navigate('NoteUpsert');
     }
   };
 

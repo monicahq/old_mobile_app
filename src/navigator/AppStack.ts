@@ -1,6 +1,7 @@
 import {createStackNavigator} from 'react-navigation';
 
 import {AddContactScreen} from '@src/pages/AddContactScreen';
+import {ChooseContactsScreen} from '@src/pages/ChooseContacts/ChooseContactsScreen';
 import {ContactScreen} from '@src/pages/Contact/ContactScreen';
 import {ActivitiesListScreen} from '@src/pages/Entities/Activities/List/ActivitiesListScreen';
 import {CallsListScreen} from '@src/pages/Entities/Calls/List/CallsListScreen';
@@ -19,6 +20,9 @@ export const AppStack = createStackNavigator(
     },
     AddContact: {
       screen: AddContactScreen,
+    },
+    ChooseContacts: {
+      screen: ChooseContactsScreen,
     },
     Contact: {
       screen: ContactScreen,

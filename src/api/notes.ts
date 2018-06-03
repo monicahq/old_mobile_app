@@ -25,7 +25,27 @@ export class Notes {
   public async update(note: INote) {
     try {
       const resp = await this.api.put(`/api/notes/${note.id}`, {
-        body: {...note, contact_id: note.contact.id},
+        body: {...note, contact_id: note.contact.id, contact: undefined},
+      });
+      if (resp.body.error) {
+        throw resp.body.error;
+      }
+      return resp.body;
+    } catch (err) {
+      throw err;
+    }
+  }
+
+  public async post(note: INote) {
+    try {
+      const resp = await this.api.post(`/api/notes`, {
+        body: {
+          ...note,
+          contact_id: note.contact.id,
+          contact: undefined,
+          // TODO: update the api to handle boolean
+          is_favorited: note.is_favorited ? 1 : 0,
+        },
       });
       if (resp.body.error) {
         throw resp.body.error;

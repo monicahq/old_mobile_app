@@ -28,6 +28,11 @@ exports[`Pages Notes should renders correctly 1`] = `
       }
     >
       <[object Object]
+        contact={
+          Object {
+            "first_name": "Theo",
+          }
+        }
         note={
           Object {
             "body": "c",

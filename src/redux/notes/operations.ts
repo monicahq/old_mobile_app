@@ -11,7 +11,7 @@ export function getNotesByContact(contactId: number) {
     if (
       state.getNotesByContact.isFetching ||
       (state.contacts[contactId].notes &&
-        state.contacts[contactId].statistics.number_of_notes ===
+        state.contacts[contactId].statistics.number_of_notes <=
           state.contacts[contactId].notes.length)
     ) {
       return;
@@ -42,6 +42,22 @@ export function updateNote(note: INote) {
       await API.Notes.update(note);
     } catch (e) {
       dispatch(actions.updateNote(oldNote));
+    }
+  };
+}
+
+export function postNote(note: INote) {
+  return async (dispatch, getState) => {
+    // const state: IRootState = getState();
+    // const oldNote = state.notes[note.id];
+    const randomId = 'temp-' + Math.random();
+    dispatch(actions.addNote({...note, id: randomId} as any));
+
+    try {
+      const res = await API.Notes.post(note);
+      dispatch(actions.updateNoteId(randomId, res.data.id));
+    } catch (e) {
+      dispatch(actions.deleteNote(note, randomId));
     }
   };
 }

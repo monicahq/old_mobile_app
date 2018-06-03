@@ -50,7 +50,7 @@ exports[`Pages Settings android should renders correctly 1`] = `
       <Switch
         disabled={false}
         onValueChange={[MockFunction]}
-        thumbTintColor="#355974"
+        thumbTintColor="#325776"
         value={true}
       />
     </Component>
@@ -208,7 +208,7 @@ exports[`Pages Settings android should renders correctly 2`] = `
       <Switch
         disabled={false}
         onValueChange={[MockFunction]}
-        thumbTintColor="#355974"
+        thumbTintColor="#325776"
         value={false}
       />
     </Component>
