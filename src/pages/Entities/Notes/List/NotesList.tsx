@@ -1,17 +1,19 @@
 import moment from 'moment';
 import React, {PureComponent} from 'react';
 import {ActivityIndicator, FlatList, Text, View} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import {EmptyActivity, Navbar} from '@components';
+import {EmptyActivity, Navbar, Touchable} from '@components';
 import {I18n} from '@i18n';
 import {INote} from '@models';
 import {IPopAction} from '@navigator/NavigationService';
-import {commonStyles} from '@theme';
+import {commonStyles, primaryColor} from '@theme';
 import {styles} from './NotesList.styles';
 
 interface INotesListProps {
   pop: IPopAction;
   getNotesByContact: () => void;
+  navigateToNote: (noteId) => any;
   notes: INote[];
   isFetching: boolean;
 }
@@ -36,14 +38,26 @@ export class NotesList extends PureComponent<INotesListProps, {}> {
   };
 
   public renderItem = ({item, index}) => {
-    const {notes} = this.props;
+    const {notes, navigateToNote} = this.props;
     const note = notes[index];
 
     return (
-      <View style={styles.noteContainer}>
-        <Text style={styles.date}>{moment(note.created_at).format('LL')}</Text>
+      <Touchable onPress={navigateToNote(note.id)} style={styles.noteContainer}>
+        <View style={{flexDirection: 'row'}}>
+          <Text style={styles.date}>
+            {moment(note.created_at).format('LL')}
+          </Text>
+          {note.is_favorited && (
+            <Icon
+              name="star"
+              size={18}
+              style={styles.favorite}
+              color={primaryColor}
+            />
+          )}
+        </View>
         <Text>{note.body}</Text>
-      </View>
+      </Touchable>
     );
   };
 

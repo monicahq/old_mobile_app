@@ -18,8 +18,8 @@ interface IContactProps {
 }
 
 export class Contact extends PureComponent<IContactProps, {}> {
-  // componentWillMount() {
-  //   this.props.navigate('Gifts', this.props.contact.id)();
+  // public componentWillMount() {
+  //   this.props.navigate('Notes', this.props.contact.id)();
   // }
   public render() {
     const {contact, pop, navigate} = this.props;

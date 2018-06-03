@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 
-import {pop} from '@navigator/NavigationService';
+import {navigate, pop} from '@navigator/NavigationService';
 import {getNotesByContact} from '@redux/notes';
 import {NotesList} from './NotesList';
 
@@ -12,10 +12,14 @@ export const mapStateToProps = (state, {navigation}) => {
   };
 };
 
-export const mapDispatchToProps = (dispatch, {navigation}) => ({
-  pop,
-  getNotesByContact: () => dispatch(getNotesByContact(navigation.state.params)),
-});
+export const mapDispatchToProps = (dispatch, {navigation}) => {
+  const contactId = navigation.state.params;
+  return {
+    pop,
+    navigateToNote: noteId => () => navigate('NoteUpsert', {noteId, contactId}),
+    getNotesByContact: () => dispatch(getNotesByContact(contactId)),
+  };
+};
 
 export const NotesListScreen = connect(
   mapStateToProps,

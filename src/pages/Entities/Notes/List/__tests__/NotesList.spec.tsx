@@ -7,10 +7,12 @@ describe('Pages', () => {
   describe('Notes', () => {
     let pop;
     let getNotesByContact;
+    let navigateToNote;
 
     beforeEach(() => {
       pop = jest.fn();
       getNotesByContact = jest.fn();
+      navigateToNote = jest.fn();
     });
 
     it('should renders correctly without notes and fetching', () => {
@@ -18,6 +20,7 @@ describe('Pages', () => {
       const tree = shallow(
         <NotesList
           pop={pop}
+          navigateToNote={navigateToNote}
           getNotesByContact={getNotesByContact}
           isFetching={true}
           notes={notes}
@@ -31,6 +34,7 @@ describe('Pages', () => {
       const tree = shallow(
         <NotesList
           pop={pop}
+          navigateToNote={navigateToNote}
           getNotesByContact={getNotesByContact}
           isFetching={false}
           notes={notes}
@@ -44,6 +48,7 @@ describe('Pages', () => {
       const tree = shallow(
         <NotesList
           pop={pop}
+          navigateToNote={navigateToNote}
           getNotesByContact={getNotesByContact}
           isFetching={true}
           notes={notes as any}
@@ -63,6 +68,7 @@ describe('Pages', () => {
       const tree = shallow(
         <NotesList
           pop={pop}
+          navigateToNote={navigateToNote}
           getNotesByContact={getNotesByContact}
           isFetching={false}
           notes={notes as any}
@@ -85,6 +91,7 @@ describe('Pages', () => {
       const tree = shallow(
         <NotesList
           pop={pop}
+          navigateToNote={navigateToNote}
           getNotesByContact={getNotesByContact}
           isFetching={true}
           notes={notes as any}
@@ -101,6 +108,7 @@ describe('Pages', () => {
       const tree = shallow(
         <NotesList
           pop={pop}
+          navigateToNote={navigateToNote}
           getNotesByContact={getNotesByContact}
           isFetching={false}
           notes={notes as any}
@@ -114,6 +122,7 @@ describe('Pages', () => {
       const tree = shallow(
         <NotesList
           pop={pop}
+          navigateToNote={navigateToNote}
           getNotesByContact={getNotesByContact}
           isFetching={false}
           notes={notes as any}

@@ -2,6 +2,7 @@ import {
   getNotesByContactFailed,
   getNotesByContactFetched,
   getNotesByContactSuccess,
+  updateNote,
 } from '../actions';
 import * as types from '../types';
 
@@ -32,6 +33,14 @@ describe('Redux', () => {
         expect(getNotesByContactFailed(error)).toEqual({
           type: types.GET_NOTES_BY_CONTACT_FAILED,
           payload: {error},
+        });
+      });
+
+      it('updateNote', () => {
+        const note = {a: 'b'};
+        expect(updateNote(note as any)).toEqual({
+          type: types.UPDATE_NOTE,
+          payload: note,
         });
       });
     });

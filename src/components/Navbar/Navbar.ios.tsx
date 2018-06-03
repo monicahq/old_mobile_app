@@ -14,6 +14,7 @@ export class Navbar extends PureComponent<INavbarProps> {
     return (
       <NavigationBar
         style={styles.navbar}
+        rightButton={this.getRightButton()}
         leftButton={
           onBack && (
             <TouchableOpacity
@@ -30,5 +31,16 @@ export class Navbar extends PureComponent<INavbarProps> {
         statusBar={statusBarLightContent}
       />
     );
+  }
+  private getRightButton() {
+    const {rightAction, rightTitle} = this.props;
+    if (!rightTitle) {
+      return null;
+    }
+    return {
+      title: rightTitle,
+      handler: rightAction,
+      tintColor: 'white',
+    };
   }
 }

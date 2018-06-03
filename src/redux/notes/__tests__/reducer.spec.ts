@@ -2,6 +2,7 @@ import {
   getNotesByContactFailed,
   getNotesByContactFetched,
   getNotesByContactSuccess,
+  updateNote,
 } from '../actions';
 import {getByContactReducer, notesReducer} from '../reducer';
 // import * as types from '../types';
@@ -101,6 +102,21 @@ describe('Redux', () => {
           expect(state).toEqual({
             [notes[0].id]: notes[0],
             [notes[1].id]: notes[1],
+          });
+        });
+
+        it('should handle update', () => {
+          const note1 = {id: 1, body: 'a'};
+          const note2 = {id: 2, body: 'b'};
+          const notes = {1: note1, 2: note2};
+          let state = notesReducer(notes as any, {} as any);
+
+          const updatedNote1 = {...note1, created_at: 'plouf'};
+          state = notesReducer(notes as any, updateNote(updatedNote1 as any));
+
+          expect(state).toEqual({
+            [note1.id]: updatedNote1,
+            [note2.id]: note2,
           });
         });
       });

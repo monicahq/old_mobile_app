@@ -2,32 +2,25 @@
 
 exports[`Components Navbar Android should renders correctly 1`] = `
 <IconToolbarAndroid
-  actions={
-    Array [
-      Object {
-        "iconName": "close",
-        "iconSize": 30,
-        "show": "always",
-        "title": "Close",
-      },
-    ]
-  }
+  actions={Array []}
   iconSize={24}
-  logo={1}
+  navIconName="arrow-back"
   onActionSelected={[Function]}
+  onIconClicked={[MockFunction]}
   style={
     Object {
       "backgroundColor": "#355974",
       "height": 56,
     }
   }
-  title="  My title"
+  title="My title"
   titleColor="white"
 />
 `;
 
 exports[`Components Navbar Android should renders correctly 2`] = `
 <IconToolbarAndroid
+  actions={Array []}
   iconSize={24}
   logo={1}
   onActionSelected={[Function]}

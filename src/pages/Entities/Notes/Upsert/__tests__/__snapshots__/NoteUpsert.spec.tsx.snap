@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages Notes should renders correctly 1`] = `
+<Component
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Navbar
+    onBack={[MockFunction]}
+    rightAction={[Function]}
+    rightIcon="done"
+    rightTitle="Done"
+    title="Edit a note"
+  />
+  <ScrollView
+    keyboardDismissMode="on-drag"
+  >
+    <Component
+      style={
+        Object {
+          "backgroundColor": "white",
+          "borderBottomWidth": 0.5,
+          "borderColor": "#E2E4E5",
+        }
+      }
+    >
+      <[object Object]
+        note={
+          Object {
+            "body": "c",
+          }
+        }
+        onSuccess={[Function]}
+      />
+    </Component>
+  </ScrollView>
+</Component>
+`;

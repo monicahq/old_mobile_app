@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components FormListItem should renders correctly 1 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "borderBottomWidth": 0.5,
+        "borderColor": "#b5b5b5",
+        "paddingHorizontal": 15,
+        "paddingVertical": 15,
+        "width": "100%",
+      },
+      null,
+    ]
+  }
+/>
+`;
+
+exports[`Components FormListItem should renders correctly 2 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "borderBottomWidth": 0.5,
+        "borderColor": "#b5b5b5",
+        "paddingHorizontal": 15,
+        "paddingVertical": 15,
+        "width": "100%",
+      },
+      Object {
+        "borderBottomWidth": 0,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Components FormListItem should renders correctly 3 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "borderBottomWidth": 0.5,
+        "borderColor": "#b5b5b5",
+        "paddingHorizontal": 15,
+        "paddingVertical": 15,
+        "width": "100%",
+      },
+      null,
+    ]
+  }
+>
+  <Component />
+</Component>
+`;
+
+exports[`Components FormListItem should renders correctly 4 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "borderBottomWidth": 0.5,
+        "borderColor": "#b5b5b5",
+        "paddingHorizontal": 15,
+        "paddingVertical": 15,
+        "width": "100%",
+      },
+      Object {
+        "borderBottomWidth": 0,
+      },
+    ]
+  }
+>
+  <Component />
+</Component>
+`;
