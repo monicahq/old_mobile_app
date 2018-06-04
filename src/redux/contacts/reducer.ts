@@ -166,6 +166,36 @@ export const contactsReducer = (
           ],
         },
       };
+
+    case noteTypes.ADD_NOTE:
+      contactId = action.payload.contact.id;
+      return {
+        ...state,
+        [contactId]: {
+          ...state[contactId],
+          statistics: {
+            ...state[contactId].statistics,
+            number_of_notes: state[contactId].statistics.number_of_notes + 1,
+          },
+          notes: [action.payload.id, ...(state[contactId].notes || [])],
+        },
+      };
+
+    case noteTypes.UPDATE_NOTE_ID:
+      contactId = Object.keys(state).find(
+        cId =>
+          state[cId].notes &&
+          state[cId].notes.indexOf(action.payload.noteId) !== -1
+      );
+      const notes = [...state[contactId].notes];
+      notes[notes.indexOf(action.payload.noteId)] = action.payload.newId;
+      return {
+        ...state,
+        [contactId]: {
+          ...state[contactId],
+          notes,
+        },
+      };
   }
 
   return state;

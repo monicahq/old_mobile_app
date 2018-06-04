@@ -9,7 +9,7 @@ exports[`Components Navbar Android should renders correctly 1`] = `
   onIconClicked={[MockFunction]}
   style={
     Object {
-      "backgroundColor": "#355974",
+      "backgroundColor": "#325776",
       "height": 56,
     }
   }
@@ -26,7 +26,7 @@ exports[`Components Navbar Android should renders correctly 2`] = `
   onActionSelected={[Function]}
   style={
     Object {
-      "backgroundColor": "#355974",
+      "backgroundColor": "#325776",
       "height": 56,
     }
   }

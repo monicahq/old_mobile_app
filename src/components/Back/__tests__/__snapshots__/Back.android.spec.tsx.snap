@@ -7,13 +7,13 @@ exports[`Components Back Android should renders correctly 1`] = `
   <Icon
     allowFontScaling={false}
     color="black"
-    name="close"
-    size={38}
+    name="arrow-back"
+    size={35}
     style={
       Object {
+        "left": 8,
         "position": "absolute",
-        "right": 8,
-        "top": 8,
+        "top": 16,
       }
     }
   />

@@ -1,9 +1,9 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
-  header: {
-    marginVertical: 10,
+  leftButton: {
     flexDirection: 'row',
-    paddingHorizontal: 5,
+    alignItems: 'center',
+    paddingLeft: 12,
   },
 });

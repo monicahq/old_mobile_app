@@ -1,3 +1,4 @@
+import {NavbarIOSBack} from '@components';
 import React, {PureComponent} from 'react';
 import {Image} from 'react-native';
 import NavigationBar from 'react-native-navbar';
@@ -13,12 +14,7 @@ export class Navbar extends PureComponent<INavbarProps, {}> {
     return (
       <NavigationBar
         style={styles.navbar}
-        leftButton={
-          <Image
-            source={require('@assets/logo.png')}
-            style={styles.navbarLogo}
-          />
-        }
+        leftButton={this.getLeftButton()}
         title={
           <SearchBar
             placeholder={I18n.t('contacts:search')}
@@ -34,6 +30,18 @@ export class Navbar extends PureComponent<INavbarProps, {}> {
         tintColor={navbarColor}
         statusBar={statusBarLightContent}
       />
+    );
+  }
+
+  private getLeftButton() {
+    const {onBack} = this.props;
+
+    if (onBack) {
+      return <NavbarIOSBack onPress={onBack} />;
+    }
+
+    return (
+      <Image source={require('@assets/logo.png')} style={styles.navbarLogo} />
     );
   }
 }

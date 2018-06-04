@@ -7,7 +7,7 @@ describe('Pages', () => {
   describe('Contacts', () => {
     const getContacts = jest.fn();
     const searchContacts = jest.fn();
-    const navigateToContact = jest.fn();
+    const onPress = jest.fn();
 
     it('should not have a componentWillReceiveProps method', () => {
       const tree = shallow(
@@ -17,7 +17,7 @@ describe('Pages', () => {
           contacts={[]}
           isFetching={true}
           isSearching={false}
-          navigateToContact={navigateToContact}
+          onPress={onPress}
           count={0}
         />
       );
@@ -34,7 +34,7 @@ describe('Pages', () => {
               contacts={[]}
               isFetching={true}
               isSearching={false}
-              navigateToContact={navigateToContact}
+              onPress={onPress}
               count={0}
             />
           )
@@ -53,7 +53,7 @@ describe('Pages', () => {
               count={0}
               isFetching={false}
               isSearching={false}
-              navigateToContact={navigateToContact}
+              onPress={onPress}
             />
           )
         )
@@ -84,7 +84,7 @@ describe('Pages', () => {
               count={2}
               isFetching={false}
               isSearching={false}
-              navigateToContact={navigateToContact}
+              onPress={onPress}
             />
           )
         )
@@ -102,7 +102,7 @@ describe('Pages', () => {
               count={30}
               isFetching={true}
               isSearching={false}
-              navigateToContact={navigateToContact}
+              onPress={onPress}
             />
           )
         )

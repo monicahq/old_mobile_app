@@ -30,4 +30,8 @@ export const contacts = {
     contact: 'Contact',
     none: 'No contact information',
   },
+
+  chooser: {
+    noContact: 'No contact',
+  },
 };

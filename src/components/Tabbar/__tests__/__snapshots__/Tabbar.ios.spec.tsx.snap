@@ -53,6 +53,44 @@ exports[`Components Tabbar should renders correctly 1`] = `
     </Component>
   </TouchableWithoutFeedback>
   <TouchableWithoutFeedback
+    key="Add"
+    onPress={[Function]}
+  >
+    <Component
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="plus-circled"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Add
+      </Text>
+    </Component>
+  </TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
     key="Settings"
     onPress={[Function]}
   >
@@ -148,6 +186,44 @@ exports[`Components Tabbar should renders correctly 2`] = `
     </Component>
   </TouchableWithoutFeedback>
   <TouchableWithoutFeedback
+    key="Add"
+    onPress={[Function]}
+  >
+    <Component
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="plus-circled"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Add
+      </Text>
+    </Component>
+  </TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
     key="Settings"
     onPress={[Function]}
   >
@@ -239,6 +315,44 @@ exports[`Components Tabbar should renders correctly 3`] = `
         }
       >
         Contacts
+      </Text>
+    </Component>
+  </TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    key="Add"
+    onPress={[Function]}
+  >
+    <Component
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 4,
+        }
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="#8d8d8d"
+        name="plus-circled"
+        size={25}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#8d8d8d",
+              "fontSize": 10,
+            },
+            undefined,
+          ]
+        }
+      >
+        Add
       </Text>
     </Component>
   </TouchableWithoutFeedback>

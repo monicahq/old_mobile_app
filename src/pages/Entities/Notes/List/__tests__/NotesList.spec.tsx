@@ -8,11 +8,13 @@ describe('Pages', () => {
     let pop;
     let getNotesByContact;
     let navigateToNote;
+    let navigateToAddNote;
 
     beforeEach(() => {
       pop = jest.fn();
       getNotesByContact = jest.fn();
       navigateToNote = jest.fn();
+      navigateToAddNote = jest.fn();
     });
 
     it('should renders correctly without notes and fetching', () => {
@@ -21,6 +23,7 @@ describe('Pages', () => {
         <NotesList
           pop={pop}
           navigateToNote={navigateToNote}
+          navigateToAddNote={navigateToAddNote}
           getNotesByContact={getNotesByContact}
           isFetching={true}
           notes={notes}
@@ -35,6 +38,7 @@ describe('Pages', () => {
         <NotesList
           pop={pop}
           navigateToNote={navigateToNote}
+          navigateToAddNote={navigateToAddNote}
           getNotesByContact={getNotesByContact}
           isFetching={false}
           notes={notes}
@@ -49,6 +53,7 @@ describe('Pages', () => {
         <NotesList
           pop={pop}
           navigateToNote={navigateToNote}
+          navigateToAddNote={navigateToAddNote}
           getNotesByContact={getNotesByContact}
           isFetching={true}
           notes={notes as any}
@@ -69,6 +74,7 @@ describe('Pages', () => {
         <NotesList
           pop={pop}
           navigateToNote={navigateToNote}
+          navigateToAddNote={navigateToAddNote}
           getNotesByContact={getNotesByContact}
           isFetching={false}
           notes={notes as any}
@@ -92,6 +98,7 @@ describe('Pages', () => {
         <NotesList
           pop={pop}
           navigateToNote={navigateToNote}
+          navigateToAddNote={navigateToAddNote}
           getNotesByContact={getNotesByContact}
           isFetching={true}
           notes={notes as any}
@@ -109,6 +116,7 @@ describe('Pages', () => {
         <NotesList
           pop={pop}
           navigateToNote={navigateToNote}
+          navigateToAddNote={navigateToAddNote}
           getNotesByContact={getNotesByContact}
           isFetching={false}
           notes={notes as any}
@@ -123,6 +131,7 @@ describe('Pages', () => {
         <NotesList
           pop={pop}
           navigateToNote={navigateToNote}
+          navigateToAddNote={navigateToAddNote}
           getNotesByContact={getNotesByContact}
           isFetching={false}
           notes={notes as any}

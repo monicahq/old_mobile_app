@@ -24,6 +24,9 @@ exports[`Pages Notes should renders correctly with notes and fetching 1`] = `
 >
   <Navbar
     onBack={[MockFunction]}
+    rightAction={[MockFunction]}
+    rightIcon="add"
+    rightTitle="Add"
     title="Notes"
   />
   <FlatList
@@ -119,6 +122,9 @@ exports[`Pages Notes should renders correctly with notes and fetching 3`] = `
 >
   <Navbar
     onBack={[MockFunction]}
+    rightAction={[MockFunction]}
+    rightIcon="add"
+    rightTitle="Add"
     title="Notes"
   />
   <FlatList
@@ -263,6 +269,9 @@ exports[`Pages Notes should renders correctly without notes and fetching 1`] = `
 >
   <Navbar
     onBack={[MockFunction]}
+    rightAction={[MockFunction]}
+    rightIcon="add"
+    rightTitle="Add"
     title="Notes"
   />
   <FlatList
@@ -306,6 +315,9 @@ exports[`Pages Notes should renders correctly without notes and not fetching 1`]
 >
   <Navbar
     onBack={[MockFunction]}
+    rightAction={[MockFunction]}
+    rightIcon="add"
+    rightTitle="Add"
     title="Notes"
   />
   <EmptyActivity

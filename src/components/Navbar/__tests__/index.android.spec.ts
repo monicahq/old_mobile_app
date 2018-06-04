@@ -8,6 +8,7 @@ jest.mock('react-native', () => ({
     OS: 'android',
   },
 }));
+jest.mock('react-native-vector-icons/MaterialIcons');
 
 describe('Components', () => {
   describe('Navbar Index', () => {

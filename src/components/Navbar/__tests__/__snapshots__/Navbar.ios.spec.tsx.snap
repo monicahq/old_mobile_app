@@ -4,32 +4,9 @@ exports[`Components Navbar IOS should renders correctly 1`] = `
 <NavigationBar
   containerStyle={Object {}}
   leftButton={
-    <TouchableOpacity
-      activeOpacity={0.2}
-      hitSlop={
-        Object {
-          "bottom": 15,
-          "left": 15,
-          "right": 15,
-          "top": 15,
-        }
-      }
+    <NavbarIOSBack
       onPress={[MockFunction]}
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "paddingLeft": 12,
-        }
-      }
-    >
-      <Icon
-        allowFontScaling={false}
-        color="white"
-        name="ios-arrow-back"
-        size={30}
-      />
-    </TouchableOpacity>
+    />
   }
   rightButton={null}
   statusBar={
@@ -42,7 +19,7 @@ exports[`Components Navbar IOS should renders correctly 1`] = `
       "marginTop": 0,
     }
   }
-  tintColor="#355974"
+  tintColor="#325776"
   title={
     Object {
       "tintColor": "white",
@@ -67,7 +44,7 @@ exports[`Components Navbar IOS should renders correctly 2`] = `
       "marginTop": 0,
     }
   }
-  tintColor="#355974"
+  tintColor="#325776"
   title={
     Object {
       "tintColor": "white",
@@ -92,7 +69,7 @@ exports[`Components Navbar IOS should renders correctly 3`] = `
       "marginTop": 0,
     }
   }
-  tintColor="#355974"
+  tintColor="#325776"
   title={<Component />}
 />
 `;

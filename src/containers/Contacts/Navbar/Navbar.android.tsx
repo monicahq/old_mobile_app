@@ -32,11 +32,15 @@ export class Navbar extends PureComponent<INavbarProps, {}> {
     this.searchBar = ref;
   };
   public render() {
+    const {onBack} = this.props;
+    const title = I18n.t('contacts:contacts');
     return [
       <Icon.ToolbarAndroid
-        logo={require('@assets/logo.png')}
         key={0}
-        title={'  ' + I18n.t('contacts:contacts')}
+        logo={!onBack ? require('@assets/logo.png') : undefined}
+        navIconName={onBack && 'arrow-back'}
+        onIconClicked={onBack}
+        title={onBack ? title : `  ${title}`}
         titleColor="white"
         onActionSelected={this.onActionSelected}
         style={commonStyles.toolbarAndroid}

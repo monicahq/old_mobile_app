@@ -13,6 +13,7 @@ import {styles} from './NotesList.styles';
 interface INotesListProps {
   pop: IPopAction;
   getNotesByContact: () => void;
+  navigateToAddNote: () => void;
   navigateToNote: (noteId) => any;
   notes: INote[];
   isFetching: boolean;
@@ -62,11 +63,23 @@ export class NotesList extends PureComponent<INotesListProps, {}> {
   };
 
   public render() {
-    const {pop, notes, getNotesByContact, isFetching} = this.props;
+    const {
+      pop,
+      notes,
+      getNotesByContact,
+      isFetching,
+      navigateToAddNote,
+    } = this.props;
 
     return (
       <View style={commonStyles.flex}>
-        <Navbar title={I18n.t('notes:notes')} onBack={pop} />
+        <Navbar
+          title={I18n.t('notes:notes')}
+          onBack={pop}
+          rightAction={navigateToAddNote}
+          rightIcon="add"
+          rightTitle={I18n.t('common:add')}
+        />
         {isFetching || notes.length ? (
           <FlatList
             data={notes}

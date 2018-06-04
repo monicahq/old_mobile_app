@@ -22,10 +22,12 @@ export const notesReducer = (
   state: INotesState = {},
   action: IRootAction
 ): INotesState => {
+  let notes;
+
   switch (action.type) {
     // GET ALL SUCCESS
     case types.GET_NOTES_BY_CONTACT_SUCCESS:
-      const notes = {...state};
+      notes = {...state};
       action.payload.notes.forEach(item => {
         if (!notes[item.id]) {
           notes[item.id] = item;
@@ -34,11 +36,32 @@ export const notesReducer = (
       return notes;
     // UPDATE NOTE
     case types.UPDATE_NOTE:
-      const notesFromUpdate = {...state};
-      notesFromUpdate[action.payload.id] = {
+      notes = {...state};
+      notes[action.payload.id] = {
         ...action.payload,
       };
-      return notesFromUpdate;
+      return notes;
+    // ADD NOTE
+    case types.ADD_NOTE:
+      notes = {...state};
+      notes[action.payload.id] = {
+        ...action.payload,
+      };
+      return notes;
+    // UPDATE NOTES ID
+    case types.UPDATE_NOTE_ID:
+      notes = {...state};
+      notes[action.payload.newId] = {
+        ...notes[action.payload.noteId],
+        id: action.payload.newId,
+      };
+      notes[action.payload.noteId] = undefined;
+      return notes;
+    // DELETE NOTE
+    case types.DELETE_NOTE:
+      notes = {...state};
+      notes[action.payload.id || action.payload.note.id] = undefined;
+      return notes;
   }
 
   return state;

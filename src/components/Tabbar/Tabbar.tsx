@@ -27,10 +27,10 @@ const routes = [
     routeName: 'Contacts',
     icon: 'users',
   },
-  // {
-  //   name: I18n.t('common:add'),
-  //   icon: 'plus-circled',
-  // },
+  {
+    name: I18n.t('common:add'),
+    icon: 'plus-circled',
+  },
   // {
   //   name: I18n.t('common:journal'),
   //   routeName: 'Journal',

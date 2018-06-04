@@ -3,15 +3,17 @@ import {Action} from 'redux';
 
 import {INote, IRootState} from '@models';
 import {pop} from '@navigator/NavigationService';
-import {updateNote} from '@redux/notes';
+import {postNote, updateNote} from '@redux/notes';
 import {NoteUpsert} from './NoteUpsert';
 
 export const mapStateToProps = (state: IRootState, {navigation}) => {
-  const {contactId, noteId} = navigation.state.params;
+  const params = navigation.state.params || {};
+  const {contactId, noteId} = params;
   const note = state.notes[noteId];
+  const contact = state.contacts[contactId];
 
   return {
-    contactId,
+    contact,
     note,
   };
 };
@@ -22,6 +24,7 @@ export const mapDispatchToProps = (
 ) => ({
   pop,
   updateNote: (note: INote) => dispatch(updateNote(note)),
+  postNote: (note: INote) => dispatch(postNote(note)),
 });
 
 export const NoteUpsertScreen = connect(
