@@ -1,3 +1,18 @@
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/monicahq/chandler/compare/0.5.1...0.6.0) (2018-06-04)
+
+
+### Bug Fixes
+
+* validation of a local network url ([#271](https://github.com/monicahq/chandler/issues/271)) ([bf4280a](https://github.com/monicahq/chandler/commit/bf4280a))
+
+### Features
+
+* add the ability to add notes ([#265](https://github.com/monicahq/chandler/issues/265)) ([49f68e3](https://github.com/monicahq/chandler/commit/49f68e3))
+* add the ability to edit a note ([#252](https://github.com/monicahq/chandler/issues/252)) ([2f5126f](https://github.com/monicahq/chandler/commit/2f5126f))
+
+
+
 <a name="0.5.1"></a>
 ## [0.5.1](https://github.com/monicahq/chandler/compare/0.5.0...0.5.1) (2018-05-30)
 

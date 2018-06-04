@@ -12,13 +12,24 @@
 default_platform(:android)
 
 platform :android do
-  desc "Submit a new Beta Build to Android Play store"
+  desc "Submit a new Alpha Build to Android Play store"
   lane :alpha do
     increment_version_code
     gradle(task: "assembleRelease")
 
     supply(
       track: "alpha",
+      apk: "#{lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH]}"
+    )
+  end
+
+  desc "Submit a new Beta Build to Android Play store"
+  lane :beta do
+    increment_version_code
+    gradle(task: "assembleRelease")
+
+    supply(
+      track: "beta",
       apk: "#{lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH]}"
     )
   end
