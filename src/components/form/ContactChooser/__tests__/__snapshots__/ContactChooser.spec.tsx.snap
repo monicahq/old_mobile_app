@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components ContactChooser should renders correctly 1`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 30,
+    }
+  }
+>
+  <ContactAvatar
+    contact={
+      Object {
+        "first_name": "plouf",
+        "last_name": "nathie",
+      }
+    }
+    key="0"
+    size={40}
+  />
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    key="10"
+    style={
+      Object {
+        "flex": 1,
+        "marginLeft": 10,
+      }
+    }
+  >
+    plouf nathie
+  </Text>
+  <Touchable
+    onPress={[Function]}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#325776",
+        }
+      }
+    >
+      Edit
+    </Text>
+  </Touchable>
+</Component>
+`;
+
+exports[`Components ContactChooser should renders with an error 1`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 30,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "height": 30,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      No contact
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "red",
+        }
+      }
+      testID="contact-chooser-error-undefined"
+    >
+       - 
+      dqwdqw
+    </Text>
+  </Component>
+  <Touchable
+    onPress={[Function]}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#325776",
+        }
+      }
+    >
+      Edit
+    </Text>
+  </Touchable>
+</Component>
+`;
+
+exports[`Components ContactChooser should renders without contact 1`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 30,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "height": 30,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      No contact
+    </Text>
+  </Component>
+  <Touchable
+    onPress={[Function]}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#325776",
+        }
+      }
+    >
+      Edit
+    </Text>
+  </Touchable>
+</Component>
+`;

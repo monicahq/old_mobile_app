@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages Contact / Meet should renders correctly 1`] = `
+<Component
+  style={
+    Object {
+      "marginTop": 5,
+    }
+  }
+>
+  <ListItem
+    key="0"
+    lastItem={false}
+    title="12/17/1991"
+  />
+  <ListItem
+    key="1"
+    lastItem={true}
+    title="test"
+  />
+</Component>
+`;

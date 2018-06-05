@@ -23,6 +23,14 @@ module.exports = {
   collectCoverageFrom: [
     "src/**/*.{js,jsx,ts,tsx}"
   ],
+  coveragePathIgnorePatterns : [
+    "<rootDir>/node_modules/",
+    "<rootDir>/src/redux/configureStore.ts",
+    "<rootDir>/src/redux/rootReducer.ts",
+    "<rootDir>/src/models/",
+    "<rootDir>/src/navigator/",
+    "<rootDir>/src/theme/",
+  ],
   moduleNameMapper: {
     "@src/(.*)": "<rootDir>/src/$1",
     "^image![a-zA-Z0-9$_-]+$": "GlobalImageStub",

@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components ListItem should renders correctly with a subtitle 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "paddingVertical": 10,
+      },
+      Object {
+        "borderBottomColor": "#96A5B3",
+        "borderBottomWidth": 0.5,
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    My title
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#96A5B3",
+        "marginLeft": 2,
+      }
+    }
+  >
+    My subtitle
+  </Text>
+</Component>
+`;
+
+exports[`Components ListItem should renders correctly with a subtitle and last 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "paddingVertical": 10,
+      },
+      null,
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    My title
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#96A5B3",
+        "marginLeft": 2,
+      }
+    }
+  >
+    My subtitle
+  </Text>
+</Component>
+`;
+
+exports[`Components ListItem should renders correctly with a title 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "paddingVertical": 10,
+      },
+      Object {
+        "borderBottomColor": "#96A5B3",
+        "borderBottomWidth": 0.5,
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    test
+  </Text>
+</Component>
+`;
+
+exports[`Components ListItem should renders correctly with an info right 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "paddingVertical": 10,
+      },
+      Object {
+        "borderBottomColor": "#96A5B3",
+        "borderBottomWidth": 0.5,
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    My title
+  </Text>
+  <Component
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  />
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#96A5B3",
+        "marginLeft": 2,
+      }
+    }
+  >
+    Info right
+  </Text>
+</Component>
+`;

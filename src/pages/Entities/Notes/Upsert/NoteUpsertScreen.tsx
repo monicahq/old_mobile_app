@@ -18,10 +18,7 @@ export const mapStateToProps = (state: IRootState, {navigation}) => {
   };
 };
 
-export const mapDispatchToProps = (
-  dispatch: Dispatch<Action>,
-  {navigation}
-) => ({
+export const mapDispatchToProps = (dispatch: Dispatch<Action>) => ({
   pop,
   updateNote: (note: INote) => dispatch(updateNote(note)),
   postNote: (note: INote) => dispatch(postNote(note)),

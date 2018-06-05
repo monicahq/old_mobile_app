@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Navbar Contacts IOS should renders correctly 1`] = `
+<NavigationBar
+  containerStyle={Object {}}
+  leftButton={
+    <Image
+      source={1}
+      style={
+        Object {
+          "marginLeft": 8,
+          "marginTop": 7,
+        }
+      }
+    />
+  }
+  rightButton={null}
+  statusBar={
+    Object {
+      "style": "light-content",
+    }
+  }
+  style={
+    Object {
+      "marginTop": 0,
+    }
+  }
+  tintColor="#325776"
+  title={
+    <SearchBar
+      autoCapitalize="words"
+      autoCorrect={false}
+      barStyle="default"
+      barTintColor={null}
+      cancelButtonText="Cancel"
+      editable={true}
+      enablesReturnKeyAutomatically={true}
+      hideBackground={true}
+      keyboardAppearance="default"
+      keyboardType="default"
+      onBlur={[Function]}
+      onCancelButtonPress={[Function]}
+      onChange={[Function]}
+      onChangeText={[MockFunction]}
+      onFocus={[Function]}
+      onSearchButtonPress={[Function]}
+      placeholder="Search your contacts"
+      returnKeyType="search"
+      searchBarStyle="minimal"
+      showsCancelButton={false}
+      showsCancelButtonWhileEditing={false}
+      spellCheck={false}
+      style={
+        Object {
+          "height": 35,
+          "marginTop": 4,
+          "width": 245,
+        }
+      }
+      text=""
+      textColor="#ACACAC"
+      textFieldBackgroundColor={null}
+      tintColor={null}
+    />
+  }
+/>
+`;
+
+exports[`Components Navbar Contacts IOS should renders correctly with onBack 1`] = `
+<NavigationBar
+  containerStyle={Object {}}
+  leftButton={
+    <NavbarIOSBack
+      onPress={[MockFunction]}
+    />
+  }
+  rightButton={null}
+  statusBar={
+    Object {
+      "style": "light-content",
+    }
+  }
+  style={
+    Object {
+      "marginTop": 0,
+    }
+  }
+  tintColor="#325776"
+  title={
+    <SearchBar
+      autoCapitalize="words"
+      autoCorrect={false}
+      barStyle="default"
+      barTintColor={null}
+      cancelButtonText="Cancel"
+      editable={true}
+      enablesReturnKeyAutomatically={true}
+      hideBackground={true}
+      keyboardAppearance="default"
+      keyboardType="default"
+      onBlur={[Function]}
+      onCancelButtonPress={[Function]}
+      onChange={[Function]}
+      onChangeText={[MockFunction]}
+      onFocus={[Function]}
+      onSearchButtonPress={[Function]}
+      placeholder="Search your contacts"
+      returnKeyType="search"
+      searchBarStyle="minimal"
+      showsCancelButton={false}
+      showsCancelButtonWhileEditing={false}
+      spellCheck={false}
+      style={
+        Object {
+          "height": 35,
+          "marginTop": 4,
+          "width": 245,
+        }
+      }
+      text=""
+      textColor="#ACACAC"
+      textFieldBackgroundColor={null}
+      tintColor={null}
+    />
+  }
+/>
+`;

@@ -16,6 +16,11 @@ describe('Utils', () => {
         };
         expect(getLabel(gift as any)).toBe('idea');
       });
+
+      it('should return undefined in any other case', () => {
+        const gift = {};
+        expect(getLabel(gift as any)).toBe(undefined);
+      });
     });
   });
 });

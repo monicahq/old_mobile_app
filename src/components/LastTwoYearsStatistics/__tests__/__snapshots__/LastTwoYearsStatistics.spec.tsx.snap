@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components LastTwoYearsStatistics should renders correctly 1`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "grey",
+      "borderRadius": 3,
+      "borderWidth": 0.5,
+      "flexDirection": "row",
+      "marginVertical": 15,
+    }
+  }
+>
+  <Image
+    source={3}
+    style={
+      Object {
+        "marginHorizontal": 10,
+      }
+    }
+  />
+  <Component
+    style={
+      Object {
+        "flex": 1,
+        "paddingHorizontal": 10,
+        "paddingVertical": 7,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontSize": 25,
+        }
+      }
+    >
+      1
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#355974",
+        }
+      }
+    >
+      title1
+    </Text>
+  </Component>
+  <Component
+    style={
+      Object {
+        "borderColor": "grey",
+        "borderLeftWidth": 0.5,
+        "flex": 1,
+        "paddingHorizontal": 10,
+        "paddingVertical": 7,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontSize": 25,
+        }
+      }
+    >
+      3
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#355974",
+        }
+      }
+    >
+      title2
+    </Text>
+  </Component>
+</Component>
+`;

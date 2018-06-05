@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components NavbarIOSBack should renders correctly 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  hitSlop={
+    Object {
+      "bottom": 15,
+      "left": 15,
+      "right": 15,
+      "top": 15,
+    }
+  }
+  onPress={[MockFunction]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "paddingLeft": 12,
+    }
+  }
+>
+  <Icon
+    allowFontScaling={false}
+    color="white"
+    name="ios-arrow-back"
+    size={30}
+  />
+</TouchableOpacity>
+`;

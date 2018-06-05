@@ -1,10 +1,13 @@
+import {IAddress} from '@models';
 import moment from 'moment';
 import {
+  getAddressLabel,
   getAge,
   getAvatarColor,
   getAvatarUrl,
   getInitials,
   getLastUpdatedDate,
+  getName,
   getRelationships,
 } from '../contacts';
 
@@ -24,6 +27,16 @@ describe('Utils', () => {
       });
     });
 
+    describe('getName', () => {
+      it('should return the full Name', () => {
+        expect(getName({first_name: 'Theo', last_name: 'Mathieu'} as any)).toBe(
+          'Theo Mathieu'
+        );
+
+        expect(getName({first_name: 'Theo'} as any)).toBe('Theo');
+      });
+    });
+
     describe('getAvatarUrl', () => {
       it('should work', () => {
         const url = 'test';
@@ -33,6 +46,15 @@ describe('Utils', () => {
           },
         };
         expect(getAvatarUrl(contact as any)).toBe(url);
+      });
+
+      it('should return undefined if the url is undefined', () => {
+        const contact = {
+          information: {
+            avatar: {},
+          },
+        };
+        expect(getAvatarUrl(contact as any)).toBeUndefined();
       });
     });
 
@@ -45,6 +67,15 @@ describe('Utils', () => {
           },
         };
         expect(getAvatarColor(contact as any)).toBe(color);
+      });
+
+      it('should return undefined if the default_avatar_color is undefined', () => {
+        const contact = {
+          information: {
+            avatar: {},
+          },
+        };
+        expect(getAvatarColor(contact as any)).toBeUndefined();
       });
     });
 
@@ -154,6 +185,40 @@ describe('Utils', () => {
         // Base date is Feb 14, 2017
         expect(getAge(contact)).toBe(25);
       });
+    });
+  });
+
+  describe('getAddressLabel', () => {
+    let address: IAddress;
+    it('should return the address', () => {
+      address = {
+        street: 'street',
+      };
+      expect(getAddressLabel(address)).toBe('street');
+
+      address = {
+        street: 'street',
+        postal_code: 'postal',
+      };
+      expect(getAddressLabel(address)).toBe('street postal');
+
+      address = {
+        street: 'street',
+        postal_code: 'postal',
+        city: 'city',
+      };
+      expect(getAddressLabel(address)).toBe('street postal city');
+
+      address = {
+        street: 'street',
+        city: 'city',
+      };
+      expect(getAddressLabel(address)).toBe('street city');
+
+      address = {
+        city: 'city',
+      };
+      expect(getAddressLabel(address)).toBe('city');
     });
   });
 });
