@@ -65,15 +65,15 @@ interface IContactInformation {
 }
 
 export interface IAddress {
-  city: string;
-  country: {
+  city?: string;
+  country?: {
     id: string;
     name: string;
   };
-  name: string;
-  postal_code: string;
-  province: string;
-  street: string;
+  name?: string;
+  postal_code?: string;
+  province?: string;
+  street?: string;
 }
 
 export interface IContact {

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages Contact / Relationships should renders correctly 1`] = `
+<Component
+  style={
+    Object {
+      "marginTop": 5,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "marginVertical": 30,
+        "textAlign": "center",
+      }
+    }
+  >
+    No relashionship
+  </Text>
+</Component>
+`;

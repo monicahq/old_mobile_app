@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages Contact / ContactInfos should renders correctly 1`] = `
+Array [
+  <SegmentedControlTab
+    activeTabBadgeContainerStyle={Object {}}
+    activeTabBadgeStyle={Object {}}
+    activeTabStyle={
+      Object {
+        "backgroundColor": "#325776",
+      }
+    }
+    activeTabTextStyle={
+      Object {
+        "color": "white",
+      }
+    }
+    badges={
+      Array [
+        "",
+        "",
+        "",
+      ]
+    }
+    borderRadius={5}
+    key="0"
+    multiple={false}
+    onTabPress={[Function]}
+    selectedIndex={2}
+    selectedIndices={
+      Array [
+        0,
+      ]
+    }
+    tabBadgeContainerStyle={Object {}}
+    tabBadgeStyle={Object {}}
+    tabStyle={
+      Object {
+        "borderColor": "#325776",
+      }
+    }
+    tabTextStyle={
+      Object {
+        "color": "#325776",
+      }
+    }
+    tabsContainerStyle={Object {}}
+    values={
+      Array [
+        "Relations",
+        "How you met",
+        "Work info",
+        "Contact",
+      ]
+    }
+  />,
+  <Work
+    contact={
+      Object {
+        "addresses": Array [
+          Object {
+            "city": "Montreal",
+            "street": "5815 Park",
+          },
+        ],
+        "contactFields": Array [
+          Object {
+            "contact_field_type": Object {
+              "fontawesome_icon": "fa fa-facebook",
+              "name": "name",
+              "protocol": "http",
+              "type": "email",
+            },
+            "content": "test@gmail.com",
+          },
+        ],
+        "first_name": "Theo",
+        "id": 2,
+        "information": Object {
+          "avatar": Object {
+            "default_avatar_color": "blue",
+            "source": "external",
+            "url": "testurl",
+          },
+          "career": Object {
+            "company": "Google",
+            "job": "Developer",
+            "linkedin_profile_url": "http://mylinkedin",
+          },
+          "dates": Object {
+            "birthdate": Object {
+              "date": null,
+            },
+            "deceased_date": Object {
+              "date": null,
+            },
+          },
+          "how_you_met": Object {
+            "first_met_date": Object {
+              "date": "1991-12-17",
+            },
+            "first_met_through_contact": null,
+            "general_information": "test",
+          },
+          "relationships": Object {
+            "family": Object {
+              "contacts": Array [],
+              "total": 0,
+            },
+            "friend": Object {
+              "contacts": Array [],
+              "total": 0,
+            },
+            "love": Object {
+              "contacts": Array [],
+              "total": 0,
+            },
+            "work": Object {
+              "contacts": Array [],
+              "total": 0,
+            },
+          },
+        },
+        "last_name": "Mathieu",
+        "statistics": Object {
+          "number_of_activities": 2,
+          "number_of_calls": 3,
+          "number_of_debts": 4,
+          "number_of_gifts": 5,
+          "number_of_notes": 6,
+          "number_of_reminders": 9,
+          "number_of_tasks": 1,
+        },
+        "updated_at": "2018-12-17",
+      }
+    }
+    key="1"
+  />,
+]
+`;

@@ -1,8 +1,11 @@
 import {
+  addNote,
+  deleteNote,
   getNotesByContactFailed,
   getNotesByContactFetched,
   getNotesByContactSuccess,
   updateNote,
+  updateNoteId,
 } from '../actions';
 import {getByContactReducer, notesReducer} from '../reducer';
 // import * as types from '../types';
@@ -118,6 +121,49 @@ describe('Redux', () => {
             [note1.id]: updatedNote1,
             [note2.id]: note2,
           });
+        });
+      });
+
+      it('should handle add', () => {
+        const note1 = {id: 1, body: 'a'};
+        const note2 = {id: 2, body: 'b'};
+        const notes = {1: note1, 2: note2};
+        let state = notesReducer(notes as any, {} as any);
+
+        const note3 = {id: 3, body: 'c'};
+        state = notesReducer(notes as any, addNote(note3 as any));
+
+        expect(state).toEqual({
+          [note1.id]: note1,
+          [note2.id]: note2,
+          [note3.id]: note3,
+        });
+      });
+
+      it('should handle delete', () => {
+        const note1 = {id: 1, body: 'a'};
+        const note2 = {id: 2, body: 'b'};
+        const notes = {1: note1, 2: note2};
+        let state = notesReducer(notes as any, {} as any);
+
+        state = notesReducer(notes as any, deleteNote(note1 as any));
+
+        expect(state).toEqual({
+          [note2.id]: note2,
+        });
+      });
+
+      it('should handle updateNoteId', () => {
+        const note1 = {id: 1, body: 'a'};
+        const note2 = {id: 2, body: 'b'};
+        const notes = {1: note1, 2: note2};
+        let state = notesReducer(notes as any, {} as any);
+
+        state = notesReducer(notes as any, updateNoteId(1, 3));
+
+        expect(state).toEqual({
+          3: {...note1, id: 3},
+          [note2.id]: note2,
         });
       });
     });
