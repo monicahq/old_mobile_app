@@ -15,6 +15,8 @@
       "@utils": ["src/utils/index"],
       "@redux/*": ["src/redux/*"],
       "@navigator/*": ["src/navigator/*"],
+      "@db": ["src/db"],
+      "@db/*": ["src/db/*"],
       "@src/*": ["src/*"],
     },
     "importHelpers": true,

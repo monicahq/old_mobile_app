@@ -1,9 +1,8 @@
-import {IContact} from '@models';
-
 export interface INote {
-  id: number;
-  created_at: string;
+  _id: string;
   body: string;
-  contact: IContact;
+  contact_id: number;
   is_favorited: boolean;
+  created_at: string;
+  updated_at: string;
 }

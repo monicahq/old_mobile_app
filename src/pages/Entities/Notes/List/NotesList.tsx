@@ -12,19 +12,17 @@ import {styles} from './NotesList.styles';
 
 interface INotesListProps {
   pop: IPopAction;
-  getNotesByContact: () => void;
-  navigateToAddNote: () => void;
-  navigateToNote: (noteId) => any;
+  navigateToNote: (noteId?: string) => any;
   notes: INote[];
   isFetching: boolean;
 }
 
 export class NotesList extends PureComponent<INotesListProps, {}> {
-  public componentWillMount() {
-    this.props.getNotesByContact();
-  }
+  // public componentWillMount() {
+  //   this.props.getNotesByContact();
+  // }
 
-  public keyExtractor = (item, index) => String(item.id);
+  public keyExtractor = (item, index) => String(item._id);
 
   public renderFooter = () => {
     const {isFetching} = this.props;
@@ -43,7 +41,10 @@ export class NotesList extends PureComponent<INotesListProps, {}> {
     const note = notes[index];
 
     return (
-      <Touchable onPress={navigateToNote(note.id)} style={styles.noteContainer}>
+      <Touchable
+        onPress={navigateToNote(note._id)}
+        style={styles.noteContainer}
+      >
         <View style={{flexDirection: 'row'}}>
           <Text style={styles.date}>
             {moment(note.created_at).format('LL')}
@@ -63,20 +64,14 @@ export class NotesList extends PureComponent<INotesListProps, {}> {
   };
 
   public render() {
-    const {
-      pop,
-      notes,
-      getNotesByContact,
-      isFetching,
-      navigateToAddNote,
-    } = this.props;
+    const {pop, notes, isFetching, navigateToNote} = this.props;
 
     return (
       <View style={commonStyles.flex}>
         <Navbar
           title={I18n.t('notes:notes')}
           onBack={pop}
-          rightAction={navigateToAddNote}
+          rightAction={navigateToNote()}
           rightIcon="add"
           rightTitle={I18n.t('common:add')}
         />
@@ -86,8 +81,8 @@ export class NotesList extends PureComponent<INotesListProps, {}> {
             renderItem={this.renderItem}
             keyExtractor={this.keyExtractor}
             ListFooterComponent={this.renderFooter}
-            onEndReached={getNotesByContact}
-            onEndReachedThreshold={0.5}
+            // onEndReached={getNotesByContact}
+            // onEndReachedThreshold={0.5}
           />
         ) : (
           <EmptyActivity

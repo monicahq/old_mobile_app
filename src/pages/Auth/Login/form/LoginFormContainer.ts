@@ -1,4 +1,5 @@
 import {API} from '@api';
+import {Database} from '@db';
 import {I18n} from '@i18n';
 import {withFormik} from 'formik';
 import {LoginForm} from './LoginForm';
@@ -30,7 +31,7 @@ export const LoginFormContainer = withFormik<IProps, IValues>({
   mapPropsToValues: props => ({
     email: '',
     password: '',
-    url: __DEV__ ? 'https://staging.monicahq.com' : 'https://app.monicahq.com',
+    url: __DEV__ ? 'http://127.0.0.1:8080' : 'https://app.monicahq.com',
   }),
   validate,
   handleSubmit: async (
@@ -44,6 +45,7 @@ export const LoginFormContainer = withFormik<IProps, IValues>({
     try {
       const res = await API.User.login(email, password);
       if (res.access_token) {
+        Database.login(res.user, password, res.couchdbAddress);
         return props.onSuccess(res);
       }
       setStatus(I18n.t('auth:badCredentials'));

@@ -1,6 +1,7 @@
 import {AsyncStorage} from 'react-native';
 
 import {API} from '@api';
+import {Database} from '@db';
 import {tokenKey} from '@src/storage-keys';
 import * as actions from './actions';
 
@@ -16,6 +17,7 @@ export function setToken(token: string) {
 
 export function logout() {
   API.setToken(null);
+  Database.logout();
   // AsyncStorage.removeItem(userKey);
   AsyncStorage.removeItem(tokenKey);
   return actions.logout();
