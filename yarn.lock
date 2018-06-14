@@ -6165,9 +6165,9 @@ react-native-safe-area-view@^0.8.0:
   dependencies:
     hoist-non-react-statics "^2.3.1"
 
-react-native-search-bar@3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/react-native-search-bar/-/react-native-search-bar-3.4.1.tgz#01f38a0df81c25e60404721c488492eab6266f82"
+react-native-search-bar@3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/react-native-search-bar/-/react-native-search-bar-3.4.2.tgz#8606bb1d6b29a26dd5ee86cfae00f7253181736d"
   dependencies:
     prop-types "^15.5.10"
 
@@ -6184,9 +6184,9 @@ react-native-segmented-control-tab@3.2.2:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-splash-screen@3.0.7:
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/react-native-splash-screen/-/react-native-splash-screen-3.0.7.tgz#352e87ad79ab1136e0e678a37b75cac0375b325f"
+react-native-splash-screen@3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/react-native-splash-screen/-/react-native-splash-screen-3.0.9.tgz#5cdd026ae414d60cd86bcaa897bffacd16395bed"
 
 react-native-tab-view@^0.0.77:
   version "0.0.77"
@@ -6200,9 +6200,9 @@ react-native-tab-view@~0.0.78:
   dependencies:
     prop-types "^15.6.0"
 
-react-native-typescript-transformer@1.2.9:
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/react-native-typescript-transformer/-/react-native-typescript-transformer-1.2.9.tgz#a8724eee5d787c4f88da50cf2e091c53be2121ee"
+react-native-typescript-transformer@1.2.10:
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/react-native-typescript-transformer/-/react-native-typescript-transformer-1.2.10.tgz#6f76c1449028cdeafa184b533301ecd547367ed1"
   dependencies:
     chalk "^2.4.0"
     find-root "^1.1.0"
