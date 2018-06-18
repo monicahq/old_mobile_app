@@ -5,14 +5,29 @@ import {Text} from 'react-native';
 import {Button, TextInput} from '@components';
 import {I18n} from '@i18n';
 import {commonStyles} from '@theme';
+import OnePassword from 'react-native-onepassword';
 import {IProps, IValues} from './LoginForm.model';
+
+interface ILoginFormState {
+  onepasswordSupported: boolean;
+}
 
 export class LoginForm extends PureComponent<
   InjectedFormikProps<IProps, IValues>,
-  {}
+  ILoginFormState
 > {
+  public state = {
+    onepasswordSupported: false,
+  };
+
   public passwordTextInput = {};
   public urlTextInput = {};
+
+  public componentDidMount() {
+    OnePassword.isSupported().then(() => {
+      this.setState({onepasswordSupported: true});
+    });
+  }
 
   public setFieldValue = fieldName => text =>
     this.props.setFieldValue(fieldName, text);
@@ -23,6 +38,13 @@ export class LoginForm extends PureComponent<
     this.props.setFieldTouched('password');
 
   public focusField = inputName => () => this[inputName].focus();
+
+  public onFoundLogin = () => {
+    OnePassword.findLogin('app.monicahq.com').then(({username, password}) => {
+      this.setFieldValue('email')(username);
+      this.setFieldValue('password')(password);
+    });
+  };
 
   public getEmailField() {
     const {values, touched, errors} = this.props;
@@ -50,6 +72,11 @@ export class LoginForm extends PureComponent<
   public getPasswordField() {
     const {values, touched, errors} = this.props;
 
+    let onepasswordImage = null;
+    if (this.state.onepasswordSupported) {
+      onepasswordImage = require('../assets/onepassword-button.png');
+    }
+
     return (
       <TextInput
         id="password"
@@ -64,6 +91,8 @@ export class LoginForm extends PureComponent<
         value={values.password}
         touched={touched.password}
         error={I18n.t(errors.password)}
+        inlineImage={onepasswordImage}
+        inlineImageAction={this.onFoundLogin}
       />
     );
   }

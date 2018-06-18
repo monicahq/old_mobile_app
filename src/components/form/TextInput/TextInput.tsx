@@ -1,5 +1,7 @@
 import React, {PureComponent} from 'react';
 import {
+  Image,
+  ImageSourcePropType,
   Text,
   TextInput as RNTextInput,
   TextInputProps,
@@ -7,12 +9,16 @@ import {
 } from 'react-native';
 import {borderColor, styles} from './TextInput.styles';
 
+import {Touchable} from '@components/Touchable';
+
 interface ITextInputProps extends TextInputProps {
   id?: string;
   title: string;
   touched?: boolean;
   error?: string;
   onSubmitEditing?: (...args) => void;
+  inlineImage?: ImageSourcePropType;
+  inlineImageAction?: (...args) => void;
 }
 
 export class TextInput extends PureComponent<ITextInputProps> {
@@ -33,6 +39,10 @@ export class TextInput extends PureComponent<ITextInputProps> {
 
     const multilineTextStyle = props.multiline ? styles.titleMultine : null;
 
+    const inlineImage = (
+      <Image source={props.inlineImage} style={styles.textInputImage} />
+    );
+
     return [
       // TITLE + ERROR
       <View key={0} style={styles.title}>
@@ -51,16 +61,28 @@ export class TextInput extends PureComponent<ITextInputProps> {
           )}
       </View>,
       // TEXTINPUT
-      <RNTextInput
-        testID={`input-${id}`}
-        ref={this.textInputRef}
+      <View
         key={1}
-        style={styles.textInput}
-        autoCorrect={false}
-        autoCapitalize="none"
-        underlineColorAndroid={borderColor}
-        {...props}
-      />,
+        style={!props.multiline && [styles.flexRow, styles.textInput]}
+      >
+        <RNTextInput
+          testID={`input-${id}`}
+          ref={this.textInputRef}
+          style={[
+            styles.textInput,
+            !!props.inlineImage && styles.hasInlineImage,
+          ]}
+          autoCorrect={false}
+          autoCapitalize="none"
+          underlineColorAndroid={borderColor}
+          {...props}
+        />
+        {!!props.inlineImageAction ? (
+          <Touchable onPress={props.inlineImageAction}>{inlineImage}</Touchable>
+        ) : (
+          inlineImage
+        )}
+      </View>,
     ];
   }
 }
