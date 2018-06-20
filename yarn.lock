@@ -786,21 +786,21 @@ anymatch@^1.3.0:
     micromatch "^2.1.5"
     normalize-path "^2.0.0"
 
-appcenter-analytics@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/appcenter-analytics/-/appcenter-analytics-1.5.1.tgz#56b5c457c90cf7b9aa63ce1f1ff8dbc6004107cd"
+appcenter-analytics@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/appcenter-analytics/-/appcenter-analytics-1.6.0.tgz#c000e6b5fc12fafcd90f019e9321e30cf369e377"
   dependencies:
-    appcenter "1.5.1"
+    appcenter "1.6.0"
 
-appcenter-crashes@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/appcenter-crashes/-/appcenter-crashes-1.5.1.tgz#8240a6286565ffc27c4ed48b1eb0fa59144255e9"
+appcenter-crashes@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/appcenter-crashes/-/appcenter-crashes-1.6.0.tgz#de385b858c310a24a61d46e7efd234ce5cea0a94"
   dependencies:
-    appcenter "1.5.1"
+    appcenter "1.6.0"
 
-appcenter-link-scripts@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/appcenter-link-scripts/-/appcenter-link-scripts-1.5.1.tgz#8109952baa6f28a4753dfab8f99d1c896141354d"
+appcenter-link-scripts@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/appcenter-link-scripts/-/appcenter-link-scripts-1.6.0.tgz#75d7364de953661f43e3792f8d3cefeea0359254"
   dependencies:
     debug "^2.2.0"
     glob "^5.0.15"
@@ -810,11 +810,11 @@ appcenter-link-scripts@1.5.1:
     which "^1.2.11"
     xcode "^1.0.0"
 
-appcenter@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/appcenter/-/appcenter-1.5.1.tgz#2b8ac2f56f1babf4f04f9d096aea9e8ca1a67431"
+appcenter@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/appcenter/-/appcenter-1.6.0.tgz#07bbc5d20d8b48064ce3a359aac360b0d5e079e8"
   dependencies:
-    appcenter-link-scripts "1.5.1"
+    appcenter-link-scripts "1.6.0"
 
 append-transform@^0.4.0:
   version "0.4.0"
@@ -2537,9 +2537,9 @@ detox-server@^7.0.0:
     npmlog "^4.0.2"
     ws "^1.1.0"
 
-detox@7.4.0:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-7.4.0.tgz#b4be499907f887c9a8e21039a30181678599b35f"
+detox@7.4.3:
+  version "7.4.3"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-7.4.3.tgz#4fb574e72bf9233ab56d4deedda4d625273b1663"
   dependencies:
     child-process-promise "^2.2.0"
     commander "^2.15.1"
@@ -3672,9 +3672,9 @@ husky@0.14.3:
     normalize-path "^1.0.0"
     strip-indent "^2.0.0"
 
-i18next@11.3.2:
-  version "11.3.2"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-11.3.2.tgz#4a1a7bb14383ba6aed4abca139b03681fc96e023"
+i18next@11.3.3:
+  version "11.3.3"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-11.3.3.tgz#a6ca3c2a93237c94e242bda7df3411588ac37ea1"
 
 iconv-lite@0.4.19, iconv-lite@^0.4.17, iconv-lite@^0.4.8, iconv-lite@~0.4.13:
   version "0.4.19"
@@ -5972,6 +5972,13 @@ prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
+prop-types@^15.6.1:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
+  dependencies:
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
 proper-lockfile@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/proper-lockfile/-/proper-lockfile-3.0.2.tgz#d30b3b83ecb157e08fe0d411f2393bc384b77ad1"
@@ -6194,11 +6201,11 @@ react-native-tab-view@^0.0.77:
   dependencies:
     prop-types "^15.6.0"
 
-react-native-tab-view@~0.0.78:
-  version "0.0.78"
-  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.78.tgz#9b90730d89cbd34a03f0e0ab10e74ca7af945560"
+react-native-tab-view@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-1.0.2.tgz#66e0bc6d38a227ed2b212e3a256b7902f6ce02ed"
   dependencies:
-    prop-types "^15.6.0"
+    prop-types "^15.6.1"
 
 react-native-typescript-transformer@1.2.10:
   version "1.2.10"
@@ -6296,19 +6303,25 @@ react-navigation-deprecated-tab-navigator@1.3.0:
   dependencies:
     react-native-tab-view "^0.0.77"
 
-react-navigation-tabs@0.3.0:
+react-navigation-drawer@0.3.0:
   version "0.3.0"
-  resolved "https://registry.yarnpkg.com/react-navigation-tabs/-/react-navigation-tabs-0.3.0.tgz#b1fe7ef1c665dd8928fafcc8622616e220ae5efa"
+  resolved "https://registry.yarnpkg.com/react-navigation-drawer/-/react-navigation-drawer-0.3.0.tgz#641007213f0f1e1b55a0a4bb64d71df07b3e7208"
+  dependencies:
+    react-native-drawer-layout-polyfill "^1.3.2"
+
+react-navigation-tabs@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/react-navigation-tabs/-/react-navigation-tabs-0.5.1.tgz#ed33bce3a3e21b92646700de25bd94b8fc570371"
   dependencies:
     hoist-non-react-statics "^2.5.0"
-    prop-types "^15.6.0"
+    prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
     react-native-safe-area-view "^0.7.0"
-    react-native-tab-view "~0.0.78"
+    react-native-tab-view "^1.0.0"
 
-react-navigation@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-2.0.4.tgz#efc09de09799c2117a54002a6ea0e9b80e92828d"
+react-navigation@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-2.3.1.tgz#f0734ecc64a0af70395f889d9ffa8f610642eed5"
   dependencies:
     clamp "^1.0.1"
     create-react-context "^0.2.1"
@@ -6316,10 +6329,10 @@ react-navigation@2.0.4:
     path-to-regexp "^1.7.0"
     prop-types "^15.5.10"
     react-lifecycles-compat "^3"
-    react-native-drawer-layout-polyfill "^1.3.2"
     react-native-safe-area-view "^0.8.0"
     react-navigation-deprecated-tab-navigator "1.3.0"
-    react-navigation-tabs "0.3.0"
+    react-navigation-drawer "0.3.0"
+    react-navigation-tabs "0.5.1"
 
 react-proxy@^1.1.7:
   version "1.1.8"
