@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages Login should renders correctly 1`] = `
-<_class
+<KeyboardAwareScrollView
   contentContainerStyle={
     Object {
       "flex": 1,
@@ -75,5 +75,5 @@ exports[`Pages Login should renders correctly 1`] = `
       }
     />
   </Component>
-</_class>
+</KeyboardAwareScrollView>
 `;
