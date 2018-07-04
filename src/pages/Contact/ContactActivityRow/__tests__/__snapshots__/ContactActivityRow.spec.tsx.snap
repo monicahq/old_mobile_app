@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages Login should renders correctly 1`] = `
-<Component>
+<ForwardRef(View)>
   <Touchable
     onPress={[MockFunction]}
     style={
@@ -12,7 +12,7 @@ exports[`Pages Login should renders correctly 1`] = `
       }
     }
   >
-    <Image
+    <ForwardRef(Image)
       source={
         Object {
           "uri": "image.net",
@@ -25,28 +25,20 @@ exports[`Pages Login should renders correctly 1`] = `
         }
       }
     />
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "flex": 1,
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <ForwardRef(Text)>
         MY TITLE
-      </Text>
-    </Component>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+      </ForwardRef(Text)>
+    </ForwardRef(View)>
+    <ForwardRef(Text)>
       0
-    </Text>
+    </ForwardRef(Text)>
     <Icon
       allowFontScaling={false}
       color="#AAA"
@@ -59,7 +51,7 @@ exports[`Pages Login should renders correctly 1`] = `
       }
     />
   </Touchable>
-  <Component
+  <ForwardRef(View)
     style={
       Object {
         "backgroundColor": "#E2E4E5",
@@ -67,11 +59,11 @@ exports[`Pages Login should renders correctly 1`] = `
       }
     }
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages Login should renders correctly with last true 1`] = `
-<Component>
+<ForwardRef(View)>
   <Touchable
     onPress={[MockFunction]}
     style={
@@ -82,7 +74,7 @@ exports[`Pages Login should renders correctly with last true 1`] = `
       }
     }
   >
-    <Image
+    <ForwardRef(Image)
       source={
         Object {
           "uri": "image.net",
@@ -95,28 +87,20 @@ exports[`Pages Login should renders correctly with last true 1`] = `
         }
       }
     />
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "flex": 1,
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <ForwardRef(Text)>
         MY TITLE
-      </Text>
-    </Component>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+      </ForwardRef(Text)>
+    </ForwardRef(View)>
+    <ForwardRef(Text)>
       0
-    </Text>
+    </ForwardRef(Text)>
     <Icon
       allowFontScaling={false}
       color="#AAA"
@@ -129,5 +113,5 @@ exports[`Pages Login should renders correctly with last true 1`] = `
       }
     />
   </Touchable>
-</Component>
+</ForwardRef(View)>
 `;

@@ -2,8 +2,8 @@ module.exports = {
   setupTestFrameworkScriptFile: "<rootDir>/setupJest.ts",
   preset: "react-native",
   transform: {
-      "^.+\\.ts?$": "ts-jest",
-      "^.+\\.tsx?$": "ts-jest"
+      "^.+\\.ts?$": "babel-jest",
+      "^.+\\.tsx?$": "babel-jest"
   },
   testMatch: [
     "<rootDir>/src/**/*.spec.{ts,tsx}"

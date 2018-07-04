@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages Contacts should renders correctly with contacts and fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "backgroundColor": "white",
@@ -43,11 +43,11 @@ exports[`Pages Contacts should renders correctly with contacts and fetching 1`] 
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages Contacts should renders correctly with contacts and not fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "backgroundColor": "white",
@@ -89,11 +89,11 @@ exports[`Pages Contacts should renders correctly with contacts and not fetching 
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages Contacts should renders correctly without contacts (even in the db) and not fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "backgroundColor": "white",
@@ -108,11 +108,11 @@ exports[`Pages Contacts should renders correctly without contacts (even in the d
     image={1}
     title="To add your first contact, use the “+” button below."
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages Contacts should renders correctly without contacts and fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "backgroundColor": "white",
@@ -141,5 +141,5 @@ exports[`Pages Contacts should renders correctly without contacts and fetching 1
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;

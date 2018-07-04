@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components Switch android should renders correctly 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "alignItems": "center",
@@ -10,7 +10,7 @@ exports[`Components Switch android should renders correctly 1`] = `
     }
   }
 >
-  <Component
+  <ForwardRef(View)
     key="0"
     style={
       Object {
@@ -21,17 +21,10 @@ exports[`Components Switch android should renders correctly 1`] = `
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <ForwardRef(Text)>
       My title
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    </ForwardRef(Text)>
+    <ForwardRef(Text)
       style={
         Object {
           "color": "red",
@@ -40,20 +33,18 @@ exports[`Components Switch android should renders correctly 1`] = `
       testID="switch-error-undefined"
     >
        
-    </Text>
-  </Component>
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
   <Switch
-    disabled={false}
     key="1"
     onTintColor="#325776"
     testID="input-undefined"
-    value={false}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Components Switch android should renders correctly 2`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "alignItems": "center",
@@ -62,7 +53,7 @@ exports[`Components Switch android should renders correctly 2`] = `
     }
   }
 >
-  <Component
+  <ForwardRef(View)
     key="0"
     style={
       Object {
@@ -73,17 +64,10 @@ exports[`Components Switch android should renders correctly 2`] = `
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <ForwardRef(Text)>
       My title
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    </ForwardRef(Text)>
+    <ForwardRef(Text)
       style={
         Object {
           "color": "red",
@@ -92,20 +76,18 @@ exports[`Components Switch android should renders correctly 2`] = `
       testID="switch-error-undefined"
     >
        
-    </Text>
-  </Component>
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
   <Switch
-    disabled={false}
     key="1"
     onTintColor="#325776"
     testID="input-undefined"
-    value={false}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Components Switch ios should renders correctly 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "alignItems": "center",
@@ -114,7 +96,7 @@ exports[`Components Switch ios should renders correctly 1`] = `
     }
   }
 >
-  <Component
+  <ForwardRef(View)
     key="0"
     style={
       Object {
@@ -125,17 +107,10 @@ exports[`Components Switch ios should renders correctly 1`] = `
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <ForwardRef(Text)>
       My title
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    </ForwardRef(Text)>
+    <ForwardRef(Text)
       style={
         Object {
           "color": "red",
@@ -144,20 +119,18 @@ exports[`Components Switch ios should renders correctly 1`] = `
       testID="switch-error-undefined"
     >
        
-    </Text>
-  </Component>
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
   <Switch
-    disabled={false}
     key="1"
     onTintColor="#325776"
     testID="input-undefined"
-    value={false}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Components Switch ios should renders correctly 2`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "alignItems": "center",
@@ -166,7 +139,7 @@ exports[`Components Switch ios should renders correctly 2`] = `
     }
   }
 >
-  <Component
+  <ForwardRef(View)
     key="0"
     style={
       Object {
@@ -177,17 +150,10 @@ exports[`Components Switch ios should renders correctly 2`] = `
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <ForwardRef(Text)>
       My title
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    </ForwardRef(Text)>
+    <ForwardRef(Text)
       style={
         Object {
           "color": "red",
@@ -196,20 +162,18 @@ exports[`Components Switch ios should renders correctly 2`] = `
       testID="switch-error-undefined"
     >
        
-    </Text>
-  </Component>
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
   <Switch
-    disabled={false}
     key="1"
     onTintColor="#325776"
     testID="input-undefined"
-    value={false}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Components Switch ios should renders correctly 3`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "alignItems": "center",
@@ -218,7 +182,7 @@ exports[`Components Switch ios should renders correctly 3`] = `
     }
   }
 >
-  <Component
+  <ForwardRef(View)
     key="0"
     style={
       Object {
@@ -229,17 +193,10 @@ exports[`Components Switch ios should renders correctly 3`] = `
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <ForwardRef(Text)>
       My title
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    </ForwardRef(Text)>
+    <ForwardRef(Text)
       style={
         Object {
           "color": "red",
@@ -249,20 +206,18 @@ exports[`Components Switch ios should renders correctly 3`] = `
     >
        
       my-error
-    </Text>
-  </Component>
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
   <Switch
-    disabled={false}
     key="1"
     onTintColor="#325776"
     testID="input-undefined"
-    value={false}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Components Switch ios should renders correctly 4`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "alignItems": "center",
@@ -271,7 +226,7 @@ exports[`Components Switch ios should renders correctly 4`] = `
     }
   }
 >
-  <Component
+  <ForwardRef(View)
     key="0"
     style={
       Object {
@@ -282,17 +237,10 @@ exports[`Components Switch ios should renders correctly 4`] = `
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <ForwardRef(Text)>
       My title
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    </ForwardRef(Text)>
+    <ForwardRef(Text)
       style={
         Object {
           "color": "red",
@@ -301,14 +249,12 @@ exports[`Components Switch ios should renders correctly 4`] = `
       testID="switch-error-undefined"
     >
        
-    </Text>
-  </Component>
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
   <Switch
-    disabled={false}
     key="1"
     onTintColor="#325776"
     testID="input-undefined"
-    value={false}
   />
-</Component>
+</ForwardRef(View)>
 `;

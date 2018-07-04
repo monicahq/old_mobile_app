@@ -70,11 +70,10 @@ describe('API', () => {
     });
     it('post failed', async () => {
       const error = new Error('Test');
-      const body = {res: 'res'};
       api.post.mockReturnValueOnce(Promise.reject(error));
 
       try {
-        const resp = await service.post({body: 'note', contact: {}} as any);
+        await service.post({body: 'note', contact: {}} as any);
         expect(false).toBe(true);
       } catch (e) {
         expect(e).toBe(error);
@@ -105,11 +104,10 @@ describe('API', () => {
 
     it('post failed', async () => {
       const error = new Error('Test');
-      const body = {res: 'res'};
       api.post.mockReturnValueOnce(Promise.reject(error));
 
       try {
-        const resp = await service.post({body: 'note', contact: {}} as any);
+        await service.post({body: 'note', contact: {}} as any);
         expect(false).toBe(true);
       } catch (e) {
         expect(e).toBe(error);
@@ -118,11 +116,10 @@ describe('API', () => {
 
     it('post failed (resolve error)', async () => {
       const error = new Error('Test');
-      const body = {res: 'res'};
       api.post.mockReturnValueOnce(Promise.resolve({body: {error}}));
 
       try {
-        const resp = await service.post({body: 'note', contact: {}} as any);
+        await service.post({body: 'note', contact: {}} as any);
         expect(false).toBe(true);
       } catch (e) {
         expect(e).toBe(error);
@@ -155,11 +152,10 @@ describe('API', () => {
     });
     it('update failed', async () => {
       const error = new Error('Test');
-      const body = {res: 'res'};
       api.put.mockReturnValueOnce(Promise.reject(error));
 
       try {
-        const resp = await service.update({body: 'note', contact: {}} as any);
+        await service.update({body: 'note', contact: {}} as any);
         expect(false).toBe(true);
       } catch (e) {
         expect(e).toBe(error);
@@ -167,11 +163,10 @@ describe('API', () => {
     });
     it('update failed (resolve)', async () => {
       const error = new Error('Test');
-      const body = {res: 'res'};
       api.put.mockReturnValueOnce(Promise.resolve({body: {error}}));
 
       try {
-        const resp = await service.update({body: 'note', contact: {}} as any);
+        await service.update({body: 'note', contact: {}} as any);
         expect(false).toBe(true);
       } catch (e) {
         expect(e).toBe(error);

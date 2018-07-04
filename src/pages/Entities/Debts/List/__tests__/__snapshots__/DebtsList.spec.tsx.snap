@@ -1,21 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages DebtsList should display the activity indicator in the footer if it is fetching 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="#999999"
-  hidesWhenStopped={true}
-  size="large"
+<ForwardRef(View)
   style={
-    Object {
-      "marginVertical": 20,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "marginVertical": 20,
+      },
+    ]
   }
-/>
+>
+  <Component
+    animating={true}
+    color="#999999"
+    hidesWhenStopped={true}
+    indeterminate={true}
+    size="large"
+    style={
+      Object {
+        "height": 36,
+        "width": 36,
+      }
+    }
+    styleAttr="Normal"
+  />
+</ForwardRef(View)>
 `;
 
 exports[`Pages DebtsList should renders correctly with debts and fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -64,88 +81,17 @@ exports[`Pages DebtsList should renders correctly with debts and fetching 1`] = 
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages DebtsList should renders correctly with debts and fetching 2`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "white",
-      "borderBottomWidth": 0.5,
-      "borderColor": "#E2E4E5",
-      "paddingHorizontal": 15,
-      "paddingVertical": 20,
-    }
-  }
->
-  <Component
-    style={
-      Object {
-        "flexDirection": "row",
-        "marginBottom": 10,
-      }
-    }
-  >
-    <Component
-      style={
-        Array [
-          Object {
-            "borderRadius": 5,
-            "paddingHorizontal": 5,
-            "paddingVertical": 2,
-          },
-          Object {
-            "backgroundColor": "red",
-          },
-        ]
-      }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 13,
-          }
-        }
-      >
-        You owe
-      </Text>
-    </Component>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "marginLeft": 6,
-          "marginTop": 2,
-        }
-      }
-    >
-      $
-    </Text>
-  </Component>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "fontSize": 13,
-      }
-    }
-  >
-    My reason
-  </Text>
-</View>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`Pages DebtsList should renders correctly with debts and fetching 3`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -201,165 +147,23 @@ exports[`Pages DebtsList should renders correctly with debts and fetching 3`] = 
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages DebtsList should renders correctly with debts and fetching 4`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "white",
-      "borderBottomWidth": 0.5,
-      "borderColor": "#E2E4E5",
-      "paddingHorizontal": 15,
-      "paddingVertical": 20,
-    }
-  }
->
-  <Component
-    style={
-      Object {
-        "flexDirection": "row",
-        "marginBottom": 10,
-      }
-    }
-  >
-    <Component
-      style={
-        Array [
-          Object {
-            "borderRadius": 5,
-            "paddingHorizontal": 5,
-            "paddingVertical": 2,
-          },
-          Object {
-            "backgroundColor": "red",
-          },
-        ]
-      }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 13,
-          }
-        }
-      >
-        You owe
-      </Text>
-    </Component>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "marginLeft": 6,
-          "marginTop": 2,
-        }
-      }
-    >
-      $
-    </Text>
-  </Component>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "fontSize": 13,
-      }
-    }
-  >
-    My reason
-  </Text>
-</View>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`Pages DebtsList should renders correctly with debts and fetching 5`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "white",
-      "borderBottomWidth": 0.5,
-      "borderColor": "#E2E4E5",
-      "paddingHorizontal": 15,
-      "paddingVertical": 20,
-    }
-  }
->
-  <Component
-    style={
-      Object {
-        "flexDirection": "row",
-        "marginBottom": 10,
-      }
-    }
-  >
-    <Component
-      style={
-        Array [
-          Object {
-            "borderRadius": 5,
-            "paddingHorizontal": 5,
-            "paddingVertical": 2,
-          },
-          Object {
-            "backgroundColor": "#325776",
-          },
-        ]
-      }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "white",
-            "fontSize": 13,
-          }
-        }
-      >
-        Bill owes you
-      </Text>
-    </Component>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "marginLeft": 6,
-          "marginTop": 2,
-        }
-      }
-    >
-      $
-    </Text>
-  </Component>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "fontSize": 13,
-      }
-    }
-  >
-    My reason 2
-  </Text>
-</View>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`Pages DebtsList should renders correctly without debts and fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -398,11 +202,11 @@ exports[`Pages DebtsList should renders correctly without debts and fetching 1`]
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages DebtsList should renders correctly without debts and not fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -418,5 +222,5 @@ exports[`Pages DebtsList should renders correctly without debts and not fetching
     subtitle="But having no debts that you owe is a way to stay happy in your friendship."
     title="Money doesn’t buy happiness."
   />
-</Component>
+</ForwardRef(View)>
 `;

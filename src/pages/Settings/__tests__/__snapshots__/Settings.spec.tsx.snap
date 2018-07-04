@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages Settings android should renders correctly 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -11,7 +11,7 @@ exports[`Pages Settings android should renders correctly 1`] = `
   <Navbar
     title="Settings"
   />
-  <Component
+  <ForwardRef(View)
     style={
       Array [
         Object {
@@ -23,7 +23,7 @@ exports[`Pages Settings android should renders correctly 1`] = `
       ]
     }
   >
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "alignItems": "center",
@@ -34,10 +34,7 @@ exports[`Pages Settings android should renders correctly 1`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <ForwardRef(Text)
         style={
           Object {
             "flex": 1,
@@ -46,15 +43,14 @@ exports[`Pages Settings android should renders correctly 1`] = `
         }
       >
         Enable advanced features.
-      </Text>
+      </ForwardRef(Text)>
       <Switch
-        disabled={false}
         onValueChange={[MockFunction]}
         thumbTintColor="#325776"
         value={true}
       />
-    </Component>
-    <Component
+    </ForwardRef(View)>
+    <ForwardRef(View)
       style={
         Object {
           "paddingHorizontal": 20,
@@ -62,10 +58,7 @@ exports[`Pages Settings android should renders correctly 1`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <ForwardRef(Text)
         style={
           Object {
             "fontSize": 12,
@@ -73,11 +66,8 @@ exports[`Pages Settings android should renders correctly 1`] = `
         }
       >
         If enabled, you'll have access to features reserved for users with a deep knowledge of how Monica works.
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      </ForwardRef(Text)>
+      <ForwardRef(Text)
         style={
           Object {
             "color": "#676767",
@@ -87,13 +77,13 @@ exports[`Pages Settings android should renders correctly 1`] = `
         }
       >
         Version: 1.0.0
-      </Text>
-    </Component>
+      </ForwardRef(Text)>
+    </ForwardRef(View)>
     <TouchableOpacity
       activeOpacity={0.2}
       onPress={[Function]}
     >
-      <Component
+      <ForwardRef(View)
         style={
           Object {
             "backgroundColor": "white",
@@ -102,10 +92,7 @@ exports[`Pages Settings android should renders correctly 1`] = `
           }
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <ForwardRef(Text)
           style={
             Object {
               "color": "#1361cb",
@@ -113,20 +100,17 @@ exports[`Pages Settings android should renders correctly 1`] = `
           }
         >
           Logout
-        </Text>
-      </Component>
+        </ForwardRef(Text)>
+      </ForwardRef(View)>
     </TouchableOpacity>
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "flex": 1,
         }
       }
     />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "color": "#676767",
@@ -137,11 +121,8 @@ exports[`Pages Settings android should renders correctly 1`] = `
       }
     >
       Most illustrations used in this app come from Freepik
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    </ForwardRef(Text)>
+    <ForwardRef(Text)
       style={
         Object {
           "color": "#676767",
@@ -153,13 +134,13 @@ exports[`Pages Settings android should renders correctly 1`] = `
       }
     >
       Designed by freepik.com
-    </Text>
-  </Component>
-</Component>
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
+</ForwardRef(View)>
 `;
 
 exports[`Pages Settings android should renders correctly 2`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -169,7 +150,7 @@ exports[`Pages Settings android should renders correctly 2`] = `
   <Navbar
     title="Settings"
   />
-  <Component
+  <ForwardRef(View)
     style={
       Array [
         Object {
@@ -181,7 +162,7 @@ exports[`Pages Settings android should renders correctly 2`] = `
       ]
     }
   >
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "alignItems": "center",
@@ -192,10 +173,7 @@ exports[`Pages Settings android should renders correctly 2`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <ForwardRef(Text)
         style={
           Object {
             "flex": 1,
@@ -204,15 +182,14 @@ exports[`Pages Settings android should renders correctly 2`] = `
         }
       >
         Enable advanced features.
-      </Text>
+      </ForwardRef(Text)>
       <Switch
-        disabled={false}
         onValueChange={[MockFunction]}
         thumbTintColor="#325776"
         value={false}
       />
-    </Component>
-    <Component
+    </ForwardRef(View)>
+    <ForwardRef(View)
       style={
         Object {
           "paddingHorizontal": 20,
@@ -220,10 +197,7 @@ exports[`Pages Settings android should renders correctly 2`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <ForwardRef(Text)
         style={
           Object {
             "fontSize": 12,
@@ -231,11 +205,8 @@ exports[`Pages Settings android should renders correctly 2`] = `
         }
       >
         If enabled, you'll have access to features reserved for users with a deep knowledge of how Monica works.
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      </ForwardRef(Text)>
+      <ForwardRef(Text)
         style={
           Object {
             "color": "#676767",
@@ -245,13 +216,13 @@ exports[`Pages Settings android should renders correctly 2`] = `
         }
       >
         Version: 1.0.0
-      </Text>
-    </Component>
+      </ForwardRef(Text)>
+    </ForwardRef(View)>
     <TouchableOpacity
       activeOpacity={0.2}
       onPress={[Function]}
     >
-      <Component
+      <ForwardRef(View)
         style={
           Object {
             "backgroundColor": "white",
@@ -260,10 +231,7 @@ exports[`Pages Settings android should renders correctly 2`] = `
           }
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <ForwardRef(Text)
           style={
             Object {
               "color": "#1361cb",
@@ -271,20 +239,17 @@ exports[`Pages Settings android should renders correctly 2`] = `
           }
         >
           Logout
-        </Text>
-      </Component>
+        </ForwardRef(Text)>
+      </ForwardRef(View)>
     </TouchableOpacity>
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "flex": 1,
         }
       }
     />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "color": "#676767",
@@ -295,11 +260,8 @@ exports[`Pages Settings android should renders correctly 2`] = `
       }
     >
       Most illustrations used in this app come from Freepik
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    </ForwardRef(Text)>
+    <ForwardRef(Text)
       style={
         Object {
           "color": "#676767",
@@ -311,13 +273,13 @@ exports[`Pages Settings android should renders correctly 2`] = `
       }
     >
       Designed by freepik.com
-    </Text>
-  </Component>
-</Component>
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
+</ForwardRef(View)>
 `;
 
 exports[`Pages Settings ios should renders correctly 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -327,7 +289,7 @@ exports[`Pages Settings ios should renders correctly 1`] = `
   <Navbar
     title="Settings"
   />
-  <Component
+  <ForwardRef(View)
     style={
       Array [
         Object {
@@ -339,7 +301,7 @@ exports[`Pages Settings ios should renders correctly 1`] = `
       ]
     }
   >
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "alignItems": "center",
@@ -350,10 +312,7 @@ exports[`Pages Settings ios should renders correctly 1`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <ForwardRef(Text)
         style={
           Object {
             "flex": 1,
@@ -362,15 +321,14 @@ exports[`Pages Settings ios should renders correctly 1`] = `
         }
       >
         Enable advanced features.
-      </Text>
+      </ForwardRef(Text)>
       <Switch
-        disabled={false}
         onValueChange={[MockFunction]}
         thumbTintColor={null}
         value={true}
       />
-    </Component>
-    <Component
+    </ForwardRef(View)>
+    <ForwardRef(View)
       style={
         Object {
           "paddingHorizontal": 20,
@@ -378,10 +336,7 @@ exports[`Pages Settings ios should renders correctly 1`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <ForwardRef(Text)
         style={
           Object {
             "fontSize": 12,
@@ -389,11 +344,8 @@ exports[`Pages Settings ios should renders correctly 1`] = `
         }
       >
         If enabled, you'll have access to features reserved for users with a deep knowledge of how Monica works.
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      </ForwardRef(Text)>
+      <ForwardRef(Text)
         style={
           Object {
             "color": "#676767",
@@ -403,13 +355,13 @@ exports[`Pages Settings ios should renders correctly 1`] = `
         }
       >
         Version: 1.0.0
-      </Text>
-    </Component>
+      </ForwardRef(Text)>
+    </ForwardRef(View)>
     <TouchableOpacity
       activeOpacity={0.2}
       onPress={[Function]}
     >
-      <Component
+      <ForwardRef(View)
         style={
           Object {
             "backgroundColor": "white",
@@ -418,10 +370,7 @@ exports[`Pages Settings ios should renders correctly 1`] = `
           }
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <ForwardRef(Text)
           style={
             Object {
               "color": "#1361cb",
@@ -429,20 +378,17 @@ exports[`Pages Settings ios should renders correctly 1`] = `
           }
         >
           Logout
-        </Text>
-      </Component>
+        </ForwardRef(Text)>
+      </ForwardRef(View)>
     </TouchableOpacity>
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "flex": 1,
         }
       }
     />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "color": "#676767",
@@ -453,11 +399,8 @@ exports[`Pages Settings ios should renders correctly 1`] = `
       }
     >
       Most illustrations used in this app come from Freepik
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    </ForwardRef(Text)>
+    <ForwardRef(Text)
       style={
         Object {
           "color": "#676767",
@@ -469,13 +412,13 @@ exports[`Pages Settings ios should renders correctly 1`] = `
       }
     >
       Designed by freepik.com
-    </Text>
-  </Component>
-</Component>
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
+</ForwardRef(View)>
 `;
 
 exports[`Pages Settings ios should renders correctly 2`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -485,7 +428,7 @@ exports[`Pages Settings ios should renders correctly 2`] = `
   <Navbar
     title="Settings"
   />
-  <Component
+  <ForwardRef(View)
     style={
       Array [
         Object {
@@ -497,7 +440,7 @@ exports[`Pages Settings ios should renders correctly 2`] = `
       ]
     }
   >
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "alignItems": "center",
@@ -508,10 +451,7 @@ exports[`Pages Settings ios should renders correctly 2`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <ForwardRef(Text)
         style={
           Object {
             "flex": 1,
@@ -520,15 +460,14 @@ exports[`Pages Settings ios should renders correctly 2`] = `
         }
       >
         Enable advanced features.
-      </Text>
+      </ForwardRef(Text)>
       <Switch
-        disabled={false}
         onValueChange={[MockFunction]}
         thumbTintColor={null}
         value={false}
       />
-    </Component>
-    <Component
+    </ForwardRef(View)>
+    <ForwardRef(View)
       style={
         Object {
           "paddingHorizontal": 20,
@@ -536,10 +475,7 @@ exports[`Pages Settings ios should renders correctly 2`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <ForwardRef(Text)
         style={
           Object {
             "fontSize": 12,
@@ -547,11 +483,8 @@ exports[`Pages Settings ios should renders correctly 2`] = `
         }
       >
         If enabled, you'll have access to features reserved for users with a deep knowledge of how Monica works.
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      </ForwardRef(Text)>
+      <ForwardRef(Text)
         style={
           Object {
             "color": "#676767",
@@ -561,13 +494,13 @@ exports[`Pages Settings ios should renders correctly 2`] = `
         }
       >
         Version: 1.0.0
-      </Text>
-    </Component>
+      </ForwardRef(Text)>
+    </ForwardRef(View)>
     <TouchableOpacity
       activeOpacity={0.2}
       onPress={[Function]}
     >
-      <Component
+      <ForwardRef(View)
         style={
           Object {
             "backgroundColor": "white",
@@ -576,10 +509,7 @@ exports[`Pages Settings ios should renders correctly 2`] = `
           }
         }
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <ForwardRef(Text)
           style={
             Object {
               "color": "#1361cb",
@@ -587,20 +517,17 @@ exports[`Pages Settings ios should renders correctly 2`] = `
           }
         >
           Logout
-        </Text>
-      </Component>
+        </ForwardRef(Text)>
+      </ForwardRef(View)>
     </TouchableOpacity>
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "flex": 1,
         }
       }
     />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "color": "#676767",
@@ -611,11 +538,8 @@ exports[`Pages Settings ios should renders correctly 2`] = `
       }
     >
       Most illustrations used in this app come from Freepik
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    </ForwardRef(Text)>
+    <ForwardRef(Text)
       style={
         Object {
           "color": "#676767",
@@ -627,7 +551,7 @@ exports[`Pages Settings ios should renders correctly 2`] = `
       }
     >
       Designed by freepik.com
-    </Text>
-  </Component>
-</Component>
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
+</ForwardRef(View)>
 `;

@@ -4,9 +4,9 @@ exports[`Components Touchable android should renders correctly 1`] = `
 <DummyTouchableNativeFeedback
   onPress={[MockFunction]}
 >
-  <Component>
-    <Component />
-  </Component>
+  <ForwardRef(View)>
+    <ForwardRef(View) />
+  </ForwardRef(View)>
 </DummyTouchableNativeFeedback>
 `;
 
@@ -15,7 +15,7 @@ exports[`Components Touchable ios should renders correctly 1`] = `
   activeOpacity={0.2}
   onPress={[MockFunction]}
 >
-  <Component />
-  <Component />
+  <ForwardRef(View) />
+  <ForwardRef(View) />
 </TouchableOpacity>
 `;

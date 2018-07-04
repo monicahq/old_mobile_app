@@ -5,7 +5,7 @@ exports[`Components ContactListItem should renders correctly 1`] = `
   activeOpacity={0.2}
   onPress={[MockFunction]}
 >
-  <Component
+  <ForwardRef(View)
     style={
       Array [
         Object {
@@ -21,7 +21,7 @@ exports[`Components ContactListItem should renders correctly 1`] = `
       contact={Object {}}
       size={50}
     />
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "justifyContent": "center",
@@ -29,17 +29,10 @@ exports[`Components ContactListItem should renders correctly 1`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <ForwardRef(Text)>
          
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      </ForwardRef(Text)>
+      <ForwardRef(Text)
         style={
           Object {
             "color": "#676767",
@@ -47,9 +40,9 @@ exports[`Components ContactListItem should renders correctly 1`] = `
         }
       >
         Last updated on testDate
-      </Text>
-    </Component>
-  </Component>
+      </ForwardRef(Text)>
+    </ForwardRef(View)>
+  </ForwardRef(View)>
 </TouchableOpacity>
 `;
 
@@ -58,7 +51,7 @@ exports[`Components ContactListItem should renders correctly 2`] = `
   activeOpacity={0.2}
   onPress={[MockFunction]}
 >
-  <Component
+  <ForwardRef(View)
     style={
       Array [
         Object {
@@ -76,7 +69,7 @@ exports[`Components ContactListItem should renders correctly 2`] = `
       contact={Object {}}
       size={50}
     />
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "justifyContent": "center",
@@ -84,17 +77,10 @@ exports[`Components ContactListItem should renders correctly 2`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <ForwardRef(Text)>
          
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      </ForwardRef(Text)>
+      <ForwardRef(Text)
         style={
           Object {
             "color": "#676767",
@@ -102,8 +88,8 @@ exports[`Components ContactListItem should renders correctly 2`] = `
         }
       >
         Last updated on testDate
-      </Text>
-    </Component>
-  </Component>
+      </ForwardRef(Text)>
+    </ForwardRef(View)>
+  </ForwardRef(View)>
 </TouchableOpacity>
 `;

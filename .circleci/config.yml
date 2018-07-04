@@ -56,7 +56,7 @@ jobs:
           - v1-dependencies-
       # - run: npm test --silent -- --listTests > test_filenames.txt
       # - run: yarn test --runInBand --findRelatedTests $(circleci tests split --total=3 test_filenames.txt | tr '\r\n' ' ') --testResultsProcessor="./node_modules/jest-junit-reporter"
-      - run: yarn test --runInBand --coverage --testResultsProcessor="./node_modules/jest-junit-reporter" --no-watchman
+      - run: ./scripts/test-ci.sh
       - run: mkdir test-results && mv test-report.xml test-results
       - run: bash <(curl -s https://codecov.io/bash)
       - store_test_results:

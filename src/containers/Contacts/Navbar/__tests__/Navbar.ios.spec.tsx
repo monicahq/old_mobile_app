@@ -1,4 +1,3 @@
-import {navigate} from '@navigator/NavigationService';
 import {shallow} from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
@@ -7,8 +6,6 @@ import {Navbar} from '../Navbar.ios';
 jest.mock('@navigator/NavigationService', () => ({
   navigate: jest.fn(),
 }));
-
-const navigateMock = navigate as jest.Mock;
 
 describe('Components', () => {
   describe('Navbar Contacts IOS', () => {

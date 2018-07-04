@@ -14,7 +14,7 @@ exports[`Pages Login should renders correctly 1`] = `
   keyboardOpeningTime={250}
   viewIsInsideTabBar={false}
 >
-  <Component
+  <ForwardRef(View)
     style={
       Object {
         "alignItems": "center",
@@ -27,14 +27,14 @@ exports[`Pages Login should renders correctly 1`] = `
     <Back
       onPress={[MockFunction]}
     />
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "flex": 1,
         }
       }
     />
-    <Component
+    <ForwardRef(View)
       style={
         Object {
           "alignItems": "center",
@@ -44,13 +44,10 @@ exports[`Pages Login should renders correctly 1`] = `
         }
       }
     >
-      <Image
+      <ForwardRef(Image)
         source={1}
       />
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+      <ForwardRef(Text)
         style={
           Object {
             "fontSize": 18,
@@ -62,18 +59,18 @@ exports[`Pages Login should renders correctly 1`] = `
         }
       >
         Sign in with your account
-      </Text>
+      </ForwardRef(Text)>
       <LoginFormContainer
         onSuccess={[Function]}
       />
-    </Component>
-    <Component
+    </ForwardRef(View)>
+    <ForwardRef(View)
       style={
         Object {
           "flex": 1,
         }
       }
     />
-  </Component>
+  </ForwardRef(View)>
 </KeyboardAwareScrollView>
 `;

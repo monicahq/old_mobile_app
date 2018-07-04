@@ -1,17 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages Contact / Relationships should renders correctly 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "marginTop": 5,
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <ForwardRef(Text)
     style={
       Object {
         "marginVertical": 30,
@@ -19,7 +16,7 @@ exports[`Pages Contact / Relationships should renders correctly 1`] = `
       }
     }
   >
-    No relashionship
-  </Text>
-</Component>
+    No relationship
+  </ForwardRef(Text)>
+</ForwardRef(View)>
 `;
