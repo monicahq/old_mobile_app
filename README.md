@@ -57,7 +57,7 @@ If you are you using [Monica official server](https://app.monicahq.com), it's ve
 
 If you have installed Monica on a server accessible from outside (a local or global network), you will have to change the Monica Url server on the login page (set as https://app.monicahq.com by default).
 
-:warning: You will also have to fill in the new MOBILE_CLIENT_ID and MOBILE_CLIENT_SECRET environment variables in your instance. If it's your first installation, you likely have to generate those keys from your server by running `php artisan passport:client --password`. [See the Monica wiki for more information](https://github.com/monicahq/monica/wiki/Mobile-application)
+:warning: You will also have to fill in the new MOBILE_CLIENT_ID and MOBILE_CLIENT_SECRET environment variables in your instance. If it's your first installation, you likely have to generate those keys from your server by running `php artisan passport:client --password`. [See the Monica docs for more information](https://github.com/monicahq/monica/blob/master/docs/installation/mobile.md).
 
 ## Running the app locally
 
