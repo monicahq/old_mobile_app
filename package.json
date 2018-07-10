@@ -63,7 +63,7 @@
     "@types/jest": "23.1.1",
     "@types/react": "16.4.6",
     "@types/react-native": "0.55.16",
-    "@types/react-redux": "6.0.2",
+    "@types/react-redux": "6.0.4",
     "babel-eslint": "8.2.5",
     "babel-jest": "23.0.1",
     "codecov": "3.0.4",
