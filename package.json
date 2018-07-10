@@ -30,7 +30,7 @@
     "babel-preset-es2015": "6.24.1",
     "formik": "0.11.11",
     "frisbee": "2.0.5",
-    "i18next": "11.3.3",
+    "i18next": "11.3.6",
     "moment": "tqc/moment#no-dynamic-import",
     "react": "16.4.1",
     "react-native": "0.55.4",
