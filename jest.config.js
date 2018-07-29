@@ -1,5 +1,6 @@
 module.exports = {
   setupTestFrameworkScriptFile: "<rootDir>/setupJest.ts",
+  // modulePaths: ["<rootDir>"],
   preset: "react-native",
   transform: {
       "^.+\\.ts?$": "ts-jest",
