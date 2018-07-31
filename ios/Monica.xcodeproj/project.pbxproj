@@ -38,6 +38,7 @@
 		380CDA6853174CEAA593D920 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92898BC662F047579206F233 /* libRNDeviceInfo.a */; };
 		455525826A034EA284AA79F8 /* libAppCenterReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EC22BC4C444A5EA6C3C43F /* libAppCenterReactNative.a */; };
 		596DFFFED913F75ACAF80689 /* libPods-Monica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6119222B9CCF49641184FC21 /* libPods-Monica.a */; };
+		5A584855BFDF43D1AD7C20AB /* libOnePassword.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5200FD52F05C49BC9C8037BD /* libOnePassword.a */; };
 		5DDD0E0B2A3E4D868D1C891D /* libAppCenterReactNativeCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4936C84C42442E82CA8825 /* libAppCenterReactNativeCrashes.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		77D932C7D6D84FF38B4A65F1 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C47BEF267B843C092E32597 /* SimpleLineIcons.ttf */; };
@@ -247,6 +248,13 @@
 			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
 			remoteInfo = "jschelpers-tvOS";
 		};
+		4C03953820CAF15800922346 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3309D9B291A04701A5E09950 /* OnePassword.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52E319201C0655C200265D56;
+			remoteInfo = OnePassword;
+		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
@@ -439,6 +447,7 @@
 		2D02E4901E0B4A5D006451C7 /* Monica-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Monica-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7618D6D8E34CE5897CEF9D /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; };
+		3309D9B291A04701A5E09950 /* OnePassword.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = OnePassword.xcodeproj; path = "../node_modules/react-native-onepassword/OnePassword.xcodeproj"; sourceTree = "<group>"; };
 		395E41DC347AE0FDA6D51A35 /* Pods-Monica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Monica/Pods-Monica.release.xcconfig"; sourceTree = "<group>"; };
 		3B4936C84C42442E82CA8825 /* libAppCenterReactNativeCrashes.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNativeCrashes.a; sourceTree = "<group>"; };
 		42EC22BC4C444A5EA6C3C43F /* libAppCenterReactNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNative.a; sourceTree = "<group>"; };
@@ -447,6 +456,7 @@
 		4A0D1ABD50A94C56A4297F83 /* RNSearchBar.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSearchBar.xcodeproj; path = "../node_modules/react-native-search-bar/ios/RNSearchBar.xcodeproj"; sourceTree = "<group>"; };
 		4E03D550E2374D12B9E0CAED /* AppCenter-Config.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "AppCenter-Config.plist"; path = "Monica/AppCenter-Config.plist"; sourceTree = "<group>"; };
 		51E4703AB091C6A7AE6E71A4 /* Pods-MonicaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonicaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonicaTests/Pods-MonicaTests.release.xcconfig"; sourceTree = "<group>"; };
+		5200FD52F05C49BC9C8037BD /* libOnePassword.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libOnePassword.a; sourceTree = "<group>"; };
 		5843A2939771446995B9A58B /* libSplashScreen.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSplashScreen.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		60A83C0C0F210078BD10E9AB /* Pods-Monica-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monica-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Monica-tvOSTests/Pods-Monica-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -518,6 +528,7 @@
 				CF5D85A54D664640B047509F /* libAppCenterReactNativeAnalytics.a in Frameworks */,
 				5DDD0E0B2A3E4D868D1C891D /* libAppCenterReactNativeCrashes.a in Frameworks */,
 				380CDA6853174CEAA593D920 /* libRNDeviceInfo.a in Frameworks */,
+				5A584855BFDF43D1AD7C20AB /* libOnePassword.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +689,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4C03953520CAF15800922346 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C03953920CAF15800922346 /* libOnePassword.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -738,6 +757,7 @@
 				7CC6BF390FDE49FCAB7141D0 /* AppCenterReactNative.xcodeproj */,
 				AF227C28B5194DE5AD277226 /* AppCenterReactNativeAnalytics.xcodeproj */,
 				4327C5F72E984FCBA6B751E6 /* AppCenterReactNativeCrashes.xcodeproj */,
+				3309D9B291A04701A5E09950 /* OnePassword.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -840,6 +860,7 @@
 				3B4936C84C42442E82CA8825 /* libAppCenterReactNativeCrashes.a */,
 				92898BC662F047579206F233 /* libRNDeviceInfo.a */,
 				2D7618D6D8E34CE5897CEF9D /* libRNDeviceInfo-tvOS.a */,
+				5200FD52F05C49BC9C8037BD /* libOnePassword.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -1030,6 +1051,10 @@
 				{
 					ProductGroup = E4DE843E201824000012CEAE /* Products */;
 					ProjectRef = E4DE843D201824000012CEAE /* CodePush.xcodeproj */;
+				},
+				{
+					ProductGroup = 4C03953520CAF15800922346 /* Products */;
+					ProjectRef = 3309D9B291A04701A5E09950 /* OnePassword.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
@@ -1273,6 +1298,13 @@
 			fileType = archive.ar;
 			path = libjschelpers.a;
 			remoteRef = 3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C03953920CAF15800922346 /* libOnePassword.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOnePassword.a;
+			remoteRef = 4C03953820CAF15800922346 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
@@ -1762,6 +1794,7 @@
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-onepassword",
 				);
 				INFOPLIST_FILE = MonicaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1793,6 +1826,7 @@
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-onepassword",
 				);
 				INFOPLIST_FILE = MonicaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1828,6 +1862,7 @@
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-onepassword",
 				);
 				INFOPLIST_FILE = Monica/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1864,6 +1899,7 @@
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-onepassword",
 				);
 				INFOPLIST_FILE = Monica/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1902,6 +1938,7 @@
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-onepassword",
 				);
 				INFOPLIST_FILE = "Monica-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1941,6 +1978,7 @@
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-onepassword",
 				);
 				INFOPLIST_FILE = "Monica-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
