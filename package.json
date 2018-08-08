@@ -75,7 +75,7 @@
     "husky": "0.14.3",
     "jest": "23.0.0",
     "jest-junit-reporter": "1.1.0",
-    "prettier": "1.14.0",
+    "prettier": "1.14.1",
     "react-dom": "16.4.1",
     "react-native-typescript-transformer": "1.2.10",
     "react-test-renderer": "16.4.1",
