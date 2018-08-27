@@ -23,7 +23,7 @@
     "test:e2e:build:ci": "detox build"
   },
   "dependencies": {
-    "appcenter": "1.7.1",
+    "appcenter": "1.8.0",
     "appcenter-analytics": "1.7.1",
     "appcenter-crashes": "1.7.1",
     "babel-core": "6.26.3",
