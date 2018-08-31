@@ -15,7 +15,7 @@ export const contacts = {
   relationships: {
     relationships: 'Relationships',
     relations: 'Relations',
-    none: 'No relashionship',
+    none: 'No relationship',
   },
   meet: {
     how: 'How you met',
