@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "7.0.0",
-    "@commitlint/config-conventional": "7.0.1",
+    "@commitlint/config-conventional": "7.1.1",
     "@commitlint/prompt-cli": "7.0.0",
     "@types/cheerio": "0.22.8",
     "@types/detox": "7.3.0",
