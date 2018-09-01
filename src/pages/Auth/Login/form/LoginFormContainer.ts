@@ -8,7 +8,7 @@ export const validate = ({email, password, url}) => {
   const errors: any = {};
   if (!email) {
     errors.email = 'common:form.required';
-  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email)) {
     errors.email = 'common:form.invalid';
   }
   if (!password) {
