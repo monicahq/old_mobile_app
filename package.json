@@ -62,7 +62,7 @@
     "@types/i18next": "8.4.5",
     "@types/jest": "23.1.5",
     "@types/react": "16.4.7",
-    "@types/react-native": "0.55.16",
+    "@types/react-native": "0.56.16",
     "@types/react-redux": "6.0.2",
     "babel-eslint": "8.2.6",
     "babel-jest": "23.0.1",
