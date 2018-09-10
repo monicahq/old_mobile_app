@@ -33,7 +33,7 @@
     "i18next": "11.6.0",
     "moment": "tqc/moment#no-dynamic-import",
     "react": "16.4.2",
-    "react-native": "0.55.4",
+    "react-native": "0.56.1",
     "react-native-actionsheet": "2.4.2",
     "react-native-code-push": "5.4.1",
     "react-native-device-info": "0.22.4",
