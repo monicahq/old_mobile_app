@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components FormListItem should renders correctly 1 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Array [
       Object {
@@ -18,7 +18,7 @@ exports[`Components FormListItem should renders correctly 1 1`] = `
 `;
 
 exports[`Components FormListItem should renders correctly 2 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Array [
       Object {
@@ -37,7 +37,7 @@ exports[`Components FormListItem should renders correctly 2 1`] = `
 `;
 
 exports[`Components FormListItem should renders correctly 3 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Array [
       Object {
@@ -51,12 +51,12 @@ exports[`Components FormListItem should renders correctly 3 1`] = `
     ]
   }
 >
-  <Component />
-</Component>
+  <ForwardRef(View) />
+</ForwardRef(View)>
 `;
 
 exports[`Components FormListItem should renders correctly 4 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Array [
       Object {
@@ -72,6 +72,6 @@ exports[`Components FormListItem should renders correctly 4 1`] = `
     ]
   }
 >
-  <Component />
-</Component>
+  <ForwardRef(View) />
+</ForwardRef(View)>
 `;

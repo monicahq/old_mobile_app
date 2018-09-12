@@ -75,3 +75,4 @@ mobile-credentials
 .vscode
 
 dist
+test-report.xml

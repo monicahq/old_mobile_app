@@ -1,40 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages CallsList should display the header if it is not fetching 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "white",
-      "paddingHorizontal": 15,
-    }
-  }
->
-  <LastTwoYearsStatistics
-    count1={100}
-    count2={1}
-    image={1}
-    title1="In 2018"
-    title2="In 2015"
-  />
-</View>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`Pages CallsList should display the loading indicator in the footer if it is fetching 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="#999999"
-  hidesWhenStopped={true}
-  size="large"
+<ForwardRef(View)
   style={
-    Object {
-      "marginVertical": 20,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "marginVertical": 20,
+      },
+    ]
   }
-/>
+>
+  <Component
+    animating={true}
+    color="#999999"
+    hidesWhenStopped={true}
+    indeterminate={true}
+    size="large"
+    style={
+      Object {
+        "height": 36,
+        "width": 36,
+      }
+    }
+    styleAttr="Normal"
+  />
+</ForwardRef(View)>
 `;
 
 exports[`Pages CallsList should renders correctly with calls and fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -85,78 +89,17 @@ exports[`Pages CallsList should renders correctly with calls and fetching 1`] = 
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages CallsList should renders correctly with calls and fetching 2`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "white",
-      "borderBottomWidth": 0.5,
-      "borderColor": "#E2E4E5",
-      "paddingHorizontal": 15,
-      "paddingVertical": 20,
-    }
-  }
->
-  <Component
-    style={
-      Object {
-        "flexDirection": "row",
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#355974",
-        }
-      }
-    >
-      You called
-    </Text>
-    <Component
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#97A5B2",
-        }
-      }
-    >
-      4 months ago
-    </Text>
-  </Component>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "fontSize": 14,
-        "marginTop": 5,
-      }
-    }
-  >
-    My content
-  </Text>
-</View>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`Pages CallsList should renders correctly with calls and fetching 3`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -207,145 +150,23 @@ exports[`Pages CallsList should renders correctly with calls and fetching 3`] = 
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages CallsList should renders correctly with calls and fetching 4`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "white",
-      "borderBottomWidth": 0.5,
-      "borderColor": "#E2E4E5",
-      "paddingHorizontal": 15,
-      "paddingVertical": 20,
-    }
-  }
->
-  <Component
-    style={
-      Object {
-        "flexDirection": "row",
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#355974",
-        }
-      }
-    >
-      You called
-    </Text>
-    <Component
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#97A5B2",
-        }
-      }
-    >
-      4 months ago
-    </Text>
-  </Component>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "fontSize": 14,
-        "marginTop": 5,
-      }
-    }
-  >
-    My content
-  </Text>
-</View>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`Pages CallsList should renders correctly with calls and fetching 5`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "white",
-      "borderBottomWidth": 0.5,
-      "borderColor": "#E2E4E5",
-      "paddingHorizontal": 15,
-      "paddingVertical": 20,
-    }
-  }
->
-  <Component
-    style={
-      Object {
-        "flexDirection": "row",
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#355974",
-        }
-      }
-    >
-      You called
-    </Text>
-    <Component
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#97A5B2",
-        }
-      }
-    >
-      6 months ago
-    </Text>
-  </Component>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "fontSize": 14,
-        "marginTop": 5,
-      }
-    }
-  >
-    My content 2
-  </Text>
-</View>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`Pages CallsList should renders correctly without calls and fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -385,11 +206,11 @@ exports[`Pages CallsList should renders correctly without calls and fetching 1`]
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages CallsList should renders correctly without calls and not fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -405,5 +226,5 @@ exports[`Pages CallsList should renders correctly without calls and not fetching
     subtitle="So you can refer to it at a later time."
     title="Enter details about phone calls you make."
   />
-</Component>
+</ForwardRef(View)>
 `;

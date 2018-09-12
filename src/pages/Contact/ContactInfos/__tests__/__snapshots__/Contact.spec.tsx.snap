@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages Contact / Contact should renders correctly 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "marginTop": 5,
@@ -18,5 +18,5 @@ exports[`Pages Contact / Contact should renders correctly 1`] = `
     lastItem={true}
     title="test@gmail.com"
   />
-</Component>
+</ForwardRef(View)>
 `;

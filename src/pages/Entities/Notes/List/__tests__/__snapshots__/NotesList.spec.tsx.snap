@@ -1,21 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages Notes should display the activity indicator in the footer if it is fetching 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="#999999"
-  hidesWhenStopped={true}
-  size="large"
+<ForwardRef(View)
   style={
-    Object {
-      "marginVertical": 20,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "marginVertical": 20,
+      },
+    ]
   }
-/>
+>
+  <Component
+    animating={true}
+    color="#999999"
+    hidesWhenStopped={true}
+    indeterminate={true}
+    size="large"
+    style={
+      Object {
+        "height": 36,
+        "width": 36,
+      }
+    }
+    styleAttr="Normal"
+  />
+</ForwardRef(View)>
 `;
 
 exports[`Pages Notes should renders correctly with notes and fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -64,7 +81,7 @@ exports[`Pages Notes should renders correctly with notes and fetching 1`] = `
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages Notes should renders correctly with notes and fetching 2`] = `
@@ -80,17 +97,14 @@ exports[`Pages Notes should renders correctly with notes and fetching 2`] = `
     }
   }
 >
-  <Component
+  <ForwardRef(View)
     style={
       Object {
         "flexDirection": "row",
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "flex": 1,
@@ -100,20 +114,16 @@ exports[`Pages Notes should renders correctly with notes and fetching 2`] = `
       }
     >
       December 17, 1991
-    </Text>
-  </Component>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
+  <ForwardRef(Text)>
     My body
-  </Text>
+  </ForwardRef(Text)>
 </TouchableOpacity>
 `;
 
 exports[`Pages Notes should renders correctly with notes and fetching 3`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -166,7 +176,7 @@ exports[`Pages Notes should renders correctly with notes and fetching 3`] = `
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages Notes should renders correctly with notes and fetching 4`] = `
@@ -182,17 +192,14 @@ exports[`Pages Notes should renders correctly with notes and fetching 4`] = `
     }
   }
 >
-  <Component
+  <ForwardRef(View)
     style={
       Object {
         "flexDirection": "row",
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "flex": 1,
@@ -202,15 +209,11 @@ exports[`Pages Notes should renders correctly with notes and fetching 4`] = `
       }
     >
       December 17, 1991
-    </Text>
-  </Component>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
+  <ForwardRef(Text)>
     My body
-  </Text>
+  </ForwardRef(Text)>
 </TouchableOpacity>
 `;
 
@@ -227,17 +230,14 @@ exports[`Pages Notes should renders correctly with notes and fetching 5`] = `
     }
   }
 >
-  <Component
+  <ForwardRef(View)
     style={
       Object {
         "flexDirection": "row",
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "flex": 1,
@@ -247,20 +247,16 @@ exports[`Pages Notes should renders correctly with notes and fetching 5`] = `
       }
     >
       December 17, 1993
-    </Text>
-  </Component>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
+  <ForwardRef(Text)>
     My body 2
-  </Text>
+  </ForwardRef(Text)>
 </TouchableOpacity>
 `;
 
 exports[`Pages Notes should renders correctly without notes and fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -302,11 +298,11 @@ exports[`Pages Notes should renders correctly without notes and fetching 1`] = `
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages Notes should renders correctly without notes and not fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -325,5 +321,5 @@ exports[`Pages Notes should renders correctly without notes and not fetching 1`]
     subtitle="Just write down what you have in mind."
     title="Notes are great to record precious details about your contacts."
   />
-</Component>
+</ForwardRef(View)>
 `;

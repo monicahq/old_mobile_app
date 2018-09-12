@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components ListItem should renders correctly with a subtitle 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Array [
       Object {
@@ -15,17 +15,10 @@ exports[`Components ListItem should renders correctly with a subtitle 1`] = `
     ]
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <ForwardRef(Text)>
     My title
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  </ForwardRef(Text)>
+  <ForwardRef(Text)
     style={
       Object {
         "color": "#96A5B3",
@@ -34,12 +27,12 @@ exports[`Components ListItem should renders correctly with a subtitle 1`] = `
     }
   >
     My subtitle
-  </Text>
-</Component>
+  </ForwardRef(Text)>
+</ForwardRef(View)>
 `;
 
 exports[`Components ListItem should renders correctly with a subtitle and last 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Array [
       Object {
@@ -50,17 +43,10 @@ exports[`Components ListItem should renders correctly with a subtitle and last 1
     ]
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <ForwardRef(Text)>
     My title
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  </ForwardRef(Text)>
+  <ForwardRef(Text)
     style={
       Object {
         "color": "#96A5B3",
@@ -69,12 +55,12 @@ exports[`Components ListItem should renders correctly with a subtitle and last 1
     }
   >
     My subtitle
-  </Text>
-</Component>
+  </ForwardRef(Text)>
+</ForwardRef(View)>
 `;
 
 exports[`Components ListItem should renders correctly with a title 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Array [
       Object {
@@ -88,18 +74,14 @@ exports[`Components ListItem should renders correctly with a title 1`] = `
     ]
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <ForwardRef(Text)>
     test
-  </Text>
-</Component>
+  </ForwardRef(Text)>
+</ForwardRef(View)>
 `;
 
 exports[`Components ListItem should renders correctly with an info right 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Array [
       Object {
@@ -113,24 +95,17 @@ exports[`Components ListItem should renders correctly with an info right 1`] = `
     ]
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <ForwardRef(Text)>
     My title
-  </Text>
-  <Component
+  </ForwardRef(Text)>
+  <ForwardRef(View)
     style={
       Object {
         "flex": 1,
       }
     }
   />
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <ForwardRef(Text)
     style={
       Object {
         "color": "#96A5B3",
@@ -139,6 +114,6 @@ exports[`Components ListItem should renders correctly with an info right 1`] = `
     }
   >
     Info right
-  </Text>
-</Component>
+  </ForwardRef(Text)>
+</ForwardRef(View)>
 `;

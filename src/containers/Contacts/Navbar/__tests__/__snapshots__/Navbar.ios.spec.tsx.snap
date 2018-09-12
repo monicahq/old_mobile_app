@@ -4,7 +4,7 @@ exports[`Components Navbar Contacts IOS should renders correctly 1`] = `
 <NavigationBar
   containerStyle={Object {}}
   leftButton={
-    <Image
+    <Component
       source={1}
       style={
         Object {

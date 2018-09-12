@@ -2,7 +2,7 @@
 
 exports[`Components TextInput android should renders correctly 1`] = `
 Array [
-  <Component
+  <ForwardRef(View)
     key="0"
     style={
       Object {
@@ -10,7 +10,13 @@ Array [
         "width": "100%",
       }
     }
-  />,
+  >
+    <ForwardRef(Text)
+      style={null}
+    >
+      My title
+    </ForwardRef(Text)>
+  </ForwardRef(View)>,
   <TextInput
     allowFontScaling={true}
     autoCapitalize="none"
@@ -33,7 +39,7 @@ Array [
 
 exports[`Components TextInput android should renders correctly 2`] = `
 Array [
-  <Component
+  <ForwardRef(View)
     key="0"
     style={
       Object {
@@ -41,7 +47,13 @@ Array [
         "width": "100%",
       }
     }
-  />,
+  >
+    <ForwardRef(Text)
+      style={null}
+    >
+      My title
+    </ForwardRef(Text)>
+  </ForwardRef(View)>,
   <TextInput
     allowFontScaling={true}
     autoCapitalize="none"
@@ -64,7 +76,7 @@ Array [
 
 exports[`Components TextInput ios should renders correctly 1`] = `
 Array [
-  <Component
+  <ForwardRef(View)
     key="0"
     style={
       Object {
@@ -72,7 +84,13 @@ Array [
         "width": "100%",
       }
     }
-  />,
+  >
+    <ForwardRef(Text)
+      style={null}
+    >
+      My title
+    </ForwardRef(Text)>
+  </ForwardRef(View)>,
   <TextInput
     allowFontScaling={true}
     autoCapitalize="none"
@@ -95,7 +113,7 @@ Array [
 
 exports[`Components TextInput ios should renders correctly 2`] = `
 Array [
-  <Component
+  <ForwardRef(View)
     key="0"
     style={
       Object {
@@ -103,7 +121,13 @@ Array [
         "width": "100%",
       }
     }
-  />,
+  >
+    <ForwardRef(Text)
+      style={null}
+    >
+      My title
+    </ForwardRef(Text)>
+  </ForwardRef(View)>,
   <TextInput
     allowFontScaling={true}
     autoCapitalize="none"
@@ -126,7 +150,7 @@ Array [
 
 exports[`Components TextInput ios should renders correctly 3`] = `
 Array [
-  <Component
+  <ForwardRef(View)
     key="0"
     style={
       Object {
@@ -134,7 +158,40 @@ Array [
         "width": "100%",
       }
     }
-  />,
+  >
+    <ForwardRef(Text)
+      style={null}
+    >
+      My title
+    </ForwardRef(Text)>
+    <ForwardRef(View)
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <ForwardRef(Text)
+        style={null}
+      >
+         - 
+      </ForwardRef(Text)>
+      <ForwardRef(Text)
+        style={
+          Array [
+            Object {
+              "color": "red",
+              "width": "100%",
+            },
+            null,
+          ]
+        }
+        testID="input-error-undefined"
+      >
+        my-error
+      </ForwardRef(Text)>
+    </ForwardRef(View)>
+  </ForwardRef(View)>,
   <TextInput
     allowFontScaling={true}
     autoCapitalize="none"
@@ -157,7 +214,7 @@ Array [
 
 exports[`Components TextInput ios should renders correctly 4`] = `
 Array [
-  <Component
+  <ForwardRef(View)
     key="0"
     style={
       Object {
@@ -165,7 +222,13 @@ Array [
         "width": "100%",
       }
     }
-  />,
+  >
+    <ForwardRef(Text)
+      style={null}
+    >
+      My title
+    </ForwardRef(Text)>
+  </ForwardRef(View)>,
   <TextInput
     allowFontScaling={true}
     autoCapitalize="none"

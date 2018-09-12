@@ -1,40 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages ActivitiesList should display the activity indicator in the footer if it is fetching 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="#999999"
-  hidesWhenStopped={true}
-  size="large"
+<ForwardRef(View)
   style={
-    Object {
-      "marginVertical": 20,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "marginVertical": 20,
+      },
+    ]
   }
-/>
+>
+  <Component
+    animating={true}
+    color="#999999"
+    hidesWhenStopped={true}
+    indeterminate={true}
+    size="large"
+    style={
+      Object {
+        "height": 36,
+        "width": 36,
+      }
+    }
+    styleAttr="Normal"
+  />
+</ForwardRef(View)>
 `;
 
 exports[`Pages ActivitiesList should display the header if it is not fetching 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "white",
-      "paddingHorizontal": 15,
-    }
-  }
->
-  <LastTwoYearsStatistics
-    count1={100}
-    count2={20}
-    image={1}
-    title1="In 2017"
-    title2="In 2015"
-  />
-</View>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`Pages ActivitiesList should renders correctly with activities and fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -82,78 +86,17 @@ exports[`Pages ActivitiesList should renders correctly with activities and fetch
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages ActivitiesList should renders correctly with activities and fetching 2`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "white",
-      "borderBottomWidth": 0.5,
-      "borderColor": "#E2E4E5",
-      "paddingHorizontal": 15,
-      "paddingVertical": 20,
-    }
-  }
->
-  <Component
-    style={
-      Object {
-        "flexDirection": "row",
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#355974",
-        }
-      }
-    >
-      Activity title
-    </Text>
-    <Component
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#97A5B2",
-        }
-      }
-    >
-      25 years ago
-    </Text>
-  </Component>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "fontSize": 14,
-        "marginTop": 5,
-      }
-    }
-  >
-    My description
-  </Text>
-</View>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`Pages ActivitiesList should renders correctly with activities and fetching 3`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -206,145 +149,23 @@ exports[`Pages ActivitiesList should renders correctly with activities and fetch
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages ActivitiesList should renders correctly with activities and fetching 4`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "white",
-      "borderBottomWidth": 0.5,
-      "borderColor": "#E2E4E5",
-      "paddingHorizontal": 15,
-      "paddingVertical": 20,
-    }
-  }
->
-  <Component
-    style={
-      Object {
-        "flexDirection": "row",
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#355974",
-        }
-      }
-    >
-      Activity title
-    </Text>
-    <Component
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#97A5B2",
-        }
-      }
-    >
-      25 years ago
-    </Text>
-  </Component>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "fontSize": 14,
-        "marginTop": 5,
-      }
-    }
-  >
-    My description
-  </Text>
-</View>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`Pages ActivitiesList should renders correctly with activities and fetching 5`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "white",
-      "borderBottomWidth": 0.5,
-      "borderColor": "#E2E4E5",
-      "paddingHorizontal": 15,
-      "paddingVertical": 20,
-    }
-  }
->
-  <Component
-    style={
-      Object {
-        "flexDirection": "row",
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#355974",
-        }
-      }
-    >
-      Activity title 2
-    </Text>
-    <Component
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#97A5B2",
-        }
-      }
-    >
-      23 years ago
-    </Text>
-  </Component>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "fontSize": 14,
-        "marginTop": 5,
-      }
-    }
-  >
-    My description 2
-  </Text>
-</View>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`Pages ActivitiesList should renders correctly without activities and fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -384,11 +205,11 @@ exports[`Pages ActivitiesList should renders correctly without activities and fe
     updateCellsBatchingPeriod={50}
     windowSize={21}
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Pages ActivitiesList should renders correctly without activities and not fetching 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "flex": 1,
@@ -404,5 +225,5 @@ exports[`Pages ActivitiesList should renders correctly without activities and no
     subtitle="Keep track of what you’ve done."
     title="Have you done an activity with Theo lately?"
   />
-</Component>
+</ForwardRef(View)>
 `;

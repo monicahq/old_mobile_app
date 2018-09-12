@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components EmptyActivity should renders correctly with a subtitle 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "alignItems": "center",
@@ -10,14 +10,14 @@ exports[`Components EmptyActivity should renders correctly with a subtitle 1`] =
     }
   }
 >
-  <Component
+  <ForwardRef(View)
     style={
       Object {
         "flex": 1,
       }
     }
   />
-  <Image
+  <ForwardRef(Image)
     source={2}
     style={
       Object {
@@ -25,17 +25,14 @@ exports[`Components EmptyActivity should renders correctly with a subtitle 1`] =
       }
     }
   />
-  <Component
+  <ForwardRef(View)
     style={
       Object {
         "paddingHorizontal": 60,
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "marginBottom": 10,
@@ -44,11 +41,8 @@ exports[`Components EmptyActivity should renders correctly with a subtitle 1`] =
       }
     >
       My title
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    </ForwardRef(Text)>
+    <ForwardRef(Text)
       style={
         Object {
           "fontSize": 13,
@@ -57,20 +51,20 @@ exports[`Components EmptyActivity should renders correctly with a subtitle 1`] =
       }
     >
       My subtitle
-    </Text>
-  </Component>
-  <Component
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
+  <ForwardRef(View)
     style={
       Object {
         "flex": 1,
       }
     }
   />
-</Component>
+</ForwardRef(View)>
 `;
 
 exports[`Components EmptyActivity should renders correctly with no subtitle 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "alignItems": "center",
@@ -79,14 +73,14 @@ exports[`Components EmptyActivity should renders correctly with no subtitle 1`] 
     }
   }
 >
-  <Component
+  <ForwardRef(View)
     style={
       Object {
         "flex": 1,
       }
     }
   />
-  <Image
+  <ForwardRef(Image)
     source={2}
     style={
       Object {
@@ -94,17 +88,14 @@ exports[`Components EmptyActivity should renders correctly with no subtitle 1`] 
       }
     }
   />
-  <Component
+  <ForwardRef(View)
     style={
       Object {
         "paddingHorizontal": 60,
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "marginBottom": 10,
@@ -113,14 +104,14 @@ exports[`Components EmptyActivity should renders correctly with no subtitle 1`] 
       }
     >
       My title
-    </Text>
-  </Component>
-  <Component
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
+  <ForwardRef(View)
     style={
       Object {
         "flex": 1,
       }
     }
   />
-</Component>
+</ForwardRef(View)>
 `;

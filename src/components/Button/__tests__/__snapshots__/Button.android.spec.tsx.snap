@@ -5,7 +5,7 @@ exports[`Components Button Android should renders correctly 1`] = `
   disabled={false}
   onPress={[Function]}
 >
-  <Component
+  <ForwardRef(View)
     style={
       Array [
         Object {
@@ -22,10 +22,7 @@ exports[`Components Button Android should renders correctly 1`] = `
       ]
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "color": "white",
@@ -35,8 +32,8 @@ exports[`Components Button Android should renders correctly 1`] = `
       }
     >
       TEST
-    </Text>
-  </Component>
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
 </DummyTouchableNativeFeedback>
 `;
 
@@ -45,7 +42,7 @@ exports[`Components Button Android should renders correctly 2`] = `
   disabled={false}
   onPress={[Function]}
 >
-  <Component
+  <ForwardRef(View)
     style={
       Array [
         Object {
@@ -62,10 +59,7 @@ exports[`Components Button Android should renders correctly 2`] = `
       ]
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "color": "white",
@@ -75,8 +69,8 @@ exports[`Components Button Android should renders correctly 2`] = `
       }
     >
       QDWDQW
-    </Text>
-  </Component>
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
 </DummyTouchableNativeFeedback>
 `;
 
@@ -85,7 +79,7 @@ exports[`Components Button Android should renders correctly 3`] = `
   disabled={false}
   onPress={[Function]}
 >
-  <Component
+  <ForwardRef(View)
     style={
       Array [
         Object {
@@ -102,10 +96,7 @@ exports[`Components Button Android should renders correctly 3`] = `
       ]
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "color": "white",
@@ -115,8 +106,8 @@ exports[`Components Button Android should renders correctly 3`] = `
       }
     >
       QDWDQW
-    </Text>
-    <ActivityIndicator
+    </ForwardRef(Text)>
+    <ForwardRef(ActivityIndicator)
       animating={true}
       color="#ffffff"
       hidesWhenStopped={true}
@@ -127,7 +118,7 @@ exports[`Components Button Android should renders correctly 3`] = `
         }
       }
     />
-  </Component>
+  </ForwardRef(View)>
 </DummyTouchableNativeFeedback>
 `;
 
@@ -136,7 +127,7 @@ exports[`Components Button Android should renders correctly 4`] = `
   disabled={true}
   onPress={[Function]}
 >
-  <Component
+  <ForwardRef(View)
     style={
       Array [
         Object {
@@ -155,10 +146,7 @@ exports[`Components Button Android should renders correctly 4`] = `
       ]
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "color": "white",
@@ -168,7 +156,7 @@ exports[`Components Button Android should renders correctly 4`] = `
       }
     >
       QDWDQW
-    </Text>
-  </Component>
+    </ForwardRef(Text)>
+  </ForwardRef(View)>
 </DummyTouchableNativeFeedback>
 `;

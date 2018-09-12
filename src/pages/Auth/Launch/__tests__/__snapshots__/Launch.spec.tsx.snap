@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components Launch should renders correctly 1`] = `
-<Component
+<ForwardRef(View)
   style={
     Object {
       "alignItems": "center",
@@ -11,14 +11,14 @@ exports[`Components Launch should renders correctly 1`] = `
     }
   }
 >
-  <Component
+  <ForwardRef(View)
     style={
       Object {
         "flex": 1,
       }
     }
   />
-  <Component
+  <ForwardRef(View)
     style={
       Object {
         "alignItems": "center",
@@ -28,13 +28,10 @@ exports[`Components Launch should renders correctly 1`] = `
       }
     }
   >
-    <Image
+    <ForwardRef(Image)
       source={1}
     />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <ForwardRef(Text)
       style={
         Object {
           "fontSize": 18,
@@ -46,11 +43,8 @@ exports[`Components Launch should renders correctly 1`] = `
       }
     >
       Keep track of every interaction with your friend and family!
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    </ForwardRef(Text)>
+    <ForwardRef(Text)
       style={
         Object {
           "color": "#97A5B2",
@@ -60,7 +54,7 @@ exports[`Components Launch should renders correctly 1`] = `
       }
     >
       Remember when you last called, what you talked about, the name of their kids or what they prefer to eat!
-    </Text>
+    </ForwardRef(Text)>
     <Button
       disabled={false}
       id="goToLogin"
@@ -69,13 +63,13 @@ exports[`Components Launch should renders correctly 1`] = `
     >
       Get started
     </Button>
-  </Component>
-  <Component
+  </ForwardRef(View)>
+  <ForwardRef(View)
     style={
       Object {
         "flex": 1,
       }
     }
   />
-</Component>
+</ForwardRef(View)>
 `;
