@@ -15,7 +15,8 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
-#import "SplashScreen.h"
+#import "RNSplashScreen.h"  // here
+
 
 @implementation AppDelegate
 
@@ -45,7 +46,7 @@
   [self.window makeKeyAndVisible];
   
   
-  [SplashScreen show];
+  [RNSplashScreen show];
   return YES;
 }
 

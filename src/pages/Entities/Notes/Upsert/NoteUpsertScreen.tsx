@@ -1,4 +1,4 @@
-import {connect, Dispatch} from 'react-redux';
+import {connect, MapDispatchToProps} from 'react-redux';
 import {Action} from 'redux';
 
 import {INote, IRootState} from '@models';
@@ -18,7 +18,10 @@ export const mapStateToProps = (state: IRootState, {navigation}) => {
   };
 };
 
-export const mapDispatchToProps = (dispatch: Dispatch<Action>) => ({
+export const mapDispatchToProps = (
+  // TODO
+  dispatch: MapDispatchToProps<any, void>
+) => ({
   pop,
   updateNote: (note: INote) => dispatch(updateNote(note)),
   postNote: (note: INote) => dispatch(postNote(note)),

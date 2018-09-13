@@ -1,6 +1,6 @@
 import {getAvatarColor, getAvatarUrl, getInitials} from '@utils/contacts';
 import React, {PureComponent} from 'react';
-import {Image, Text, View, ViewStyle} from 'react-native';
+import {Image, ImageStyle, Text, View} from 'react-native';
 
 import {IContact} from '@models';
 import {styles} from './ContactAvatar.styles';
@@ -8,7 +8,7 @@ import {styles} from './ContactAvatar.styles';
 interface IContactAvatar {
   contact: IContact;
   size: number;
-  style?: ViewStyle;
+  style?: ImageStyle;
 }
 
 export class ContactAvatar extends PureComponent<IContactAvatar> {
@@ -23,6 +23,7 @@ export class ContactAvatar extends PureComponent<IContactAvatar> {
         <Image
           // @ts-ignore TODO Fix this
           source={{uri: getAvatarUrl(contact)}}
+          // @ts-ignore TODO Fix this
           style={[styles.avatar, sizeStyle, style]}
         />
       );
