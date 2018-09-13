@@ -1,5 +1,4 @@
-import {connect, Dispatch} from 'react-redux';
-import {Action} from 'redux';
+import {connect, MapDispatchToProps} from 'react-redux';
 
 import {navigate} from '@navigator/NavigationService';
 import {subscribeBeta} from '@redux/beta';
@@ -9,7 +8,8 @@ import {InitialState} from './InitialState';
 
 export const InitialStateContainer = connect(
   null,
-  (dispatch: Dispatch<Action>) => ({
+  // TODO
+  (dispatch: MapDispatchToProps<any, void>) => ({
     navigate: routeName => navigate(routeName),
     setToken: token => dispatch(setToken(token)),
     getContacts: () => dispatch(getContacts()),

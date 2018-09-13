@@ -3,8 +3,11 @@
 exports[`Pages Contact / ContactInfos should renders correctly 1`] = `
 Array [
   <SegmentedControlTab
+    accessibilityLabels={Array []}
+    accessible={true}
     activeTabBadgeContainerStyle={Object {}}
     activeTabBadgeStyle={Object {}}
+    activeTabOpacity={1}
     activeTabStyle={
       Object {
         "backgroundColor": "#325776",
@@ -15,6 +18,7 @@ Array [
         "color": "white",
       }
     }
+    allowFontScaling={true}
     badges={
       Array [
         "",
@@ -23,6 +27,7 @@ Array [
       ]
     }
     borderRadius={5}
+    enabled={true}
     key="0"
     multiple={false}
     onTabPress={[Function]}
@@ -44,7 +49,13 @@ Array [
         "color": "#325776",
       }
     }
+    tabsContainerDisableStyle={
+      Object {
+        "opacity": 0.6,
+      }
+    }
     tabsContainerStyle={Object {}}
+    textNumberOfLines={1}
     values={
       Array [
         "Relations",

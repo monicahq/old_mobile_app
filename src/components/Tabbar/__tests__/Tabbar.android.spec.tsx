@@ -5,6 +5,7 @@ import {Tabbar} from '../Tabbar';
 
 jest.mock('Platform', () => ({
   OS: 'android',
+  select: () => null,
 }));
 
 describe('Components', () => {
