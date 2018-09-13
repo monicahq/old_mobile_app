@@ -60,7 +60,7 @@
     "@babel/parser": "7.0.0",
     "@commitlint/cli": "7.1.1",
     "@commitlint/config-conventional": "7.1.1",
-    "@commitlint/prompt-cli": "7.1.1",
+    "@commitlint/prompt-cli": "7.1.2",
     "@types/cheerio": "0.22.9",
     "@types/detox": "7.3.0",
     "@types/i18next": "8.4.5",
