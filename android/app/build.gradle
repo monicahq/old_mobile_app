@@ -102,8 +102,8 @@ android {
         applicationId "com.monicahq.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 9
-        versionName "0.6.0"
+        versionCode 11
+        versionName "0.7.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -119,13 +119,13 @@ android {
     signingConfigs {
       debug {}
       release {
-          "git clone git@gitlab.com:monicahq/mobile-credentials.git".execute()
+          "git clone git@gitlab.com:monicahq/mobile-creds.git".execute()
 
           if (project.hasProperty('MONICA_RELEASE_STORE_FILE')) {
               storeFile file(MONICA_RELEASE_STORE_FILE)
-              storePassword new File('mobile-credentials/android/monica-store-password').text
+              storePassword new File('mobile-creds/android/monica-store-password').text
               keyAlias MONICA_RELEASE_KEY_ALIAS
-              keyPassword new File('mobile-credentials/android/monica-key-password').text
+              keyPassword new File('mobile-creds/android/monica-key-password').text
           }
       }
     }

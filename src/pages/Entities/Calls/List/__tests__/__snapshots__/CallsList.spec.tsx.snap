@@ -20,7 +20,7 @@ exports[`Pages CallsList should display the loading indicator in the footer if i
     ]
   }
 >
-  <Component
+  <_class
     animating={true}
     color="#999999"
     hidesWhenStopped={true}

@@ -16,7 +16,7 @@ platform :ios do
   lane :beta do
      match(
       type: "appstore",
-      git_url: "git@gitlab.com:monicahq/mobile-credentials.git"
+      git_url: "git@gitlab.com:monicahq/mobile-creds.git"
     )
     increment_build_number(xcodeproj: "Monica.xcodeproj")
     build_app(workspace: "Monica.xcworkspace", scheme: "Monica")
@@ -27,8 +27,8 @@ platform :ios do
 
   lane :certificates do
     register_devices(devices_file: "./devices.txt")
-    match(git_url: "git@gitlab.com:monicahq/mobile-credentials.git", type: "adhoc", force_for_new_devices: true)
-    match(git_url: "git@gitlab.com:monicahq/mobile-credentials.git", type: "development", force_for_new_devices: true, app_identifier: "com.monicahq.app.debug")
+    match(git_url: "git@gitlab.com:monicahq/mobile-creds.git", type: "adhoc", force_for_new_devices: true)
+    match(git_url: "git@gitlab.com:monicahq/mobile-creds.git", type: "development", force_for_new_devices: true, app_identifier: "com.monicahq.app.debug")
   end
 
   lane :version do |options|

@@ -14,7 +14,7 @@ exports[`Pages DebtsList should display the activity indicator in the footer if 
     ]
   }
 >
-  <Component
+  <_class
     animating={true}
     color="#999999"
     hidesWhenStopped={true}

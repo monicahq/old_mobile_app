@@ -14,7 +14,7 @@ exports[`Pages Tasks should display the task indicator in the footer if it is fe
     ]
   }
 >
-  <Component
+  <_class
     animating={true}
     color="#999999"
     hidesWhenStopped={true}

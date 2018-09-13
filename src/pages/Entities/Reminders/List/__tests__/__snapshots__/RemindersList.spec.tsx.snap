@@ -14,7 +14,7 @@ exports[`Pages Reminders should display the reminder indicator in the footer if 
     ]
   }
 >
-  <Component
+  <_class
     animating={true}
     color="#999999"
     hidesWhenStopped={true}
