@@ -1,2 +1,2 @@
-json_key_file "mobile-credentials/android/play-store.json" # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
+json_key_file "mobile-creds/android/play-store.json" # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
 package_name "com.monicahq.app" # e.g. com.krausefx.app

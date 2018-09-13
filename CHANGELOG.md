@@ -1,3 +1,19 @@
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/monicahq/chandler/compare/0.6.0...0.7.0) (2018-09-13)
+
+### Features
+
+* increase allowed length of TLD part of the mail (thanks to @DBX12) ([#357](https://github.com/monicahq/chandler/issues/357)) ([c9a392a](https://github.com/monicahq/chandler/commit/c9a392a))
+* **package:** update react-native to version 0.57.0. Major update including android sdk updates ([#397](https://github.com/monicahq/chandler/issues/397)) ([2793899](https://github.com/monicahq/chandler/commit/2793899))
+* update misc dependencies ([#398](https://github.com/monicahq/chandler/issues/398)) ([e0420c1](https://github.com/monicahq/chandler/commit/e0420c1))
+
+
+### Bug Fixes
+
+* fixed typo (thanks to @parasdaryanani)
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/monicahq/chandler/compare/0.5.1...0.6.0) (2018-06-04)
 

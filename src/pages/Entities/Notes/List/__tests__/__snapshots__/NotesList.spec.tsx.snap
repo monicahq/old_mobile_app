@@ -14,7 +14,7 @@ exports[`Pages Notes should display the activity indicator in the footer if it i
     ]
   }
 >
-  <Component
+  <_class
     animating={true}
     color="#999999"
     hidesWhenStopped={true}
