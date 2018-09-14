@@ -954,10 +954,11 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-native@0.56.18":
-  version "0.56.18"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.56.18.tgz#9e656d87da53a1fdd42be4cc4eab23f81bff71e9"
+"@types/react-native@0.56.19":
+  version "0.56.19"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.56.19.tgz#64ec243b7af6c53787909519b1ac22f56688cc96"
   dependencies:
+    "@types/prop-types" "*"
     "@types/react" "*"
 
 "@types/react-redux@6.0.8":
