@@ -1,10 +1,10 @@
 import {shallow} from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
-import {Checkbox} from '../Checkbox.android';
+import {Checkbox} from '../Checkbox';
 
 describe('Components', () => {
-  describe('Checkbox Android', () => {
+  describe('Checkbox IOS', () => {
     // const defaultOnPress = {
     //   onPress: () => {
     //     return;
