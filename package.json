@@ -144,5 +144,11 @@
         "name": "iPhone SE"
       }
     }
+  },
+  "greenkeeper": {
+    "commitMessages": {
+      "dependencyUpdate": "fix(package): update ${dependency} to version ${version}",
+      "devDependencyUpdate": "chore(package): update ${dependency} to version ${version}"
+    }
   }
 }
