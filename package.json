@@ -20,7 +20,7 @@
     "clean": "watchman watch-del-all && rm -rf node_modules && yarn && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/haste-map-react-native-packager-*",
     "test:e2e": "detox test -c ios.sim.debug.iPhoneSE",
     "test:e2e:build": "detox build -c ios.sim.debug.iPhoneSE",
-    "test:e2e:ci": "detox test",
+    "test:e2e:ci": "detox test --cleanup",
     "test:e2e:build:ci": "detox build"
   },
   "dependencies": {
@@ -72,7 +72,7 @@
     "babel-jest": "^23.6.0",
     "codecov": "3.1.0",
     "conventional-changelog-cli": "^2.0.5",
-    "detox": "7.4.3",
+    "detox": "9.0.1",
     "enzyme": "3.6.0",
     "enzyme-adapter-react-16": "1.5.0",
     "enzyme-to-json": "3.3.4",
@@ -84,6 +84,7 @@
     "react-dom": "16.5.1",
     "react-native-typescript-transformer": "1.2.10",
     "react-test-renderer": "16.5.1",
+    "ts-jest": "^23.1.4",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.15.0",
     "tslint-plugin-prettier": "2.0.0",
