@@ -1018,9 +1018,9 @@
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/@types/detox/-/detox-7.3.0.tgz#1ecd3a9a4e79a137e9a8e6e14f1f512584b3b7d0"
 
-"@types/i18next@8.4.5":
-  version "8.4.5"
-  resolved "https://registry.yarnpkg.com/@types/i18next/-/i18next-8.4.5.tgz#d6c0cb594258815219c70006e9f5cd65ad6d797f"
+"@types/i18next@8.4.6":
+  version "8.4.6"
+  resolved "https://registry.yarnpkg.com/@types/i18next/-/i18next-8.4.6.tgz#d03e36289c913dc624378f5f1c8925e553e6d6c8"
 
 "@types/jest@23.3.2":
   version "23.3.2"
