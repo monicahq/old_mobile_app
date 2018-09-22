@@ -814,9 +814,9 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-native@0.56.21":
-  version "0.56.21"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.56.21.tgz#15e7aeb48d5e56013c0778290038aa1d6df7e906"
+"@types/react-native@0.56.23":
+  version "0.56.23"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.56.23.tgz#00f161fd11cf7dfd7ba31ce7d5178f386dd041fb"
   dependencies:
     "@types/prop-types" "*"
     "@types/react" "*"
