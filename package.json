@@ -77,7 +77,7 @@
     "enzyme-adapter-react-16": "1.5.0",
     "enzyme-to-json": "3.3.4",
     "greenkeeper-lockfile": "1.15.1",
-    "husky": "0.14.3",
+    "husky": "1.0.0",
     "jest": "23.6.0",
     "jest-junit-reporter": "1.1.0",
     "prettier": "1.14.3",
