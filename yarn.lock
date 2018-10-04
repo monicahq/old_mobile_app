@@ -6016,12 +6016,12 @@ react-native-typescript-transformer@1.2.10:
     semver "^5.4.1"
     source-map "^0.5.6"
 
-react-native-vector-icons@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-5.0.0.tgz#d0bd6fdda01159db409810718dd04904951a98f5"
+react-native-vector-icons@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-6.0.1.tgz#065a1b7d7b91b5bbc09969625d8450babd856bd1"
   dependencies:
     lodash "^4.0.0"
-    prop-types "^15.5.10"
+    prop-types "^15.6.2"
     yargs "^8.0.2"
 
 react-native-vector-icons@^4.4.2:
