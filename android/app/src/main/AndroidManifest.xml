@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.monicahq.app"
+    android:installLocation="auto"
     android:versionCode="0.1.0"
     android:versionName="0.1.0">
 
