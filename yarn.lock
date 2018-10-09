@@ -792,9 +792,9 @@
   version "0.22.9"
   resolved "https://registry.yarnpkg.com/@types/cheerio/-/cheerio-0.22.9.tgz#b5990152604c2ada749b7f88cab3476f21f39d7b"
 
-"@types/detox@7.3.0":
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/@types/detox/-/detox-7.3.0.tgz#1ecd3a9a4e79a137e9a8e6e14f1f512584b3b7d0"
+"@types/detox@7.3.2":
+  version "7.3.2"
+  resolved "https://registry.yarnpkg.com/@types/detox/-/detox-7.3.2.tgz#a7f04ae79995e1da933052f9e9daed3dd2c0bc83"
 
 "@types/i18next@11.9.0":
   version "11.9.0"
