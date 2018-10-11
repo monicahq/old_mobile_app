@@ -706,6 +706,20 @@
     lodash.topairs "4.3.0"
     resolve-from "4.0.0"
 
+"@commitlint/load@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/load/-/load-7.2.1.tgz#f1a49cb2ecf53e235e4f3523f75a553f5b481f5c"
+  dependencies:
+    "@commitlint/execute-rule" "^7.1.2"
+    "@commitlint/resolve-extends" "^7.1.2"
+    babel-runtime "^6.23.0"
+    cosmiconfig "^4.0.0"
+    lodash.merge "4.6.1"
+    lodash.mergewith "4.6.1"
+    lodash.pick "4.4.0"
+    lodash.topairs "4.3.0"
+    resolve-from "4.0.0"
+
 "@commitlint/message@^7.1.2":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@commitlint/message/-/message-7.1.2.tgz#b8e7ed3914896f8490b5897c4f6b8923105b55fd"
@@ -717,19 +731,19 @@
     conventional-changelog-angular "^1.3.3"
     conventional-commits-parser "^2.1.0"
 
-"@commitlint/prompt-cli@7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@commitlint/prompt-cli/-/prompt-cli-7.1.2.tgz#4376dbdb7f7354e9584b174c2516f8defc1ee361"
+"@commitlint/prompt-cli@7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/prompt-cli/-/prompt-cli-7.2.1.tgz#3658c6301765674b96e1e837337c35bb3d67bff1"
   dependencies:
-    "@commitlint/prompt" "^7.1.2"
+    "@commitlint/prompt" "^7.2.1"
     execa "0.9.0"
     meow "3.7.0"
 
-"@commitlint/prompt@^7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@commitlint/prompt/-/prompt-7.1.2.tgz#ca57b3dbb3e165c2e912fea4b5037f9247cd9bc3"
+"@commitlint/prompt@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/prompt/-/prompt-7.2.1.tgz#513ab300ce3a2a7eb9fe06d6e60b097f2313223c"
   dependencies:
-    "@commitlint/load" "^7.1.2"
+    "@commitlint/load" "^7.2.1"
     babel-runtime "^6.23.0"
     chalk "^2.0.0"
     lodash.camelcase "4.3.0"
