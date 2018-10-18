@@ -42,7 +42,7 @@ exports[`Components Launch should renders correctly 1`] = `
         }
       }
     >
-      Keep track of every interaction with your friend and family!
+      Keep track of every interaction with your friends and family!
     </ForwardRef(Text)>
     <ForwardRef(Text)
       style={
