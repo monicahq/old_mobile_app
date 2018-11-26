@@ -788,9 +788,9 @@
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
-"@types/cheerio@0.22.9":
-  version "0.22.9"
-  resolved "https://registry.yarnpkg.com/@types/cheerio/-/cheerio-0.22.9.tgz#b5990152604c2ada749b7f88cab3476f21f39d7b"
+"@types/cheerio@0.22.10":
+  version "0.22.10"
+  resolved "https://registry.yarnpkg.com/@types/cheerio/-/cheerio-0.22.10.tgz#780d552467824be4a241b29510a7873a7432c4a6"
 
 "@types/detox@7.3.0":
   version "7.3.0"
