@@ -86,7 +86,7 @@
     "react-test-renderer": "16.5.1",
     "ts-jest": "^23.1.4",
     "tslint": "5.11.0",
-    "tslint-config-prettier": "1.15.0",
+    "tslint-config-prettier": "1.17.0",
     "tslint-plugin-prettier": "2.0.0",
     "tslint-react": "3.6.0",
     "typescript": "3.0.3"
