@@ -75,7 +75,7 @@
     "detox": "9.0.1",
     "enzyme": "3.6.0",
     "enzyme-adapter-react-16": "1.5.0",
-    "enzyme-to-json": "3.3.4",
+    "enzyme-to-json": "3.3.5",
     "greenkeeper-lockfile": "1.15.1",
     "husky": "0.14.3",
     "jest": "23.6.0",
