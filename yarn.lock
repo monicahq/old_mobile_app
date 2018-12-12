@@ -834,9 +834,10 @@
   dependencies:
     csstype "^2.2.0"
 
-"@types/react@16.4.14":
-  version "16.4.14"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.14.tgz#47c604c8e46ed674bbdf4aabf82b34b9041c6a04"
+"@types/react@16.7.15":
+  version "16.7.15"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.7.15.tgz#640a50bc7d8ef0ef690a3583873b1cfd8e909d21"
+  integrity sha512-bYstzLUwzHtmmWbYpCGpTR8MLpg/fmebZ74E4O3IhYfq+SDzOgmrMY8dc4vihXkHesoe/Aw7nbD+K3J1Qo17TQ==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
