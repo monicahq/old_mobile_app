@@ -30,7 +30,7 @@
     "appcenter-analytics": "1.8.1",
     "appcenter-crashes": "1.8.1",
     "babel-core": "7.0.0-bridge.0",
-    "formik": "0.11.11",
+    "formik": "1.4.1",
     "frisbee": "2.0.5",
     "i18next": "11.9.0",
     "metro-react-native-babel-preset": "0.45.3",
