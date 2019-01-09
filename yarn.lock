@@ -3549,9 +3549,10 @@ husky@0.14.3:
     normalize-path "^1.0.0"
     strip-indent "^2.0.0"
 
-i18next@11.9.0:
-  version "11.9.0"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-11.9.0.tgz#c30c0a5e0a857124923a8dd1ce8f1df603e30c70"
+i18next@13.1.1:
+  version "13.1.1"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-13.1.1.tgz#2c3adf91884b1d5a6d72ddba4814a678109a95d4"
+  integrity sha512-g/Aov1Xtj+XCs9hkT4S0UFuQxAGweX5MLXgoc9XgLR/8nmgKDflmEDHTNaPun16Thc8ojD8AJLAr8e5HawHB6A==
 
 iconv-lite@0.4.19:
   version "0.4.19"
