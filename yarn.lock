@@ -649,9 +649,10 @@
     lodash.pick "4.4.0"
     meow "5.0.0"
 
-"@commitlint/config-conventional@7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-7.1.2.tgz#5b5e45924c9abd8f9a8d83eb1f66e24e5f66916f"
+"@commitlint/config-conventional@7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-7.3.0.tgz#d76fa88e0a32e3768f103d84cd3413f750ac85d1"
+  integrity sha512-JKhQOfc+brEDUp/nDsNMOur8i1/Mbszd5hSdtUIiQqOjP294V99FrFytxOH4vIsInSrv6xagGxSE8J57wGQRxA==
 
 "@commitlint/ensure@^7.1.2":
   version "7.1.2"
