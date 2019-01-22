@@ -5,6 +5,7 @@
 <p align="center">
   <a href="https://travis-ci.org/monicahq/chandler"><img src="https://travis-ci.org/monicahq/chandler.svg?branch=develop" alt="Build Status"></a>
   <a href="https://circleci.com/gh/monicahq/chandler"><img src="https://circleci.com/gh/monicahq/chandler.svg?style=shield" alt="Build Status"></a>
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fmonicahq%2Fchandler?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmonicahq%2Fchandler.svg?type=shield"/></a>
   <a href="https://codecov.io/gh/monicahq/chandler"><img src="https://codecov.io/gh/monicahq/chandler/branch/develop/graph/badge.svg" /></a>
 </p>
 
@@ -30,6 +31,9 @@
 
 <!-- /MarkdownTOC -->
 
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmonicahq%2Fchandler.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmonicahq%2Fchandler?ref=badge_large)
 
 ## Introduction
 
