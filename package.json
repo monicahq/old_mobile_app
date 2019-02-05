@@ -74,7 +74,7 @@
     "conventional-changelog-cli": "^2.0.5",
     "detox": "9.0.1",
     "enzyme": "3.8.0",
-    "enzyme-adapter-react-16": "1.5.0",
+    "enzyme-adapter-react-16": "1.9.0",
     "enzyme-to-json": "3.3.4",
     "greenkeeper-lockfile": "1.15.1",
     "husky": "0.14.3",
