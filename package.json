@@ -35,7 +35,7 @@
     "i18next": "11.9.0",
     "metro-react-native-babel-preset": "0.45.3",
     "moment": "tqc/moment#no-dynamic-import",
-    "react": "16.5.1",
+    "react": "16.8.1",
     "react-native": "0.57.1",
     "react-native-actionsheet": "2.4.2",
     "react-native-code-push": "5.4.2",
