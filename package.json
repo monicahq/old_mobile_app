@@ -81,7 +81,7 @@
     "jest": "23.6.0",
     "jest-junit-reporter": "1.1.0",
     "prettier": "1.14.3",
-    "react-dom": "16.5.1",
+    "react-dom": "16.8.0",
     "react-native-typescript-transformer": "1.2.10",
     "react-test-renderer": "16.5.1",
     "ts-jest": "^23.1.4",
