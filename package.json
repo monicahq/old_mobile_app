@@ -31,7 +31,7 @@
     "appcenter-crashes": "1.8.1",
     "babel-core": "7.0.0-bridge.0",
     "formik": "0.11.11",
-    "frisbee": "2.0.5",
+    "frisbee": "2.0.6",
     "i18next": "11.9.0",
     "metro-react-native-babel-preset": "0.45.3",
     "moment": "tqc/moment#no-dynamic-import",
