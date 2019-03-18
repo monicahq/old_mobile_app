@@ -5913,15 +5913,17 @@ react-native-actionsheet@2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/react-native-actionsheet/-/react-native-actionsheet-2.4.2.tgz#6a00dd51a75ef2c8974312130e405af73191500f"
 
-react-native-code-push@5.4.2:
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/react-native-code-push/-/react-native-code-push-5.4.2.tgz#a43f976f983b9866005aac50fe7c1e915ab23943"
+react-native-code-push@5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/react-native-code-push/-/react-native-code-push-5.6.0.tgz#e905d32d188c5f7bcff446d813271d03a69543fd"
+  integrity sha512-NDZG+t1K+7ubjdtkuQ5UjcqRZbtqZMiMPCnp3VJRfdcX2KcgivW0piRZ3myuAYd6Jyxs4w13rIXo2kzLW4sxBQ==
   dependencies:
     code-push "2.0.6"
     glob "^5.0.15"
     hoist-non-react-statics "^2.3.1"
     inquirer "1.1.2"
     plist "3.0.1"
+    semver "^5.6.0"
     xcode "1.0.0"
 
 react-native-device-info@0.22.5:
@@ -6626,6 +6628,11 @@ schedule@^0.4.0:
 semver@^5.5.1:
   version "5.5.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.1.tgz#7dfdd8814bdb7cabc7be0fb1d734cfb66c940477"
+
+semver@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
+  integrity sha512-RS9R6R35NYgQn++fkDWaOmqGoj4Ek9gGs+DPxNUZKuwE183xjJroKvyo1IzVFeXvUrvmALy6FWD5xrdJT25gMg==
 
 send@0.16.2:
   version "0.16.2"
