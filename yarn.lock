@@ -7303,9 +7303,10 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typesafe-actions@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/typesafe-actions/-/typesafe-actions-2.0.4.tgz#31c8f8df3566d549eb52edb64a75997e970c17d0"
+typesafe-actions@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/typesafe-actions/-/typesafe-actions-3.3.0.tgz#fd06eebb740e4901a8b261f93f1f0c0e89e17a99"
+  integrity sha512-Pf5gB1/lbZxnHYZbj6b/62k+AsY+i2o92MiIN0WgdWiCSUkzLab2Vyvh1tDIoqSmasOa09v8+E6IJjg91ME4nw==
 
 typescript@3.0.3:
   version "3.0.3"
