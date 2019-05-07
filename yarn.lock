@@ -814,9 +814,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-native@0.56.23":
-  version "0.56.23"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.56.23.tgz#00f161fd11cf7dfd7ba31ce7d5178f386dd041fb"
+"@types/react-native@0.57.52":
+  version "0.57.52"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.57.52.tgz#64f80498fbbe07884a08f77fd6fc387f489128e9"
+  integrity sha512-hbNlGvXZRHtz6eXBIzJXmUv7yTRNGsmuJ8DsYIgFkXRbth+AvoLsayPv0tPZr82/QTc4Q0WeCGpUb5Kovoof9A==
   dependencies:
     "@types/prop-types" "*"
     "@types/react" "*"
