@@ -72,7 +72,7 @@
     "babel-jest": "^23.6.0",
     "codecov": "3.1.0",
     "conventional-changelog-cli": "^2.0.5",
-    "detox": "9.0.1",
+    "detox": "12.7.3",
     "enzyme": "3.6.0",
     "enzyme-adapter-react-16": "1.5.0",
     "enzyme-to-json": "3.3.4",
