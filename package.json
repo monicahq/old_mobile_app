@@ -39,7 +39,7 @@
     "react-native": "0.57.1",
     "react-native-actionsheet": "2.4.2",
     "react-native-code-push": "5.4.2",
-    "react-native-device-info": "0.22.5",
+    "react-native-device-info": "1.7.0",
     "react-native-keyboard-aware-scroll-view": "0.7.2",
     "react-native-navbar": "2.1.0",
     "react-native-search-bar": "3.4.2",
