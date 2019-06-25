@@ -977,35 +977,38 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
-appcenter-analytics@1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/appcenter-analytics/-/appcenter-analytics-1.8.1.tgz#1fec88b66570eaf0a5c5e89ec12371d80404862c"
+appcenter-analytics@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/appcenter-analytics/-/appcenter-analytics-2.1.0.tgz#67b66e01245d472be8fecc0b28f591b7d64dc8b9"
+  integrity sha512-4gMvlTSSlyc+Lp0jW3mLvlMJavXJsOVQX30upKaYnRgKH+YCjix9a/Iy99CaH40MZoEVFSQiZdj3KfDnTjAKvQ==
   dependencies:
-    appcenter "1.8.1"
+    appcenter "2.1.0"
 
-appcenter-crashes@1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/appcenter-crashes/-/appcenter-crashes-1.8.1.tgz#8892641e2a906366a37a7794273448b13c4059f7"
+appcenter-crashes@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/appcenter-crashes/-/appcenter-crashes-2.1.0.tgz#cd88344acab16fe699df02b90c804bce77e92b80"
+  integrity sha512-TP3yfALyoTVdsi/p9TBkBZAtf8XwoxdK+6Gz7h1ByGQ0qcF7INxFrrKePj5qYXCJznkxPL0WvkV2ArqI+xFkrw==
   dependencies:
-    appcenter "1.8.1"
+    appcenter "2.1.0"
 
-appcenter-link-scripts@1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/appcenter-link-scripts/-/appcenter-link-scripts-1.8.1.tgz#03cbac52242c74b49e1a615e378b72e1553716ea"
+appcenter-link-scripts@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/appcenter-link-scripts/-/appcenter-link-scripts-2.1.0.tgz#a15b1efe59327851c605e93dc1eb8af576fbf0cf"
+  integrity sha512-oCEUUi1hlEIu7xzeM6Hly3TROfqBUoUe7b6yqttJzZnu9xy7oAK6W1L/cH3gh15I8g2melDQd+0E2dbAfSY2yg==
   dependencies:
     debug "^2.2.0"
     glob "^5.0.15"
-    inquirer "1.1.2"
     mkdirp "^0.5.1"
     plist "^3.0.1"
     which "^1.2.11"
-    xcode "^1.0.0"
+    xcode "^2.0.0"
 
-appcenter@1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/appcenter/-/appcenter-1.8.1.tgz#e8c91937e1ada9690291b42bf6ebf7dba85f9fac"
+appcenter@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/appcenter/-/appcenter-2.1.0.tgz#e378c6270030edf0a57b96010371d3b6ba8e9ff4"
+  integrity sha512-6cmdAOCFTPeV1rPMT8+I8izk2Ug79xfOSNuj4mKkOnT0NEM6tPe5gj+QkhTXWy17Y77n40giYSqdFXs12sty/g==
   dependencies:
-    appcenter-link-scripts "1.8.1"
+    appcenter-link-scripts "2.1.0"
 
 append-transform@^1.0.0:
   version "1.0.0"
@@ -6729,6 +6732,15 @@ simple-plist@^0.2.1:
     bplist-parser "0.1.1"
     plist "2.0.1"
 
+simple-plist@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/simple-plist/-/simple-plist-1.0.0.tgz#bed3085633b22f371e111f45d159a1ccf94b81eb"
+  integrity sha512-043L2rO80LVF7zfZ+fqhsEkoJFvW8o59rt/l4ctx1TJWoTx7/jkiS1R5TatD15Z1oYnuLJytzE7gcnnBuIPL2g==
+  dependencies:
+    bplist-creator "0.0.7"
+    bplist-parser "0.1.1"
+    plist "^3.0.1"
+
 sisteransi@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-0.1.1.tgz#5431447d5f7d1675aac667ccd0b865a4994cb3ce"
@@ -7436,9 +7448,10 @@ uuid@^2.0.1:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
 
-uuid@^3.0.1, uuid@^3.1.0:
+uuid@^3.0.1, uuid@^3.1.0, uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
+  integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
 
 validate-npm-package-license@^3.0.1:
   version "3.0.3"
@@ -7605,7 +7618,7 @@ ws@^5.2.0:
   dependencies:
     async-limiter "~1.0.0"
 
-xcode@1.0.0, xcode@^1.0.0:
+xcode@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/xcode/-/xcode-1.0.0.tgz#e1f5b1443245ded38c180796df1a10fdeda084ec"
   dependencies:
@@ -7620,6 +7633,14 @@ xcode@^0.9.1:
     pegjs "^0.10.0"
     simple-plist "^0.2.1"
     uuid "3.0.1"
+
+xcode@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/xcode/-/xcode-2.0.0.tgz#134f1f94c26fbfe8a9aaa9724bfb2772419da1a2"
+  integrity sha512-5xF6RCjAdDEiEsbbZaS/gBRt3jZ/177otZcpoLCjGN/u1LrfgH7/Sgeeavpr/jELpyDqN2im3AKosl2G2W8hfw==
+  dependencies:
+    simple-plist "^1.0.0"
+    uuid "^3.3.2"
 
 xml-name-validator@^3.0.0:
   version "3.0.0"
