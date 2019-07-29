@@ -32,7 +32,7 @@
     "babel-core": "7.0.0-bridge.0",
     "formik": "0.11.11",
     "frisbee": "2.0.5",
-    "i18next": "11.9.0",
+    "i18next": "17.0.7",
     "metro-react-native-babel-preset": "0.45.3",
     "moment": "tqc/moment#no-dynamic-import",
     "react": "16.5.1",
